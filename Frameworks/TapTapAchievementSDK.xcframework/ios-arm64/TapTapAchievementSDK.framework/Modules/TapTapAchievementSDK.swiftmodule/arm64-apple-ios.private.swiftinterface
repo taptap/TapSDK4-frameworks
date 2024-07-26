@@ -1,0 +1,85 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TapTapAchievementSDK
+import Foundation
+import Swift
+import TapTapBasicToolsSDK
+import TapTapCoreSDK
+import TapTapLoginSDK
+import TapTapNetworkSDK
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(TapTapAchievementOptions) @objcMembers public class TapTapAchievementOptions : ObjectiveC.NSObject, TapTapCoreSDK.TapTapSDKBaseOptions {
+  @objc final public let moduleName: Swift.String
+  @objc public var enableToast: Swift.Bool
+  @objc public static func initWithJson(_ json: [Swift.String : Any]?) -> TapTapAchievementSDK.TapTapAchievementOptions
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum TapTapAchievementType : Swift.Int, Swift.Codable {
+  case NORMAL = 0
+  case PLATINUM
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapAchievementResult : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var achievementId: Swift.String
+  @objc public var achievementName: Swift.String
+  @objc public var achievementType: TapTapAchievementSDK.TapTapAchievementType
+  @objc public var currentSteps: Swift.Int64
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public protocol TapTapAcheievementCallback : ObjectiveC.NSObjectProtocol {
+  @objc func onAchievementSuccess(code: Swift.Int, result: TapTapAchievementSDK.TapTapAchievementResult)
+  @objc func onAchievementFailure(achievementId: Swift.String, errorCode: Swift.Int, errorMsg: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class TapAchievementCallbackCode : ObjectiveC.NSObject {
+  @objc public static let UNLOCK_SUCCESS: Swift.Int
+  @objc public static let INCREMENT_SUCCESS: Swift.Int
+  @objc public static let NOT_INITIALIZED: Swift.Int
+  @objc public static let REGION_NOT_SUPPORTED: Swift.Int
+  @objc public static let NOT_LOGGED: Swift.Int
+  @objc public static let ACCESS_DENIED: Swift.Int
+  @objc public static let INVALID_REQUEST: Swift.Int
+  @objc public static let NETWORK_ERROR: Swift.Int
+  @objc public static let UNKNOWN_ERROR: Swift.Int
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapAchievement : ObjectiveC.NSObject {
+  @objc public static func increment(achievementId: Swift.String, steps: Swift.Int)
+  @objc public static func unlock(achievementId: Swift.String)
+  @objc public static func registerCallback(callback: any TapTapAchievementSDK.TapTapAcheievementCallback)
+  @objc public static func unregisterCallback(callback: any TapTapAchievementSDK.TapTapAcheievementCallback)
+  @objc public static func setToastEnable(enable: Swift.Bool)
+  @objc public static func showAchievements()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class TapWebViewJavascriptBridge : ObjectiveC.NSObject {
+  @objc public func getWebView() -> WebKit.WKWebView
+  @objc deinit
+}
+extension TapTapAchievementSDK.TapWebViewJavascriptBridge : WebKit.WKScriptMessageHandler {
+  @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+}
+extension TapTapAchievementSDK.TapWebViewJavascriptBridge : WebKit.WKNavigationDelegate {
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> ())
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> ())
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> ())
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+}
+extension TapTapAchievementSDK.TapTapAchievementType : Swift.Equatable {}
+extension TapTapAchievementSDK.TapTapAchievementType : Swift.Hashable {}
+extension TapTapAchievementSDK.TapTapAchievementType : Swift.RawRepresentable {}

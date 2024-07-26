@@ -1,0 +1,116 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TapTapLoginSDK
+import CommonCrypto
+import Foundation
+import Kingfisher
+import ObjectiveC
+import Swift
+import TapTapBasicToolsSDK
+import TapTapCoreSDK
+@_exported import TapTapLoginSDK
+import TapTapNetworkSDK
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @objcMembers public class UserInfo : ObjectiveC.NSObject {
+  @objc public var name: Swift.String? {
+    get
+  }
+  @objc public var avatar: Swift.String? {
+    get
+  }
+  @objc public var openId: Swift.String? {
+    get
+  }
+  @objc public var unionId: Swift.String? {
+    get
+  }
+  @objc public var email: Swift.String? {
+    get
+  }
+  @objc public var gender: Swift.String? {
+    get
+  }
+  public var isCertified: Swift.Bool? {
+    get
+  }
+  @objc public var emailVerified: Swift.Bool {
+    get
+  }
+  @objc public init(json: [Swift.String : Any])
+  @objc public func toJsonString() -> Swift.String
+  @objc deinit
+}
+public typealias LoginHandler<T> = ((_ result: T?, _ error: Foundation.NSError?, _ isCancel: Swift.Bool) -> Swift.Void)
+public enum Scope : Swift.String {
+  case basicInfo
+  case publicProfile
+  case email
+  case userFriends
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class TapTapLogin : ObjectiveC.NSObject {
+  @objc public static var currentAccount: TapTapLoginSDK.TapTapAccount? {
+    @objc get
+  }
+  public static func login(with scopes: [TapTapLoginSDK.Scope], handler: @escaping TapTapLoginSDK.LoginHandler<TapTapLoginSDK.TapTapAccount>)
+  @objc public static func logout()
+  @objc @discardableResult
+  public static func open(url: Foundation.URL) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class FriendsResult : ObjectiveC.NSObject {
+  @objc public var friends: [TapTapLoginSDK.FriendInfo]
+  public var cursor: Swift.Int?
+  @objc deinit
+}
+@objc @objcMembers public class FriendInfo : ObjectiveC.NSObject {
+  @objc public var name: Swift.String? {
+    get
+  }
+  @objc public var avatar: Swift.String? {
+    get
+  }
+  @objc public var openId: Swift.String? {
+    get
+  }
+  @objc public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+public struct FriendQuery {
+  public var size: Swift.Int
+  public var cursor: Swift.String?
+  public init(size: Swift.Int = 20, cursor: Swift.String? = nil)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class AccessToken : ObjectiveC.NSObject {
+  @objc public var kid: Swift.String?
+  @objc public var tokenType: Swift.String?
+  @objc public var macKey: Swift.String?
+  @objc public var macAlgorithm: Swift.String?
+  @objc public var scope: Swift.String?
+  @objc public var scopeArray: [Swift.String]?
+  @objc public func toJsonString() -> Swift.String
+  @objc public static func build(with accessTokenJsonString: Swift.String) -> TapTapLoginSDK.AccessToken?
+  @objc public static func build(kid: Swift.String, tokenType: Swift.String, macKey: Swift.String, macAlgorithm: Swift.String, scope: Swift.String? = nil) -> TapTapLoginSDK.AccessToken
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class TapTipHUD : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public class func showTip(_ tip: Swift.String, imageUrl: Swift.String = "", timeInterval: Foundation.TimeInterval = 1)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapAccount : ObjectiveC.NSObject {
+  @objc public var accessToken: TapTapLoginSDK.AccessToken?
+  @objc public var userInfo: TapTapLoginSDK.UserInfo?
+  @objc deinit
+}
+extension TapTapLoginSDK.Scope : Swift.Equatable {}
+extension TapTapLoginSDK.Scope : Swift.Hashable {}
+extension TapTapLoginSDK.Scope : Swift.RawRepresentable {}

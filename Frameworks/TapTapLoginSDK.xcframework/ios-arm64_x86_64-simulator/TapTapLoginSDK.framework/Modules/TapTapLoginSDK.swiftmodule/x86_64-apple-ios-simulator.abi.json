@@ -1,0 +1,4797 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ObjectiveC",
+        "printedName": "ObjectiveC",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapNetworkSDK",
+        "printedName": "TapTapNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapCoreSDK",
+        "printedName": "TapTapCoreSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserInfo",
+        "printedName": "UserInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(py)name",
+            "mangledName": "$s03TapA8LoginSDK8UserInfoC4nameSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(im)name",
+                "mangledName": "$s03TapA8LoginSDK8UserInfoC4nameSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "avatar",
+            "printedName": "avatar",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(py)avatar",
+            "mangledName": "$s03TapA8LoginSDK8UserInfoC6avatarSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(im)avatar",
+                "mangledName": "$s03TapA8LoginSDK8UserInfoC6avatarSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "openId",
+            "printedName": "openId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(py)openId",
+            "mangledName": "$s03TapA8LoginSDK8UserInfoC6openIdSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(im)openId",
+                "mangledName": "$s03TapA8LoginSDK8UserInfoC6openIdSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unionId",
+            "printedName": "unionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(py)unionId",
+            "mangledName": "$s03TapA8LoginSDK8UserInfoC7unionIdSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(im)unionId",
+                "mangledName": "$s03TapA8LoginSDK8UserInfoC7unionIdSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(py)email",
+            "mangledName": "$s03TapA8LoginSDK8UserInfoC5emailSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(im)email",
+                "mangledName": "$s03TapA8LoginSDK8UserInfoC5emailSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gender",
+            "printedName": "gender",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(py)gender",
+            "mangledName": "$s03TapA8LoginSDK8UserInfoC6genderSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(im)gender",
+                "mangledName": "$s03TapA8LoginSDK8UserInfoC6genderSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isCertified",
+            "printedName": "isCertified",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA8LoginSDK8UserInfoC11isCertifiedSbSgvp",
+            "mangledName": "$s03TapA8LoginSDK8UserInfoC11isCertifiedSbSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK8UserInfoC11isCertifiedSbSgvg",
+                "mangledName": "$s03TapA8LoginSDK8UserInfoC11isCertifiedSbSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailVerified",
+            "printedName": "emailVerified",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(py)emailVerified",
+            "mangledName": "$s03TapA8LoginSDK8UserInfoC13emailVerifiedSbvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(im)emailVerified",
+                "mangledName": "$s03TapA8LoginSDK8UserInfoC13emailVerifiedSbvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(json:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserInfo",
+                "printedName": "TapTapLoginSDK.UserInfo",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(im)initWithJson:",
+            "mangledName": "$s03TapA8LoginSDK8UserInfoC4jsonACSDySSypG_tcfc",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "toJsonString",
+            "printedName": "toJsonString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(im)toJsonString",
+            "mangledName": "$s03TapA8LoginSDK8UserInfoC12toJsonStringSSyF",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserInfo",
+                "printedName": "TapTapLoginSDK.UserInfo",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo(im)init",
+            "mangledName": "$s03TapA8LoginSDK8UserInfoCACycfc",
+            "moduleName": "TapTapLoginSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo",
+        "mangledName": "$s03TapA8LoginSDK8UserInfoC",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapCoreSDK",
+        "printedName": "TapTapCoreSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapNetworkSDK",
+        "printedName": "TapTapNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Scope",
+        "printedName": "Scope",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "basicInfo",
+            "printedName": "basicInfo",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TapTapLoginSDK.Scope.Type) -> TapTapLoginSDK.Scope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scope",
+                    "printedName": "TapTapLoginSDK.Scope",
+                    "usr": "s:03TapA8LoginSDK5ScopeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TapTapLoginSDK.Scope.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Scope",
+                        "printedName": "TapTapLoginSDK.Scope",
+                        "usr": "s:03TapA8LoginSDK5ScopeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:03TapA8LoginSDK5ScopeO9basicInfoyA2CmF",
+            "mangledName": "$s03TapA8LoginSDK5ScopeO9basicInfoyA2CmF",
+            "moduleName": "TapTapLoginSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "publicProfile",
+            "printedName": "publicProfile",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TapTapLoginSDK.Scope.Type) -> TapTapLoginSDK.Scope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scope",
+                    "printedName": "TapTapLoginSDK.Scope",
+                    "usr": "s:03TapA8LoginSDK5ScopeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TapTapLoginSDK.Scope.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Scope",
+                        "printedName": "TapTapLoginSDK.Scope",
+                        "usr": "s:03TapA8LoginSDK5ScopeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:03TapA8LoginSDK5ScopeO13publicProfileyA2CmF",
+            "mangledName": "$s03TapA8LoginSDK5ScopeO13publicProfileyA2CmF",
+            "moduleName": "TapTapLoginSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TapTapLoginSDK.Scope.Type) -> TapTapLoginSDK.Scope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scope",
+                    "printedName": "TapTapLoginSDK.Scope",
+                    "usr": "s:03TapA8LoginSDK5ScopeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TapTapLoginSDK.Scope.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Scope",
+                        "printedName": "TapTapLoginSDK.Scope",
+                        "usr": "s:03TapA8LoginSDK5ScopeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:03TapA8LoginSDK5ScopeO5emailyA2CmF",
+            "mangledName": "$s03TapA8LoginSDK5ScopeO5emailyA2CmF",
+            "moduleName": "TapTapLoginSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "userFriends",
+            "printedName": "userFriends",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TapTapLoginSDK.Scope.Type) -> TapTapLoginSDK.Scope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scope",
+                    "printedName": "TapTapLoginSDK.Scope",
+                    "usr": "s:03TapA8LoginSDK5ScopeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TapTapLoginSDK.Scope.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Scope",
+                        "printedName": "TapTapLoginSDK.Scope",
+                        "usr": "s:03TapA8LoginSDK5ScopeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:03TapA8LoginSDK5ScopeO11userFriendsyA2CmF",
+            "mangledName": "$s03TapA8LoginSDK5ScopeO11userFriendsyA2CmF",
+            "moduleName": "TapTapLoginSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TapTapLoginSDK.Scope?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scope",
+                    "printedName": "TapTapLoginSDK.Scope",
+                    "usr": "s:03TapA8LoginSDK5ScopeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:03TapA8LoginSDK5ScopeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s03TapA8LoginSDK5ScopeO8rawValueACSgSS_tcfc",
+            "moduleName": "TapTapLoginSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA8LoginSDK5ScopeO8rawValueSSvp",
+            "mangledName": "$s03TapA8LoginSDK5ScopeO8rawValueSSvp",
+            "moduleName": "TapTapLoginSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK5ScopeO8rawValueSSvg",
+                "mangledName": "$s03TapA8LoginSDK5ScopeO8rawValueSSvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:03TapA8LoginSDK5ScopeO",
+        "mangledName": "$s03TapA8LoginSDK5ScopeO",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapTapLogin",
+        "printedName": "TapTapLogin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "currentAccount",
+            "printedName": "currentAccount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TapTapLoginSDK.TapTapAccount?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapTapAccount",
+                    "printedName": "TapTapLoginSDK.TapTapAccount",
+                    "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapLogin(cpy)currentAccount",
+            "mangledName": "$s03TapA8LoginSDK0aaB0C14currentAccountAA0aaE0CSgvpZ",
+            "moduleName": "TapTapLoginSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TapTapLoginSDK.TapTapAccount?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TapTapAccount",
+                        "printedName": "TapTapLoginSDK.TapTapAccount",
+                        "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapLogin(cm)currentAccount",
+                "mangledName": "$s03TapA8LoginSDK0aaB0C14currentAccountAA0aaE0CSgvgZ",
+                "moduleName": "TapTapLoginSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "login",
+            "printedName": "login(with:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[TapTapLoginSDK.Scope]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scope",
+                    "printedName": "TapTapLoginSDK.Scope",
+                    "usr": "s:03TapA8LoginSDK5ScopeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TapTapLoginSDK.TapTapAccount?, Foundation.NSError?, Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(TapTapLoginSDK.TapTapAccount?, Foundation.NSError?, Swift.Bool)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "TapTapLoginSDK.TapTapAccount?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TapTapAccount",
+                            "printedName": "TapTapLoginSDK.TapTapAccount",
+                            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:03TapA8LoginSDK0aaB0C5login4with7handlerySayAA5ScopeOG_yAA0aA7AccountCSg_So7NSErrorCSgSbtctFZ",
+            "mangledName": "$s03TapA8LoginSDK0aaB0C5login4with7handlerySayAA5ScopeOG_yAA0aA7AccountCSg_So7NSErrorCSgSbtctFZ",
+            "moduleName": "TapTapLoginSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logout",
+            "printedName": "logout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapLogin(cm)logout",
+            "mangledName": "$s03TapA8LoginSDK0aaB0C6logoutyyFZ",
+            "moduleName": "TapTapLoginSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "open",
+            "printedName": "open(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapLogin(cm)openWithUrl:",
+            "mangledName": "$s03TapA8LoginSDK0aaB0C4open3urlSb10Foundation3URLV_tFZ",
+            "moduleName": "TapTapLoginSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapLogin",
+        "mangledName": "$s03TapA8LoginSDK0aaB0C",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FriendsResult",
+        "printedName": "FriendsResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "friends",
+            "printedName": "friends",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[TapTapLoginSDK.FriendInfo]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FriendInfo",
+                    "printedName": "TapTapLoginSDK.FriendInfo",
+                    "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendsResult(py)friends",
+            "mangledName": "$s03TapA8LoginSDK13FriendsResultC7friendsSayAA10FriendInfoCGvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[TapTapLoginSDK.FriendInfo]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FriendInfo",
+                        "printedName": "TapTapLoginSDK.FriendInfo",
+                        "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendsResult(im)friends",
+                "mangledName": "$s03TapA8LoginSDK13FriendsResultC7friendsSayAA10FriendInfoCGvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[TapTapLoginSDK.FriendInfo]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FriendInfo",
+                        "printedName": "TapTapLoginSDK.FriendInfo",
+                        "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendsResult(im)setFriends:",
+                "mangledName": "$s03TapA8LoginSDK13FriendsResultC7friendsSayAA10FriendInfoCGvs",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK13FriendsResultC7friendsSayAA10FriendInfoCGvM",
+                "mangledName": "$s03TapA8LoginSDK13FriendsResultC7friendsSayAA10FriendInfoCGvM",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cursor",
+            "printedName": "cursor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA8LoginSDK13FriendsResultC6cursorSiSgvp",
+            "mangledName": "$s03TapA8LoginSDK13FriendsResultC6cursorSiSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK13FriendsResultC6cursorSiSgvg",
+                "mangledName": "$s03TapA8LoginSDK13FriendsResultC6cursorSiSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK13FriendsResultC6cursorSiSgvs",
+                "mangledName": "$s03TapA8LoginSDK13FriendsResultC6cursorSiSgvs",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK13FriendsResultC6cursorSiSgvM",
+                "mangledName": "$s03TapA8LoginSDK13FriendsResultC6cursorSiSgvM",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FriendsResult",
+                "printedName": "TapTapLoginSDK.FriendsResult",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendsResult"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendsResult(im)init",
+            "mangledName": "$s03TapA8LoginSDK13FriendsResultCACycfc",
+            "moduleName": "TapTapLoginSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendsResult",
+        "mangledName": "$s03TapA8LoginSDK13FriendsResultC",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FriendInfo",
+        "printedName": "FriendInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo(py)name",
+            "mangledName": "$s03TapA8LoginSDK10FriendInfoC4nameSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo(im)name",
+                "mangledName": "$s03TapA8LoginSDK10FriendInfoC4nameSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "avatar",
+            "printedName": "avatar",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo(py)avatar",
+            "mangledName": "$s03TapA8LoginSDK10FriendInfoC6avatarSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo(im)avatar",
+                "mangledName": "$s03TapA8LoginSDK10FriendInfoC6avatarSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "openId",
+            "printedName": "openId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo(py)openId",
+            "mangledName": "$s03TapA8LoginSDK10FriendInfoC6openIdSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo(im)openId",
+                "mangledName": "$s03TapA8LoginSDK10FriendInfoC6openIdSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dictionary:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FriendInfo",
+                "printedName": "TapTapLoginSDK.FriendInfo",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo(im)initWithDictionary:",
+            "mangledName": "$s03TapA8LoginSDK10FriendInfoC10dictionaryACSDySSypG_tcfc",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FriendInfo",
+                "printedName": "TapTapLoginSDK.FriendInfo",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo(im)init",
+            "mangledName": "$s03TapA8LoginSDK10FriendInfoCACycfc",
+            "moduleName": "TapTapLoginSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo",
+        "mangledName": "$s03TapA8LoginSDK10FriendInfoC",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapNetworkSDK",
+        "printedName": "TapTapNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapNetworkSDK",
+        "printedName": "TapTapNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FriendQuery",
+        "printedName": "FriendQuery",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "size",
+            "printedName": "size",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA8LoginSDK11FriendQueryV4sizeSivp",
+            "mangledName": "$s03TapA8LoginSDK11FriendQueryV4sizeSivp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK11FriendQueryV4sizeSivg",
+                "mangledName": "$s03TapA8LoginSDK11FriendQueryV4sizeSivg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK11FriendQueryV4sizeSivs",
+                "mangledName": "$s03TapA8LoginSDK11FriendQueryV4sizeSivs",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK11FriendQueryV4sizeSivM",
+                "mangledName": "$s03TapA8LoginSDK11FriendQueryV4sizeSivM",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cursor",
+            "printedName": "cursor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA8LoginSDK11FriendQueryV6cursorSSSgvp",
+            "mangledName": "$s03TapA8LoginSDK11FriendQueryV6cursorSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK11FriendQueryV6cursorSSSgvg",
+                "mangledName": "$s03TapA8LoginSDK11FriendQueryV6cursorSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK11FriendQueryV6cursorSSSgvs",
+                "mangledName": "$s03TapA8LoginSDK11FriendQueryV6cursorSSSgvs",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK11FriendQueryV6cursorSSSgvM",
+                "mangledName": "$s03TapA8LoginSDK11FriendQueryV6cursorSSSgvM",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(size:cursor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FriendQuery",
+                "printedName": "TapTapLoginSDK.FriendQuery",
+                "usr": "s:03TapA8LoginSDK11FriendQueryV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:03TapA8LoginSDK11FriendQueryV4size6cursorACSi_SSSgtcfc",
+            "mangledName": "$s03TapA8LoginSDK11FriendQueryV4size6cursorACSi_SSSgtcfc",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:03TapA8LoginSDK11FriendQueryV",
+        "mangledName": "$s03TapA8LoginSDK11FriendQueryV",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AccessToken",
+        "printedName": "AccessToken",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "kid",
+            "printedName": "kid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(py)kid",
+            "mangledName": "$s03TapA8LoginSDK11AccessTokenC3kidSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)kid",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC3kidSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setKid:",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC3kidSSSgvs",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK11AccessTokenC3kidSSSgvM",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC3kidSSSgvM",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tokenType",
+            "printedName": "tokenType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(py)tokenType",
+            "mangledName": "$s03TapA8LoginSDK11AccessTokenC9tokenTypeSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)tokenType",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC9tokenTypeSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setTokenType:",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC9tokenTypeSSSgvs",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK11AccessTokenC9tokenTypeSSSgvM",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC9tokenTypeSSSgvM",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "macKey",
+            "printedName": "macKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(py)macKey",
+            "mangledName": "$s03TapA8LoginSDK11AccessTokenC6macKeySSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)macKey",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC6macKeySSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setMacKey:",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC6macKeySSSgvs",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK11AccessTokenC6macKeySSSgvM",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC6macKeySSSgvM",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "macAlgorithm",
+            "printedName": "macAlgorithm",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(py)macAlgorithm",
+            "mangledName": "$s03TapA8LoginSDK11AccessTokenC12macAlgorithmSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)macAlgorithm",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC12macAlgorithmSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setMacAlgorithm:",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC12macAlgorithmSSSgvs",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK11AccessTokenC12macAlgorithmSSSgvM",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC12macAlgorithmSSSgvM",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scope",
+            "printedName": "scope",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(py)scope",
+            "mangledName": "$s03TapA8LoginSDK11AccessTokenC5scopeSSSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)scope",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC5scopeSSSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setScope:",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC5scopeSSSgvs",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK11AccessTokenC5scopeSSSgvM",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC5scopeSSSgvM",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scopeArray",
+            "printedName": "scopeArray",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(py)scopeArray",
+            "mangledName": "$s03TapA8LoginSDK11AccessTokenC10scopeArraySaySSGSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)scopeArray",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC10scopeArraySaySSGSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setScopeArray:",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC10scopeArraySaySSGSgvs",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK11AccessTokenC10scopeArraySaySSGSgvM",
+                "mangledName": "$s03TapA8LoginSDK11AccessTokenC10scopeArraySaySSGSgvM",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toJsonString",
+            "printedName": "toJsonString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)toJsonString",
+            "mangledName": "$s03TapA8LoginSDK11AccessTokenC12toJsonStringSSyF",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TapTapLoginSDK.AccessToken?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AccessToken",
+                    "printedName": "TapTapLoginSDK.AccessToken",
+                    "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(cm)buildWith:",
+            "mangledName": "$s03TapA8LoginSDK11AccessTokenC5build4withACSgSS_tFZ",
+            "moduleName": "TapTapLoginSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build(kid:tokenType:macKey:macAlgorithm:scope:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AccessToken",
+                "printedName": "TapTapLoginSDK.AccessToken",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(cm)buildWithKid:tokenType:macKey:macAlgorithm:scope:",
+            "mangledName": "$s03TapA8LoginSDK11AccessTokenC5build3kid9tokenType6macKey0J9Algorithm5scopeACSS_S4SSgtFZ",
+            "moduleName": "TapTapLoginSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AccessToken",
+                "printedName": "TapTapLoginSDK.AccessToken",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)init",
+            "mangledName": "$s03TapA8LoginSDK11AccessTokenCACycfc",
+            "moduleName": "TapTapLoginSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken",
+        "mangledName": "$s03TapA8LoginSDK11AccessTokenC",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Kingfisher",
+        "printedName": "Kingfisher",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapTipHUD",
+        "printedName": "TapTipHUD",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "showTip",
+            "printedName": "showTip(_:imageUrl:timeInterval:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:03TapA8LoginSDK0A6TipHUDC04showD0_8imageUrl12timeIntervalySS_SSSdtFZ",
+            "mangledName": "$s03TapA8LoginSDK0A6TipHUDC04showD0_8imageUrl12timeIntervalySS_SSSdtFZ",
+            "moduleName": "TapTapLoginSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTipHUD",
+        "mangledName": "$s03TapA8LoginSDK0A6TipHUDC",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapTapAccount",
+        "printedName": "TapTapAccount",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "accessToken",
+            "printedName": "accessToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TapTapLoginSDK.AccessToken?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AccessToken",
+                    "printedName": "TapTapLoginSDK.AccessToken",
+                    "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount(py)accessToken",
+            "mangledName": "$s03TapA8LoginSDK0aA7AccountC11accessTokenAA06AccessF0CSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TapTapLoginSDK.AccessToken?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AccessToken",
+                        "printedName": "TapTapLoginSDK.AccessToken",
+                        "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount(im)accessToken",
+                "mangledName": "$s03TapA8LoginSDK0aA7AccountC11accessTokenAA06AccessF0CSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TapTapLoginSDK.AccessToken?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AccessToken",
+                        "printedName": "TapTapLoginSDK.AccessToken",
+                        "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount(im)setAccessToken:",
+                "mangledName": "$s03TapA8LoginSDK0aA7AccountC11accessTokenAA06AccessF0CSgvs",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK0aA7AccountC11accessTokenAA06AccessF0CSgvM",
+                "mangledName": "$s03TapA8LoginSDK0aA7AccountC11accessTokenAA06AccessF0CSgvM",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userInfo",
+            "printedName": "userInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TapTapLoginSDK.UserInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserInfo",
+                    "printedName": "TapTapLoginSDK.UserInfo",
+                    "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount(py)userInfo",
+            "mangledName": "$s03TapA8LoginSDK0aA7AccountC8userInfoAA04UserF0CSgvp",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TapTapLoginSDK.UserInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfo",
+                        "printedName": "TapTapLoginSDK.UserInfo",
+                        "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount(im)userInfo",
+                "mangledName": "$s03TapA8LoginSDK0aA7AccountC8userInfoAA04UserF0CSgvg",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TapTapLoginSDK.UserInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserInfo",
+                        "printedName": "TapTapLoginSDK.UserInfo",
+                        "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount(im)setUserInfo:",
+                "mangledName": "$s03TapA8LoginSDK0aA7AccountC8userInfoAA04UserF0CSgvs",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA8LoginSDK0aA7AccountC8userInfoAA04UserF0CSgvM",
+                "mangledName": "$s03TapA8LoginSDK0aA7AccountC8userInfoAA04UserF0CSgvM",
+                "moduleName": "TapTapLoginSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapTapAccount",
+                "printedName": "TapTapLoginSDK.TapTapAccount",
+                "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount(im)init",
+            "mangledName": "$s03TapA8LoginSDK0aA7AccountCACycfc",
+            "moduleName": "TapTapLoginSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount",
+        "mangledName": "$s03TapA8LoginSDK0aA7AccountC",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapCoreSDK",
+        "printedName": "TapTapCoreSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "kind": "StringLiteral",
+      "offset": 213,
+      "length": 17,
+      "value": "\"TapTapSDK\/Login\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "kind": "StringLiteral",
+      "offset": 282,
+      "length": 18,
+      "value": "\"TapTapSDK\/Logout\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "kind": "StringLiteral",
+      "offset": 372,
+      "length": 26,
+      "value": "\"TapTapSDK\/GetPreApproved\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "kind": "StringLiteral",
+      "offset": 470,
+      "length": 26,
+      "value": "\"TapTapSDK\/SetPreApproved\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "kind": "StringLiteral",
+      "offset": 553,
+      "length": 24,
+      "value": "\"TapTapSDK\/TapAuthLogin\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "kind": "StringLiteral",
+      "offset": 655,
+      "length": 32,
+      "value": "\"TapTapSDK\/AdditionalLoginScope\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "kind": "StringLiteral",
+      "offset": 750,
+      "length": 29,
+      "value": "\"TapTapSDK\/SetInitialOptions\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "kind": "StringLiteral",
+      "offset": 839,
+      "length": 21,
+      "value": "\"TapTapSDK\/GetOpenID\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "kind": "StringLiteral",
+      "offset": 919,
+      "length": 19,
+      "value": "\"TapTapSDK\/SendRnd\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "kind": "StringLiteral",
+      "offset": 1014,
+      "length": 30,
+      "value": "\"TapTapSDK\/LoginAuthorization\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/String+Extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 901,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1714,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1754,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1791,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1833,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1877,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1921,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1958,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9142,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9168,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 24313,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 24848,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 24854,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 24764,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 25192,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 25198,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 25106,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 25476,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 25828,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 25926,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 26061,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 26200,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "IntegerLiteral",
+      "offset": 26604,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "IntegerLiteral",
+      "offset": 26736,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26853,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 27192,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 27198,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 27118,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 27307,
+      "length": 3,
+      "value": "6.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 27414,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 27427,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 27531,
+      "length": 4,
+      "value": "80.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 27545,
+      "length": 4,
+      "value": "80.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 27723,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 27738,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 27933,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 28224,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "BooleanLiteral",
+      "offset": 28831,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "BooleanLiteral",
+      "offset": 29265,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "kind": "FloatLiteral",
+      "offset": 29474,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 354,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/UserInfo.swift",
+      "kind": "BooleanLiteral",
+      "offset": 672,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2873,
+      "length": 25,
+      "value": "\"TapTapSDKCurrentProfile\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/UserInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 137,
+      "length": 8,
+      "value": "\"TapTapLoginSDK.UserInfo\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "kind": "StringLiteral",
+      "offset": 340,
+      "length": 12,
+      "value": "\"basic_info\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "kind": "StringLiteral",
+      "offset": 378,
+      "length": 16,
+      "value": "\"public_profile\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "kind": "StringLiteral",
+      "offset": 433,
+      "length": 14,
+      "value": "\"user_friends\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "kind": "StringLiteral",
+      "offset": 340,
+      "length": 12,
+      "value": "\"basic_info\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "kind": "StringLiteral",
+      "offset": 378,
+      "length": 16,
+      "value": "\"public_profile\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "kind": "StringLiteral",
+      "offset": 433,
+      "length": 14,
+      "value": "\"user_friends\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 795,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 872,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8300,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 139,
+      "length": 13,
+      "value": "\"TapTapLoginSDK.FriendsResult\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 859,
+      "length": 10,
+      "value": "\"TapTapLoginSDK.FriendInfo\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendQuery.swift",
+      "kind": "IntegerLiteral",
+      "offset": 190,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendQuery.swift",
+      "kind": "IntegerLiteral",
+      "offset": 278,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 163,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "FloatLiteral",
+      "offset": 165,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 179,
+      "length": 3,
+      "value": "217"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "FloatLiteral",
+      "offset": 183,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 196,
+      "length": 3,
+      "value": "197"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "FloatLiteral",
+      "offset": 200,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 214,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 261,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "FloatLiteral",
+      "offset": 263,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 277,
+      "length": 3,
+      "value": "165"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "FloatLiteral",
+      "offset": 281,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 294,
+      "length": 3,
+      "value": "173"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "FloatLiteral",
+      "offset": 298,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 312,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 351,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 361,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 370,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 380,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 417,
+      "length": 3,
+      "value": "246"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "FloatLiteral",
+      "offset": 421,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 435,
+      "length": 2,
+      "value": "76"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "FloatLiteral",
+      "offset": 438,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 451,
+      "length": 2,
+      "value": "76"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "FloatLiteral",
+      "offset": 454,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 468,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapAccessToken.swift",
+      "kind": "StringLiteral",
+      "offset": 4915,
+      "length": 29,
+      "value": "\"TapTapSDKcurrentAccessToken\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
+      "kind": "BooleanLiteral",
+      "offset": 487,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
+      "kind": "StringLiteral",
+      "offset": 562,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
+      "kind": "IntegerLiteral",
+      "offset": 595,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapAccount.swift",
+      "kind": "StringLiteral",
+      "offset": 167,
+      "length": 13,
+      "value": "\"TapTapLoginSDK.TapTapAccount\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 401,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1795,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 397,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 452,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 509,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 550,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 650,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 661,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 828,
+      "length": 2,
+      "value": "85"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "FloatLiteral",
+      "offset": 834,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 856,
+      "length": 3,
+      "value": "182"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "FloatLiteral",
+      "offset": 863,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 884,
+      "length": 3,
+      "value": "197"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "FloatLiteral",
+      "offset": 891,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 905,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 957,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1009,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1060,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1066,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1076,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1087,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1482,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1547,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1550,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1594,
+      "length": 3,
+      "value": "2.5"
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 2953,
+      "length": 19,
+      "value": "\"TapTapLoginSDK.LoginWebViewHandler\""
+    },
+    {
+      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "StringLiteral",
+      "offset": 160,
+      "length": 12,
+      "value": "\"TapTapLoginSDK.LoginWebView\""
+    }
+  ]
+}
