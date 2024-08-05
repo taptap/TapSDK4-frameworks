@@ -2987,7 +2987,7 @@
     {
       "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapAchievement\/Private\/UI\/TapAchievementWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10162,
+      "offset": 10156,
       "length": 25,
       "value": "\"TapTapAchievementSDK.AchievementWebViewHandler\""
     },
