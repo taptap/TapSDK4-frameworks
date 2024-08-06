@@ -62,8 +62,6 @@ typedef NS_ENUM(NSInteger, TapComplianceAgeLimit) {
 /// 获取用户剩余时长（单位：秒）
 + (NSInteger)getRemainingTime;
 
-/// 获取用户剩余时长（单位：分钟）
-+ (NSInteger)getRemainingTimeInMinutes;
 
 /// 获取用户年龄段
 + (TapComplianceAgeLimit)getAgeRange;
@@ -82,7 +80,7 @@ typedef NS_ENUM(NSInteger, TapComplianceAgeLimit) {
 + (void)submitPayment:(NSInteger)amount callBack:(void(^ _Nullable)(BOOL success))callBack failureHandler:(void (^ _Nullable)(NSString * _Nonnull error))failureHandler;
 
 ///获取当前防沉迷Token
-+ (NSString *)currentToken;
++ (NSString *)getCurrentAccessToken;
 
 
 @end

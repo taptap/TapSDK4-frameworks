@@ -777,13 +777,6 @@
       },
       {
         "kind": "Import",
-        "name": "TapTapCoreSDK",
-        "printedName": "TapTapCoreSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapLoginSDK"
-      },
-      {
-        "kind": "Import",
         "name": "TapTapBasicToolsSDK",
         "printedName": "TapTapBasicToolsSDK",
         "declKind": "Import",
@@ -791,8 +784,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "TapTapCoreSDK",
+        "printedName": "TapTapCoreSDK",
         "declKind": "Import",
         "moduleName": "TapTapLoginSDK"
       },
@@ -800,6 +793,13 @@
         "kind": "Import",
         "name": "TapTapNetworkSDK",
         "printedName": "TapTapNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapLoginSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "TapTapLoginSDK"
       },
@@ -1082,71 +1082,6 @@
         "printedName": "TapTapLogin",
         "children": [
           {
-            "kind": "Var",
-            "name": "currentAccount",
-            "printedName": "currentAccount",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "TapTapLoginSDK.TapTapAccount?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TapTapAccount",
-                    "printedName": "TapTapLoginSDK.TapTapAccount",
-                    "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapLogin(cpy)currentAccount",
-            "mangledName": "$s03TapA8LoginSDK0aaB0C14currentAccountAA0aaE0CSgvpZ",
-            "moduleName": "TapTapLoginSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "TapTapLoginSDK.TapTapAccount?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TapTapAccount",
-                        "printedName": "TapTapLoginSDK.TapTapAccount",
-                        "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapLogin(cm)currentAccount",
-                "mangledName": "$s03TapA8LoginSDK0aaB0C14currentAccountAA0aaE0CSgvgZ",
-                "moduleName": "TapTapLoginSDK",
-                "static": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "login",
             "printedName": "login(with:handler:)",
@@ -1238,6 +1173,38 @@
           },
           {
             "kind": "Function",
+            "name": "getCurrentTapAccount",
+            "printedName": "getCurrentTapAccount()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TapTapLoginSDK.TapTapAccount?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapTapAccount",
+                    "printedName": "TapTapLoginSDK.TapTapAccount",
+                    "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapLogin(cm)getCurrentTapAccount",
+            "mangledName": "$s03TapA8LoginSDK0aaB0C010getCurrentA7AccountAA0aaF0CSgyFZ",
+            "moduleName": "TapTapLoginSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "logout",
             "printedName": "logout()",
             "children": [
@@ -1255,8 +1222,8 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1290,6 +1257,99 @@
               "RawDocComment",
               "ObjC"
             ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "Login",
+            "printedName": "Login(scopes:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?, TapTapLoginSDK.TapTapAccount?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?, TapTapLoginSDK.TapTapAccount?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "TapTapLoginSDK.TapTapAccount?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TapTapAccount",
+                            "printedName": "TapTapLoginSDK.TapTapAccount",
+                            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TapTapLoginSDK@objc(cs)TapTapLogin(cm)LoginWithScopes:handler:",
+            "mangledName": "$s03TapA8LoginSDK0aaB0C0B06scopes7handlerySaySSG_ySb_So7NSErrorCSgAA0aA7AccountCSgtctFZ",
+            "moduleName": "TapTapLoginSDK",
+            "static": true,
+            "objc_name": "LoginWithScopes:handler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -3750,6 +3810,28 @@
             ]
           },
           {
+            "kind": "Function",
+            "name": "toJsonString",
+            "printedName": "toJsonString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount(im)toJsonString",
+            "mangledName": "$s03TapA8LoginSDK0aA7AccountC12toJsonStringSSyF",
+            "moduleName": "TapTapLoginSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -3926,868 +4008,868 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 213,
       "length": 17,
       "value": "\"TapTapSDK\/Login\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 18,
       "value": "\"TapTapSDK\/Logout\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 372,
       "length": 26,
       "value": "\"TapTapSDK\/GetPreApproved\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 470,
       "length": 26,
       "value": "\"TapTapSDK\/SetPreApproved\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 553,
       "length": 24,
       "value": "\"TapTapSDK\/TapAuthLogin\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 655,
       "length": 32,
       "value": "\"TapTapSDK\/AdditionalLoginScope\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 750,
       "length": 29,
       "value": "\"TapTapSDK\/SetInitialOptions\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 839,
       "length": 21,
       "value": "\"TapTapSDK\/GetOpenID\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 919,
       "length": 19,
       "value": "\"TapTapSDK\/SendRnd\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/TapTapLoginRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 1014,
       "length": 30,
       "value": "\"TapTapSDK\/LoginAuthorization\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/String+Extension.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/String+Extension.swift",
       "kind": "IntegerLiteral",
       "offset": 901,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "IntegerLiteral",
       "offset": 1714,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "IntegerLiteral",
       "offset": 1754,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "IntegerLiteral",
       "offset": 1791,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "IntegerLiteral",
       "offset": 1833,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "IntegerLiteral",
       "offset": 1877,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "IntegerLiteral",
       "offset": 1921,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "IntegerLiteral",
       "offset": 1958,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "BooleanLiteral",
       "offset": 9142,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "BooleanLiteral",
       "offset": 9168,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 24313,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 24848,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 24854,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 24764,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 25192,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 25198,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 25106,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 25476,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 25828,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 25926,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 26061,
       "length": 4,
       "value": "16.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 26200,
       "length": 4,
       "value": "16.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "IntegerLiteral",
       "offset": 26604,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "IntegerLiteral",
       "offset": 26736,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "BooleanLiteral",
       "offset": 26853,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 27192,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 27198,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 27118,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 27307,
       "length": 3,
       "value": "6.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 27414,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 27427,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 27531,
       "length": 4,
       "value": "80.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 27545,
       "length": 4,
       "value": "80.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 27723,
       "length": 5,
       "value": "100.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 27738,
       "length": 5,
       "value": "100.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 27933,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 28224,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "BooleanLiteral",
       "offset": 28831,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "BooleanLiteral",
       "offset": 29265,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/Toast.swift",
       "kind": "FloatLiteral",
       "offset": 29474,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginManager.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginManager.swift",
       "kind": "BooleanLiteral",
       "offset": 354,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/UserInfo.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/UserInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 672,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/UserInfo.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 2873,
       "length": 25,
       "value": "\"TapTapSDKCurrentProfile\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/UserInfo.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/UserInfo.swift",
       "kind": "StringLiteral",
       "offset": 137,
       "length": 8,
       "value": "\"TapTapLoginSDK.UserInfo\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 340,
+      "offset": 338,
       "length": 12,
       "value": "\"basic_info\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 378,
+      "offset": 376,
       "length": 16,
       "value": "\"public_profile\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 433,
+      "offset": 431,
       "length": 14,
       "value": "\"user_friends\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 340,
+      "offset": 338,
       "length": 12,
       "value": "\"basic_info\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 378,
+      "offset": 376,
       "length": 16,
       "value": "\"public_profile\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 433,
+      "offset": 431,
       "length": 14,
       "value": "\"user_friends\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 795,
+      "offset": 788,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 872,
+      "offset": 865,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 8300,
+      "offset": 8360,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendInfo.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendInfo.swift",
       "kind": "StringLiteral",
       "offset": 139,
       "length": 13,
       "value": "\"TapTapLoginSDK.FriendsResult\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendInfo.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendInfo.swift",
       "kind": "StringLiteral",
       "offset": 859,
       "length": 10,
       "value": "\"TapTapLoginSDK.FriendInfo\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendQuery.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendQuery.swift",
       "kind": "IntegerLiteral",
       "offset": 190,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendQuery.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendQuery.swift",
       "kind": "IntegerLiteral",
       "offset": 278,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 163,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "FloatLiteral",
       "offset": 165,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 179,
       "length": 3,
       "value": "217"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "FloatLiteral",
       "offset": 183,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 196,
       "length": 3,
       "value": "197"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "FloatLiteral",
       "offset": 200,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 214,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 261,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "FloatLiteral",
       "offset": 263,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 277,
       "length": 3,
       "value": "165"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "FloatLiteral",
       "offset": 281,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 294,
       "length": 3,
       "value": "173"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "FloatLiteral",
       "offset": 298,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 312,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 351,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 370,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 380,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 417,
       "length": 3,
       "value": "246"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "FloatLiteral",
       "offset": 421,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 435,
       "length": 2,
       "value": "76"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "FloatLiteral",
       "offset": 438,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 451,
       "length": 2,
       "value": "76"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "FloatLiteral",
       "offset": 454,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/UI.swift",
       "kind": "IntegerLiteral",
       "offset": 468,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapAccessToken.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapAccessToken.swift",
       "kind": "StringLiteral",
       "offset": 4915,
       "length": 29,
       "value": "\"TapTapSDKcurrentAccessToken\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
       "kind": "BooleanLiteral",
       "offset": 487,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
       "kind": "StringLiteral",
       "offset": 562,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 595,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapAccount.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Public\/TapTapAccount.swift",
       "kind": "StringLiteral",
       "offset": 167,
       "length": 13,
       "value": "\"TapTapLoginSDK.TapTapAccount\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginHelper.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginHelper.swift",
       "kind": "BooleanLiteral",
       "offset": 401,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginHelper.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginHelper.swift",
       "kind": "BooleanLiteral",
       "offset": 1795,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 397,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "BooleanLiteral",
       "offset": 452,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "BooleanLiteral",
       "offset": 509,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "BooleanLiteral",
       "offset": 550,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 650,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 661,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 828,
       "length": 2,
       "value": "85"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "FloatLiteral",
       "offset": 834,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 856,
       "length": 3,
       "value": "182"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "FloatLiteral",
       "offset": 863,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 884,
       "length": 3,
       "value": "197"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "FloatLiteral",
       "offset": 891,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 905,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 957,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "BooleanLiteral",
       "offset": 1009,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 1060,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 1066,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 1076,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 1087,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "FloatLiteral",
       "offset": 1482,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 1547,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 1550,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "FloatLiteral",
       "offset": 1594,
       "length": 3,
       "value": "2.5"
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "StringLiteral",
       "offset": 2953,
       "length": 19,
       "value": "\"TapTapLoginSDK.LoginWebViewHandler\""
     },
     {
-      "filePath": "\/Users\/seraph\/sourceCode\/tapsdk4_ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "filePath": "\/Users\/taptap\/builds\/ij43ueNF\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "StringLiteral",
       "offset": 160,
       "length": 12,

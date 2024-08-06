@@ -44,7 +44,7 @@ import _SwiftConcurrencyShims
   @objc public func toJsonString() -> Swift.String
   @objc deinit
 }
-public typealias LoginHandler<T> = ((_ result: T?, _ error: Foundation.NSError?, _ isCancel: Swift.Bool) -> Swift.Void)
+public typealias LoginHandler<T> = (_ result: T?, _ error: Foundation.NSError?, _ isCancel: Swift.Bool) -> Swift.Void
 public enum Scope : Swift.String {
   case basicInfo
   case publicProfile
@@ -57,14 +57,15 @@ public enum Scope : Swift.String {
   }
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class TapTapLogin : ObjectiveC.NSObject {
-  @objc public static var currentAccount: TapTapLoginSDK.TapTapAccount? {
-    @objc get
-  }
   public static func login(with scopes: [TapTapLoginSDK.Scope], handler: @escaping TapTapLoginSDK.LoginHandler<TapTapLoginSDK.TapTapAccount>)
+  @objc public static func getCurrentTapAccount() -> TapTapLoginSDK.TapTapAccount?
   @objc public static func logout()
   @objc @discardableResult
   public static func open(url: Foundation.URL) -> Swift.Bool
   @objc deinit
+}
+extension TapTapLoginSDK.TapTapLogin {
+  @objc public static func Login(scopes: [Swift.String], handler: @escaping ((Swift.Bool, Foundation.NSError?, TapTapLoginSDK.TapTapAccount?) -> Swift.Void))
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class FriendsResult : ObjectiveC.NSObject {
   @objc public var friends: [TapTapLoginSDK.FriendInfo]
@@ -109,6 +110,7 @@ public struct FriendQuery {
 @objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapAccount : ObjectiveC.NSObject {
   @objc public var accessToken: TapTapLoginSDK.AccessToken?
   @objc public var userInfo: TapTapLoginSDK.UserInfo?
+  @objc public func toJsonString() -> Swift.String
   @objc deinit
 }
 extension TapTapLoginSDK.Scope : Swift.Equatable {}

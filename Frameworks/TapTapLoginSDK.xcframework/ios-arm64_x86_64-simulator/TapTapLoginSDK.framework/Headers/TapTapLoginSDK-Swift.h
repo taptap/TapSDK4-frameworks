@@ -344,6 +344,7 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK13TapTapAccount")
 @interface TapTapAccount : NSObject
 @property (nonatomic, strong) AccessToken * _Nullable accessToken;
 @property (nonatomic, strong) UserInfo * _Nullable userInfo;
+- (NSString * _Nonnull)toJsonString SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -352,11 +353,9 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK13TapTapAccount")
 
 SWIFT_CLASS("_TtC14TapTapLoginSDK11TapTapLogin")
 @interface TapTapLogin : NSObject
-/// 当前登录的 TapTapAccount
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapTapAccount * _Nullable currentAccount;)
-+ (TapTapAccount * _Nullable)currentAccount SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (TapTapAccount * _Nullable)getCurrentTapAccount SWIFT_WARN_UNUSED_RESULT;
 /// 退出登录
 + (void)logout;
 /// 从 TapTap 登录完成唤起应用需要调用此方法
@@ -370,6 +369,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapTapAccoun
 + (BOOL)openWithUrl:(NSURL * _Nonnull)url;
 @end
 
+@class NSError;
+
+@interface TapTapLogin (SWIFT_EXTENSION(TapTapLoginSDK))
+/// OC 的登录方法
++ (void)LoginWithScopes:(NSArray<NSString *> * _Nonnull)scopes handler:(void (^ _Nonnull)(BOOL, NSError * _Nullable, TapTapAccount * _Nullable))handler;
+@end
 
 
 @class NSCoder;
@@ -753,6 +758,7 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK13TapTapAccount")
 @interface TapTapAccount : NSObject
 @property (nonatomic, strong) AccessToken * _Nullable accessToken;
 @property (nonatomic, strong) UserInfo * _Nullable userInfo;
+- (NSString * _Nonnull)toJsonString SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -761,11 +767,9 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK13TapTapAccount")
 
 SWIFT_CLASS("_TtC14TapTapLoginSDK11TapTapLogin")
 @interface TapTapLogin : NSObject
-/// 当前登录的 TapTapAccount
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapTapAccount * _Nullable currentAccount;)
-+ (TapTapAccount * _Nullable)currentAccount SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (TapTapAccount * _Nullable)getCurrentTapAccount SWIFT_WARN_UNUSED_RESULT;
 /// 退出登录
 + (void)logout;
 /// 从 TapTap 登录完成唤起应用需要调用此方法
@@ -779,6 +783,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapTapAccoun
 + (BOOL)openWithUrl:(NSURL * _Nonnull)url;
 @end
 
+@class NSError;
+
+@interface TapTapLogin (SWIFT_EXTENSION(TapTapLoginSDK))
+/// OC 的登录方法
++ (void)LoginWithScopes:(NSArray<NSString *> * _Nonnull)scopes handler:(void (^ _Nonnull)(BOOL, NSError * _Nullable, TapTapAccount * _Nullable))handler;
+@end
 
 
 @class NSCoder;
