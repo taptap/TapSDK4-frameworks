@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/TapTapBasicToolsSDK.framework/Info.plist</key>
 		<data>
-		/m/r2Thbti8mgy988S4x8xE2qNo=
+		VNZ4wuSQN5YMmOMGJYjxFPrUBvI=
 		</data>
 		<key>Frameworks/TapTapBasicToolsSDK.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Frameworks/TapTapBasicToolsSDK.framework/TapTapBasicToolsSDK</key>
 		<data>
-		Qy2I1QcWgu1ekxnTd0ZsCPk5ueo=
+		5nJ+7uZO/FjY5KTStysCnLXVriQ=
 		</data>
 		<key>Frameworks/TapTapBasicToolsSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		oBSbptwwmWSbQdY2vcbsf/zbH10=
+		UY6Rl6XM1zL1wVDfGZvOglgMeHo=
 		</data>
 		<key>Headers/TapTapCoreSDK.h</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Headers/TapTapSDK.h</key>
 		<data>
-		4FHlMOIteceDAK5pc8YIgY8c2zg=
+		5lUeClfw9LhDL3GkUFNtqleB8IE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tsNkY9vNKwXUSnPMU3dnP1biRwU=
+		m50EFySqZswvtNaeVEgnVAj8pgs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/m/r2Thbti8mgy988S4x8xE2qNo=
+			VNZ4wuSQN5YMmOMGJYjxFPrUBvI=
 			</data>
 			<key>hash2</key>
 			<data>
-			g2Sg8BEx7G6nnokZzN8cMXslNb62dDnV67Jh2tMBPWM=
+			8P3t8KgmR+ksT8SUqRg5BXX/sc5J10lm8RVsbuyAP+4=
 			</data>
 		</dict>
 		<key>Frameworks/TapTapBasicToolsSDK.framework/PrivacyInfo.xcprivacy</key>
@@ -73,22 +73,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qy2I1QcWgu1ekxnTd0ZsCPk5ueo=
+			5nJ+7uZO/FjY5KTStysCnLXVriQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			U9mhAygTf8uxHcq5iTuQ9Z8vvXPovpvVIS2SlrQ3pxM=
+			DJGE3CJ+x2dWuoxQfHXdVhScPVqhGMGKZYUttyCSxDQ=
 			</data>
 		</dict>
 		<key>Frameworks/TapTapBasicToolsSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oBSbptwwmWSbQdY2vcbsf/zbH10=
+			UY6Rl6XM1zL1wVDfGZvOglgMeHo=
 			</data>
 			<key>hash2</key>
 			<data>
-			YIoxNzHdaxnTt35UImAP5V8d5TLzlyCnLkb7HPPtOPw=
+			pUGbsqiYzktXT5hIoxW7WQJ6hB13PvEG9fHSaKbDlig=
 			</data>
 		</dict>
 		<key>Headers/TapTapCoreSDK.h</key>
@@ -117,11 +117,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4FHlMOIteceDAK5pc8YIgY8c2zg=
+			5lUeClfw9LhDL3GkUFNtqleB8IE=
 			</data>
 			<key>hash2</key>
 			<data>
-			p7z6gFR6qbZVpPhkW1erokr817exRuXEdwwV5PPXwE8=
+			FnNhOZuTYxCuGeUrjKAejrfUA/NYvYAXaUYBlG8MQRk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

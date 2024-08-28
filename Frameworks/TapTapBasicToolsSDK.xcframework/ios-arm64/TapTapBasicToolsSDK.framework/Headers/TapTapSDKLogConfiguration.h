@@ -10,10 +10,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, TapTapSDKProjectType) {
-    TapTapSDKUpdate,
-    TapTapSDKAppDuration,
-    TapTapSDKSDKCore,
-    TapTapSDKLogin,
+    TapTapUpdateProject,
+    TapTapAppDurationProject,
+    TapTapCoreProject,
+    TapTapLoginProject,
+    TapTapMomentProject,
+    TapTapAchievementProject,
+    TapTapComplianceProject
 };
 
 @interface TapTapSDKLogConfiguration : NSObject
@@ -25,6 +28,8 @@ typedef NS_ENUM(NSUInteger, TapTapSDKProjectType) {
 
 /// 获取公共基础埋点参数
 + (NSDictionary *)getCommonBaseParameters;
+
++ (NSString *)getProjectType:(TapTapSDKProjectType)type;
 @end
 
 NS_ASSUME_NONNULL_END

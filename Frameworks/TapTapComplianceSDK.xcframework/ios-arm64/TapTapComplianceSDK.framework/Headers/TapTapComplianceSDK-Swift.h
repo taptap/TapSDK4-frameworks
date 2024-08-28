@@ -467,8 +467,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) AntiAddictionConfigura
 
 
 @interface TapComplianceService (SWIFT_EXTENSION(TapTapComplianceSDK))
-+ (void)checkRealNameStateWithClientId:(NSString * _Nonnull)clientId userId:(NSString * _Nonnull)userId useAgeRange:(BOOL)useAgeRange completion:(void (^ _Nonnull)(enum TapComplianceRealNameAuthState, NSString * _Nonnull))completion failureHandler:(void (^ _Nonnull)(NSString * _Nonnull))failureHandler;
-+ (void)checkRealNameByTapTokenWithClientId:(NSString * _Nonnull)clientId userId:(NSString * _Nonnull)userId useAgeRang:(BOOL)useAgeRang token:(AccessToken * _Nullable)token completion:(void (^ _Nonnull)(enum TapComplianceRealNameAuthState, NSString * _Nonnull))completion failureHandler:(void (^ _Nonnull)(NSString * _Nonnull))failureHandler;
++ (void)checkRealNameStateWithClientId:(NSString * _Nonnull)clientId userId:(NSString * _Nonnull)userId useAgeRange:(BOOL)useAgeRange completion:(void (^ _Nonnull)(enum TapComplianceRealNameAuthState, NSString * _Nonnull, BOOL))completion failureHandler:(void (^ _Nonnull)(NSString * _Nonnull))failureHandler;
++ (void)checkRealNameByTapTokenWithClientId:(NSString * _Nonnull)clientId userId:(NSString * _Nonnull)userId useAgeRang:(BOOL)useAgeRang token:(AccessToken * _Nullable)token completion:(void (^ _Nonnull)(enum TapComplianceRealNameAuthState, NSString * _Nonnull, BOOL))completion failureHandler:(void (^ _Nonnull)(NSString * _Nonnull))failureHandler;
 + (BOOL)hasComplianceAuthInLocalWithToken:(AccessToken * _Nullable)token useAgeRang:(BOOL)useAgeRang SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getCurrentSession SWIFT_WARN_UNUSED_RESULT;
 + (void)enterGamebyUI;

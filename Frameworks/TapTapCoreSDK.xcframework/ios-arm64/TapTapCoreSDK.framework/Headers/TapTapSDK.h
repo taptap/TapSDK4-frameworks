@@ -15,13 +15,13 @@ typedef NS_ENUM(NSInteger, TapTapRegionType) {
     TapTapRegionTypeOverseas = 1  // 海外
 };
 
-@protocol TapTapSDKBaseOptions <NSObject>
+@protocol TapTapSdkBaseOptions <NSObject>
 
 @property (nonatomic, copy, readonly, nonnull) NSString *moduleName;
 
 @end
 
-@interface TapTapSDKCoreOptions: NSObject <TapTapSDKBaseOptions>
+@interface TapTapSdkOptions: NSObject <TapTapSdkBaseOptions>
 
 @property (nonatomic, copy) NSString *clientId;
 @property (nonatomic, copy) NSString *clientToken;
@@ -61,11 +61,11 @@ typedef NS_ENUM(NSInteger, TapTapRegionType) {
 /// 初始化
 /// - Parameter coreOption: 核心库配置
 /// - Parameter otherOptions: 其他库配置
-+ (void)initWithOptions:(TapTapSDKCoreOptions *)coreOption otherOptions:(NSArray<id<TapTapSDKBaseOptions>> * _Nullable)otherOptions;
++ (void)initWithOptions:(TapTapSdkOptions *)coreOption otherOptions:(NSArray<id<TapTapSdkBaseOptions>> * _Nullable)otherOptions;
 
 /// 初始化
 /// - Parameter coreOption: 核心库配置
-+ (void)initWithOptions:(TapTapSDKCoreOptions *)coreOption;
++ (void)initWithOptions:(TapTapSdkOptions *)coreOption;
 
 
 /// 切换语言

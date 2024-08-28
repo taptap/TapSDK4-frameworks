@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TapTapMomentOptions : NSObject <TapTapSDKBaseOptions>
+@interface TapTapMomentOptions : NSObject <TapTapSdkBaseOptions>
 
 - (instancetype)init;
 + (instancetype)initWithJson:(NSDictionary *) json;

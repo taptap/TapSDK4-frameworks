@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/TapTapSDKLogConfiguration.h</key>
 		<data>
-		YFdhcN9AwAk3q6f1voQi+pVvQ4k=
+		wck/vMsSYGX19h+90xjfZck451s=
 		</data>
 		<key>Headers/TapTapSDKLogEvent.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/TapTapSDKOpenLogHelper.h</key>
 		<data>
-		PdImvuCJDVAk0+DaYz3RhrRftJM=
+		hwiozvAbVtztbBBk1vLkCZUHQQU=
 		</data>
 		<key>Headers/TapTapSDKReachability.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/m/r2Thbti8mgy988S4x8xE2qNo=
+		VNZ4wuSQN5YMmOMGJYjxFPrUBvI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -287,11 +287,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YFdhcN9AwAk3q6f1voQi+pVvQ4k=
+			wck/vMsSYGX19h+90xjfZck451s=
 			</data>
 			<key>hash2</key>
 			<data>
-			tzvmLpGCfIuCOtuVXY9nINstliC96f+N+PvxTVYPK7o=
+			NSDL+d9P9ykNRyU7KWn/mqjJ7CLpPYh4jVosaP4UhBE=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKLogEvent.h</key>
@@ -309,11 +309,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PdImvuCJDVAk0+DaYz3RhrRftJM=
+			hwiozvAbVtztbBBk1vLkCZUHQQU=
 			</data>
 			<key>hash2</key>
 			<data>
-			vhPahO7uOlAhjBzIIz0osU00HNuWAYYPYrE1mpI/7Fg=
+			9WAXJ5vLPSP30MP5CA+TcxqczV2+dVUGigbW0146UPY=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKReachability.h</key>

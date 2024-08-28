@@ -389,7 +389,7 @@ SWIFT_CLASS("_TtC20TapTapAchievementSDK17TapTapAchievement")
 
 
 SWIFT_CLASS_NAMED("TapTapAchievementOptions")
-@interface TapTapAchievementOptions : NSObject <TapTapSDKBaseOptions>
+@interface TapTapAchievementOptions : NSObject <TapTapSdkBaseOptions>
 @property (nonatomic, readonly, copy) NSString * _Nonnull moduleName;
 @property (nonatomic) BOOL enableToast;
 + (TapTapAchievementOptions * _Nonnull)initWithJson:(NSDictionary<NSString *, id> * _Nullable)json SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
@@ -845,7 +845,7 @@ SWIFT_CLASS("_TtC20TapTapAchievementSDK17TapTapAchievement")
 
 
 SWIFT_CLASS_NAMED("TapTapAchievementOptions")
-@interface TapTapAchievementOptions : NSObject <TapTapSDKBaseOptions>
+@interface TapTapAchievementOptions : NSObject <TapTapSdkBaseOptions>
 @property (nonatomic, readonly, copy) NSString * _Nonnull moduleName;
 @property (nonatomic) BOOL enableToast;
 + (TapTapAchievementOptions * _Nonnull)initWithJson:(NSDictionary<NSString *, id> * _Nullable)json SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;

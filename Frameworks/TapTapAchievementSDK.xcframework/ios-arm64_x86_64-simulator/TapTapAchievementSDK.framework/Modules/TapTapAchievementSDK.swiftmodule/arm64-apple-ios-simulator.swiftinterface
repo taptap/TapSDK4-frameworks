@@ -12,7 +12,7 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @objc(TapTapAchievementOptions) @objcMembers public class TapTapAchievementOptions : ObjectiveC.NSObject, TapTapCoreSDK.TapTapSDKBaseOptions {
+@_inheritsConvenienceInitializers @objc(TapTapAchievementOptions) @objcMembers public class TapTapAchievementOptions : ObjectiveC.NSObject, TapTapCoreSDK.TapTapSdkBaseOptions {
   @objc final public let moduleName: Swift.String
   @objc public var enableToast: Swift.Bool
   @objc public static func initWithJson(_ json: [Swift.String : Any]?) -> TapTapAchievementSDK.TapTapAchievementOptions

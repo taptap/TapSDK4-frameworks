@@ -6,19 +6,19 @@
 	<dict>
 		<key>Headers/TapTapAchievementSDK-Swift.h</key>
 		<data>
-		gH7OPwt/8qKAEA6p/LAcL3/bHfs=
+		d1r4omhqTYSJh20ExpKGm7wS2M8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kJMD/BcclFLMhkjvME7dbxjRrdg=
+		exMwEdZlDpnXeRIfhvvwxcdWn3w=
 		</data>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		uOZpo4RTqtWOl9QfyLGwTO1r3gs=
+		eZec+PDVrc6UI93GUjBdDuYuSfQ=
 		</data>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		nY/p560tm94FgSzc41lBHoDGo40=
+		1knAZQu5vjEE9JFD78xzYUsm1t8=
 		</data>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nY/p560tm94FgSzc41lBHoDGo40=
+		1knAZQu5vjEE9JFD78xzYUsm1t8=
 		</data>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BaLPJHRq02FHOiZ7SFKFfmDXR9E=
+		kX7n3hoYdXrkr9JtFg8IhLTrGv8=
 		</data>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		uOZpo4RTqtWOl9QfyLGwTO1r3gs=
+		eZec+PDVrc6UI93GUjBdDuYuSfQ=
 		</data>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		RgoUHV6Ouh1cQ+U2D2BpueZt8wo=
+		Wr+KHzYmBneuZyE1dt+7c5JoCeU=
 		</data>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RgoUHV6Ouh1cQ+U2D2BpueZt8wo=
+		Wr+KHzYmBneuZyE1dt+7c5JoCeU=
 		</data>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rWXHlR0KjFBp27TJQxKwSJ86zkY=
+		/maPE4B5SHhh2fhtYQtKeRVxpLs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,33 +67,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gH7OPwt/8qKAEA6p/LAcL3/bHfs=
+			d1r4omhqTYSJh20ExpKGm7wS2M8=
 			</data>
 			<key>hash2</key>
 			<data>
-			rofsq0YUidl5gNFHuojAHrhQ65/8XXGnrcS7C05IOCQ=
+			IKES27PeMUGCyETx17cGXkbiQcgufV4gldbM3jfHZXE=
 			</data>
 		</dict>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uOZpo4RTqtWOl9QfyLGwTO1r3gs=
+			eZec+PDVrc6UI93GUjBdDuYuSfQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			MhONl7uoGbMTf6GNyDIxYUZLKl1hi9zwPRYpVAR0IBM=
+			Pq1gAKhg1uPlrR4bRtxLQZazjunIFoQ5cvXcipk26Po=
 			</data>
 		</dict>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nY/p560tm94FgSzc41lBHoDGo40=
+			1knAZQu5vjEE9JFD78xzYUsm1t8=
 			</data>
 			<key>hash2</key>
 			<data>
-			50pdAlm3hihSwGjbT8FPKP19P4IEMmKJKu+Mx3LYklI=
+			+IG+pGVeL98YM0txmwqt16qe7gh1U6P7oB73ZPO5JLA=
 			</data>
 		</dict>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -111,44 +111,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nY/p560tm94FgSzc41lBHoDGo40=
+			1knAZQu5vjEE9JFD78xzYUsm1t8=
 			</data>
 			<key>hash2</key>
 			<data>
-			50pdAlm3hihSwGjbT8FPKP19P4IEMmKJKu+Mx3LYklI=
+			+IG+pGVeL98YM0txmwqt16qe7gh1U6P7oB73ZPO5JLA=
 			</data>
 		</dict>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BaLPJHRq02FHOiZ7SFKFfmDXR9E=
+			kX7n3hoYdXrkr9JtFg8IhLTrGv8=
 			</data>
 			<key>hash2</key>
 			<data>
-			se139jWSP3GViGOeR/sNXIDKqD0gEyv8pleQl2I68Jg=
+			cmXOnGH+HaINUbCk0xSJeDMl6XClPY0krb9pVRAp3Gc=
 			</data>
 		</dict>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uOZpo4RTqtWOl9QfyLGwTO1r3gs=
+			eZec+PDVrc6UI93GUjBdDuYuSfQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			MhONl7uoGbMTf6GNyDIxYUZLKl1hi9zwPRYpVAR0IBM=
+			Pq1gAKhg1uPlrR4bRtxLQZazjunIFoQ5cvXcipk26Po=
 			</data>
 		</dict>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RgoUHV6Ouh1cQ+U2D2BpueZt8wo=
+			Wr+KHzYmBneuZyE1dt+7c5JoCeU=
 			</data>
 			<key>hash2</key>
 			<data>
-			t8JU0LZXidV+6Nz+nzcdf0docMbihrD7XIQWTQCGn8c=
+			Aq/CmbhCUEuDXaVLHGzkmghZcfmAsmA8GxCvZQkylbY=
 			</data>
 		</dict>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -166,22 +166,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RgoUHV6Ouh1cQ+U2D2BpueZt8wo=
+			Wr+KHzYmBneuZyE1dt+7c5JoCeU=
 			</data>
 			<key>hash2</key>
 			<data>
-			t8JU0LZXidV+6Nz+nzcdf0docMbihrD7XIQWTQCGn8c=
+			Aq/CmbhCUEuDXaVLHGzkmghZcfmAsmA8GxCvZQkylbY=
 			</data>
 		</dict>
 		<key>Modules/TapTapAchievementSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rWXHlR0KjFBp27TJQxKwSJ86zkY=
+			/maPE4B5SHhh2fhtYQtKeRVxpLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			0ZRCX26d6eJOfhLf9qCuBIaCaugctnCviKsCa46Lpas=
+			mhmRAxTNCk0E/0BLa+mn5tDYdpBwqu6eszVrDRmDYDg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

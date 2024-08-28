@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TapTapComplianceOptions : NSObject <TapTapSDKBaseOptions>
+@interface TapTapComplianceOptions : NSObject <TapTapSdkBaseOptions>
 
 @property (nonatomic, assign) BOOL showSwitchAccount;
 @property (nonatomic, assign) BOOL useAgeRange;

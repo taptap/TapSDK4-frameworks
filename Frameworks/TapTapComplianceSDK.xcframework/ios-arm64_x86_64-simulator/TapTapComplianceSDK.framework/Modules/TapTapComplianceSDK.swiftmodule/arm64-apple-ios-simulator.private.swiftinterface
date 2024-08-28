@@ -617,8 +617,8 @@ extension TapTapComplianceSDK.Reachability {
   @objc deinit
 }
 extension TapTapComplianceSDK.TapComplianceService {
-  @objc final public class func checkRealNameState(clientId: Swift.String, userId: Swift.String, useAgeRange: Swift.Bool, completion: @escaping (_ identifyState: TapTapComplianceSDK.TapComplianceRealNameAuthState, _ antiAddictionToken: Swift.String) -> (), failureHandler: @escaping (_ errorMessage: Swift.String) -> ())
-  @objc final public class func checkRealNameByTapToken(clientId: Swift.String, userId: Swift.String, useAgeRang: Swift.Bool, token: TapTapLoginSDK.AccessToken?, completion: @escaping (_ identifyState: TapTapComplianceSDK.TapComplianceRealNameAuthState, _ antiAddictionToken: Swift.String) -> (), failureHandler: @escaping (_ errorMessage: Swift.String) -> ())
+  @objc final public class func checkRealNameState(clientId: Swift.String, userId: Swift.String, useAgeRange: Swift.Bool, completion: @escaping (_ identifyState: TapTapComplianceSDK.TapComplianceRealNameAuthState, _ antiAddictionToken: Swift.String, _ useTapToken: Swift.Bool) -> (), failureHandler: @escaping (_ errorMessage: Swift.String) -> ())
+  @objc final public class func checkRealNameByTapToken(clientId: Swift.String, userId: Swift.String, useAgeRang: Swift.Bool, token: TapTapLoginSDK.AccessToken?, completion: @escaping (_ identifyState: TapTapComplianceSDK.TapComplianceRealNameAuthState, _ antiAddictionToken: Swift.String, _ useTapToken: Swift.Bool) -> (), failureHandler: @escaping (_ errorMessage: Swift.String) -> ())
   @objc final public class func hasComplianceAuthInLocal(token: TapTapLoginSDK.AccessToken?, useAgeRang: Swift.Bool) -> Swift.Bool
   @objc final public class func getCurrentSession() -> Swift.String
   @objc final public class func enterGamebyUI()
