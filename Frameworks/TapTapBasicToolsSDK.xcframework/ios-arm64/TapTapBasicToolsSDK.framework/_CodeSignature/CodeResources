@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/TapTapBasicToolsSDK.h</key>
 		<data>
-		eBXJbK2pLAwWYiugY4M7W8zh8Fk=
+		pWbozoIKEm3gYHVx+ufyxzraGkE=
 		</data>
 		<key>Headers/TapTapSDKConfiguration.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/TapTapSDKLogConfiguration.h</key>
 		<data>
-		wck/vMsSYGX19h+90xjfZck451s=
+		Bc2PcSWttBdgs/t8pucCp7/hvTI=
 		</data>
 		<key>Headers/TapTapSDKLogEvent.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/TapTapSDKOpenLogHelper.h</key>
 		<data>
-		hwiozvAbVtztbBBk1vLkCZUHQQU=
+		CDX+kljRIKDQf+GY3nyKHEPmK1M=
 		</data>
 		<key>Headers/TapTapSDKReachability.h</key>
 		<data>
@@ -91,6 +91,10 @@
 		<key>Headers/TapTapSDKVersion.h</key>
 		<data>
 		puimViAGL2LSrZ4qatXxbtnEb9I=
+		</data>
+		<key>Headers/UIView+TapSdkToast.h</key>
+		<data>
+		QGibxgwmHq1qrxw0o73KD+Iofno=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -210,11 +214,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eBXJbK2pLAwWYiugY4M7W8zh8Fk=
+			pWbozoIKEm3gYHVx+ufyxzraGkE=
 			</data>
 			<key>hash2</key>
 			<data>
-			cxQAlfRMRoR8ocOgf3/MZalSPOaPVe5AoVSYMb5KdhM=
+			Gv+2hyjGWpOryK509suIQ5e+dEYuomIHVCUBljO5LjQ=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKConfiguration.h</key>
@@ -287,11 +291,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wck/vMsSYGX19h+90xjfZck451s=
+			Bc2PcSWttBdgs/t8pucCp7/hvTI=
 			</data>
 			<key>hash2</key>
 			<data>
-			NSDL+d9P9ykNRyU7KWn/mqjJ7CLpPYh4jVosaP4UhBE=
+			xQB/g9FAX6w+kfSpn/9Uv/oQH8ydID4jOqQh9DoUtRk=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKLogEvent.h</key>
@@ -309,11 +313,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hwiozvAbVtztbBBk1vLkCZUHQQU=
+			CDX+kljRIKDQf+GY3nyKHEPmK1M=
 			</data>
 			<key>hash2</key>
 			<data>
-			9WAXJ5vLPSP30MP5CA+TcxqczV2+dVUGigbW0146UPY=
+			0rXhyZfaheD/VI6qzNeT2abB0Mye0vXyqzydkgajISQ=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKReachability.h</key>
@@ -347,6 +351,17 @@
 			<key>hash2</key>
 			<data>
 			FMLJ6Faiw/BWyImDFaAbB7l35Qf5Rb9XqKMKyb+sWh0=
+			</data>
+		</dict>
+		<key>Headers/UIView+TapSdkToast.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QGibxgwmHq1qrxw0o73KD+Iofno=
+			</data>
+			<key>hash2</key>
+			<data>
+			x0L/M5GImiqsdRzlLH3ziG6ODgACOrnARF4Z3lumT6E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

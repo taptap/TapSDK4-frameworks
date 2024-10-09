@@ -16,7 +16,8 @@ typedef NS_ENUM(NSUInteger, TapTapSDKProjectType) {
     TapTapLoginProject,
     TapTapMomentProject,
     TapTapAchievementProject,
-    TapTapComplianceProject
+    TapTapComplianceProject,
+    TapTapShareProject
 };
 
 @interface TapTapSDKLogConfiguration : NSObject

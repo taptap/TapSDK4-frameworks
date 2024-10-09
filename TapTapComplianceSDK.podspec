@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapComplianceSDK'
-  s.version          = '4.3.10'
+  s.version          = '4.4.0'
   s.summary          = '提供 TapTap 合规认证能力。'
 
   s.description      = <<-DESC

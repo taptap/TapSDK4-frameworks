@@ -4,7 +4,6 @@
 import CommonCrypto
 import Foundation
 import Kingfisher
-import ObjectiveC
 import Swift
 import TapTapBasicToolsSDK
 import TapTapCoreSDK

@@ -387,8 +387,6 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK9TapTipHUD")
 
 
 
-
-
 SWIFT_CLASS("_TtC14TapTapLoginSDK8UserInfo")
 @interface UserInfo : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
@@ -798,8 +796,6 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK9TapTipHUD")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
-
-
 
 
 

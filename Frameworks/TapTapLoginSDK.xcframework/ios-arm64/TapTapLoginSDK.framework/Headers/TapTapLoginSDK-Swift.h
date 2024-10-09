@@ -387,8 +387,6 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK9TapTipHUD")
 
 
 
-
-
 SWIFT_CLASS("_TtC14TapTapLoginSDK8UserInfo")
 @interface UserInfo : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
