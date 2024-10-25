@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/taptap/TapSDK4-frameworks'
   s.license          = { :type => "MIT" }
   s.author           = 'TapTap'
-  s.source           = { :git => 'git@github.com:taptap/TapSDK4-frameworks.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/taptap/TapSDK4-frameworks.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '11.0'
   s.static_framework = true
