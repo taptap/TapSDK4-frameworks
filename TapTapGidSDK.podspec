@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "Frameworks/TapTapBasicToolsSDK.xcframework", "Frameworks/THEMISLite.xcframework", "Frameworks/TapTapNetworkSDK.xcframework", "Frameworks/TapTapGidSDK.xcframework"
 
   s.frameworks = 'UIKit', 'Foundation', 'CoreTelephony', 'SystemConfiguration', 'AdSupport', 'GameController'
-  
-  s.dependency 'Protobuf', '~> 3.0'
-  
+    
   s.library = 'c++'
 
 end
