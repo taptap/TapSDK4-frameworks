@@ -28,6 +28,7 @@
 #import <TapTapBasicToolsSDK/TapSDKWebImageView.h>
 #import <TapTapBasicToolsSDK/TapSDKCoreUIHelper.h>
 #import <TapTapBasicToolsSDK/UIView+TapSdkToast.h>
+#import <TapTapBasicToolsSDK/TapTapSDKBasicLogUtils.h>
 
 
 

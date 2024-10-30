@@ -42,11 +42,15 @@
 		</data>
 		<key>Headers/TapTapBasicToolsSDK.h</key>
 		<data>
-		pWbozoIKEm3gYHVx+ufyxzraGkE=
+		RMOTOyxpYvoV3Q+GLgZ49z4N6gg=
+		</data>
+		<key>Headers/TapTapSDKBasicLogUtils.h</key>
+		<data>
+		gliEbMtzGd1paD0lFDPSW6Jd7C4=
 		</data>
 		<key>Headers/TapTapSDKConfiguration.h</key>
 		<data>
-		dl4Se1CTejLkFZtNI0ZlwzoUkYw=
+		EJAdEVYCBQGyF178vavfZSloHfw=
 		</data>
 		<key>Headers/TapTapSDKHostConfiguration.h</key>
 		<data>
@@ -70,11 +74,11 @@
 		</data>
 		<key>Headers/TapTapSDKLogConfiguration.h</key>
 		<data>
-		Bc2PcSWttBdgs/t8pucCp7/hvTI=
+		KRcMmY65xSLUQ42oRZVSo5OSQqw=
 		</data>
 		<key>Headers/TapTapSDKLogEvent.h</key>
 		<data>
-		aMfCrPHpmmQPpmrZiPaeXCV2SVg=
+		bMeMFrYLI655CyPhqXfiE+nXEFo=
 		</data>
 		<key>Headers/TapTapSDKOpenLogHelper.h</key>
 		<data>
@@ -214,22 +218,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pWbozoIKEm3gYHVx+ufyxzraGkE=
+			RMOTOyxpYvoV3Q+GLgZ49z4N6gg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gv+2hyjGWpOryK509suIQ5e+dEYuomIHVCUBljO5LjQ=
+			jWkzw8E71KfGJy7LV3DUYG4RHU/mfUciaAgN/ZFBGRU=
+			</data>
+		</dict>
+		<key>Headers/TapTapSDKBasicLogUtils.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gliEbMtzGd1paD0lFDPSW6Jd7C4=
+			</data>
+			<key>hash2</key>
+			<data>
+			u2XVkFxQlFbXOwUs6diANj81J50m17LDCFzrwHud2dY=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKConfiguration.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dl4Se1CTejLkFZtNI0ZlwzoUkYw=
+			EJAdEVYCBQGyF178vavfZSloHfw=
 			</data>
 			<key>hash2</key>
 			<data>
-			6yrV+h5WB/XbcX+NPAWMQ0KOx8SQ+myn32vKMFTsLY8=
+			zvUJG9Fv5t8P3ENYZhwIni6iM/zHtXDPysDg4BvWWfM=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKHostConfiguration.h</key>
@@ -291,22 +306,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bc2PcSWttBdgs/t8pucCp7/hvTI=
+			KRcMmY65xSLUQ42oRZVSo5OSQqw=
 			</data>
 			<key>hash2</key>
 			<data>
-			xQB/g9FAX6w+kfSpn/9Uv/oQH8ydID4jOqQh9DoUtRk=
+			MnFRrh3xVg/p6CqQxBO0JUak6gwu1t87/UqldHinFKI=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKLogEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aMfCrPHpmmQPpmrZiPaeXCV2SVg=
+			bMeMFrYLI655CyPhqXfiE+nXEFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			DELLy4QsV45BZw3QtQEJFZyRYHAgi8YKeBwowezG+E4=
+			tr5xvUVyM4cFHeO8XK3hsHnUX7SbqNnw39fcxGzrnTk=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKOpenLogHelper.h</key>

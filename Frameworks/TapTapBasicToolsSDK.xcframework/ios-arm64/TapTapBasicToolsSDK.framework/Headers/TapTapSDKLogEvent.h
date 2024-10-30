@@ -9,13 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, TapSDKLogContentType) {
-    TapSDKContentJson,
-    TapSDKContentProtobuf,
-};
-
 @interface TapTapSDKLogEvent : NSObject
-- (instancetype)initIdentifier:(NSString *)identifier withUrl:(NSString *)url type:(TapSDKLogContentType)type;
+- (instancetype)initIdentifier:(NSString *)identifier withUrl:(NSString *)url;
 
 /// 发送事件
 /// - Parameter event: 事件参数

@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 唯一ID
 @property (nonatomic, strong, nullable) NSString *gid;
 
+/// IDFA
+@property (nonatomic, strong, nullable) NSString *idfa;
+
 /// 登陆ID
 @property (nonatomic, strong, nullable) NSString *openID;
 

@@ -22,9 +22,6 @@ typedef NS_ENUM(NSUInteger, TapTapSDKProjectType) {
 
 @interface TapTapSDKLogConfiguration : NSObject
 
-/// 获取 log 埋点参数
-/// - Parameter type: ProjectType
-+ (NSMutableDictionary *)getParamsType:(TapTapSDKProjectType)type;
 
 
 /// 获取公共基础埋点参数
