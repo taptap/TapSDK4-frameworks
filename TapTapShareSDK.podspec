@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name             = 'TapTapShareSDK'
   s.version          = '4.4.3'
   s.summary          = '提供分享数据到 Tap 客户端的能力。'
-
+  s.swift_version    = '5.0'
   s.description      = <<-DESC
   提供分享数据到 Tap 客户端的能力。
                        DESC
