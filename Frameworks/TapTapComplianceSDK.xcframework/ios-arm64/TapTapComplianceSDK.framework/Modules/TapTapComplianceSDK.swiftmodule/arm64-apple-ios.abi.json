@@ -798,29 +798,8 @@
       },
       {
         "kind": "Import",
-        "name": "TapTapLoginSDK",
-        "printedName": "TapTapLoginSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapComplianceSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CommonConfig",
-        "printedName": "CommonConfig",
-        "declKind": "Import",
-        "moduleName": "TapTapComplianceSDK"
-      },
-      {
-        "kind": "Import",
         "name": "ObjectiveC",
         "printedName": "ObjectiveC",
-        "declKind": "Import",
-        "moduleName": "TapTapComplianceSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "TapTapNetworkSDK",
-        "printedName": "TapTapNetworkSDK",
         "declKind": "Import",
         "moduleName": "TapTapComplianceSDK"
       },
@@ -833,15 +812,22 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "TapTapLoginSDK",
+        "printedName": "TapTapLoginSDK",
         "declKind": "Import",
         "moduleName": "TapTapComplianceSDK"
       },
       {
         "kind": "Import",
-        "name": "CommonConfig",
-        "printedName": "CommonConfig",
+        "name": "TapTapNetworkSDK",
+        "printedName": "TapTapNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapComplianceSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "TapTapComplianceSDK"
       },
@@ -10514,6 +10500,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapComplianceSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "DefaultsKey",
         "printedName": "DefaultsKey",
@@ -12994,6 +12990,36 @@
       },
       {
         "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "TapTapComplianceSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapComplianceSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AntiHttpUtil",
+        "printedName": "AntiHttpUtil",
+        "declKind": "Class",
+        "usr": "s:03TapA13ComplianceSDK12AntiHttpUtilC",
+        "mangledName": "$s03TapA13ComplianceSDK12AntiHttpUtilC",
+        "moduleName": "TapTapComplianceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -13013,13 +13039,6 @@
         "kind": "Import",
         "name": "TapTapLoginSDK",
         "printedName": "TapTapLoginSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapComplianceSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CommonConfig",
-        "printedName": "CommonConfig",
         "declKind": "Import",
         "moduleName": "TapTapComplianceSDK"
       },
@@ -18240,49 +18259,49 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/Network\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 260,
+      "offset": 238,
       "length": 24,
       "value": "\"--网络请求失败--\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/Network\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 334,
+      "offset": 312,
       "length": 30,
       "value": "\"--接口数据解析失败--\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/Network\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 420,
+      "offset": 398,
       "length": 30,
       "value": "\"--网络服务请求成功--\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/Network\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 511,
+      "offset": 489,
       "length": 19,
       "value": "\"error_description\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/Network\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 574,
+      "offset": 552,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/Network\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 834,
+      "offset": 800,
       "length": 16,
       "value": "\"\/real-name\/v1\/\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/Network\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 924,
+      "offset": 882,
       "length": 21,
       "value": "\"\/anti-addiction\/v1\/\""
     },
@@ -18793,679 +18812,679 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 354,
+      "offset": 334,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 426,
+      "offset": 406,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 492,
+      "offset": 472,
       "length": 4,
       "value": "1001"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 569,
+      "offset": 549,
       "length": 4,
       "value": "1030"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 775,
+      "offset": 755,
       "length": 4,
       "value": "1095"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 852,
+      "offset": 832,
       "length": 4,
       "value": "1020"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 944,
+      "offset": 924,
       "length": 4,
       "value": "1025"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1036,
+      "offset": 1016,
       "length": 4,
       "value": "1100"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1107,
+      "offset": 1087,
       "length": 4,
       "value": "1200"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1187,
+      "offset": 1167,
       "length": 4,
       "value": "9002"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 354,
+      "offset": 334,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 426,
+      "offset": 406,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 492,
+      "offset": 472,
       "length": 4,
       "value": "1001"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 569,
+      "offset": 549,
       "length": 4,
       "value": "1030"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 775,
+      "offset": 755,
       "length": 4,
       "value": "1095"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 852,
+      "offset": 832,
       "length": 4,
       "value": "1020"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 944,
+      "offset": 924,
       "length": 4,
       "value": "1025"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1036,
+      "offset": 1016,
       "length": 4,
       "value": "1100"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1107,
+      "offset": 1087,
       "length": 4,
       "value": "1200"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1187,
+      "offset": 1167,
       "length": 4,
       "value": "9002"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1631,
+      "offset": 1611,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1693,
+      "offset": 1673,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1631,
+      "offset": 1611,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1693,
+      "offset": 1673,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1631,
+      "offset": 1611,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 1693,
+      "offset": 1673,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2108,
+      "offset": 2088,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2153,
+      "offset": 2133,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2205,
+      "offset": 2185,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2108,
+      "offset": 2088,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2153,
+      "offset": 2133,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2205,
+      "offset": 2185,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2108,
+      "offset": 2088,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2153,
+      "offset": 2133,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2205,
+      "offset": 2185,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2309,
+      "offset": 2289,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2404,
+      "offset": 2384,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2309,
+      "offset": 2289,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2404,
+      "offset": 2384,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2309,
+      "offset": 2289,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2404,
+      "offset": 2384,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2530,
+      "offset": 2510,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2589,
+      "offset": 2569,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2638,
+      "offset": 2618,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2530,
+      "offset": 2510,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2589,
+      "offset": 2569,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2638,
+      "offset": 2618,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2768,
+      "offset": 2748,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2788,
+      "offset": 2768,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2827,
+      "offset": 2807,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2866,
+      "offset": 2846,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2905,
+      "offset": 2885,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2948,
+      "offset": 2928,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2981,
+      "offset": 2961,
       "length": 3,
       "value": "110"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2768,
+      "offset": 2748,
       "length": 1,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2788,
+      "offset": 2768,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2827,
+      "offset": 2807,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2866,
+      "offset": 2846,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2905,
+      "offset": 2885,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2948,
+      "offset": 2928,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 2981,
+      "offset": 2961,
       "length": 3,
       "value": "110"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3636,
+      "offset": 3616,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3668,
+      "offset": 3648,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3715,
+      "offset": 3695,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3740,
+      "offset": 3720,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3774,
+      "offset": 3754,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3820,
+      "offset": 3800,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3636,
+      "offset": 3616,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3668,
+      "offset": 3648,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3715,
+      "offset": 3695,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3740,
+      "offset": 3720,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3774,
+      "offset": 3754,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "IntegerLiteral",
-      "offset": 3820,
+      "offset": 3800,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "BooleanLiteral",
-      "offset": 4205,
+      "offset": 4185,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 4477,
+      "offset": 4457,
       "length": 13,
       "value": "\"accessToken\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 4524,
+      "offset": 4504,
       "length": 15,
       "value": "\"accessTokenV2\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 4568,
+      "offset": 4548,
       "length": 10,
       "value": "\"ageLimit\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 4628,
+      "offset": 4608,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "BooleanLiteral",
-      "offset": 4704,
+      "offset": 4684,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "BooleanLiteral",
-      "offset": 4738,
+      "offset": 4718,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "BooleanLiteral",
-      "offset": 5201,
+      "offset": 5181,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "BooleanLiteral",
-      "offset": 5230,
+      "offset": 5210,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "BooleanLiteral",
-      "offset": 16166,
+      "offset": 16146,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "BooleanLiteral",
-      "offset": 17144,
+      "offset": 17124,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 17576,
+      "offset": 17556,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 17625,
+      "offset": 17605,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 17670,
+      "offset": 17650,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 17720,
+      "offset": 17700,
       "length": 4,
       "value": "\"11\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 17766,
+      "offset": 17746,
       "length": 4,
       "value": "\"12\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 17812,
+      "offset": 17792,
       "length": 4,
       "value": "\"13\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 17576,
+      "offset": 17556,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 17625,
+      "offset": 17605,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 17670,
+      "offset": 17650,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 17720,
+      "offset": 17700,
       "length": 4,
       "value": "\"11\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 17766,
+      "offset": 17746,
       "length": 4,
       "value": "\"12\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 17812,
+      "offset": 17792,
       "length": 4,
       "value": "\"13\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/TapComplianceService.swift",
       "kind": "StringLiteral",
-      "offset": 27590,
+      "offset": 27570,
       "length": 35,
       "value": "\"startSecondsCountdownNotification\""
     },

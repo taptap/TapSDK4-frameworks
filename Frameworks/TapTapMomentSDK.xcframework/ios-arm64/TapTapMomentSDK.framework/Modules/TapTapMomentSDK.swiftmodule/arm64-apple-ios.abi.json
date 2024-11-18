@@ -7620,13 +7620,6 @@
         "moduleName": "TapTapMomentSDK"
       },
       {
-        "kind": "Import",
-        "name": "TapTapMomentResult",
-        "printedName": "TapTapMomentResult",
-        "declKind": "Import",
-        "moduleName": "TapTapMomentSDK"
-      },
-      {
         "kind": "TypeDecl",
         "name": "TapMomentInternal",
         "printedName": "TapMomentInternal",
@@ -9728,35 +9721,35 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "BooleanLiteral",
-      "offset": 346,
+      "offset": 320,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "BooleanLiteral",
-      "offset": 381,
+      "offset": 355,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "StringLiteral",
-      "offset": 420,
+      "offset": 394,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "IntegerLiteral",
-      "offset": 456,
+      "offset": 430,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/ios\/tapsdk4\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "StringLiteral",
-      "offset": 499,
+      "offset": 473,
       "length": 2,
       "value": "\"\""
     }

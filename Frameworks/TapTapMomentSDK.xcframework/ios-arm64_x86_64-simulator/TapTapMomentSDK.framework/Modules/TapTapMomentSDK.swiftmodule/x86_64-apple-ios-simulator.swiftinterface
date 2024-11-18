@@ -7,7 +7,6 @@ import Swift
 import TapTapBasicToolsSDK
 import TapTapCoreSDK
 import TapTapLoginSDK
-import TapTapMomentResult
 @_exported import TapTapMomentSDK
 import TapTapNetworkSDK
 import _Concurrency
