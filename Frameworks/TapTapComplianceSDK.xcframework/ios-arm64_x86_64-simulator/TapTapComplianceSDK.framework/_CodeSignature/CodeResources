@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TapTapCompliance.h</key>
 		<data>
-		J7WP7PQaFaEuwbNpSwP1hW1kMm0=
+		HN7j+tk+hMLB0IQyXBlUC7rqSj8=
 		</data>
 		<key>Headers/TapTapComplianceOptions.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		8Ho1+U+4oucyNN+iZ1Sb6Z/sC5I=
+		8UmnBeKIwNFhMXslEga/zrm+xqU=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cFKGNndvHAeu34ca+AOR4a4dYhY=
+		Vr7apeDvgI1uWgW1dRqRCyKpZ8I=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		8Ho1+U+4oucyNN+iZ1Sb6Z/sC5I=
+		8UmnBeKIwNFhMXslEga/zrm+xqU=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QNhg5RFkT82sHTgszc6IYEYlJKs=
+		PVnfk3IEuQBwjJORoXAsxOe9dow=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,11 +79,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J7WP7PQaFaEuwbNpSwP1hW1kMm0=
+			HN7j+tk+hMLB0IQyXBlUC7rqSj8=
 			</data>
 			<key>hash2</key>
 			<data>
-			vCySU+0sl4QW8i5tl74Mds+dk0Wd6Mu1E/x0Qe5UAPg=
+			sUPt5hCiA4HnMaxV1mU/f2IRY5bYI5xV7lQK00UV5iA=
 			</data>
 		</dict>
 		<key>Headers/TapTapComplianceOptions.h</key>
@@ -123,11 +123,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8Ho1+U+4oucyNN+iZ1Sb6Z/sC5I=
+			8UmnBeKIwNFhMXslEga/zrm+xqU=
 			</data>
 			<key>hash2</key>
 			<data>
-			h5h72sPfNKp6XfLVHXCqU73e9GKadtFu6G++iULkmTA=
+			d7t5eV5lc36i7wt3Ez7kh1ZLH5Ud9HKn03/I0dXS71I=
 			</data>
 		</dict>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -167,22 +167,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cFKGNndvHAeu34ca+AOR4a4dYhY=
+			Vr7apeDvgI1uWgW1dRqRCyKpZ8I=
 			</data>
 			<key>hash2</key>
 			<data>
-			kOLFdC+C6bN6bTtxXGzNor4qUhQCO20ntzBORjX8kGg=
+			i8G1faWtmp/zMIQNlTofh3jxRdqPsnEi2D2m2txDiX4=
 			</data>
 		</dict>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8Ho1+U+4oucyNN+iZ1Sb6Z/sC5I=
+			8UmnBeKIwNFhMXslEga/zrm+xqU=
 			</data>
 			<key>hash2</key>
 			<data>
-			h5h72sPfNKp6XfLVHXCqU73e9GKadtFu6G++iULkmTA=
+			d7t5eV5lc36i7wt3Ez7kh1ZLH5Ud9HKn03/I0dXS71I=
 			</data>
 		</dict>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -222,11 +222,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QNhg5RFkT82sHTgszc6IYEYlJKs=
+			PVnfk3IEuQBwjJORoXAsxOe9dow=
 			</data>
 			<key>hash2</key>
 			<data>
-			vAd9LwvstrJp8mH0hdFOz2DNWzXzPKMHqlXLJztp6v0=
+			+eVZc5jsnez/3ryqFBYr/RL8jC+sdtukEi9MtMqeZ34=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

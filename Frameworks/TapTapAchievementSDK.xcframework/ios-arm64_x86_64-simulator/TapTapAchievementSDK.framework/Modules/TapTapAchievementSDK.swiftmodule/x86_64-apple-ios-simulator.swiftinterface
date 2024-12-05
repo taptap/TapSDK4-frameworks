@@ -54,13 +54,15 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapAchievement : ObjectiveC.NSObject {
-  @objc public static func increment(achievementId: Swift.String, steps: Swift.Int)
-  @objc public static func unlock(achievementId: Swift.String)
-  @objc public static func registerCallback(callback: any TapTapAchievementSDK.TapTapAcheievementCallback)
-  @objc public static func unregisterCallback(callback: any TapTapAchievementSDK.TapTapAcheievementCallback)
-  @objc public static func setToastEnable(enable: Swift.Bool)
-  @objc public static func showAchievements()
+@objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapAchievement : ObjectiveC.NSObject, TapTapBasicToolsSDK.TapTapSDKVerifyProtocol {
+  @objc dynamic public static func increment(achievementId: Swift.String, steps: Swift.Int)
+  @objc dynamic public static func unlock(achievementId: Swift.String)
+  @objc dynamic public static func registerCallback(callback: any TapTapAchievementSDK.TapTapAcheievementCallback)
+  @objc dynamic public static func unregisterCallback(callback: any TapTapAchievementSDK.TapTapAcheievementCallback)
+  @objc dynamic public static func setToastEnable(enable: Swift.Bool)
+  @objc dynamic public static func showAchievements()
+  @objc public static func verifyCurrentState() -> Swift.Bool
+  @objc public static func getWhiteListMethodArray() -> [Any]?
   @objc override dynamic public init()
   @objc deinit
 }

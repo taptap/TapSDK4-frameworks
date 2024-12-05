@@ -10,6 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, TapTapSDKInitState){
+    INIT_STATE_SUCCESS = 0,
+    INIT_STATE_EMPTY = -1,
+    INIT_STATE_INVALID = -2
+};
+
 typedef NS_ENUM(NSInteger, TapTapRegionType) {
     TapTapRegionTypeCN = 0, // 国内
     TapTapRegionTypeOverseas = 1  // 海外
@@ -71,6 +77,12 @@ typedef NS_ENUM(NSInteger, TapTapRegionType) {
 /// 切换语言
 /// - Parameter language: 要切换的语言
 + (void)updateLanguage:(TapLanguageType)language;
+
+/// 检查初始化状态
+/// - Return    0：初始化信息正常 （TAPSDK_INIT_STATE_SUCCESS）
+///         -1： 未初始化 （TAPSDK_INIT_STATE_EMPTY）
+///         -2： 应用 bundleId 与 clientID 或 clientToken 不匹配 （TAPSDK_INIT_STATE_INVALID）
++ (int)checkInitState;
 
 @end
 

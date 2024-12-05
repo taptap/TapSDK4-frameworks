@@ -29,6 +29,8 @@
 #import <TapTapBasicToolsSDK/TapSDKCoreUIHelper.h>
 #import <TapTapBasicToolsSDK/UIView+TapSdkToast.h>
 #import <TapTapBasicToolsSDK/TapTapSDKBasicLogUtils.h>
+#import <TapTapBasicToolsSDK/TapTapSDKVerifyProtocol.h>
+#import <TapTapBasicToolsSDK/TapSDKVerifyHandler.h>
 
 
 

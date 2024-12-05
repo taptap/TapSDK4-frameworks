@@ -4,12 +4,15 @@
 import Foundation
 import Swift
 import TapTapBasicToolsSDK
+import TapTapCoreSDK
 import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @objc public class TapTapShare : ObjectiveC.NSObject {
-  @objc public static func share(_ obj: TapTapShareSDK.TapTapShareObj, completion: @escaping (Swift.Int) -> Swift.Void)
+@_inheritsConvenienceInitializers @objc public class TapTapShare : ObjectiveC.NSObject, TapTapBasicToolsSDK.TapTapSDKVerifyProtocol {
+  @objc public static func verifyCurrentState() -> Swift.Bool
+  @objc public static func getWhiteListMethodArray() -> [Any]?
+  @objc dynamic public static func share(_ obj: TapTapShareSDK.TapTapShareObj, completion: @escaping (Swift.Int) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }

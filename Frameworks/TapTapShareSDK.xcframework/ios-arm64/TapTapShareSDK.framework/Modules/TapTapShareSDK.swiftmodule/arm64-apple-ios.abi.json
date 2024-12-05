@@ -22,10 +22,82 @@
         "moduleName": "TapTapShareSDK"
       },
       {
+        "kind": "Import",
+        "name": "TapTapCoreSDK",
+        "printedName": "TapTapCoreSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapShareSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "TapTapShare",
         "printedName": "TapTapShare",
         "children": [
+          {
+            "kind": "Function",
+            "name": "verifyCurrentState",
+            "printedName": "verifyCurrentState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapShareSDK@objc(cs)TapTapShare(cm)verifyCurrentState",
+            "mangledName": "$s03TapA8ShareSDK0aaB0C18verifyCurrentStateSbyFZ",
+            "moduleName": "TapTapShareSDK",
+            "static": true,
+            "objc_name": "verifyCurrentState",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getWhiteListMethodArray",
+            "printedName": "getWhiteListMethodArray()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapShareSDK@objc(cs)TapTapShare(cm)getWhiteListMethodArray",
+            "mangledName": "$s03TapA8ShareSDK0aaB0C23getWhiteListMethodArraySayypGSgyFZ",
+            "moduleName": "TapTapShareSDK",
+            "static": true,
+            "objc_name": "getWhiteListMethodArray",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
           {
             "kind": "Function",
             "name": "share",
@@ -68,6 +140,7 @@
             "static": true,
             "declAttributes": [
               "Final",
+              "Dynamic",
               "AccessControl",
               "ObjC",
               "RawDocComment"

@@ -279,6 +279,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
+@import TapTapBasicToolsSDK;
 @import TapTapCoreSDK;
 @import WebKit;
 #endif
@@ -336,7 +337,7 @@ SWIFT_PROTOCOL("_TtP20TapTapAchievementSDK26TapTapAcheievementCallback_")
 
 
 SWIFT_CLASS("_TtC20TapTapAchievementSDK17TapTapAchievement")
-@interface TapTapAchievement : NSObject
+@interface TapTapAchievement : NSObject <TapTapSDKVerifyProtocol>
 /// 上报分步成就增长步数
 /// <ul>
 ///   <li>
@@ -384,6 +385,8 @@ SWIFT_CLASS("_TtC20TapTapAchievementSDK17TapTapAchievement")
 + (void)setToastEnableWithEnable:(BOOL)enable;
 /// 显示成就页，已安装则跳转 taptap 主站，未安装跳转 web
 + (void)showAchievements;
++ (BOOL)verifyCurrentState SWIFT_WARN_UNUSED_RESULT;
++ (NSArray * _Nullable)getWhiteListMethodArray SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -735,6 +738,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
+@import TapTapBasicToolsSDK;
 @import TapTapCoreSDK;
 @import WebKit;
 #endif
@@ -792,7 +796,7 @@ SWIFT_PROTOCOL("_TtP20TapTapAchievementSDK26TapTapAcheievementCallback_")
 
 
 SWIFT_CLASS("_TtC20TapTapAchievementSDK17TapTapAchievement")
-@interface TapTapAchievement : NSObject
+@interface TapTapAchievement : NSObject <TapTapSDKVerifyProtocol>
 /// 上报分步成就增长步数
 /// <ul>
 ///   <li>
@@ -840,6 +844,8 @@ SWIFT_CLASS("_TtC20TapTapAchievementSDK17TapTapAchievement")
 + (void)setToastEnableWithEnable:(BOOL)enable;
 /// 显示成就页，已安装则跳转 taptap 主站，未安装跳转 web
 + (void)showAchievements;
++ (BOOL)verifyCurrentState SWIFT_WARN_UNUSED_RESULT;
++ (NSArray * _Nullable)getWhiteListMethodArray SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

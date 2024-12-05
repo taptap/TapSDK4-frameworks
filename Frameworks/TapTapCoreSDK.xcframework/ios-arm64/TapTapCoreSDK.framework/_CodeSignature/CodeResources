@@ -14,7 +14,7 @@
 		</data>
 		<key>Frameworks/TapTapBasicToolsSDK.framework/TapTapBasicToolsSDK</key>
 		<data>
-		hqQAB5fpiFn9xKCcBm5HgOxAqv0=
+		8Fnm25LMsdnrbkqrNnTBRTVV6H8=
 		</data>
 		<key>Frameworks/TapTapBasicToolsSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Headers/TapTapEvent.h</key>
 		<data>
-		LGGTOWaJGOlEE1ZgBWt8Akg0sFQ=
+		CjlKf/0QP/HkmqAA/FCheuFvXC0=
 		</data>
 		<key>Headers/TapTapSDK.h</key>
 		<data>
-		5lUeClfw9LhDL3GkUFNtqleB8IE=
+		2PhSW33bxsJaXuQBGjZGQutgmnY=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -73,11 +73,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hqQAB5fpiFn9xKCcBm5HgOxAqv0=
+			8Fnm25LMsdnrbkqrNnTBRTVV6H8=
 			</data>
 			<key>hash2</key>
 			<data>
-			RJ8bpzTNv6LhcL2KWH5UTHs0SNP2LIlKP+DclXQmv9Y=
+			o50LnufuqN5Upeb8XH37cxzewW2Q9SC1uFraVpG1+gY=
 			</data>
 		</dict>
 		<key>Frameworks/TapTapBasicToolsSDK.framework/_CodeSignature/CodeResources</key>
@@ -106,22 +106,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LGGTOWaJGOlEE1ZgBWt8Akg0sFQ=
+			CjlKf/0QP/HkmqAA/FCheuFvXC0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lv/mN7j1poiNGWUR4wL3gZE315+kVz+7X6erjDBHPCs=
+			IvnM4mKcO3p6HmsU88IVMKxxrPM+xcDWgNKt0Xfh+M0=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5lUeClfw9LhDL3GkUFNtqleB8IE=
+			2PhSW33bxsJaXuQBGjZGQutgmnY=
 			</data>
 			<key>hash2</key>
 			<data>
-			FnNhOZuTYxCuGeUrjKAejrfUA/NYvYAXaUYBlG8MQRk=
+			Fq6doElVHfnVK1fa2P5LEh9cUzzWHJk9/PiZeOXwzjI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

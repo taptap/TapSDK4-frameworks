@@ -55,16 +55,18 @@ public enum Scope : Swift.String {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class TapTapLogin : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class TapTapLogin : ObjectiveC.NSObject, TapTapBasicToolsSDK.TapTapSDKVerifyProtocol {
   public static func login(with scopes: [TapTapLoginSDK.Scope], handler: @escaping TapTapLoginSDK.LoginHandler<TapTapLoginSDK.TapTapAccount>)
-  @objc public static func getCurrentTapAccount() -> TapTapLoginSDK.TapTapAccount?
-  @objc public static func logout()
+  @objc dynamic public static func getCurrentTapAccount() -> TapTapLoginSDK.TapTapAccount?
+  @objc dynamic public static func logout()
   @objc @discardableResult
   public static func open(url: Foundation.URL) -> Swift.Bool
+  @objc public static func verifyCurrentState() -> Swift.Bool
+  @objc public static func getWhiteListMethodArray() -> [Any]?
   @objc deinit
 }
 extension TapTapLoginSDK.TapTapLogin {
-  @objc public static func Login(scopes: [Swift.String], handler: @escaping ((Swift.Bool, Foundation.NSError?, TapTapLoginSDK.TapTapAccount?) -> Swift.Void))
+  @objc dynamic public static func Login(scopes: [Swift.String], handler: @escaping ((Swift.Bool, Foundation.NSError?, TapTapLoginSDK.TapTapAccount?) -> Swift.Void))
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class FriendsResult : ObjectiveC.NSObject {
   @objc public var friends: [TapTapLoginSDK.FriendInfo]

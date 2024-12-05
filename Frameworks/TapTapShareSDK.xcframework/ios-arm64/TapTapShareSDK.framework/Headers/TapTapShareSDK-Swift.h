@@ -279,6 +279,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
+@import TapTapBasicToolsSDK;
 #endif
 
 #endif
@@ -302,7 +303,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class TapTapShareObj;
 
 SWIFT_CLASS("_TtC14TapTapShareSDK11TapTapShare")
-@interface TapTapShare : NSObject
+@interface TapTapShare : NSObject <TapTapSDKVerifyProtocol>
++ (BOOL)verifyCurrentState SWIFT_WARN_UNUSED_RESULT;
++ (NSArray * _Nullable)getWhiteListMethodArray SWIFT_WARN_UNUSED_RESULT;
 /// 分享到TapTap
 /// \param obj 分享对象
 ///

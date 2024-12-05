@@ -280,6 +280,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
+@import TapTapBasicToolsSDK;
 @import UIKit;
 #endif
 
@@ -352,7 +353,7 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK13TapTapAccount")
 @class NSURL;
 
 SWIFT_CLASS("_TtC14TapTapLoginSDK11TapTapLogin")
-@interface TapTapLogin : NSObject
+@interface TapTapLogin : NSObject <TapTapSDKVerifyProtocol>
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (TapTapAccount * _Nullable)getCurrentTapAccount SWIFT_WARN_UNUSED_RESULT;
@@ -367,6 +368,8 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK11TapTapLogin")
 /// returns:
 /// 是否被 TapTapLogin 处理
 + (BOOL)openWithUrl:(NSURL * _Nonnull)url;
++ (BOOL)verifyCurrentState SWIFT_WARN_UNUSED_RESULT;
++ (NSArray * _Nullable)getWhiteListMethodArray SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class NSError;
