@@ -31,8 +31,7 @@ typedef NS_ENUM(NSInteger, TapTapHTTPRequestMethod) {
 
 typedef NS_ENUM(NSInteger, TapTapHTTPBodyDataType) {
     TapTapHTTPBodyDataTypeJSON,
-    TapTapHTTPBodyDataTypeForm,
-    TapTapHTTPBodyDataTypePB,
+    TapTapHTTPBodyDataTypeForm
 };
 
 @interface TapTapSDKNetworkTarget : NSObject
@@ -41,7 +40,6 @@ typedef NS_ENUM(NSInteger, TapTapHTTPBodyDataType) {
 @property (nonatomic, assign) TapTapHTTPRequestMethod method;
 /// 参数数据类型
 @property (nonatomic, assign) TapTapHTTPBodyDataType dataType;
-// key = protobufData 有数据 走 protobuf上报方式
 @property (nonatomic, copy) NSDictionary * _Nullable parameters;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable header;
 // 需要加到 url 后的 query 列表

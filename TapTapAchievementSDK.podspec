@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapAchievementSDK'
-  s.version          = '4.5.1'
+  s.version          = '4.5.2'
   s.summary          = '提供 TapTap 同步及展示成就数据的能力。'
 
   s.description      = <<-DESC

@@ -337,7 +337,6 @@ typedef SWIFT_ENUM(NSInteger, AntiAddictionTipType, open) {
   AntiAddictionTipTypeTaptap_quick_verify = 0,
   AntiAddictionTipTypeManual_auth_verify = 1,
   AntiAddictionTipTypeAuth_waiting = 2,
-  AntiAddictionTipTypeAuth_failed = 3,
   AntiAddictionTipTypeAllow_enter = 10,
   AntiAddictionTipTypeReject_enter = 11,
 };
@@ -459,7 +458,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) AntiAddictionConfigura
 ///
 /// \param completion 结果回调
 ///
-+ (void)realNameAuthWithClientId:(NSString * _Nonnull)clientId userId:(NSString * _Nonnull)userId code:(NSString * _Nonnull)code name:(NSString * _Nonnull)name idCard:(NSString * _Nonnull)idCard isFallBack:(BOOL)isFallBack completion:(void (^ _Nonnull)(enum TapComplianceRealNameAuthState, NSString * _Nonnull))completion failureHandler:(void (^ _Nonnull)(NSString * _Nonnull))failureHandler;
++ (void)realNameAuthWithClientId:(NSString * _Nonnull)clientId userId:(NSString * _Nonnull)userId code:(NSString * _Nonnull)code name:(NSString * _Nonnull)name idCard:(NSString * _Nonnull)idCard isFallBack:(BOOL)isFallBack completion:(void (^ _Nonnull)(enum TapComplianceRealNameAuthState, NSString * _Nonnull))completion failureHandler:(void (^ _Nonnull)(BOOL, NSString * _Nonnull))failureHandler;
 + (void)performRealNameUseTapAuthWithPermission:(NSString * _Nonnull)permission callback:(void (^ _Nonnull)(AccessToken * _Nullable, NSError * _Nullable, BOOL))callback;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

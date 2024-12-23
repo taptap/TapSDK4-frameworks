@@ -583,7 +583,6 @@ extension TapTapComplianceSDK.Reachability {
   case taptap_quick_verify = 0
   case manual_auth_verify = 1
   case auth_waiting = 2
-  case auth_failed = 3
   case allow_enter = 10
   case reject_enter = 11
   public init?(rawValue: Swift.Int)
@@ -615,7 +614,7 @@ extension TapTapComplianceSDK.Reachability {
   @objc final public class func checkPayLimit(_ amount: Swift.Int, callBack: ((_ status: Swift.Bool, _ title: Swift.String, _ description: Swift.String) -> Swift.Void)? = nil, failureHandler: ((_ message: Swift.String) -> Swift.Void)? = nil)
   @objc final public class func submitPayResult(_ amount: Swift.Int, _ callBack: ((_ success: Swift.Bool) -> Swift.Void)? = nil, _ failureHandler: ((_ message: Swift.String) -> Swift.Void)? = nil)
   @objc final public class func isHoliday() -> Swift.Bool
-  @objc final public class func realNameAuth(clientId: Swift.String, userId: Swift.String, code: Swift.String, name: Swift.String, idCard: Swift.String, isFallBack: Swift.Bool, completion: @escaping (TapTapComplianceSDK.TapComplianceRealNameAuthState, Swift.String) -> (), failureHandler: @escaping (_ errorMessage: Swift.String) -> ())
+  @objc final public class func realNameAuth(clientId: Swift.String, userId: Swift.String, code: Swift.String, name: Swift.String, idCard: Swift.String, isFallBack: Swift.Bool, completion: @escaping (TapTapComplianceSDK.TapComplianceRealNameAuthState, Swift.String) -> (), failureHandler: @escaping (_ isInvalidUser: Swift.Bool, _ errorMessage: Swift.String) -> ())
   @objc final public class func performRealNameUseTapAuth(permission: Swift.String, callback: @escaping (TapTapLoginSDK.AccessToken?, Foundation.NSError?, Swift.Bool) -> ())
   @objc deinit
 }
