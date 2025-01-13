@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "Frameworks/TapTapLoginSDK.xcframework"
   s.resources = 'Frameworks/TapTapLoginResource.bundle'
   s.dependency 'TapTapCoreSDK', s.version.to_s
-  s.dependency 'Kingfisher', '~> 6.0'
   s.frameworks = 'UIKit',
                  'Foundation',
                  'CoreTelephony',
