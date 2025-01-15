@@ -3446,13 +3446,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
-        "declKind": "Import",
-        "moduleName": "TapTapLoginSDK"
-      },
-      {
         "kind": "TypeDecl",
         "name": "TapTipHUD",
         "printedName": "TapTipHUD",
@@ -3460,7 +3453,7 @@
           {
             "kind": "Function",
             "name": "showTip",
-            "printedName": "showTip(_:imageUrl:timeInterval:)",
+            "printedName": "showTip(_:timeInterval:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3475,13 +3468,6 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Double",
                 "printedName": "Swift.Double",
                 "hasDefaultArg": true,
@@ -3489,8 +3475,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:03TapA8LoginSDK0A6TipHUDC04showD0_8imageUrl12timeIntervalySS_SSSdtFZ",
-            "mangledName": "$s03TapA8LoginSDK0A6TipHUDC04showD0_8imageUrl12timeIntervalySS_SSSdtFZ",
+            "usr": "s:03TapA8LoginSDK0A6TipHUDC04showD0_12timeIntervalySS_SdtFZ",
+            "mangledName": "$s03TapA8LoginSDK0A6TipHUDC04showD0_12timeIntervalySS_SdtFZ",
             "moduleName": "TapTapLoginSDK",
             "static": true,
             "declAttributes": [
@@ -4235,35 +4221,35 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 925,
+      "offset": 921,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1002,
+      "offset": 998,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1181,
+      "offset": 1177,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 11775,
+      "offset": 12392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 17332,
+      "offset": 17905,
       "length": 17,
       "value": "\"loginWithScopes\""
     },
@@ -4480,21 +4466,14 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
       "kind": "BooleanLiteral",
-      "offset": 487,
+      "offset": 469,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
-      "kind": "StringLiteral",
-      "offset": 562,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
       "kind": "IntegerLiteral",
-      "offset": 595,
+      "offset": 554,
       "length": 1,
       "value": "1"
     },

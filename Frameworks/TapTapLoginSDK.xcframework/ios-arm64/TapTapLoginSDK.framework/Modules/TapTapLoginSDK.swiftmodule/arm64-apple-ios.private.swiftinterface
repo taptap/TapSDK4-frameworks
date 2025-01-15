@@ -3,7 +3,6 @@
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TapTapLoginSDK
 import CommonCrypto
 import Foundation
-import Kingfisher
 import Swift
 import TapTapBasicToolsSDK
 import TapTapCoreSDK
@@ -105,7 +104,7 @@ public struct FriendQuery {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class TapTipHUD : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public class func showTip(_ tip: Swift.String, imageUrl: Swift.String = "", timeInterval: Foundation.TimeInterval = 1)
+  @_Concurrency.MainActor(unsafe) public class func showTip(_ tip: Swift.String, timeInterval: Foundation.TimeInterval = 1)
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapAccount : ObjectiveC.NSObject {
