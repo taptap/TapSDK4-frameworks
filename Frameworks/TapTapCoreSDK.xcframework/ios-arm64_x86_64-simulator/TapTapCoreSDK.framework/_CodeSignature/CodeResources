@@ -4,22 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/TapTapBasicToolsSDK.framework/Info.plist</key>
-		<data>
-		VNZ4wuSQN5YMmOMGJYjxFPrUBvI=
-		</data>
-		<key>Frameworks/TapTapBasicToolsSDK.framework/PrivacyInfo.xcprivacy</key>
-		<data>
-		tMZZdx4/wtyo+JEWzQgmP4yW0+E=
-		</data>
-		<key>Frameworks/TapTapBasicToolsSDK.framework/TapTapBasicToolsSDK</key>
-		<data>
-		8dDdbhybblRcgS/11Ki7jqumPiE=
-		</data>
-		<key>Frameworks/TapTapBasicToolsSDK.framework/_CodeSignature/CodeResources</key>
-		<data>
-		UY6Rl6XM1zL1wVDfGZvOglgMeHo=
-		</data>
 		<key>Headers/TapTapCoreSDK.h</key>
 		<data>
 		CjQc1lIvVfwryu5frH6Ytto10Cg=
@@ -34,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		m50EFySqZswvtNaeVEgnVAj8pgs=
+		TwMJjMyJxay92fBRVyxLi9lEI94=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,50 +31,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/TapTapBasicToolsSDK.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VNZ4wuSQN5YMmOMGJYjxFPrUBvI=
-			</data>
-			<key>hash2</key>
-			<data>
-			8P3t8KgmR+ksT8SUqRg5BXX/sc5J10lm8RVsbuyAP+4=
-			</data>
-		</dict>
-		<key>Frameworks/TapTapBasicToolsSDK.framework/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tMZZdx4/wtyo+JEWzQgmP4yW0+E=
-			</data>
-			<key>hash2</key>
-			<data>
-			JFGrU5eswsYifgw5n6o+OcVmO+tZS3twR3AA7u69LD8=
-			</data>
-		</dict>
-		<key>Frameworks/TapTapBasicToolsSDK.framework/TapTapBasicToolsSDK</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8dDdbhybblRcgS/11Ki7jqumPiE=
-			</data>
-			<key>hash2</key>
-			<data>
-			ir/FsXaDWhWZmh8fmWGtD4FgLn01H5cEeCBsaja7y1Y=
-			</data>
-		</dict>
-		<key>Frameworks/TapTapBasicToolsSDK.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UY6Rl6XM1zL1wVDfGZvOglgMeHo=
-			</data>
-			<key>hash2</key>
-			<data>
-			pUGbsqiYzktXT5hIoxW7WQJ6hB13PvEG9fHSaKbDlig=
-			</data>
-		</dict>
 		<key>Headers/TapTapCoreSDK.h</key>
 		<dict>
 			<key>hash</key>

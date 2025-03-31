@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapMomentSDK'
-  s.version          = '4.5.4'
+  s.version          = '4.5.5'
   s.summary          = '提供 TapTap 内嵌动态功能。'
   s.swift_version    = '5.0'
   s.description      = <<-DESC

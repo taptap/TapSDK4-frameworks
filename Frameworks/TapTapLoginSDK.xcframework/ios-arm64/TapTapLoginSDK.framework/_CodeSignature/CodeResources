@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TapTapLoginSDK-Swift.h</key>
 		<data>
-		qV2sr6FHhGZ1JEaTMuhQtPLwOlg=
+		OfCTFAxEcjv+jYziMeZAr8NlKi4=
 		</data>
 		<key>Headers/TapTapLoginSDK.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8NQWuqWwDaIoC9RrCLQKDsOdbFo=
+		+krxhQEmxIDaJ038yOSYN3h4Pz4=
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		2vdVQKX0zTJElLS3UFUqgi6QHFE=
+		/EfaI/bgz0PfT7iBfHP59SoQ3PA=
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		KaEvOV0dYF6IrcM5z3P38M8VOn8=
+		AfBo7VIOiZkXHxBWU32chxcDoks=
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		DQPJWI0LWS1lWFUjcx7rBjC/q/s=
+		sBT+hDalq9QUmUn8hJYoQTosv14=
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		KaEvOV0dYF6IrcM5z3P38M8VOn8=
+		AfBo7VIOiZkXHxBWU32chxcDoks=
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+fEfRkDOvIkPCQ7rhzG8V222Qws=
+		IZsmpAxfGzDpiAtHp2fvrz6y2BU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,11 +47,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qV2sr6FHhGZ1JEaTMuhQtPLwOlg=
+			OfCTFAxEcjv+jYziMeZAr8NlKi4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Do6Coy/DzsFUWR3+XrIhmmqNylLXzpuBNXGfkNs4Dwg=
+			2tc+z1X9T9tOWbmAiIMFjL3ec/XqdcfkegvxBfivXWs=
 			</data>
 		</dict>
 		<key>Headers/TapTapLoginSDK.h</key>
@@ -69,55 +69,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2vdVQKX0zTJElLS3UFUqgi6QHFE=
+			/EfaI/bgz0PfT7iBfHP59SoQ3PA=
 			</data>
 			<key>hash2</key>
 			<data>
-			WdT+8RczCcKRqPEafRpwBhi0AFQowUR9V8NjGu0nbdQ=
+			lXntKVDZ80Liyn1lkuiandodEePdv4q8gdyZ1nqKs3M=
 			</data>
 		</dict>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KaEvOV0dYF6IrcM5z3P38M8VOn8=
+			AfBo7VIOiZkXHxBWU32chxcDoks=
 			</data>
 			<key>hash2</key>
 			<data>
-			jHq3LyqKV4N0OL1AkozzlvIHYDDQhCGLtHDm/u4AVd8=
+			9zQfjyC0LsILABSjzhwjwGyylGVxBJKFnC6EeUbzO14=
 			</data>
 		</dict>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DQPJWI0LWS1lWFUjcx7rBjC/q/s=
+			sBT+hDalq9QUmUn8hJYoQTosv14=
 			</data>
 			<key>hash2</key>
 			<data>
-			xaDb8/5TAV34szUqlNrZHdHtD0mwaSHEm3ySReg6CuU=
+			P77nVvwGxPsSa9vrVofn6MFosd5UB9ujSDHeiYD/Khc=
 			</data>
 		</dict>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KaEvOV0dYF6IrcM5z3P38M8VOn8=
+			AfBo7VIOiZkXHxBWU32chxcDoks=
 			</data>
 			<key>hash2</key>
 			<data>
-			jHq3LyqKV4N0OL1AkozzlvIHYDDQhCGLtHDm/u4AVd8=
+			9zQfjyC0LsILABSjzhwjwGyylGVxBJKFnC6EeUbzO14=
 			</data>
 		</dict>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+fEfRkDOvIkPCQ7rhzG8V222Qws=
+			IZsmpAxfGzDpiAtHp2fvrz6y2BU=
 			</data>
 			<key>hash2</key>
 			<data>
-			prRbdnL1EKrjuRCYkMzbTBo+zeh3O3muLQ8zB8/e3ac=
+			xok9BPYpE61Llo1JMEnHTRfbvaInImRpBFkHJAwUaAo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

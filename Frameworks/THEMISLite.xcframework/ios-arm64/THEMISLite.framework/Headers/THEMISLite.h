@@ -12,9 +12,13 @@
 
 #ifdef __cplusplus
 extern "C" {
+__attribute__((visibility("default")))
 void init_themis(const char* host);
+__attribute__((visibility("default")))
 void set_adid(const char* id,int32_t id_length);
+__attribute__((visibility("default")))
 const char* get_oneid_data();
+__attribute__((visibility("default")))
 void set_previous_oneid(const char* oneid,int32_t length);
 }
 #endif
@@ -25,6 +29,7 @@ void set_previous_oneid(const char* oneid,int32_t length);
 
 NS_ASSUME_NONNULL_BEGIN
 
+__attribute__((visibility("default")))
 @interface THEMIS : NSObject
 
 +(void)initTHEMIS:(NSString*)host;

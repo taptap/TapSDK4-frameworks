@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TapTapLoginSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CommonCrypto
 import Foundation
 import Swift
@@ -55,7 +56,7 @@ public enum Scope : Swift.String {
   }
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class TapTapLogin : ObjectiveC.NSObject, TapTapBasicToolsSDK.TapTapSDKVerifyProtocol {
-  public static func login(with scopes: [TapTapLoginSDK.Scope], handler: @escaping TapTapLoginSDK.LoginHandler<TapTapLoginSDK.TapTapAccount>)
+  public static func login(with scopes: [TapTapLoginSDK.Scope], viewController: UIKit.UIViewController? = nil, handler: @escaping TapTapLoginSDK.LoginHandler<TapTapLoginSDK.TapTapAccount>)
   @objc dynamic public static func getCurrentTapAccount() -> TapTapLoginSDK.TapTapAccount?
   @objc dynamic public static func logout()
   @objc @discardableResult
@@ -65,6 +66,7 @@ public enum Scope : Swift.String {
   @objc deinit
 }
 extension TapTapLoginSDK.TapTapLogin {
+  @objc dynamic public static func Login(scopes: [Swift.String], viewController: UIKit.UIViewController? = nil, handler: @escaping ((Swift.Bool, Foundation.NSError?, TapTapLoginSDK.TapTapAccount?) -> Swift.Void))
   @objc dynamic public static func Login(scopes: [Swift.String], handler: @escaping ((Swift.Bool, Foundation.NSError?, TapTapLoginSDK.TapTapAccount?) -> Swift.Void))
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class FriendsResult : ObjectiveC.NSObject {
@@ -90,6 +92,19 @@ public struct FriendQuery {
   public var cursor: Swift.String?
   public init(size: Swift.Int = 20, cursor: Swift.String? = nil)
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class TapTapFirstPartyLogin : ObjectiveC.NSObject {
+  @objc public static func login(with scopes: [Swift.String], viewController: UIKit.UIViewController? = nil, firstPartyLoginOptions: TapTapLoginSDK.TapFirstPartyLoginOptions?, handler: @escaping TapTapLoginSDK.LoginHandler<TapTapLoginSDK.TapTapAccount>)
+  @objc public static func getLoginType() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class TapFirstPartyLoginOptions : ObjectiveC.NSObject {
+  @objc public var isPreApproved: Swift.Bool
+  @objc public var phoneVerifyToken: Swift.String?
+  @objc public var preferLoginType: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class AccessToken : ObjectiveC.NSObject {
   @objc public var kid: Swift.String?
   @objc public var tokenType: Swift.String?
@@ -103,8 +118,8 @@ public struct FriendQuery {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class TapTipHUD : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public class func showTip(_ tip: Swift.String, timeInterval: Foundation.TimeInterval = 1)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class TapTipHUD : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public class func showTip(_ tip: Swift.String, timeInterval: Foundation.TimeInterval = 1)
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapAccount : ObjectiveC.NSObject {

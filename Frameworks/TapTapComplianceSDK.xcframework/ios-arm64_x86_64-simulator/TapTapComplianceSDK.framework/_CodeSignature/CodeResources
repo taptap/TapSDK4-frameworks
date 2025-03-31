@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/TapTapComplianceSDK-Swift.h</key>
 		<data>
-		kWKNw5TyoPX7JhSrcze1DRiAmCk=
+		k4ITjO+YUGFCJbQ1olKz+G9kutk=
 		</data>
 		<key>Headers/TapTapComplianceSDK.h</key>
 		<data>
@@ -22,47 +22,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		W52yrEGABPzwefWA4rU0SeIRhWM=
+		d/ob1SCxxQVD9vjNLIFbZuxYXNg=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		P8eEiDTBM34U6HzoKXfoli3B/Ig=
+		XvW1ungibrG3CTb/CPR/OeqCGPE=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/PonVfogPilLbzPHpC5hCHm1Kjs=
+		DJq/vOAh6tsKKsuodJ7+i9bsKps=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		rQh0M8zVR1c2TOEkZ6VKBa4l68c=
+		GL5VVjsp7z2pVoaYFqAMwEvKl+0=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/PonVfogPilLbzPHpC5hCHm1Kjs=
+		DJq/vOAh6tsKKsuodJ7+i9bsKps=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pPKrXVR7J8r91sGRO4k4B0Z2OIA=
+		8xFUUSz7uKNHWepfsI0KllOpl+A=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		P8eEiDTBM34U6HzoKXfoli3B/Ig=
+		XvW1ungibrG3CTb/CPR/OeqCGPE=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		smXrM3M9/+VtW5+Hiri2pFGx7Uo=
+		e0CaooiBFlAoEc3WmMdCs4AbY7w=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dcz0qvJdKzI0JBtSugx+bE/EkS0=
+		h0soFxerz9NRaszqvTLVIpfu458=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		smXrM3M9/+VtW5+Hiri2pFGx7Uo=
+		e0CaooiBFlAoEc3WmMdCs4AbY7w=
 		</data>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DaF0g0iL8MvuEdLZkBIFcWr4RrM=
+		iV7iWDDE3UPnwk5hK58Tv3o/fBE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -101,11 +101,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kWKNw5TyoPX7JhSrcze1DRiAmCk=
+			k4ITjO+YUGFCJbQ1olKz+G9kutk=
 			</data>
 			<key>hash2</key>
 			<data>
-			uJrEfW+xhemQz19xHoKJU+CepyOVCDzT59zqzpPMCXQ=
+			DwGg6do5C56elqpulMUY7rV/r5kHm4RN7ZvbSCLqzxY=
 			</data>
 		</dict>
 		<key>Headers/TapTapComplianceSDK.h</key>
@@ -123,110 +123,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P8eEiDTBM34U6HzoKXfoli3B/Ig=
+			XvW1ungibrG3CTb/CPR/OeqCGPE=
 			</data>
 			<key>hash2</key>
 			<data>
-			nbi2erf6dbemT1zUrsLEhGS/LafUECtFQcuIupwSk10=
+			ChP7fwcQqdP2wVL6sjT032iGkLLveUDJkoEwnlE435A=
 			</data>
 		</dict>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/PonVfogPilLbzPHpC5hCHm1Kjs=
+			DJq/vOAh6tsKKsuodJ7+i9bsKps=
 			</data>
 			<key>hash2</key>
 			<data>
-			/28j1d1R70/S5dNVb9s1wAnOHpO9stYr2RynkY+0jRY=
+			5S6qWSL9FGvfcp+MzuRHyd18txtcUzxm23+znPvet6A=
 			</data>
 		</dict>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rQh0M8zVR1c2TOEkZ6VKBa4l68c=
+			GL5VVjsp7z2pVoaYFqAMwEvKl+0=
 			</data>
 			<key>hash2</key>
 			<data>
-			9kqJB7SpIKh5xwsVVjNAxMpjfIjf6hJgd8VA8Gh34BM=
+			YDmE0i2Xsuo98ttx0p9krmTGBxxmkNn0TCQutkEZo7Y=
 			</data>
 		</dict>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/PonVfogPilLbzPHpC5hCHm1Kjs=
+			DJq/vOAh6tsKKsuodJ7+i9bsKps=
 			</data>
 			<key>hash2</key>
 			<data>
-			/28j1d1R70/S5dNVb9s1wAnOHpO9stYr2RynkY+0jRY=
+			5S6qWSL9FGvfcp+MzuRHyd18txtcUzxm23+znPvet6A=
 			</data>
 		</dict>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pPKrXVR7J8r91sGRO4k4B0Z2OIA=
+			8xFUUSz7uKNHWepfsI0KllOpl+A=
 			</data>
 			<key>hash2</key>
 			<data>
-			FXMX2jD2ZU7AjFX755dg4ZiVA7uqX1GRV0UTlCTUgWE=
+			Hntk29/4RjE8pkTwN9cdN+EoT0wgLZ36pppPZI38LwE=
 			</data>
 		</dict>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			P8eEiDTBM34U6HzoKXfoli3B/Ig=
+			XvW1ungibrG3CTb/CPR/OeqCGPE=
 			</data>
 			<key>hash2</key>
 			<data>
-			nbi2erf6dbemT1zUrsLEhGS/LafUECtFQcuIupwSk10=
+			ChP7fwcQqdP2wVL6sjT032iGkLLveUDJkoEwnlE435A=
 			</data>
 		</dict>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			smXrM3M9/+VtW5+Hiri2pFGx7Uo=
+			e0CaooiBFlAoEc3WmMdCs4AbY7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			lEqW8aadTs+4pb/dnY+UNXd6VpnwA93yzIUcwiu1lHo=
+			W3vGpjhTpVQiYpgSoU25JjpWC6QuuI/n88oRtUFrhPE=
 			</data>
 		</dict>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dcz0qvJdKzI0JBtSugx+bE/EkS0=
+			h0soFxerz9NRaszqvTLVIpfu458=
 			</data>
 			<key>hash2</key>
 			<data>
-			jsBrrai9DcaQdgjW5jax4xzHBuHNMMRFUoPCePEJ9qE=
+			+4AIGxdRkyVqBrmeOOiGaYBwNzj2sJgihfvU8pvsWUA=
 			</data>
 		</dict>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			smXrM3M9/+VtW5+Hiri2pFGx7Uo=
+			e0CaooiBFlAoEc3WmMdCs4AbY7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			lEqW8aadTs+4pb/dnY+UNXd6VpnwA93yzIUcwiu1lHo=
+			W3vGpjhTpVQiYpgSoU25JjpWC6QuuI/n88oRtUFrhPE=
 			</data>
 		</dict>
 		<key>Modules/TapTapComplianceSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DaF0g0iL8MvuEdLZkBIFcWr4RrM=
+			iV7iWDDE3UPnwk5hK58Tv3o/fBE=
 			</data>
 			<key>hash2</key>
 			<data>
-			GXM7hezBZO5346yCzhcAgbhu3KKKn2RAdUk7rPIkyoU=
+			660wMLBAx4u/uSp2alePyYsKAkASLbNGfXYmQkAXboQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
