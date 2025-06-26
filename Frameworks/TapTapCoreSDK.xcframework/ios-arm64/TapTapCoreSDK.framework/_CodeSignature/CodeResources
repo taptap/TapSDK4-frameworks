@@ -4,21 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/TapTapBaseVerifyObject.h</key>
+		<data>
+		ZvDNd0uQKkQE1NsNd4q+msejndQ=
+		</data>
 		<key>Headers/TapTapCoreSDK.h</key>
 		<data>
 		CjQc1lIvVfwryu5frH6Ytto10Cg=
 		</data>
 		<key>Headers/TapTapEvent.h</key>
 		<data>
-		CjlKf/0QP/HkmqAA/FCheuFvXC0=
+		5MpAQwvxwge8SegA1Ks7+QR7kdE=
 		</data>
 		<key>Headers/TapTapSDK.h</key>
 		<data>
-		2PhSW33bxsJaXuQBGjZGQutgmnY=
+		Au0RiviAE34th7VPCBWt61rI5Ew=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EII+mJ6f5cc2dot4ON4WBgFCB7o=
+		RYmSEVgo/UvX/SLjAj09mlj8x4g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,6 +35,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/TapTapBaseVerifyObject.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZvDNd0uQKkQE1NsNd4q+msejndQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			pJciXNRJF5nYkix6D1FiXMeKLsHscE1uyFzUTx3voWE=
+			</data>
+		</dict>
 		<key>Headers/TapTapCoreSDK.h</key>
 		<dict>
 			<key>hash</key>
@@ -46,22 +61,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CjlKf/0QP/HkmqAA/FCheuFvXC0=
+			5MpAQwvxwge8SegA1Ks7+QR7kdE=
 			</data>
 			<key>hash2</key>
 			<data>
-			IvnM4mKcO3p6HmsU88IVMKxxrPM+xcDWgNKt0Xfh+M0=
+			2eRe+C/xrpbhEyNYyP84uNSPJYfpSRH4nC6X7tZY//U=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2PhSW33bxsJaXuQBGjZGQutgmnY=
+			Au0RiviAE34th7VPCBWt61rI5Ew=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fq6doElVHfnVK1fa2P5LEh9cUzzWHJk9/PiZeOXwzjI=
+			EcizrXPlBtAPyW8MFKNLgKmY46W87omInvsvCT7ghLY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -35,71 +35,6 @@
         "children": [
           {
             "kind": "Function",
-            "name": "verifyCurrentState",
-            "printedName": "verifyCurrentState()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapShareSDK@objc(cs)TapTapShare(cm)verifyCurrentState",
-            "mangledName": "$s03TapA8ShareSDK0aaB0C18verifyCurrentStateSbyFZ",
-            "moduleName": "TapTapShareSDK",
-            "static": true,
-            "objc_name": "verifyCurrentState",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getWhiteListMethodArray",
-            "printedName": "getWhiteListMethodArray()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapShareSDK@objc(cs)TapTapShare(cm)getWhiteListMethodArray",
-            "mangledName": "$s03TapA8ShareSDK0aaB0C23getWhiteListMethodArraySayypGSgyFZ",
-            "moduleName": "TapTapShareSDK",
-            "static": true,
-            "objc_name": "getWhiteListMethodArray",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "share",
             "printedName": "share(_:completion:)",
             "children": [
@@ -140,7 +75,6 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "Dynamic",
               "AccessControl",
               "ObjC",
               "RawDocComment"
@@ -1574,14 +1508,14 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapShare\/Public\/TapTapShare.swift",
       "kind": "StringLiteral",
-      "offset": 714,
+      "offset": 375,
       "length": 11,
       "value": "\"taptap:\/\/\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapShare\/Public\/TapTapShare.swift",
       "kind": "BooleanLiteral",
-      "offset": 816,
+      "offset": 477,
       "length": 5,
       "value": "false"
     },

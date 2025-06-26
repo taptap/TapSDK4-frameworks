@@ -34,8 +34,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (long long)getEventIndex;
 
-/// 获取IDFA 授权状态 iOS 14 以下会直接返回通过授权
+/// 异步获取IDFA 授权状态 iOS 14 以下会直接返回通过授权
 + (void)requestTrackingAuthorizationWithCompletionHandler:(void(^)(NSUInteger status))completion;
+
+// 获取IDFA 当前用户授权状态
++ (NSUInteger)trackingStatus;
+
 @end
 
 NS_ASSUME_NONNULL_END

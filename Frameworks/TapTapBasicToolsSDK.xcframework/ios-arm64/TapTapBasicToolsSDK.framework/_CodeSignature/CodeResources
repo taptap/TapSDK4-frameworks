@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/TapTapSDKConfiguration.h</key>
 		<data>
-		EJAdEVYCBQGyF178vavfZSloHfw=
+		lfGueO9/NKKdHiFtMxLe3WiWAJk=
 		</data>
 		<key>Headers/TapTapSDKHostConfiguration.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/TapTapSDKIDTool.h</key>
 		<data>
-		Wjp0ikER+wxU/jBptqxNYMPsusE=
+		CU3wF7G98uS3JFndlNRnoHW+KpQ=
 		</data>
 		<key>Headers/TapTapSDKKeychain.h</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JKgqEuOhGGTxORH3V31ALUVPg3I=
+		0fMkg45Unit34btmEYYXdVQ3TH4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -259,11 +259,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EJAdEVYCBQGyF178vavfZSloHfw=
+			lfGueO9/NKKdHiFtMxLe3WiWAJk=
 			</data>
 			<key>hash2</key>
 			<data>
-			zvUJG9Fv5t8P3ENYZhwIni6iM/zHtXDPysDg4BvWWfM=
+			PK9PpK1kg7A3rhppNe5Cxm4PcCsOavu9yQGXV+6s8C4=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKHostConfiguration.h</key>
@@ -281,11 +281,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wjp0ikER+wxU/jBptqxNYMPsusE=
+			CU3wF7G98uS3JFndlNRnoHW+KpQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			xYaNl2flKc0QBVVXRQ/yrA+QVlD2cZXbUtyUwJ5/o4w=
+			mxHdf18h04ud5tZwkDKSBsQzu8uT58o1nYjEDQCM+Ss=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKKeychain.h</key>

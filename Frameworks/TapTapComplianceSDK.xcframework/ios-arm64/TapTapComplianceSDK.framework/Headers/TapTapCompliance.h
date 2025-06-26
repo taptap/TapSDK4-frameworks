@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <TapTapComplianceSDK/TapTapComplianceOptions.h>
-#import <TapTapBasicToolsSDK/TapTapSDKVerifyProtocol.h>
+#import <TapTapCoreSDK/TapTapBaseVerifyObject.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, TapComplianceAgeLimit) {
 @end
 
 
-@interface TapTapCompliance : NSObject <TapTapSDKVerifyProtocol>
+@interface TapTapCompliance : TapTapBaseVerifyObject
 
 
 /// 设置回调代理

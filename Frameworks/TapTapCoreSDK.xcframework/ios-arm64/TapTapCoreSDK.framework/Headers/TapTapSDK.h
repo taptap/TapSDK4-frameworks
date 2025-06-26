@@ -37,25 +37,45 @@ typedef NS_ENUM(NSInteger, TapTapRegionType) {
 @property (nonatomic, assign) TapLanguageType preferredLanguage;
 
 /// 分包渠道名称
-@property (nonatomic, strong, nullable) NSString *channel;
+@property (nonatomic, strong, nullable) NSString *channel __attribute__((deprecated("Use TapTapEventOptions's channel instead")));
+
 /// 游戏版本（默认会读取主包 info.plist 中的版本号）
 @property (nonatomic, strong, nullable) NSString *gameVersion;
+
 /// 自定义属性，启动首个预置事件（device_login）会带上这些属性
-@property (nonatomic, strong, nullable) NSDictionary *properties;
+@property (nonatomic, strong, nullable) NSDictionary *properties __attribute__((deprecated("Use TapTapEventOptions's properties instead")));
 
 @property (nonatomic, strong, nullable) NSString *caid;
 
 /// 自定义字段是否能覆盖内置字段
-@property (nonatomic, assign) BOOL overrideBuiltInParameters;
+@property (nonatomic, assign) BOOL overrideBuiltInParameters __attribute__((deprecated("Use TapTapEventOptions's overrideBuiltInParameters instead")));
 
 /// 是否可以获取 IDFA，默认值为 false
 @property(nonatomic, assign) BOOL enableAdvertiserIDCollection;
 
 /// 是否自动上报苹果内购支付成功事件
-@property(nonatomic, assign) BOOL enableAutoIAPEvent;
+@property(nonatomic, assign) BOOL enableAutoIAPEvent __attribute__((deprecated("Use TapTapEventOptions's enableAutoIAPEvent instead")));
 
 /// 是否开启 log，建议 Debug 开启，Release 关闭，默认关闭 log
 @property (nonatomic, assign) BOOL enableLog;
+@end
+
+@interface TapTapEventOptions: NSObject <TapTapSdkBaseOptions>
+
+@property (nonatomic, assign) BOOL enableTapTapEvent;
+
+/// 分包渠道名称
+@property (nonatomic, strong, nullable) NSString *channel;
+
+/// 自定义属性，启动首个预置事件（device_login）会带上这些属性
+@property (nonatomic, strong, nullable) NSDictionary *properties;
+
+/// 自定义字段是否能覆盖内置字段
+@property (nonatomic, assign) BOOL overrideBuiltInParameters;
+
+/// 是否自动上报苹果内购支付成功事件
+@property(nonatomic, assign) BOOL enableAutoIAPEvent;
+
 @end
 
 

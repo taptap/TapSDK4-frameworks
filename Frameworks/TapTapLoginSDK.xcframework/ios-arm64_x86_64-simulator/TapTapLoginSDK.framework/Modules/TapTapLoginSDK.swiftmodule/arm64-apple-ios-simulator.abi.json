@@ -1230,7 +1230,6 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "Dynamic",
               "AccessControl",
               "ObjC"
             ],
@@ -1254,7 +1253,6 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "Dynamic",
               "AccessControl",
               "RawDocComment",
               "ObjC"
@@ -1290,71 +1288,6 @@
               "DiscardableResult",
               "RawDocComment",
               "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "verifyCurrentState",
-            "printedName": "verifyCurrentState()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapLogin(cm)verifyCurrentState",
-            "mangledName": "$s03TapA8LoginSDK0aaB0C18verifyCurrentStateSbyFZ",
-            "moduleName": "TapTapLoginSDK",
-            "static": true,
-            "objc_name": "verifyCurrentState",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getWhiteListMethodArray",
-            "printedName": "getWhiteListMethodArray()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapLogin(cm)getWhiteListMethodArray",
-            "mangledName": "$s03TapA8LoginSDK0aaB0C23getWhiteListMethodArraySayypGSgyFZ",
-            "moduleName": "TapTapLoginSDK",
-            "static": true,
-            "objc_name": "getWhiteListMethodArray",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1458,10 +1391,9 @@
             "static": true,
             "objc_name": "LoginWithScopes:viewController:handler:",
             "declAttributes": [
-              "Dynamic",
+              "Final",
               "ObjC",
-              "RawDocComment",
-              "Final"
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1551,9 +1483,8 @@
             "static": true,
             "objc_name": "LoginWithScopes:handler:",
             "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Final"
+              "Final",
+              "ObjC"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -5128,49 +5059,49 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 935,
+      "offset": 910,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1114,
+      "offset": 1089,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 2206,
+      "offset": 2186,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 5708,
+      "offset": 5597,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 13495,
+      "offset": 13438,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 18392,
+      "offset": 18083,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 18664,
+      "offset": 18355,
       "length": 17,
       "value": "\"loginWithScopes\""
     },

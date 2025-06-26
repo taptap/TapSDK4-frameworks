@@ -2094,7 +2094,6 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "Dynamic",
               "AccessControl",
               "RawDocComment",
               "ObjC"
@@ -2125,7 +2124,6 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "Dynamic",
               "AccessControl",
               "RawDocComment",
               "ObjC"
@@ -2156,7 +2154,6 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "Dynamic",
               "AccessControl",
               "RawDocComment",
               "ObjC"
@@ -2187,7 +2184,6 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "Dynamic",
               "AccessControl",
               "RawDocComment",
               "ObjC"
@@ -2218,7 +2214,6 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "Dynamic",
               "AccessControl",
               "RawDocComment",
               "ObjC"
@@ -2243,75 +2238,9 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "Dynamic",
               "AccessControl",
               "RawDocComment",
               "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "verifyCurrentState",
-            "printedName": "verifyCurrentState()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapAchievementSDK@objc(cs)TapTapAchievement(cm)verifyCurrentState",
-            "mangledName": "$s03TapA14AchievementSDK0aaB0C18verifyCurrentStateSbyFZ",
-            "moduleName": "TapTapAchievementSDK",
-            "static": true,
-            "objc_name": "verifyCurrentState",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getWhiteListMethodArray",
-            "printedName": "getWhiteListMethodArray()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapAchievementSDK@objc(cs)TapTapAchievement(cm)getWhiteListMethodArray",
-            "mangledName": "$s03TapA14AchievementSDK0aaB0C23getWhiteListMethodArraySayypGSgyFZ",
-            "moduleName": "TapTapAchievementSDK",
-            "static": true,
-            "objc_name": "getWhiteListMethodArray",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -3314,7 +3243,7 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapAchievement\/Private\/TapAchievementManager.swift",
       "kind": "StringLiteral",
-      "offset": 20374,
+      "offset": 20517,
       "length": 16,
       "value": "\"achievement_id\""
     }

@@ -7,10 +7,11 @@
 
 #import <Foundation/Foundation.h>
 #import <TapTapBasicToolsSDK/TapTapSDKVerifyProtocol.h>
+#import <TapTapCoreSDK/TapTapBaseVerifyObject.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TapTapEvent : NSObject <TapTapSDKVerifyProtocol>
+@interface TapTapEvent : TapTapBaseVerifyObject
 
 /// 绑定游戏（接入方）的用户 ID
 /// - Parameter userID: 接入方的用户 ID

@@ -11,6 +11,7 @@
 #import <TapTapMomentSDK/TapTapMomentResultCode.h>
 #import <Foundation/Foundation.h>
 #import <TapTapBasicToolsSDK/TapTapBasicToolsSDK.h>
+#import <TapTapCoreSDK/TapTapBaseVerifyObject.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -25,7 +26,7 @@ FOUNDATION_EXPORT NSString *const TapMomentPageShortcutKey;
 FOUNDATION_EXPORT NSString *const TapMomentPageUser;
 FOUNDATION_EXPORT NSString *const TapMomentPageUserKey;
 # pragma mark SDK 公开方法
-@interface TapTapMoment : NSObject <TapTapSDKVerifyProtocol>
+@interface TapTapMoment : TapTapBaseVerifyObject
 
 + (instancetype)new NS_UNAVAILABLE;
 

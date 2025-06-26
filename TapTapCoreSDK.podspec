@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapCoreSDK'
-  s.version          = '4.5.5'
+  s.version          = '4.6.3'
   s.summary          = '是一套专注于解决游戏项目数据需求的分析工具，致力于帮开发者实现低成本、高效率的接入与查询体验。'
 
   s.description      = <<-DESC
