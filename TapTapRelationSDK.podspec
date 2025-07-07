@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapRelationSDK'
-  s.version          = '4.6.3'
+  s.version          = '4.7.0'
   s.summary          = '好友 SDK'
   s.swift_version    = '5.0'
   s.description      = <<-DESC
