@@ -18,6 +18,9 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'UIKit', 'Foundation', 'CoreTelephony', 'SystemConfiguration', 'AdSupport', 'GameController'
     
-  s.library = 'c++'
+  s.libraries = ['c++']
+  s.xcconfig = {
+    'OTHER_LDFLAGS' => '-lz.1'
+  }
 
 end
