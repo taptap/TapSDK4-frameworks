@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		f+LP1JdvIibQDRl+TzKV2bdVKFk=
+		NMYWZoVCERg4QKYhsdDprj6mc9Y=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		EQ6bgHxZMPa9DPZ3MeLcbiKKmgg=
+		Wf4lK0lvSWQdMBpzwAesAZ/SD40=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		POKpvCr54uQgbYqNZXXXBAT0q3g=
+		f4tEwvPLXqha4c+IQGW8sumvQPY=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EQ6bgHxZMPa9DPZ3MeLcbiKKmgg=
+		Wf4lK0lvSWQdMBpzwAesAZ/SD40=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		r/Q1Hebsi79Qs7bcOCCB0ZhKpcc=
+		iJ7BN9WJiBsiafVqg8A/C9ta+Is=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -58,19 +58,19 @@
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		U/RmUJZTGmjRKnOP3SPJQzM3ZH0=
+		VHoT2c5gdTo02MoprvZ5lDSQ8Ic=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mJMxebpE4XuAZQgvhL2RXBVt80A=
+		kqKQK9Vf/VmQ3yCPuvHdEURshFg=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		U/RmUJZTGmjRKnOP3SPJQzM3ZH0=
+		VHoT2c5gdTo02MoprvZ5lDSQ8Ic=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cBD2cDpOiPBTOh+h+E95dUjqGfs=
+		l/YXw+Sc9ZRJoh3JWsdYZ+pod94=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -164,44 +164,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EQ6bgHxZMPa9DPZ3MeLcbiKKmgg=
+			Wf4lK0lvSWQdMBpzwAesAZ/SD40=
 			</data>
 			<key>hash2</key>
 			<data>
-			Im8usayjlS55klLAteREf/PpScUFhqSjE9gRFV66KMg=
+			3bTO4EzHQGdWCcTEHbc7ri++vV5fTBXPZ+kOIG+7v8s=
 			</data>
 		</dict>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			POKpvCr54uQgbYqNZXXXBAT0q3g=
+			f4tEwvPLXqha4c+IQGW8sumvQPY=
 			</data>
 			<key>hash2</key>
 			<data>
-			wFF54MEIjg8nOnIiFpdKfjnKY8tuRvdCwYonj6khyx8=
+			EMd5iJB3AB7cmu1mFLTXvgpaugxtg9qAw3gpvCRrI3I=
 			</data>
 		</dict>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EQ6bgHxZMPa9DPZ3MeLcbiKKmgg=
+			Wf4lK0lvSWQdMBpzwAesAZ/SD40=
 			</data>
 			<key>hash2</key>
 			<data>
-			Im8usayjlS55klLAteREf/PpScUFhqSjE9gRFV66KMg=
+			3bTO4EzHQGdWCcTEHbc7ri++vV5fTBXPZ+kOIG+7v8s=
 			</data>
 		</dict>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			r/Q1Hebsi79Qs7bcOCCB0ZhKpcc=
+			iJ7BN9WJiBsiafVqg8A/C9ta+Is=
 			</data>
 			<key>hash2</key>
 			<data>
-			WlhkNkAY5og9Rjie7wCVgYTmstdja8LpekLIEHLin+E=
+			mCH/YFQDEKeyjpyX4Z2NtdYwsEd84Xk+ai5ZrCP0QZI=
 			</data>
 		</dict>
 		<key>Modules/TapTapMomentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -219,44 +219,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U/RmUJZTGmjRKnOP3SPJQzM3ZH0=
+			VHoT2c5gdTo02MoprvZ5lDSQ8Ic=
 			</data>
 			<key>hash2</key>
 			<data>
-			55/x0lHq1GDCOD2iqEA8/mIZLOGddeP0cYVA3Ucr/VI=
+			Hkf1u1jxQS64Z32VyPpkpMYPyqXm2IkE3XXW1LumHJg=
 			</data>
 		</dict>
 		<key>Modules/TapTapMomentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mJMxebpE4XuAZQgvhL2RXBVt80A=
+			kqKQK9Vf/VmQ3yCPuvHdEURshFg=
 			</data>
 			<key>hash2</key>
 			<data>
-			SPgn1q1tfBuQj6L99FW+PYWN51k/zL9jHD2lnaaph4s=
+			PsQ5eLiX2rzcXoaypsRTdHM0j+mJCWMRVYjcamKs4IU=
 			</data>
 		</dict>
 		<key>Modules/TapTapMomentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U/RmUJZTGmjRKnOP3SPJQzM3ZH0=
+			VHoT2c5gdTo02MoprvZ5lDSQ8Ic=
 			</data>
 			<key>hash2</key>
 			<data>
-			55/x0lHq1GDCOD2iqEA8/mIZLOGddeP0cYVA3Ucr/VI=
+			Hkf1u1jxQS64Z32VyPpkpMYPyqXm2IkE3XXW1LumHJg=
 			</data>
 		</dict>
 		<key>Modules/TapTapMomentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cBD2cDpOiPBTOh+h+E95dUjqGfs=
+			l/YXw+Sc9ZRJoh3JWsdYZ+pod94=
 			</data>
 			<key>hash2</key>
 			<data>
-			/wPkC2hgZtdLQ6WOf1b2g6/WtEI7txlMqNIVvkBMUsU=
+			H4FxI1WpgvqrDWeemfnIeUZixRPqfikqxAziycnnn/E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

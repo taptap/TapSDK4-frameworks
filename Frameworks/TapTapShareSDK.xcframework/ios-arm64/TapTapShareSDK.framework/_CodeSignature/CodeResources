@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/TapTapShareSDK-Swift.h</key>
 		<data>
-		rzPR+SeGbrs2EYuqIhdCN319EWo=
+		l8tj4RKo87G3Jm0dbXxAVZIQPtQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		novrR8//TshVUU/BCd48ekMlbXA=
+		bFomHhnhwrAFlfgLKVUYqlPvVbM=
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		WixbE0zDbDzJ5GezXqg49AjPWAE=
+		gY78h//8BLl/y4IVySBVvUZ5h7g=
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		NCY3g9h+kx2GH+3hpb9s8UtU3dY=
+		GgL/x7eDDBvBIYaAiyIzoYAJ3E4=
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		WixbE0zDbDzJ5GezXqg49AjPWAE=
+		gY78h//8BLl/y4IVySBVvUZ5h7g=
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		nIL3xGhhlpXikj+coGmHbrGEdhM=
+		+l1E1ekb2ZriXU7al7g9eLgxqns=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,11 +58,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rzPR+SeGbrs2EYuqIhdCN319EWo=
+			l8tj4RKo87G3Jm0dbXxAVZIQPtQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			G1pNg7cUS8ogKUUaHn2JNLSKXRuVUwPGKseqxpMrODI=
+			N5bTIt+KQRsiIteNbhIDJEqHpBDe2iwj4v8gEdoOGVU=
 			</data>
 		</dict>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -80,44 +80,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WixbE0zDbDzJ5GezXqg49AjPWAE=
+			gY78h//8BLl/y4IVySBVvUZ5h7g=
 			</data>
 			<key>hash2</key>
 			<data>
-			3zoGLrW8pop1ydnIh/5e0OtwQYro50WEaIx5Zp3uqyE=
+			B8dLxVpCQZ2EbslA/kpgJXSskcYALepylcH6wUlZxCY=
 			</data>
 		</dict>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NCY3g9h+kx2GH+3hpb9s8UtU3dY=
+			GgL/x7eDDBvBIYaAiyIzoYAJ3E4=
 			</data>
 			<key>hash2</key>
 			<data>
-			BdL71Mn7J2N4CbZO1p1qkPfJ+/MZcDH0YL65NGU4EBE=
+			FN0NYFHIoIVX20BpN9p/Oqc1Oxn5pqT4bjM5kPReGKs=
 			</data>
 		</dict>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WixbE0zDbDzJ5GezXqg49AjPWAE=
+			gY78h//8BLl/y4IVySBVvUZ5h7g=
 			</data>
 			<key>hash2</key>
 			<data>
-			3zoGLrW8pop1ydnIh/5e0OtwQYro50WEaIx5Zp3uqyE=
+			B8dLxVpCQZ2EbslA/kpgJXSskcYALepylcH6wUlZxCY=
 			</data>
 		</dict>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nIL3xGhhlpXikj+coGmHbrGEdhM=
+			+l1E1ekb2ZriXU7al7g9eLgxqns=
 			</data>
 			<key>hash2</key>
 			<data>
-			nPskAbnUJ5smkXUbZ0M4l6f9DUP85tLtvod8FUGUm4g=
+			+uQoH/v8gV/P/t0oTsVaF1jbVtzmLwCgW60nDQoVPt4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

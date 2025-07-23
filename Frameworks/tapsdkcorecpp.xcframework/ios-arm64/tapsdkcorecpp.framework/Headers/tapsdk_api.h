@@ -31,6 +31,7 @@ extern "C" {
  *   {
  *       "region": 2,
  *       "log_to_console": 1,
+ *       “enable_auto_test_log”: 0,
  *       "log_level": 1,
  *       "data_dir": "/tmp",
  *       "env": "local",
@@ -144,7 +145,7 @@ TDSSDK_EXPORT_API void TdkSetExtraAppDurationParams(const char* params);
 /**
  * 设置日志等级
  */
-TDSSDK_EXPORT_API void TdkSetLogLevel(int logLevel, int logToConsole);
+TDSSDK_EXPORT_API void TdkSetLogLevel(int logLevel, int logToConsole, int enableAutoTestLog);
 
 /**
  * 代码版本，如：1.2.5
