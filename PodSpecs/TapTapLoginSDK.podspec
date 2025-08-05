@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapLoginSDK'
-  s.version          = '4.7.0-beta.1'
+  s.version          = '4.7.0-beta.2'
   s.summary          = '提供 TapTap 登录能力。'
   s.swift_version    = '5.0'
   s.description      = <<-DESC
