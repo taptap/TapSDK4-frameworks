@@ -1288,13 +1288,6 @@
       },
       {
         "kind": "Import",
-        "name": "TapTapNetworkSDK",
-        "printedName": "TapTapNetworkSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapAchievementSDK"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -3096,14 +3089,14 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapAchievement\/Private\/UI\/TapAchievementWebViewController.swift",
       "kind": "Array",
-      "offset": 687,
+      "offset": 663,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapAchievement\/Private\/UI\/TapAchievementWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8895,
+      "offset": 8871,
       "length": 4,
       "value": "true"
     },

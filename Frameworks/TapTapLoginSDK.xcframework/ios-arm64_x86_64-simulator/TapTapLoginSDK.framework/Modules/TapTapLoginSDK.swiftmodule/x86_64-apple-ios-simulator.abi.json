@@ -4873,22 +4873,8 @@
       },
       {
         "kind": "Import",
-        "name": "TapTapBasicToolsSDK",
-        "printedName": "TapTapBasicToolsSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapLoginSDK"
-      },
-      {
-        "kind": "Import",
         "name": "TapTapCoreSDK",
         "printedName": "TapTapCoreSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapLoginSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "TapTapNetworkSDK",
-        "printedName": "TapTapNetworkSDK",
         "declKind": "Import",
         "moduleName": "TapTapLoginSDK"
       },
@@ -5101,21 +5087,21 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 13433,
+      "offset": 13438,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 18078,
+      "offset": 18083,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 18350,
+      "offset": 18355,
       "length": 17,
       "value": "\"loginWithScopes\""
     },
@@ -5367,21 +5353,21 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 446,
+      "offset": 395,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 2148,
+      "offset": 2097,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 3043,
+      "offset": 2992,
       "length": 4,
       "value": "true"
     },

@@ -13276,13 +13276,6 @@
         "moduleName": "TapTapComplianceSDK"
       },
       {
-        "kind": "Import",
-        "name": "TapTapNetworkSDK",
-        "printedName": "TapTapNetworkSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapComplianceSDK"
-      },
-      {
         "kind": "TypeDecl",
         "name": "AntiHttpUtil",
         "printedName": "AntiHttpUtil",
