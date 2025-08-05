@@ -7,10 +7,10 @@ Pod::Spec.new do |s|
   提供获取 GID 的功能.
                        DESC
 
-  s.homepage         = 'https://github.com/taptap/test-only'
+  s.homepage         = 'https://github.com/taptap/TapSDK4-frameworks'
   s.license          = { :type => "MIT" }
   s.author           = 'TapTap'
-  s.source           = { :git => 'https://github.com/taptap/test-only.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/taptap/TapSDK4-frameworks.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '11.0'
   s.static_framework = true

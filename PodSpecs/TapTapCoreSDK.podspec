@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
   结合 TapTap 生态的数据，为开发者提供全链路的游戏数据分析能力。
                        DESC
 
-  s.homepage         = 'https://github.com/taptap/test-only'
+  s.homepage         = 'https://github.com/taptap/TapSDK4-frameworks'
   s.license          = { :type => "MIT" }
   s.author           = 'TapTap'
-  s.source           = { :git => 'https://github.com/taptap/test-only.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/taptap/TapSDK4-frameworks.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '11.0'
   s.static_framework = true

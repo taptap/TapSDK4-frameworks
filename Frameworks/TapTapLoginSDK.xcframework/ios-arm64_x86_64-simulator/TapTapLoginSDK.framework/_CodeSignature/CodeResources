@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		VUzjxfaBUOX+pZTzen9NKSJ4Ijk=
+		MQjV3bjkmVulFN7/e5LU5kZU1Ds=
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zft3UJip0wOHP2TjF20YMEAsYTo=
+		KiEh4ftOdNFLbh5m8N1N80HJy6c=
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		VUzjxfaBUOX+pZTzen9NKSJ4Ijk=
+		MQjV3bjkmVulFN7/e5LU5kZU1Ds=
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oSwMYSL1wDlJ9nb1qgPYv5bMqHg=
+		2xZmVvGMfjrgAX4I08mQ4dStCsA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -89,11 +89,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VUzjxfaBUOX+pZTzen9NKSJ4Ijk=
+			MQjV3bjkmVulFN7/e5LU5kZU1Ds=
 			</data>
 			<key>hash2</key>
 			<data>
-			jOw8+nPTRZ4M19b8msV5hvVODneVPLi6KlDKDvbaZcc=
+			+vF6H8cvn0JY87sRTcO/FC+oBSwqKKs1BshxwhVfwKw=
 			</data>
 		</dict>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,22 +133,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zft3UJip0wOHP2TjF20YMEAsYTo=
+			KiEh4ftOdNFLbh5m8N1N80HJy6c=
 			</data>
 			<key>hash2</key>
 			<data>
-			AGdI8D/4R4Yc/BKdsrF26DvfK7UWIYyZ1F5a4pMrolI=
+			it7FDBiIEuSfmYMYBh6FUJTL6602Ltl6N8GSWbdiqAM=
 			</data>
 		</dict>
 		<key>Modules/TapTapLoginSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VUzjxfaBUOX+pZTzen9NKSJ4Ijk=
+			MQjV3bjkmVulFN7/e5LU5kZU1Ds=
 			</data>
 			<key>hash2</key>
 			<data>
-			jOw8+nPTRZ4M19b8msV5hvVODneVPLi6KlDKDvbaZcc=
+			+vF6H8cvn0JY87sRTcO/FC+oBSwqKKs1BshxwhVfwKw=
 			</data>
 		</dict>
 		<key>Modules/TapTapLoginSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oSwMYSL1wDlJ9nb1qgPYv5bMqHg=
+			2xZmVvGMfjrgAX4I08mQ4dStCsA=
 			</data>
 			<key>hash2</key>
 			<data>
-			GeFhAVPX80tnYn4TDToth7rafsjLAEMQ8buC4aRTtjc=
+			j4gQ82eKesDa9QQA0AGD0KhTkMYhJr5LMA+WGl0HhtQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
