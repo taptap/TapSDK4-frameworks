@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapGidSDK'
-  s.version          = '4.7.2'
+  s.version          = '4.8.1-beta.3'
   s.summary          = '提供获取 GID 的功能'
 
   s.description      = <<-DESC
