@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/TapTapCloudSaveSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		fDfS28FWHd+ZcQNiH16+ZuKfvCM=
+		ud+/6J5oUjprOMO7P11slVbpbOI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>PrivateHeaders/cloudsave_sdk.h</key>
 		<data>
-		xocCBJFWV/umExtfpjh9/3qRfm4=
+		CLCFc2AR0oOq/qCBolVssUv+81Y=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -121,11 +121,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fDfS28FWHd+ZcQNiH16+ZuKfvCM=
+			ud+/6J5oUjprOMO7P11slVbpbOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			r/Spm5mYIdZBnJC2o5EwHFCl8SCNTKS0LanKetP2C9o=
+			BMcE3gQfROALqQRGQxrMQEJmJOOtQxRdR9tGVoGgSjo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -154,11 +154,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xocCBJFWV/umExtfpjh9/3qRfm4=
+			CLCFc2AR0oOq/qCBolVssUv+81Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			mKJ+H/eFgiexdRRVvbtxRgVc3yvXua26v+nkLDOlqVU=
+			DzTg6fP3c/yxy8cKgtxpJADNxBW6CLD+nIYc/yey1pk=
 			</data>
 		</dict>
 	</dict>

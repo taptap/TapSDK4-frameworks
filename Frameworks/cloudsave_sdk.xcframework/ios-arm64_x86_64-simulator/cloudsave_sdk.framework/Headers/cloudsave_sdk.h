@@ -310,11 +310,17 @@ TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveData(const char* archiveUUID, c
 TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveCover(const char* archiveUUID, const char* archiveFileID, int64_t* coverSize, const char* extraParams);
 
 /**
- * 清理clientID的本地缓存。允许并发调用
+ * 清理clientID的本地缓存。允许并发调用，不依赖初始化
  *
- * @param clientID TapSDK传client id，Miniapp传miniappId
+ * @param params clientID TapSDK传client id，Miniapp传miniappId
+ *   {
+ *      "data_dir": "/tmp/cloudsave",
+ *      "client_id": "rfciqabirt4vqav7io"
+ *   }
+ *   - data_dir 和初始化接口传的参数保存一致
+ *   - client_id TapSDK传client id，Miniapp传miniappId
  */
-TAPSDK_EXPORT_API void TapSdkCloudSaveClearCache(const char* clientID);
+TAPSDK_EXPORT_API void TapSdkCloudSaveClearCache(const char* params);
 
 #ifdef __cplusplus
 } // extern "C"

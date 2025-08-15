@@ -160,7 +160,8 @@ TAPSDK_EXPORT_API int TapSdkCloudSaveUpdateAccessToken(const char* token);
  *     }
  * @note 对于Tap Miniapp，JSON字段使用驼峰风格。比如上面的返回示例，对于Tap Miniapp，是"fileId"而不是"file_id"。
  */
-TAPSDK_EXPORT_API char* TapSdkCloudSaveCreateArchive(const char* metadata, const char* archiveData, const char* coverData);
+TAPSDK_EXPORT_API char* TapSdkCloudSaveCreateArchive(const char* metadata, const char* archiveData, uint32_t archiveDataSize, const char* coverData,
+                                                     uint32_t coverDataSize, const char* extraParams);
 
 /**
  * 更新云存档，同步等待服务端返回，然后更新本地存档缓存。不允许并发调用，否则直接抛错
@@ -195,7 +196,8 @@ TAPSDK_EXPORT_API char* TapSdkCloudSaveCreateArchive(const char* metadata, const
  *     }
  * @note 对于Tap Miniapp，JSON字段使用驼峰风格。比如上面的返回示例，对于Tap Miniapp，是"fileId"而不是"file_id"。
  */
-TAPSDK_EXPORT_API char* TapSdkCloudSaveUpdateArchive(const char* archiveUUID, const char* metadata, const char* archiveData,const char* coverData);
+TAPSDK_EXPORT_API char* TapSdkCloudSaveUpdateArchive(const char* archiveUUID, const char* metadata, const char* archiveData, uint32_t archiveDataSize,
+                                                     const char* coverData, uint32_t coverDataSize, const char* extraParams);
 
 /**
  * 发起删除存档请求，同步等待服务端返回，然后删除本地存档缓存。允许并发调用
@@ -216,7 +218,7 @@ TAPSDK_EXPORT_API char* TapSdkCloudSaveUpdateArchive(const char* archiveUUID, co
  *         "success": true
  *     }
  */
-TAPSDK_EXPORT_API char* TapSdkCloudSaveDeleteArchive(const char* archiveUUID);
+TAPSDK_EXPORT_API char* TapSdkCloudSaveDeleteArchive(const char* archiveUUID, const char* extraParams);
 
 /**
  * 获取存档元信息列表，同步等待服务端返回。允许并发调用
@@ -251,7 +253,7 @@ TAPSDK_EXPORT_API char* TapSdkCloudSaveDeleteArchive(const char* archiveUUID);
  *     - playtime 秒级
  * @note 对于Tap Miniapp，JSON字段使用驼峰风格。比如上面的返回示例，对于Tap Miniapp，是"fileId/saveSize"而不是"file_id/save_size"。
  */
-TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveList();
+TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveList(const char* extraParams);
 
 /**
  * 读取存档文件，优先使用本地缓存，不存在才下载
@@ -277,7 +279,7 @@ TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveList();
  *     }
  * @note 对于Tap Miniapp，JSON字段使用驼峰风格。比如上面的返回示例，对于Tap Miniapp，是"errorDescription"而不是"error_description"。
  */
-TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveData(const char* archiveUUID, const char* archiveFileID);
+TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveData(const char* archiveUUID, const char* archiveFileID, int64_t* archiveDataSize, const char* extraParams);
 
 /**
  * 读取封面文件，优先使用本地缓存，不存在才下载
@@ -304,7 +306,7 @@ TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveData(const char* archiveUUID, c
  *     }
  * @note 对于Tap Miniapp，JSON字段使用驼峰风格。比如上面的返回示例，对于Tap Miniapp，是"errorDescription"而不是"error_description"。
  */
-TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveCover(const char* archiveUUID, const char* archiveFileID);
+TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveCover(const char* archiveUUID, const char* archiveFileID, int64_t* coverSize, const char* extraParams);
 
 #ifdef __cplusplus
 } // extern "C"
