@@ -1,0 +1,4 @@
+framework module TapTapCloudSaveSDK {
+  header "TapTapCloudSaveSDK-Swift.h"
+  requires objc
+}
