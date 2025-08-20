@@ -1,4 +1,0 @@
-framework module cloudsave_sdk {
-     header "cloudsave_sdk.h"
-     export *
-}
