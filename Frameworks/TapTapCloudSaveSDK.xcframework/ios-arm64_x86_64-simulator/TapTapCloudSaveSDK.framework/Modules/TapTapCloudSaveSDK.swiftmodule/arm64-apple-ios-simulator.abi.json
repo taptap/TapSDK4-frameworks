@@ -3147,8 +3147,8 @@
           },
           {
             "kind": "Var",
-            "name": "createdAt",
-            "printedName": "createdAt",
+            "name": "createdTime",
+            "printedName": "createdTime",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3158,8 +3158,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(py)createdAt",
-            "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC9createdAts5Int64Vvp",
+            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(py)createdTime",
+            "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC11createdTimes5Int64Vvp",
             "moduleName": "TapTapCloudSaveSDK",
             "declAttributes": [
               "HasStorage",
@@ -3181,8 +3181,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(im)createdAt",
-                "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC9createdAts5Int64Vvg",
+                "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(im)createdTime",
+                "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC11createdTimes5Int64Vvg",
                 "moduleName": "TapTapCloudSaveSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -3208,8 +3208,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(im)setCreatedAt:",
-                "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC9createdAts5Int64Vvs",
+                "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(im)setCreatedTime:",
+                "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC11createdTimes5Int64Vvs",
                 "moduleName": "TapTapCloudSaveSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -3229,8 +3229,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:03TapA12CloudSaveSDK11ArchiveDataC9createdAts5Int64VvM",
-                "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC9createdAts5Int64VvM",
+                "usr": "s:03TapA12CloudSaveSDK11ArchiveDataC11createdTimes5Int64VvM",
+                "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC11createdTimes5Int64VvM",
                 "moduleName": "TapTapCloudSaveSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3239,8 +3239,8 @@
           },
           {
             "kind": "Var",
-            "name": "updatedAt",
-            "printedName": "updatedAt",
+            "name": "modifiedTime",
+            "printedName": "modifiedTime",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3250,8 +3250,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(py)updatedAt",
-            "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC9updatedAts5Int64Vvp",
+            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(py)modifiedTime",
+            "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC12modifiedTimes5Int64Vvp",
             "moduleName": "TapTapCloudSaveSDK",
             "declAttributes": [
               "HasStorage",
@@ -3273,8 +3273,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(im)updatedAt",
-                "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC9updatedAts5Int64Vvg",
+                "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(im)modifiedTime",
+                "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC12modifiedTimes5Int64Vvg",
                 "moduleName": "TapTapCloudSaveSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -3300,8 +3300,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(im)setUpdatedAt:",
-                "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC9updatedAts5Int64Vvs",
+                "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(im)setModifiedTime:",
+                "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC12modifiedTimes5Int64Vvs",
                 "moduleName": "TapTapCloudSaveSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -3321,8 +3321,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:03TapA12CloudSaveSDK11ArchiveDataC9updatedAts5Int64VvM",
-                "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC9updatedAts5Int64VvM",
+                "usr": "s:03TapA12CloudSaveSDK11ArchiveDataC12modifiedTimes5Int64VvM",
+                "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC12modifiedTimes5Int64VvM",
                 "moduleName": "TapTapCloudSaveSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3408,7 +3408,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(uuid:name:summary:extra:playtime:saveSize:coverSize:fileId:createdAt:updatedAt:)",
+            "printedName": "init(uuid:name:summary:extra:playtime:saveSize:coverSize:fileId:createdTime:modifiedTime:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3478,10 +3478,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(im)initWithUuid:name:summary:extra:playtime:saveSize:coverSize:fileId:createdAt:updatedAt:",
-            "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC4uuid4name7summary5extra8playtime8saveSize05coverM06fileId9createdAt07updatedR0ACSS_S3Ss5Int64VA2OSSA2Otcfc",
+            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)ArchiveData(im)initWithUuid:name:summary:extra:playtime:saveSize:coverSize:fileId:createdTime:modifiedTime:",
+            "mangledName": "$s03TapA12CloudSaveSDK11ArchiveDataC4uuid4name7summary5extra8playtime8saveSize05coverM06fileId11createdTime08modifiedR0ACSS_S3Ss5Int64VA2OSSA2Otcfc",
             "moduleName": "TapTapCloudSaveSDK",
-            "objc_name": "initWithUuid:name:summary:extra:playtime:saveSize:coverSize:fileId:createdAt:updatedAt:",
+            "objc_name": "initWithUuid:name:summary:extra:playtime:saveSize:coverSize:fileId:createdTime:modifiedTime:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -4738,42 +4738,42 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
       "kind": "BooleanLiteral",
-      "offset": 615,
+      "offset": 620,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
       "kind": "StringLiteral",
-      "offset": 2957,
+      "offset": 2992,
       "length": 11,
       "value": "\"save_size\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
       "kind": "StringLiteral",
-      "offset": 2994,
+      "offset": 3029,
       "length": 12,
       "value": "\"cover_size\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
       "kind": "StringLiteral",
-      "offset": 3029,
+      "offset": 3064,
       "length": 9,
       "value": "\"file_id\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
       "kind": "StringLiteral",
-      "offset": 3064,
+      "offset": 3101,
       "length": 14,
       "value": "\"created_time\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
       "kind": "StringLiteral",
-      "offset": 3104,
+      "offset": 3144,
       "length": 15,
       "value": "\"modified_time\""
     },

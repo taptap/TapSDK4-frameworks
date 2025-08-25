@@ -91,13 +91,13 @@ extension TapTapCloudSaveSDK.TapTapCloudSaveRequestCallback {
   @objc public var saveSize: Swift.Int64
   @objc public var coverSize: Swift.Int64
   @objc public var fileId: Swift.String
-  @objc public var createdAt: Swift.Int64
-  @objc public var updatedAt: Swift.Int64
+  @objc public var createdTime: Swift.Int64
+  @objc public var modifiedTime: Swift.Int64
   @objc public static var supportsSecureCoding: Swift.Bool {
     @objc get
   }
   @objc override dynamic public init()
-  @objc public init(uuid: Swift.String, name: Swift.String, summary: Swift.String, extra: Swift.String, playtime: Swift.Int64, saveSize: Swift.Int64, coverSize: Swift.Int64, fileId: Swift.String, createdAt: Swift.Int64, updatedAt: Swift.Int64)
+  @objc public init(uuid: Swift.String, name: Swift.String, summary: Swift.String, extra: Swift.String, playtime: Swift.Int64, saveSize: Swift.Int64, coverSize: Swift.Int64, fileId: Swift.String, createdTime: Swift.Int64, modifiedTime: Swift.Int64)
   @objc required public init?(coder: Foundation.NSCoder)
   @objc public func encode(with coder: Foundation.NSCoder)
   @objc deinit

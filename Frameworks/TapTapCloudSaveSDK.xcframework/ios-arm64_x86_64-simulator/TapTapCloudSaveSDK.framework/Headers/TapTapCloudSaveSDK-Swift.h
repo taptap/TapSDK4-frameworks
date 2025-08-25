@@ -317,12 +317,12 @@ SWIFT_CLASS("_TtC18TapTapCloudSaveSDK11ArchiveData")
 @property (nonatomic) int64_t saveSize;
 @property (nonatomic) int64_t coverSize;
 @property (nonatomic, copy) NSString * _Nonnull fileId;
-@property (nonatomic) int64_t createdAt;
-@property (nonatomic) int64_t updatedAt;
+@property (nonatomic) int64_t createdTime;
+@property (nonatomic) int64_t modifiedTime;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureCoding;)
 + (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithUuid:(NSString * _Nonnull)uuid name:(NSString * _Nonnull)name summary:(NSString * _Nonnull)summary extra:(NSString * _Nonnull)extra playtime:(int64_t)playtime saveSize:(int64_t)saveSize coverSize:(int64_t)coverSize fileId:(NSString * _Nonnull)fileId createdAt:(int64_t)createdAt updatedAt:(int64_t)updatedAt OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithUuid:(NSString * _Nonnull)uuid name:(NSString * _Nonnull)name summary:(NSString * _Nonnull)summary extra:(NSString * _Nonnull)extra playtime:(int64_t)playtime saveSize:(int64_t)saveSize coverSize:(int64_t)coverSize fileId:(NSString * _Nonnull)fileId createdTime:(int64_t)createdTime modifiedTime:(int64_t)modifiedTime OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)coder;
 @end
@@ -769,12 +769,12 @@ SWIFT_CLASS("_TtC18TapTapCloudSaveSDK11ArchiveData")
 @property (nonatomic) int64_t saveSize;
 @property (nonatomic) int64_t coverSize;
 @property (nonatomic, copy) NSString * _Nonnull fileId;
-@property (nonatomic) int64_t createdAt;
-@property (nonatomic) int64_t updatedAt;
+@property (nonatomic) int64_t createdTime;
+@property (nonatomic) int64_t modifiedTime;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureCoding;)
 + (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithUuid:(NSString * _Nonnull)uuid name:(NSString * _Nonnull)name summary:(NSString * _Nonnull)summary extra:(NSString * _Nonnull)extra playtime:(int64_t)playtime saveSize:(int64_t)saveSize coverSize:(int64_t)coverSize fileId:(NSString * _Nonnull)fileId createdAt:(int64_t)createdAt updatedAt:(int64_t)updatedAt OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithUuid:(NSString * _Nonnull)uuid name:(NSString * _Nonnull)name summary:(NSString * _Nonnull)summary extra:(NSString * _Nonnull)extra playtime:(int64_t)playtime saveSize:(int64_t)saveSize coverSize:(int64_t)coverSize fileId:(NSString * _Nonnull)fileId createdTime:(int64_t)createdTime modifiedTime:(int64_t)modifiedTime OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)encodeWithCoder:(NSCoder * _Nonnull)coder;
 @end
