@@ -449,6 +449,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) AntiAddictionConfigura
 ///
 + (void)submitPayResult:(NSInteger)amount :(void (^ _Nullable)(BOOL))callBack :(void (^ _Nullable)(NSString * _Nonnull))failureHandler;
 /// 打开实名窗口，实名结果通过回调接受
++ (AccessToken * _Nullable)getTapSdkToken SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isHoliday SWIFT_WARN_UNUSED_RESULT;
 /// 实名认证
 /// \param userToken 用户唯一标识，如用户 ID

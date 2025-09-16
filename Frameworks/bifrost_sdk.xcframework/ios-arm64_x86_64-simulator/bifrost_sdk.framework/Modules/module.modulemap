@@ -1,0 +1,5 @@
+framework module bifrost_sdk {
+     header "bifrost_sdk.h"
+     header "bifrost_common.h"
+     export *
+}

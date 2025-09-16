@@ -316,6 +316,7 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK11AccessToken")
 @property (nonatomic, copy) NSString * _Nullable macAlgorithm;
 @property (nonatomic, copy) NSString * _Nullable scope;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable scopeArray;
+@property (nonatomic) NSInteger expiresIn;
 - (NSString * _Nonnull)toJsonString SWIFT_WARN_UNUSED_RESULT;
 + (AccessToken * _Nullable)buildWith:(NSString * _Nonnull)accessTokenJsonString SWIFT_WARN_UNUSED_RESULT;
 + (AccessToken * _Nonnull)buildWithKid:(NSString * _Nonnull)kid tokenType:(NSString * _Nonnull)tokenType macKey:(NSString * _Nonnull)macKey macAlgorithm:(NSString * _Nonnull)macAlgorithm scope:(NSString * _Nullable)scope SWIFT_WARN_UNUSED_RESULT;
@@ -741,6 +742,7 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK11AccessToken")
 @property (nonatomic, copy) NSString * _Nullable macAlgorithm;
 @property (nonatomic, copy) NSString * _Nullable scope;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable scopeArray;
+@property (nonatomic) NSInteger expiresIn;
 - (NSString * _Nonnull)toJsonString SWIFT_WARN_UNUSED_RESULT;
 + (AccessToken * _Nullable)buildWith:(NSString * _Nonnull)accessTokenJsonString SWIFT_WARN_UNUSED_RESULT;
 + (AccessToken * _Nonnull)buildWithKid:(NSString * _Nonnull)kid tokenType:(NSString * _Nonnull)tokenType macKey:(NSString * _Nonnull)macKey macAlgorithm:(NSString * _Nonnull)macAlgorithm scope:(NSString * _Nullable)scope SWIFT_WARN_UNUSED_RESULT;

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapLoginSDK
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapLoginSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CommonCrypto
 import Foundation
@@ -110,6 +110,7 @@ public struct FriendQuery {
   @objc public var macAlgorithm: Swift.String?
   @objc public var scope: Swift.String?
   @objc public var scopeArray: [Swift.String]?
+  @objc public var expiresIn: Swift.Int
   @objc public func toJsonString() -> Swift.String
   @objc public static func build(with accessTokenJsonString: Swift.String) -> TapTapLoginSDK.AccessToken?
   @objc public static func build(kid: Swift.String, tokenType: Swift.String, macKey: Swift.String, macAlgorithm: Swift.String, scope: Swift.String? = nil) -> TapTapLoginSDK.AccessToken

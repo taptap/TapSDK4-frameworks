@@ -30,27 +30,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ug6RLFtFPl7Tycn/a/7GxXHnF10=
+		3FebS8/RGsAkMR45jR/oLHGycdQ=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		uX1WV5P7+Usozwg3mT0HAtLfWtk=
+		r+wqbwnQ98w6/qOVvSrPunDIFyc=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		oHVp6gB39CwKkbWbWwHZrQn8/0I=
+		qIn2baaOQfDoGOhAmILj9fuOBmg=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Z1oBlulDZy3QiwWyZaW7rKCMq/k=
+		P5xrAQ9YauieBkELzkPlT/HEs9Y=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		oHVp6gB39CwKkbWbWwHZrQn8/0I=
+		qIn2baaOQfDoGOhAmILj9fuOBmg=
 		</data>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Nb+1/pjo9sW6BRNYNM8mLmqocEM=
+		tCb4oYLK/Y0VneJLgwr2+dbQBRs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -133,55 +133,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uX1WV5P7+Usozwg3mT0HAtLfWtk=
+			r+wqbwnQ98w6/qOVvSrPunDIFyc=
 			</data>
 			<key>hash2</key>
 			<data>
-			w26goZM/nDCmV+rF26C3Z/wOEihFme5rqgCLYhevogk=
+			YCmmS/dl/kkxphroinlU16bljXPDM/xhL0Lj9azh9jY=
 			</data>
 		</dict>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oHVp6gB39CwKkbWbWwHZrQn8/0I=
+			qIn2baaOQfDoGOhAmILj9fuOBmg=
 			</data>
 			<key>hash2</key>
 			<data>
-			E0GWuJsxtMtz/R9P+wMNgcap/+d+h0iAGQ8i/OdmoHg=
+			yOZi+dKSFAuG3HystLEp5NLXaho/8MitBXM8AV/YfFs=
 			</data>
 		</dict>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z1oBlulDZy3QiwWyZaW7rKCMq/k=
+			P5xrAQ9YauieBkELzkPlT/HEs9Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			IAvYht7CNY37PImRKW+xpWsIZUImdWlVlrSsivZhL+M=
+			K7rDOVHCQzODlVgERUUXR9IqzB7u7ix8Q54N5+7C9Xg=
 			</data>
 		</dict>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oHVp6gB39CwKkbWbWwHZrQn8/0I=
+			qIn2baaOQfDoGOhAmILj9fuOBmg=
 			</data>
 			<key>hash2</key>
 			<data>
-			E0GWuJsxtMtz/R9P+wMNgcap/+d+h0iAGQ8i/OdmoHg=
+			yOZi+dKSFAuG3HystLEp5NLXaho/8MitBXM8AV/YfFs=
 			</data>
 		</dict>
 		<key>Modules/TapTapMomentSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Nb+1/pjo9sW6BRNYNM8mLmqocEM=
+			tCb4oYLK/Y0VneJLgwr2+dbQBRs=
 			</data>
 			<key>hash2</key>
 			<data>
-			xt91B/xkMhr97P22jGbbeoAE2m2DruHU37vptl6pjMk=
+			URqWcCuNCHcHXyDSsSGNKBMlKY5xOJ1jhrsVJJgozzM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

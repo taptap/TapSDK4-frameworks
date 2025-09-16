@@ -40,6 +40,8 @@ typedef NS_ENUM(NSInteger, TapTapHTTPBodyDataType) {
 @property (nonatomic, assign) TapTapHTTPRequestMethod method;
 /// 参数数据类型
 @property (nonatomic, assign) TapTapHTTPBodyDataType dataType;
+
+/// 只针对 Post 请求生效
 @property (nonatomic, copy) NSDictionary * _Nullable parameters;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable header;
 // 需要加到 url 后的 query 列表

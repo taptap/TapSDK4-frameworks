@@ -14,15 +14,15 @@
 		</data>
 		<key>Headers/TapTapEvent.h</key>
 		<data>
-		5MpAQwvxwge8SegA1Ks7+QR7kdE=
+		3FT78UfyNrFxxH4qVic5F+BMdZk=
 		</data>
 		<key>Headers/TapTapSDK.h</key>
 		<data>
-		Au0RiviAE34th7VPCBWt61rI5Ew=
+		jG/NrNdhXwya7bbVuLhn4gqDWgo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TzxPwK+XH3tE2GR3o/K4Fn0CoEo=
+		CRDgEnmkhlIWjPV9g66ZkbBiW8A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,22 +61,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5MpAQwvxwge8SegA1Ks7+QR7kdE=
+			3FT78UfyNrFxxH4qVic5F+BMdZk=
 			</data>
 			<key>hash2</key>
 			<data>
-			2eRe+C/xrpbhEyNYyP84uNSPJYfpSRH4nC6X7tZY//U=
+			P1/OHdI1O2Zn06CMcqi+diVkLIqkTBy3Ff884VWWvr4=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Au0RiviAE34th7VPCBWt61rI5Ew=
+			jG/NrNdhXwya7bbVuLhn4gqDWgo=
 			</data>
 			<key>hash2</key>
 			<data>
-			EcizrXPlBtAPyW8MFKNLgKmY46W87omInvsvCT7ghLY=
+			Dd/IkSf8L5RNZ2iXUSGaX3mU1EdjWqqdUmrdO4eeRAI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

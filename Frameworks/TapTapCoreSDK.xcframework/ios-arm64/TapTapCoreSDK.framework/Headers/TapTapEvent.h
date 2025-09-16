@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TapTapBasicToolsSDK/TapTapSDKVerifyProtocol.h>
 #import <TapTapCoreSDK/TapTapBaseVerifyObject.h>
 
 NS_ASSUME_NONNULL_BEGIN

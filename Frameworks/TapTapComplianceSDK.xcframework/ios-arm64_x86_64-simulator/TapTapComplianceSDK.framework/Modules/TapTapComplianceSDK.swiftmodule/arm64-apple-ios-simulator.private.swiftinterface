@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapComplianceSDK
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapComplianceSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CommonCrypto
 import Foundation
@@ -614,6 +614,7 @@ extension TapTapComplianceSDK.Reachability {
   @objc final public class func currentUserRemainingTime() -> Swift.Int
   @objc final public class func checkPayLimit(_ amount: Swift.Int, callBack: ((_ status: Swift.Bool, _ title: Swift.String, _ description: Swift.String) -> Swift.Void)? = nil, failureHandler: ((_ message: Swift.String) -> Swift.Void)? = nil)
   @objc final public class func submitPayResult(_ amount: Swift.Int, _ callBack: ((_ success: Swift.Bool) -> Swift.Void)? = nil, _ failureHandler: ((_ message: Swift.String) -> Swift.Void)? = nil)
+  @objc public static func getTapSdkToken() -> TapTapLoginSDK.AccessToken?
   @objc final public class func isHoliday() -> Swift.Bool
   @objc final public class func realNameAuth(clientId: Swift.String, userId: Swift.String, code: Swift.String, name: Swift.String, idCard: Swift.String, isFallBack: Swift.Bool, completion: @escaping (TapTapComplianceSDK.TapComplianceRealNameAuthState, Swift.String) -> (), failureHandler: @escaping (_ isInvalidUser: Swift.Bool, _ errorMessage: Swift.String) -> ())
   @objc final public class func performRealNameUseTapAuth(permission: Swift.String, callback: @escaping (TapTapLoginSDK.AccessToken?, Foundation.NSError?, Swift.Bool) -> ())

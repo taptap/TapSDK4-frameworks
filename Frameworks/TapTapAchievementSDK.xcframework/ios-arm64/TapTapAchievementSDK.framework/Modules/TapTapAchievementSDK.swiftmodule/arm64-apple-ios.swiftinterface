@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapAchievementSDK
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapAchievementSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import Swift
@@ -38,9 +38,12 @@ import _SwiftConcurrencyShims
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@objc public protocol TapTapAcheievementCallback : ObjectiveC.NSObjectProtocol {
+@objc public protocol TapTapAchievementCallback : ObjectiveC.NSObjectProtocol {
   @objc func onAchievementSuccess(code: Swift.Int, result: TapTapAchievementSDK.TapTapAchievementResult)
   @objc func onAchievementFailure(achievementId: Swift.String, errorCode: Swift.Int, errorMsg: Swift.String)
+}
+@available(*, deprecated, message: "Use `TapTapAchievementCallback` instead.")
+@objc public protocol TapTapAcheievementCallback : TapTapAchievementSDK.TapTapAchievementCallback {
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class TapAchievementCallbackCode : ObjectiveC.NSObject {
   @objc public static let UNLOCK_SUCCESS: Swift.Int
@@ -58,8 +61,8 @@ import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapAchievement : ObjectiveC.NSObject {
   @objc public static func increment(achievementId: Swift.String, steps: Swift.Int)
   @objc public static func unlock(achievementId: Swift.String)
-  @objc public static func registerCallback(callback: any TapTapAchievementSDK.TapTapAcheievementCallback)
-  @objc public static func unregisterCallback(callback: any TapTapAchievementSDK.TapTapAcheievementCallback)
+  @objc public static func registerCallback(callback: any TapTapAchievementSDK.TapTapAchievementCallback)
+  @objc public static func unregisterCallback(callback: any TapTapAchievementSDK.TapTapAchievementCallback)
   @objc public static func setToastEnable(enable: Swift.Bool)
   @objc public static func showAchievements()
   @objc override dynamic public init()

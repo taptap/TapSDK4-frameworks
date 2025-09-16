@@ -21,6 +21,16 @@ typedef NS_ENUM(NSInteger, TapTapRegionType) {
     TapTapRegionTypeOverseas = 1  // 海外
 };
 
+typedef NS_ENUM(NSInteger, TapTapScreenOrientation) {
+    TapTapScreenOrientationPortrait = 0, // 竖屏
+    TapTapScreenOrientationLandscape = 1  // 横屏
+};
+
+typedef NS_ENUM(NSInteger, TapTapUITheme) {
+    TapTapUIThemeLight = 0, // 正常主题
+    TapTapUIThemeDark = 1  // 深色主题
+};
+
 @protocol TapTapSdkBaseOptions <NSObject>
 
 @property (nonatomic, copy, readonly, nonnull) NSString *moduleName;
@@ -58,6 +68,10 @@ typedef NS_ENUM(NSInteger, TapTapRegionType) {
 
 /// 是否开启 log，建议 Debug 开启，Release 关闭，默认关闭 log
 @property (nonatomic, assign) BOOL enableLog;
+
+@property (nonatomic, assign) TapTapScreenOrientation screenOrientation;
+
+@property (nonatomic, assign) TapTapUITheme uiTheme;
 @end
 
 @interface TapTapEventOptions: NSObject <TapTapSdkBaseOptions>

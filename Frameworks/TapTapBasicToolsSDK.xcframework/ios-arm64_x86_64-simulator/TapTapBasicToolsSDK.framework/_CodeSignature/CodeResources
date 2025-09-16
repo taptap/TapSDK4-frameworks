@@ -36,17 +36,13 @@
 		<data>
 		w35af2q3undtqJ/MC7hT4o5v42s=
 		</data>
-		<key>Headers/TapSDKVerifyHandler.h</key>
-		<data>
-		5rOy6YCHseZ/6PaeX+YbOda4dE8=
-		</data>
 		<key>Headers/TapSDKWebImageView.h</key>
 		<data>
 		ingGo/EpB9LylKz/pY4ZFF0zG/M=
 		</data>
 		<key>Headers/TapTapBasicToolsSDK.h</key>
 		<data>
-		YeKqsOEYAtzNRqFs94GNLFqvn9o=
+		RMOTOyxpYvoV3Q+GLgZ49z4N6gg=
 		</data>
 		<key>Headers/TapTapSDKBasicLogUtils.h</key>
 		<data>
@@ -54,7 +50,7 @@
 		</data>
 		<key>Headers/TapTapSDKConfiguration.h</key>
 		<data>
-		lfGueO9/NKKdHiFtMxLe3WiWAJk=
+		vDBaVWAz8xEFl1ILvchyBr+FuY0=
 		</data>
 		<key>Headers/TapTapSDKHostConfiguration.h</key>
 		<data>
@@ -78,7 +74,7 @@
 		</data>
 		<key>Headers/TapTapSDKLogConfiguration.h</key>
 		<data>
-		mcCFoUS1QirpYvFwaccgZmZg3NE=
+		UEKUkqKKPZBnqVsRTOUBV8qjlhQ=
 		</data>
 		<key>Headers/TapTapSDKLogEvent.h</key>
 		<data>
@@ -96,10 +92,6 @@
 		<data>
 		tO2rHSxAeWPu557qTn12MojUuiw=
 		</data>
-		<key>Headers/TapTapSDKVerifyProtocol.h</key>
-		<data>
-		OgNesgXXhAQpymkiOxtfV3MLXTY=
-		</data>
 		<key>Headers/TapTapSDKVersion.h</key>
 		<data>
 		puimViAGL2LSrZ4qatXxbtnEb9I=
@@ -110,7 +102,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wyMHn0nkQpFRq8Cg/jT0YkZWde0=
+		5K7EL3gcATsr0RyxoDaYXbKDWUw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -211,17 +203,6 @@
 			pxjY2Dg4HiBYJQDq6D9KIxglTZrSuM4rZxxszzvqL/I=
 			</data>
 		</dict>
-		<key>Headers/TapSDKVerifyHandler.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5rOy6YCHseZ/6PaeX+YbOda4dE8=
-			</data>
-			<key>hash2</key>
-			<data>
-			oC2LWthnnfO5RbLiUFgkhSdv6T9G4T86TTB59TdlmsE=
-			</data>
-		</dict>
 		<key>Headers/TapSDKWebImageView.h</key>
 		<dict>
 			<key>hash</key>
@@ -237,11 +218,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YeKqsOEYAtzNRqFs94GNLFqvn9o=
+			RMOTOyxpYvoV3Q+GLgZ49z4N6gg=
 			</data>
 			<key>hash2</key>
 			<data>
-			7Q+NvyDLN7OTmYcaMTbiEiLLOo3zSBifPF93eyPtPCI=
+			jWkzw8E71KfGJy7LV3DUYG4RHU/mfUciaAgN/ZFBGRU=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKBasicLogUtils.h</key>
@@ -259,11 +240,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lfGueO9/NKKdHiFtMxLe3WiWAJk=
+			vDBaVWAz8xEFl1ILvchyBr+FuY0=
 			</data>
 			<key>hash2</key>
 			<data>
-			PK9PpK1kg7A3rhppNe5Cxm4PcCsOavu9yQGXV+6s8C4=
+			gFnwVpn+dUttVQarqV2iQ6/3ta+Jehf33zY1Q5Xq/cU=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKHostConfiguration.h</key>
@@ -325,11 +306,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mcCFoUS1QirpYvFwaccgZmZg3NE=
+			UEKUkqKKPZBnqVsRTOUBV8qjlhQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			djQOdvnIXcHPIo2+9IoudwfiMRr7FU390eNMnajUarA=
+			UoDTVB6Xbqkr69W8LJgXGdbcrhPfc8GRkOXgHY+sgiM=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKLogEvent.h</key>
@@ -374,17 +355,6 @@
 			<key>hash2</key>
 			<data>
 			JVMJBiAmqG6iP0xoJz9NOEqZIX+u6ZlAVXdtZOJX1pw=
-			</data>
-		</dict>
-		<key>Headers/TapTapSDKVerifyProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OgNesgXXhAQpymkiOxtfV3MLXTY=
-			</data>
-			<key>hash2</key>
-			<data>
-			yTKfjn102P4928AE/95wB5QDrqjoJVqv/Spe2zej9oA=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKVersion.h</key>

@@ -10,6 +10,7 @@
 #import <TapTapNetworkSDK/TapTapSDKNetworkRequest.h>
 #import <TapTapNetworkSDK/TapTapSDKRequestHelper.h>
 #import <TapTapNetworkSDK/TapTapSDKTimeUtil.h>
+#import <TapTapNetworkSDK/TapTapSDKImageNetwork.h>
 
 //! Project version number for TapTapSDKNetwork.
 FOUNDATION_EXPORT double TapTapSDKNetworkVersionNumber;

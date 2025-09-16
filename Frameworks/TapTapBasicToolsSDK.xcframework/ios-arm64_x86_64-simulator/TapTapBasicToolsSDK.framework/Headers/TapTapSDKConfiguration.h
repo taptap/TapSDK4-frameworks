@@ -43,9 +43,19 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) NSString *artifact;
 
+/// 屏幕方向  0 竖屏 1 横屏
+@property (nonatomic, assign) NSInteger screenOrientation;
+
+/// 主题， 0 浅色 1 深色
+@property (nonatomic, assign) NSInteger uiTheme;
+
 + (instancetype)shareInstance;
 
 - (void)startFetchDeviceId;
+
+/// 判断当前是否为深色主题
+/// @return YES 为深色主题，NO 为浅色主题
+- (BOOL)isDarkTheme;
 
 @end
 

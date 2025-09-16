@@ -332,10 +332,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger UNKNOWN_ER
 
 @class TapTapAchievementResult;
 @class NSString;
-SWIFT_PROTOCOL("_TtP20TapTapAchievementSDK26TapTapAcheievementCallback_")
-@protocol TapTapAcheievementCallback <NSObject>
+SWIFT_PROTOCOL("_TtP20TapTapAchievementSDK25TapTapAchievementCallback_")
+@protocol TapTapAchievementCallback <NSObject>
 - (void)onAchievementSuccessWithCode:(NSInteger)code result:(TapTapAchievementResult * _Nonnull)result;
 - (void)onAchievementFailureWithAchievementId:(NSString * _Nonnull)achievementId errorCode:(NSInteger)errorCode errorMsg:(NSString * _Nonnull)errorMsg;
+@end
+
+/// 标记废弃，避免开发者旧版本升级后直接崩溃
+SWIFT_PROTOCOL("_TtP20TapTapAchievementSDK26TapTapAcheievementCallback_") SWIFT_DEPRECATED_MSG("Use `TapTapAchievementCallback` instead.")
+@protocol TapTapAcheievementCallback <TapTapAchievementCallback>
 @end
 
 SWIFT_CLASS("_TtC20TapTapAchievementSDK17TapTapAchievement")
@@ -376,11 +381,11 @@ SWIFT_CLASS("_TtC20TapTapAchievementSDK17TapTapAchievement")
 /// 注册成就回调
 /// \param callback 成就回调实例
 ///
-+ (void)registerCallbackWithCallback:(id <TapTapAcheievementCallback> _Nonnull)callback;
++ (void)registerCallbackWithCallback:(id <TapTapAchievementCallback> _Nonnull)callback;
 /// 移除成就回调
 /// \param callback 成就回调实例
 ///
-+ (void)unregisterCallbackWithCallback:(id <TapTapAcheievementCallback> _Nonnull)callback;
++ (void)unregisterCallbackWithCallback:(id <TapTapAchievementCallback> _Nonnull)callback;
 /// 设置是否展示达成成就气泡弹窗
 /// \param enable 是否展示
 ///
@@ -786,10 +791,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger UNKNOWN_ER
 
 @class TapTapAchievementResult;
 @class NSString;
-SWIFT_PROTOCOL("_TtP20TapTapAchievementSDK26TapTapAcheievementCallback_")
-@protocol TapTapAcheievementCallback <NSObject>
+SWIFT_PROTOCOL("_TtP20TapTapAchievementSDK25TapTapAchievementCallback_")
+@protocol TapTapAchievementCallback <NSObject>
 - (void)onAchievementSuccessWithCode:(NSInteger)code result:(TapTapAchievementResult * _Nonnull)result;
 - (void)onAchievementFailureWithAchievementId:(NSString * _Nonnull)achievementId errorCode:(NSInteger)errorCode errorMsg:(NSString * _Nonnull)errorMsg;
+@end
+
+/// 标记废弃，避免开发者旧版本升级后直接崩溃
+SWIFT_PROTOCOL("_TtP20TapTapAchievementSDK26TapTapAcheievementCallback_") SWIFT_DEPRECATED_MSG("Use `TapTapAchievementCallback` instead.")
+@protocol TapTapAcheievementCallback <TapTapAchievementCallback>
 @end
 
 SWIFT_CLASS("_TtC20TapTapAchievementSDK17TapTapAchievement")
@@ -830,11 +840,11 @@ SWIFT_CLASS("_TtC20TapTapAchievementSDK17TapTapAchievement")
 /// 注册成就回调
 /// \param callback 成就回调实例
 ///
-+ (void)registerCallbackWithCallback:(id <TapTapAcheievementCallback> _Nonnull)callback;
++ (void)registerCallbackWithCallback:(id <TapTapAchievementCallback> _Nonnull)callback;
 /// 移除成就回调
 /// \param callback 成就回调实例
 ///
-+ (void)unregisterCallbackWithCallback:(id <TapTapAcheievementCallback> _Nonnull)callback;
++ (void)unregisterCallbackWithCallback:(id <TapTapAchievementCallback> _Nonnull)callback;
 /// 设置是否展示达成成就气泡弹窗
 /// \param enable 是否展示
 ///

@@ -6,7 +6,11 @@
 	<dict>
 		<key>Headers/TapTapNetworkSDK.h</key>
 		<data>
-		vEHJYja0PFN2UWlQC6XMtmVCcpo=
+		Csi5WjYpWLAkMri4cA6ZVe5/FL8=
+		</data>
+		<key>Headers/TapTapSDKImageNetwork.h</key>
+		<data>
+		nehk8R55WR89Uk0LggnNjt4yR4c=
 		</data>
 		<key>Headers/TapTapSDKNetworkRequest.h</key>
 		<data>
@@ -14,7 +18,7 @@
 		</data>
 		<key>Headers/TapTapSDKNetworkTarget.h</key>
 		<data>
-		zNwwPmoGpDfRLT+ruaRoFs6IXN0=
+		Sgk31SWYT6gf1SdImQpra18ge7w=
 		</data>
 		<key>Headers/TapTapSDKRequestHelper.h</key>
 		<data>
@@ -26,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HcG1E8aQWrdVDf9FyGmhi7zfUvU=
+		n/Oq80siq37pb+3rDjsA+25c1+4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,11 +43,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vEHJYja0PFN2UWlQC6XMtmVCcpo=
+			Csi5WjYpWLAkMri4cA6ZVe5/FL8=
 			</data>
 			<key>hash2</key>
 			<data>
-			szjfhVxX046Kde3r1+RydAqCkxdJV9D54qTgn/fy51I=
+			oFTYiGfbax1gFCpiKiaQxe8+qMtCSk1ASdwfw2jm2Bw=
+			</data>
+		</dict>
+		<key>Headers/TapTapSDKImageNetwork.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nehk8R55WR89Uk0LggnNjt4yR4c=
+			</data>
+			<key>hash2</key>
+			<data>
+			5CikTN+JRI8iUGdWeoiYRpsUP3uRodc6739kJI7SXNk=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKNetworkRequest.h</key>
@@ -61,11 +76,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zNwwPmoGpDfRLT+ruaRoFs6IXN0=
+			Sgk31SWYT6gf1SdImQpra18ge7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			KR5cVlrtnOY71zpZREEudhrFSrMJqdPsCDaLREPrmMQ=
+			ybvwQHXWnybA+IB/O1lvEAaP4qW9gc5sGGpYmkqV65o=
 			</data>
 		</dict>
 		<key>Headers/TapTapSDKRequestHelper.h</key>
