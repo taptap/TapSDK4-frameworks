@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/TapTapRelationLiteSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3Mo5lBla7zf8AeGFQbsqpcfYI38=
+		DZUjwUWskRGvhnI0rmuq/IaaEa8=
 		</data>
 		<key>Modules/TapTapRelationLiteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/TapTapRelationLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FRQdz9DDFLNnStQDXk3QTYf/a8E=
+		/Czumxv73JB7KFqY/DmMmueJbBg=
 		</data>
 		<key>TapTapRelationLiteResource.bundle/images/dark/ttf_checkbox_unselected.png</key>
 		<data>
@@ -166,11 +166,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Mo5lBla7zf8AeGFQbsqpcfYI38=
+			DZUjwUWskRGvhnI0rmuq/IaaEa8=
 			</data>
 			<key>hash2</key>
 			<data>
-			din88m2y7GvSH1kEB1AXfBbcjFmo2/mKa+ebwByb3iI=
+			FQVu/M8SUgHQ8jmPh579NZieVViz6CXQyVsMjBH8tEs=
 			</data>
 		</dict>
 		<key>Modules/TapTapRelationLiteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -221,11 +221,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FRQdz9DDFLNnStQDXk3QTYf/a8E=
+			/Czumxv73JB7KFqY/DmMmueJbBg=
 			</data>
 			<key>hash2</key>
 			<data>
-			eCujIDy1k++wqZhg0h6LJdZRWY98LL7h2mnyDEVi1A0=
+			CZIus9nYzHDW35pKWNraG/xNS+KnbJMYFgIEAuTVaWg=
 			</data>
 		</dict>
 		<key>TapTapRelationLiteResource.bundle/images/dark/ttf_checkbox_unselected.png</key>
