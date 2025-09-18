@@ -4433,7 +4433,7 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/TTFChatMessageTableView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18521,
+      "offset": 18942,
       "length": 5,
       "value": "false"
     },
@@ -4678,14 +4678,14 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandFriendView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17274,
+      "offset": 17074,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandFriendView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20586,
+      "offset": 20386,
       "length": 5,
       "value": "false"
     },
