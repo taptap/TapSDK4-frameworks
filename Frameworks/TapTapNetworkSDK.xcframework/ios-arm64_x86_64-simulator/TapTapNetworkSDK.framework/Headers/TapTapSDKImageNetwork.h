@@ -14,7 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^DownloadProgressBlock)(double progress);
-typedef void(^DownloadCompletionBlock)(BOOL success,  NSString * _Nullable   errorMessage);
+typedef void(^DownloadCompletionBlock)(BOOL success,  NSData *_Nullable imageData, NSString * _Nullable   errorMessage);
 
 @interface TapTapSDKImageNetwork : NSObject <NSURLSessionDownloadDelegate>
 

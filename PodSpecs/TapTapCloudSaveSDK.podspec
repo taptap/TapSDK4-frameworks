@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapCloudSaveSDK'
-  s.version          = '4.8.2-beta.0'
+  s.version          = '4.8.2-beta.1'
   s.summary          = '提供 TapTap 云存档的能力。'
   s.swift_version    = '5.0'
   s.description      = <<-DESC

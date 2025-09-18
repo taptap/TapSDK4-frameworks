@@ -6,8 +6,8 @@
     "children": [
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "TapTapNetworkSDK",
+        "printedName": "TapTapNetworkSDK",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK",
         "declAttributes": [
@@ -16,18 +16,15 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
         "declKind": "Import",
-        "moduleName": "TapTapRelationSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "TapTapRelationSDK"
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -70,6 +67,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -94,8 +101,18 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -487,6 +504,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapNetworkSDK",
+        "printedName": "TapTapNetworkSDK",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -2124,23 +2148,6 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
-        "declKind": "Import",
-        "moduleName": "TapTapRelationSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TapTapRelationSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -3584,6 +3591,20 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Utils\/TTFImageUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 336,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Utils\/TTFImageUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 353,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Model\/ChatMsgModel\/TTFTeamInviteMsgModel.swift",
       "kind": "StringLiteral",
       "offset": 391,
@@ -4174,14 +4195,14 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Widget\/TTFToastManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 231,
+      "offset": 210,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Widget\/TTFToastManager.swift",
       "kind": "Array",
-      "offset": 306,
+      "offset": 285,
       "length": 2,
       "value": "[]"
     },
@@ -4349,35 +4370,35 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Presenter\/TTFEmotionDataPresenter.swift",
       "kind": "Array",
-      "offset": 337,
+      "offset": 361,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Presenter\/TTFEmotionDataPresenter.swift",
       "kind": "Dictionary",
-      "offset": 426,
+      "offset": 450,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Presenter\/TTFEmotionDataPresenter.swift",
       "kind": "Array",
-      "offset": 496,
+      "offset": 520,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Presenter\/TTFEmotionDataPresenter.swift",
       "kind": "Array",
-      "offset": 627,
+      "offset": 651,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Presenter\/TTFEmotionDataPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 657,
+      "offset": 681,
       "length": 5,
       "value": "false"
     },
@@ -4412,7 +4433,7 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/TTFChatMessageTableView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18825,
+      "offset": 18521,
       "length": 5,
       "value": "false"
     },
@@ -6589,7 +6610,7 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/InputView\/KeyBoard\/EmojiKeyBoard\/TTFEmojiKeyBoardCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 13412,
+      "offset": 13422,
       "length": 2,
       "value": "12"
     },
@@ -6960,7 +6981,7 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Public\/TapTapRelation.swift",
       "kind": "BooleanLiteral",
-      "offset": 2414,
+      "offset": 2340,
       "length": 4,
       "value": "true"
     },
