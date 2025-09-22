@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/TapTapLeaderboardSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		fUJLr0IWvzaI4zpEXUOc2UokTuU=
+		ySOTt19Og1yVo7Fu5QEeaQAYZ5w=
 		</data>
 		<key>Modules/TapTapLeaderboardSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/TapTapLeaderboardSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lUppHZy/Y4kDNuo+kuYKNHgnwTI=
+		s4tScePKYbAR6oOB0rh2ImmtP4M=
 		</data>
 		<key>Modules/TapTapLeaderboardSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		fUJLr0IWvzaI4zpEXUOc2UokTuU=
+		ySOTt19Og1yVo7Fu5QEeaQAYZ5w=
 		</data>
 		<key>Modules/TapTapLeaderboardSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/TapTapLeaderboardSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		N2231UGsdooR7vIFuRaaJ3xG6gQ=
+		ZoltiLNxkqu70+vIzcHFkG76Qrc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -70,11 +70,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fUJLr0IWvzaI4zpEXUOc2UokTuU=
+			ySOTt19Og1yVo7Fu5QEeaQAYZ5w=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y6/REYNPxPAlP/7Y+qOWffCxDTT2A/RDfW2P0VdynY0=
+			5VvMNatFYSsQGHq7vuxlBcGy9AjPrj69TAculScvkvw=
 			</data>
 		</dict>
 		<key>Modules/TapTapLeaderboardSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -114,22 +114,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lUppHZy/Y4kDNuo+kuYKNHgnwTI=
+			s4tScePKYbAR6oOB0rh2ImmtP4M=
 			</data>
 			<key>hash2</key>
 			<data>
-			3xc+Wq89scFsajtsys1rna60NaRFYkmeOcyx9zoVdns=
+			5DQW5ckHMeFJzN9VpmjuAzWE7ocMpbCh69zhWNRQ9YQ=
 			</data>
 		</dict>
 		<key>Modules/TapTapLeaderboardSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fUJLr0IWvzaI4zpEXUOc2UokTuU=
+			ySOTt19Og1yVo7Fu5QEeaQAYZ5w=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y6/REYNPxPAlP/7Y+qOWffCxDTT2A/RDfW2P0VdynY0=
+			5VvMNatFYSsQGHq7vuxlBcGy9AjPrj69TAculScvkvw=
 			</data>
 		</dict>
 		<key>Modules/TapTapLeaderboardSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -169,11 +169,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N2231UGsdooR7vIFuRaaJ3xG6gQ=
+			ZoltiLNxkqu70+vIzcHFkG76Qrc=
 			</data>
 			<key>hash2</key>
 			<data>
-			U8LF9HWwK8gk7ER8EG0Wc6iUpDJk658QFxyc3SxGGBU=
+			ZYgO46A5ijZV5LbBWVRHMpO2RMMD+EOKNh4yH4ycvZI=
 			</data>
 		</dict>
 	</dict>

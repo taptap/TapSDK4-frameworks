@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/TapTapProfileSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		KjZME4FjH22PWKGPaBUB+JNjC5g=
+		039Zo8vFPQqX8lHI7lv+JODpdbs=
 		</data>
 		<key>Modules/TapTapProfileSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/TapTapProfileSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UwtEJflKA2IFJkUdNZ2ayKV0DlI=
+		k/4mdk52Fq8BN73ITHIDC7VTOlM=
 		</data>
 		<key>Modules/TapTapProfileSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		KjZME4FjH22PWKGPaBUB+JNjC5g=
+		039Zo8vFPQqX8lHI7lv+JODpdbs=
 		</data>
 		<key>Modules/TapTapProfileSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/TapTapProfileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tThsRUwow/EcmVRN5KMAr+u6+Nw=
+		QGFPGbQdmOTg+6KPyqJlfzBnEfA=
 		</data>
 		<key>TapTapProfileResource.bundle/images/dark/tap_profile_chat.png</key>
 		<data>
@@ -107,11 +107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KjZME4FjH22PWKGPaBUB+JNjC5g=
+			039Zo8vFPQqX8lHI7lv+JODpdbs=
 			</data>
 			<key>hash2</key>
 			<data>
-			8b9W5ZswuDVpQWpFJiROPREh0xOJooQ2MUnvVm7LdtY=
+			EOH/TAg0UMKvdF+R3PD3htOGvI3msS86q7JQFwde6Ko=
 			</data>
 		</dict>
 		<key>Modules/TapTapProfileSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -151,22 +151,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UwtEJflKA2IFJkUdNZ2ayKV0DlI=
+			k/4mdk52Fq8BN73ITHIDC7VTOlM=
 			</data>
 			<key>hash2</key>
 			<data>
-			mH1AXUyVM/fFmq3mTrV82bjSBaKFEifoV4zmW9OwTpE=
+			U+m04zNHIINs7kVcVQcaHrLBW5I8Mt8KVfxjh56alLM=
 			</data>
 		</dict>
 		<key>Modules/TapTapProfileSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KjZME4FjH22PWKGPaBUB+JNjC5g=
+			039Zo8vFPQqX8lHI7lv+JODpdbs=
 			</data>
 			<key>hash2</key>
 			<data>
-			8b9W5ZswuDVpQWpFJiROPREh0xOJooQ2MUnvVm7LdtY=
+			EOH/TAg0UMKvdF+R3PD3htOGvI3msS86q7JQFwde6Ko=
 			</data>
 		</dict>
 		<key>Modules/TapTapProfileSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -206,11 +206,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tThsRUwow/EcmVRN5KMAr+u6+Nw=
+			QGFPGbQdmOTg+6KPyqJlfzBnEfA=
 			</data>
 			<key>hash2</key>
 			<data>
-			tay8f3XjKo5+bJc3K2VQN0B3IXQkPkHkUZVLJkZ/vn8=
+			Z7YVGyiNorjS2LsnJM/m4C/2HvhuB2e/g5pIRikqmoY=
 			</data>
 		</dict>
 		<key>TapTapProfileResource.bundle/images/dark/tap_profile_chat.png</key>
