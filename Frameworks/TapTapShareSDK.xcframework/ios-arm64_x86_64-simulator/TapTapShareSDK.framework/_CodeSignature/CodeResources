@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		04z5yLgRIRQy8CZRI7fgZmj0OBs=
+		rNu5adiqq1DZMzzrK+/4fJxQt9s=
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+vcGHql3MXRhvjPKhvhRWzC7kWg=
+		LuJOZhwBbs4LMqoORnwOIBdaIZY=
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		04z5yLgRIRQy8CZRI7fgZmj0OBs=
+		rNu5adiqq1DZMzzrK+/4fJxQt9s=
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VSligOrE/SZTaKcrliprg69Hj+E=
+		/eoiiOXyivcPF00VcTfo7MEWb0E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -89,11 +89,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			04z5yLgRIRQy8CZRI7fgZmj0OBs=
+			rNu5adiqq1DZMzzrK+/4fJxQt9s=
 			</data>
 			<key>hash2</key>
 			<data>
-			zKiTI6QE5lc+xdi37rTLxJ/IYJCOobYNWVfsmqN9u+M=
+			xHROkzYimRlZViH5rtFT1d4jwK4I4W1Jq/pfRpLbacg=
 			</data>
 		</dict>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,22 +133,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+vcGHql3MXRhvjPKhvhRWzC7kWg=
+			LuJOZhwBbs4LMqoORnwOIBdaIZY=
 			</data>
 			<key>hash2</key>
 			<data>
-			nYDJVssNyvYm1wpRSAwSJ5R81gKxWXtImN0x0Ffn67Q=
+			bzaA6xZZJUdHeaQiHORrktDBdsXk9Hp4LoSmy1Szoa8=
 			</data>
 		</dict>
 		<key>Modules/TapTapShareSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			04z5yLgRIRQy8CZRI7fgZmj0OBs=
+			rNu5adiqq1DZMzzrK+/4fJxQt9s=
 			</data>
 			<key>hash2</key>
 			<data>
-			zKiTI6QE5lc+xdi37rTLxJ/IYJCOobYNWVfsmqN9u+M=
+			xHROkzYimRlZViH5rtFT1d4jwK4I4W1Jq/pfRpLbacg=
 			</data>
 		</dict>
 		<key>Modules/TapTapShareSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VSligOrE/SZTaKcrliprg69Hj+E=
+			/eoiiOXyivcPF00VcTfo7MEWb0E=
 			</data>
 			<key>hash2</key>
 			<data>
-			rCVpk8gbUCFsxejU3U3LfnwEWJtYtcjKuIHOd+jcoII=
+			4nnT+zpZYOE6Zkh/8GuoANWLhUOkoYPnjDhFpfjispk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

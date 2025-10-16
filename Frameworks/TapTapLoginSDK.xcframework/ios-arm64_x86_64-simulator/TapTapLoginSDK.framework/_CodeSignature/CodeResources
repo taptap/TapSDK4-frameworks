@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		DR4+LpG4wh2y3rvRgo7QDUM4EU0=
+		ktQl6H0zKiCksKcrhPvyhlD+r9Y=
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		at+wZ6pQkQow5OUqsZ0YCYZEHGo=
+		pssD9SbBZ/8nFebfpEPl7rl/6yk=
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		DR4+LpG4wh2y3rvRgo7QDUM4EU0=
+		ktQl6H0zKiCksKcrhPvyhlD+r9Y=
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,63 +54,11 @@
 		</data>
 		<key>Modules/TapTapLoginSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2g9fXQ5uG+rmcjNVMYE6wdIP/ms=
+		mTm22Y7jLwVDpiio57N6Pww/MFA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		juXkQ5+HgWNrJHQfAfYL+ogClxA=
-		</data>
-		<key>TapTapProfileResource.bundle/images/dark/tap_profile_chat.png</key>
-		<data>
-		i4p45WSnOfluJBrLDciGFotel9Y=
-		</data>
-		<key>TapTapProfileResource.bundle/images/dark/tap_profile_close.png</key>
-		<data>
-		uwmWnnBcxD6eCorKRh5pv4aEKCs=
-		</data>
-		<key>TapTapProfileResource.bundle/images/dark/tap_profile_invite.png</key>
-		<data>
-		20MY4+0w8Gv85h1evYkmokBEFtk=
-		</data>
-		<key>TapTapProfileResource.bundle/images/dark/tap_profile_unfollow.png</key>
-		<data>
-		YVbuyoTeB2EeRAA/QZvR/KTEjhI=
-		</data>
-		<key>TapTapProfileResource.bundle/images/light/tap_profile_chat.png</key>
-		<data>
-		Qxv+QdLxqo0EuFyV6s31wAxuujU=
-		</data>
-		<key>TapTapProfileResource.bundle/images/light/tap_profile_close.png</key>
-		<data>
-		ZFlUB7hOEAGaxgRbo93sx4HTLYA=
-		</data>
-		<key>TapTapProfileResource.bundle/images/light/tap_profile_invite.png</key>
-		<data>
-		ZaBsASU/S13d7quHnW8KSVuCyL8=
-		</data>
-		<key>TapTapProfileResource.bundle/images/light/tap_profile_unfollow.png</key>
-		<data>
-		YVbuyoTeB2EeRAA/QZvR/KTEjhI=
-		</data>
-		<key>TapTapProfileResource.bundle/images/tap_profile_achievement.png</key>
-		<data>
-		sHYa1/X6h7qMdg/jeXjBF4i3U8g=
-		</data>
-		<key>TapTapProfileResource.bundle/images/tap_profile_achievement_platinum.png</key>
-		<data>
-		zrSQNS4Ekj402J7jAdD6MHVaIyU=
-		</data>
-		<key>TapTapProfileResource.bundle/images/tap_profile_arrow.png</key>
-		<data>
-		r+tGrPzgENEL2nfghuRv2aR0LQQ=
-		</data>
-		<key>TapTapProfileResource.bundle/images/tap_profile_default_background.png</key>
-		<data>
-		uLRypHl9AySHrvVc4Rr4l7ZAgCo=
-		</data>
-		<key>TapTapProfileResource.bundle/images/tap_profile_logo.png</key>
-		<data>
-		nc55G4fnWJ8iW4OXCiExyF39ko8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -141,11 +89,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DR4+LpG4wh2y3rvRgo7QDUM4EU0=
+			ktQl6H0zKiCksKcrhPvyhlD+r9Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			s68n7SX0LtW3boYYT60U5TJd+jcoDrfG8qNYRjFSLf0=
+			8ed5QZKXGBn76zUd38FBB/xtCeAdmZ5tE8l+v2HycIY=
 			</data>
 		</dict>
 		<key>Modules/TapTapLoginSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -185,22 +133,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			at+wZ6pQkQow5OUqsZ0YCYZEHGo=
+			pssD9SbBZ/8nFebfpEPl7rl/6yk=
 			</data>
 			<key>hash2</key>
 			<data>
-			2OTrmD6M2v8tDu/ExsZMTsepWLbVJv+3USPEJi7B2IU=
+			htOQjj2mlAUxWt+KfKU1ZZsFgbF4IL+VBH7CC8Oj/HA=
 			</data>
 		</dict>
 		<key>Modules/TapTapLoginSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DR4+LpG4wh2y3rvRgo7QDUM4EU0=
+			ktQl6H0zKiCksKcrhPvyhlD+r9Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			s68n7SX0LtW3boYYT60U5TJd+jcoDrfG8qNYRjFSLf0=
+			8ed5QZKXGBn76zUd38FBB/xtCeAdmZ5tE8l+v2HycIY=
 			</data>
 		</dict>
 		<key>Modules/TapTapLoginSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -240,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2g9fXQ5uG+rmcjNVMYE6wdIP/ms=
+			mTm22Y7jLwVDpiio57N6Pww/MFA=
 			</data>
 			<key>hash2</key>
 			<data>
-			lrrOR+JFfG24SewjDH37ejcV35jNgS+8veiascBM9Wg=
+			rvgaZSqnT/+FPtdYvGwV0Art8z0HpkVKASL9lj7+ppQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -256,149 +204,6 @@
 			<key>hash2</key>
 			<data>
 			nSP0Pfcny4nTVtpNF3XcwQe8+n59mR2nrrKkoXuDiC8=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/dark/tap_profile_chat.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			i4p45WSnOfluJBrLDciGFotel9Y=
-			</data>
-			<key>hash2</key>
-			<data>
-			dRT8AFVf5nZWaz6PT+1JsCKEIq36lljE1afHdVn/064=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/dark/tap_profile_close.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uwmWnnBcxD6eCorKRh5pv4aEKCs=
-			</data>
-			<key>hash2</key>
-			<data>
-			jv2mzz6S69cKIs5+o+UVbtQDjzLn2sf5jXgeSyYiMKE=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/dark/tap_profile_invite.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			20MY4+0w8Gv85h1evYkmokBEFtk=
-			</data>
-			<key>hash2</key>
-			<data>
-			IVFweI9ja1zqcCK1EXvmUOzGczWI6ysw9joAOk3y2Ww=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/dark/tap_profile_unfollow.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YVbuyoTeB2EeRAA/QZvR/KTEjhI=
-			</data>
-			<key>hash2</key>
-			<data>
-			4GY1q0WT/3kwH69LyndnV28YgYx7lj+z3dnmYPQpZK4=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/light/tap_profile_chat.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Qxv+QdLxqo0EuFyV6s31wAxuujU=
-			</data>
-			<key>hash2</key>
-			<data>
-			QYjnAXzKqyDV4XYnM1dWWrQyYif9eNfn4Ym4MXMNyq4=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/light/tap_profile_close.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZFlUB7hOEAGaxgRbo93sx4HTLYA=
-			</data>
-			<key>hash2</key>
-			<data>
-			HaJutC2/M9LzQuuBwjhKSPrBzVxyAGR9r1wnV0T+JQs=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/light/tap_profile_invite.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZaBsASU/S13d7quHnW8KSVuCyL8=
-			</data>
-			<key>hash2</key>
-			<data>
-			4N4FD2PpiaJdaHc4mIODhtlKFwU5KngqFk2Bd1YEpWw=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/light/tap_profile_unfollow.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YVbuyoTeB2EeRAA/QZvR/KTEjhI=
-			</data>
-			<key>hash2</key>
-			<data>
-			4GY1q0WT/3kwH69LyndnV28YgYx7lj+z3dnmYPQpZK4=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/tap_profile_achievement.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sHYa1/X6h7qMdg/jeXjBF4i3U8g=
-			</data>
-			<key>hash2</key>
-			<data>
-			APzYrYToxD6UHTUlaTuqSx3TSIfn+83eqP6XHxFbh9g=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/tap_profile_achievement_platinum.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zrSQNS4Ekj402J7jAdD6MHVaIyU=
-			</data>
-			<key>hash2</key>
-			<data>
-			uelSfoKyBfSy7qDaEh+KwVFqR21dNEinrRI70mJnr9c=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/tap_profile_arrow.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			r+tGrPzgENEL2nfghuRv2aR0LQQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			IW6+N0qjvnL8T2aQXizdaXSpyLDaNxFqjk3hjxMcFtQ=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/tap_profile_default_background.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uLRypHl9AySHrvVc4Rr4l7ZAgCo=
-			</data>
-			<key>hash2</key>
-			<data>
-			0sx20YY8FhtykbtjREF/RzBQ7m3Mx5XVL+589QVs/4Q=
-			</data>
-		</dict>
-		<key>TapTapProfileResource.bundle/images/tap_profile_logo.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nc55G4fnWJ8iW4OXCiExyF39ko8=
-			</data>
-			<key>hash2</key>
-			<data>
-			3FAmeKTQi+DfXQHAfiocXfPRY6IgPOOWkpbvpWAtR/c=
 			</data>
 		</dict>
 	</dict>

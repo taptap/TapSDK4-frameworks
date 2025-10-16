@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		04z5yLgRIRQy8CZRI7fgZmj0OBs=
+		rNu5adiqq1DZMzzrK+/4fJxQt9s=
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		BxeZFLKxnaY7PRTOq24ipnuRo24=
+		iTrAqEEcSMfozqaay92WWoWzBVs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,11 +69,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			04z5yLgRIRQy8CZRI7fgZmj0OBs=
+			rNu5adiqq1DZMzzrK+/4fJxQt9s=
 			</data>
 			<key>hash2</key>
 			<data>
-			zKiTI6QE5lc+xdi37rTLxJ/IYJCOobYNWVfsmqN9u+M=
+			xHROkzYimRlZViH5rtFT1d4jwK4I4W1Jq/pfRpLbacg=
 			</data>
 		</dict>
 		<key>Modules/TapTapShareSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -113,11 +113,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BxeZFLKxnaY7PRTOq24ipnuRo24=
+			iTrAqEEcSMfozqaay92WWoWzBVs=
 			</data>
 			<key>hash2</key>
 			<data>
-			8w5FoEkwueM+KikbpX2vbvNGttvRtsSYCrayG+xAC+U=
+			KPGZAM0J/1H5+1Nz+lyOg16Xnf1BUrmBJvaDB2TrYOY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapProfileSDK'
-  s.version          = '4.8.3-beta.1'
+  s.version          = '4.8.3'
   s.summary          = '提供 TapTap 展示用户名片信息的能力。'
   s.swift_version    = '5.0'
   s.description      = <<-DESC
