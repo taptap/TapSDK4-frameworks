@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/TapTapCloudSaveSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		cqXEiFRsyEWJbx4rjQtn/hKgeg4=
+		L88AcwmEUr/kC2MUMWkuPop6tjo=
 		</data>
 		<key>Modules/TapTapCloudSaveSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/TapTapCloudSaveSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Wg02bMtm79S6xKa0RoVFd0ep1HU=
+		vB2JivcVK2ZKmLlqdEAGoNxDoQw=
 		</data>
 		<key>Modules/TapTapCloudSaveSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		cqXEiFRsyEWJbx4rjQtn/hKgeg4=
+		L88AcwmEUr/kC2MUMWkuPop6tjo=
 		</data>
 		<key>Modules/TapTapCloudSaveSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/TapTapCloudSaveSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QB9cg//quuNX9gJ1bK6n6haxV3w=
+		GC1ce25cIW9IkuQB6d6HXXMmy7Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -97,11 +97,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cqXEiFRsyEWJbx4rjQtn/hKgeg4=
+			L88AcwmEUr/kC2MUMWkuPop6tjo=
 			</data>
 			<key>hash2</key>
 			<data>
-			K56hYl/6GtNR99AT7bSgd69VzxeBWwjd05IGkKAMwf0=
+			DoV3BVzfVKsHr4udJ3aU19c1/qVYWheVNiO250eWSYg=
 			</data>
 		</dict>
 		<key>Modules/TapTapCloudSaveSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -141,22 +141,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wg02bMtm79S6xKa0RoVFd0ep1HU=
+			vB2JivcVK2ZKmLlqdEAGoNxDoQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			6tZF8KtnLJi8J09OPr3afWy1q8z93Bg1lamPPHz66Nc=
+			gGNikFygJ6BYeAO2yoctqnZkwzVqIOVPsAhETrNNnEs=
 			</data>
 		</dict>
 		<key>Modules/TapTapCloudSaveSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cqXEiFRsyEWJbx4rjQtn/hKgeg4=
+			L88AcwmEUr/kC2MUMWkuPop6tjo=
 			</data>
 			<key>hash2</key>
 			<data>
-			K56hYl/6GtNR99AT7bSgd69VzxeBWwjd05IGkKAMwf0=
+			DoV3BVzfVKsHr4udJ3aU19c1/qVYWheVNiO250eWSYg=
 			</data>
 		</dict>
 		<key>Modules/TapTapCloudSaveSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -196,11 +196,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QB9cg//quuNX9gJ1bK6n6haxV3w=
+			GC1ce25cIW9IkuQB6d6HXXMmy7Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			YQg8/6LL639V2ecqMDfzgwa4WidTStT+qz8jMhAjk1Y=
+			uqVfEhO3qkQPhp9Wpdp99F4N19yB//qjHMerNWLyQ0g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

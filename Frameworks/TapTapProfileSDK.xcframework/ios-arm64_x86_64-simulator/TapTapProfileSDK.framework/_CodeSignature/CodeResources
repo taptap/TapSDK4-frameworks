@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/TapTapProfileSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		blVUkKPssiTkdNzDfQXgP2t0COk=
+		KjZME4FjH22PWKGPaBUB+JNjC5g=
 		</data>
 		<key>Modules/TapTapProfileSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/TapTapProfileSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OAmtjrjm6MwbBXq2Qftcv6XvK8A=
+		UwtEJflKA2IFJkUdNZ2ayKV0DlI=
 		</data>
 		<key>Modules/TapTapProfileSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		blVUkKPssiTkdNzDfQXgP2t0COk=
+		KjZME4FjH22PWKGPaBUB+JNjC5g=
 		</data>
 		<key>Modules/TapTapProfileSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/TapTapProfileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xY2luglA+CoeadHvTcuBZ2aEW7A=
+		tThsRUwow/EcmVRN5KMAr+u6+Nw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,11 +55,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			blVUkKPssiTkdNzDfQXgP2t0COk=
+			KjZME4FjH22PWKGPaBUB+JNjC5g=
 			</data>
 			<key>hash2</key>
 			<data>
-			VEF8ZZ5P+xKmbGsiSb9MWUNS88+wfpDXaZLr7UaZyRE=
+			8b9W5ZswuDVpQWpFJiROPREh0xOJooQ2MUnvVm7LdtY=
 			</data>
 		</dict>
 		<key>Modules/TapTapProfileSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -99,22 +99,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OAmtjrjm6MwbBXq2Qftcv6XvK8A=
+			UwtEJflKA2IFJkUdNZ2ayKV0DlI=
 			</data>
 			<key>hash2</key>
 			<data>
-			yBVBfL9cJRfitVGZRI+V6V1CmGJIktZG1LsYJPnQIqc=
+			mH1AXUyVM/fFmq3mTrV82bjSBaKFEifoV4zmW9OwTpE=
 			</data>
 		</dict>
 		<key>Modules/TapTapProfileSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			blVUkKPssiTkdNzDfQXgP2t0COk=
+			KjZME4FjH22PWKGPaBUB+JNjC5g=
 			</data>
 			<key>hash2</key>
 			<data>
-			VEF8ZZ5P+xKmbGsiSb9MWUNS88+wfpDXaZLr7UaZyRE=
+			8b9W5ZswuDVpQWpFJiROPREh0xOJooQ2MUnvVm7LdtY=
 			</data>
 		</dict>
 		<key>Modules/TapTapProfileSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -154,11 +154,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xY2luglA+CoeadHvTcuBZ2aEW7A=
+			tThsRUwow/EcmVRN5KMAr+u6+Nw=
 			</data>
 			<key>hash2</key>
 			<data>
-			N+DvPD83LD7GBl6OUd2StkqmtoFdlMmwb0iKp5duPIw=
+			tay8f3XjKo5+bJc3K2VQN0B3IXQkPkHkUZVLJkZ/vn8=
 			</data>
 		</dict>
 	</dict>
