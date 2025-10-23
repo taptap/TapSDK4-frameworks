@@ -17,6 +17,5 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "Frameworks/TapTapRelationSDK.xcframework", "Frameworks/bifrost_sdk.xcframework", "Frameworks/TapTapSDKBridgeCore.xcframework"
   s.resources = 'Frameworks/TapTapRelationResource.bundle'
   s.dependency 'TapTapProfileSDK', s.version.to_s
-  s.weak_frameworks = 'CoreAudioTypes'
 
 end

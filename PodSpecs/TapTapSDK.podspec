@@ -45,10 +45,10 @@ Pod::Spec.new do |s|
     ]
 
     gid.frameworks = ['UIKit', 'Foundation', 'CoreTelephony', 'SystemConfiguration', 'AdSupport', 'GameController']
-    gid.weak_frameworks = ['CoreAudioTypes']
     gid.libraries = ['c++']
+    # 注意：CoreAudioTypes 实际未使用，但 Xcode 15+ 的 auto-linking 会误触发，使用弱链接避免错误
     gid.xcconfig = {
-      'OTHER_LDFLAGS' => '-lz.1'
+      'OTHER_LDFLAGS' => '-lz.1 -weak_framework CoreAudioTypes'
     }
   end
 
@@ -112,9 +112,9 @@ Pod::Spec.new do |s|
       "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
     cloudsave.dependency 'TapTapSDK/Login'
-    cloudsave.weak_frameworks = ['CoreAudioTypes']
+    # 注意：CoreAudioTypes 实际未使用，但 Xcode 15+ 的 auto-linking 会误触发，使用弱链接避免错误
     cloudsave.xcconfig = {
-      'OTHER_LDFLAGS' => '-lz.1'
+      'OTHER_LDFLAGS' => '-lz.1 -weak_framework CoreAudioTypes'
     }
   end
 
@@ -151,7 +151,10 @@ Pod::Spec.new do |s|
     ]
     relation.resources = 'Frameworks/TapTapRelationResource.bundle'
     relation.dependency 'TapTapSDK/Profile'
-    relation.weak_frameworks = ['CoreAudioTypes']
+    # 注意：CoreAudioTypes 实际未使用，但 Xcode 15+ 的 auto-linking 会误触发，使用弱链接避免错误
+    relation.xcconfig = {
+      'OTHER_LDFLAGS' => '-weak_framework CoreAudioTypes'
+    }
   end
 
   # ==================== Leaderboard 模块 ====================
