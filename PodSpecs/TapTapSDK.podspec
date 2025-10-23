@@ -40,10 +40,12 @@ Pod::Spec.new do |s|
       "Frameworks/THEMISLite.xcframework",
       "Frameworks/TapTapNetworkSDK.xcframework",
       "Frameworks/TapTapGidSDK.xcframework",
-      "Frameworks/tapsdkcorecpp.xcframework"
+      "Frameworks/tapsdkcorecpp.xcframework",
+      "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
 
     gid.frameworks = ['UIKit', 'Foundation', 'CoreTelephony', 'SystemConfiguration', 'AdSupport', 'GameController']
+    gid.weak_frameworks = ['CoreAudioTypes']
     gid.libraries = ['c++']
     gid.xcconfig = {
       'OTHER_LDFLAGS' => '-lz.1'
@@ -61,7 +63,10 @@ Pod::Spec.new do |s|
 
   # ==================== Login 模块 ====================
   s.subspec 'Login' do |login|
-    login.vendored_frameworks = "Frameworks/TapTapLoginSDK.xcframework"
+    login.vendored_frameworks = [
+      "Frameworks/TapTapLoginSDK.xcframework",
+      "Frameworks/TapTapSDKBridgeCore.xcframework"
+    ]
     login.resources = 'Frameworks/TapTapLoginResource.bundle'
     login.dependency 'TapTapSDK/Core'
 
@@ -71,21 +76,30 @@ Pod::Spec.new do |s|
 
   # ==================== Achievement 模块 ====================
   s.subspec 'Achievement' do |achievement|
-    achievement.vendored_frameworks = "Frameworks/TapTapAchievementSDK.xcframework"
+    achievement.vendored_frameworks = [
+      "Frameworks/TapTapAchievementSDK.xcframework",
+      "Frameworks/TapTapSDKBridgeCore.xcframework"
+    ]
     achievement.resources = 'Frameworks/TapTapAchievementResource.bundle'
     achievement.dependency 'TapTapSDK/Login'
   end
 
   # ==================== Moment 模块 ====================
   s.subspec 'Moment' do |moment|
-    moment.vendored_frameworks = "Frameworks/TapTapMomentSDK.xcframework"
+    moment.vendored_frameworks = [
+      "Frameworks/TapTapMomentSDK.xcframework",
+      "Frameworks/TapTapSDKBridgeCore.xcframework"
+    ]
     moment.resources = 'Frameworks/TapTapMomentResource.bundle'
     moment.dependency 'TapTapSDK/Login'
   end
 
   # ==================== Compliance 模块 ====================
   s.subspec 'Compliance' do |compliance|
-    compliance.vendored_frameworks = "Frameworks/TapTapComplianceSDK.xcframework"
+    compliance.vendored_frameworks = [
+      "Frameworks/TapTapComplianceSDK.xcframework",
+      "Frameworks/TapTapSDKBridgeCore.xcframework"
+    ]
     compliance.resources = 'Frameworks/TapTapComplianceResource.bundle'
     compliance.dependency 'TapTapSDK/Login'
   end
@@ -94,9 +108,11 @@ Pod::Spec.new do |s|
   s.subspec 'CloudSave' do |cloudsave|
     cloudsave.vendored_frameworks = [
       "Frameworks/TapTapCloudSaveSDK.xcframework",
-      "Frameworks/cloudsave_sdk.xcframework"
+      "Frameworks/cloudsave_sdk.xcframework",
+      "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
     cloudsave.dependency 'TapTapSDK/Login'
+    cloudsave.weak_frameworks = ['CoreAudioTypes']
     cloudsave.xcconfig = {
       'OTHER_LDFLAGS' => '-lz.1'
     }
@@ -118,7 +134,10 @@ Pod::Spec.new do |s|
 
   # ==================== RelationLite 模块 ====================
   s.subspec 'RelationLite' do |relationlite|
-    relationlite.vendored_frameworks = "Frameworks/TapTapRelationLiteSDK.xcframework"
+    relationlite.vendored_frameworks = [
+      "Frameworks/TapTapRelationLiteSDK.xcframework",
+      "Frameworks/TapTapSDKBridgeCore.xcframework"
+    ]
     relationlite.resources = 'Frameworks/TapTapRelationLiteResource.bundle'
     relationlite.dependency 'TapTapSDK/Profile'
   end
@@ -127,15 +146,20 @@ Pod::Spec.new do |s|
   s.subspec 'Relation' do |relation|
     relation.vendored_frameworks = [
       "Frameworks/TapTapRelationSDK.xcframework",
-      "Frameworks/bifrost_sdk.xcframework"
+      "Frameworks/bifrost_sdk.xcframework",
+      "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
     relation.resources = 'Frameworks/TapTapRelationResource.bundle'
     relation.dependency 'TapTapSDK/Profile'
+    relation.weak_frameworks = ['CoreAudioTypes']
   end
 
   # ==================== Leaderboard 模块 ====================
   s.subspec 'Leaderboard' do |leaderboard|
-    leaderboard.vendored_frameworks = "Frameworks/TapTapLeaderboardSDK.xcframework"
+    leaderboard.vendored_frameworks = [
+      "Frameworks/TapTapLeaderboardSDK.xcframework",
+      "Frameworks/TapTapSDKBridgeCore.xcframework"
+    ]
     leaderboard.resources = 'Frameworks/TapTapLeaderboardResource.bundle'
     leaderboard.dependency 'TapTapSDK/Profile'
   end

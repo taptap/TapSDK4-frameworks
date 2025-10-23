@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
   s.static_framework = true
-  s.vendored_frameworks = "Frameworks/TapTapRelationLiteSDK.xcframework"
+  s.vendored_frameworks = "Frameworks/TapTapRelationLiteSDK.xcframework", "Frameworks/TapTapSDKBridgeCore.xcframework"
   s.resources = 'Frameworks/TapTapRelationLiteResource.bundle'
   s.dependency 'TapTapProfileSDK', s.version.to_s
 

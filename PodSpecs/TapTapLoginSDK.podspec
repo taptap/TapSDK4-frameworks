@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
   s.static_framework = true
-  s.vendored_frameworks = "Frameworks/TapTapLoginSDK.xcframework"
+  s.vendored_frameworks = "Frameworks/TapTapLoginSDK.xcframework", "Frameworks/TapTapSDKBridgeCore.xcframework"
   s.resources = 'Frameworks/TapTapLoginResource.bundle'
   s.dependency 'TapTapCoreSDK', s.version.to_s
   s.frameworks = 'UIKit',

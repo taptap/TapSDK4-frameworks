@@ -14,8 +14,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
   s.static_framework = true
-  s.vendored_frameworks = "Frameworks/TapTapRelationSDK.xcframework", "Frameworks/bifrost_sdk.xcframework"
+  s.vendored_frameworks = "Frameworks/TapTapRelationSDK.xcframework", "Frameworks/bifrost_sdk.xcframework", "Frameworks/TapTapSDKBridgeCore.xcframework"
   s.resources = 'Frameworks/TapTapRelationResource.bundle'
   s.dependency 'TapTapProfileSDK', s.version.to_s
+  s.weak_frameworks = 'CoreAudioTypes'
 
 end
