@@ -46,9 +46,12 @@ Pod::Spec.new do |s|
 
     gid.frameworks = ['UIKit', 'Foundation', 'CoreTelephony', 'SystemConfiguration', 'AdSupport', 'GameController']
     gid.libraries = ['c++']
-    # 注意：CoreAudioTypes 实际未使用，但 Xcode 15+ 的 auto-linking 会误触发，使用弱链接避免错误
     gid.xcconfig = {
-      'OTHER_LDFLAGS' => '-lz.1 -weak_framework CoreAudioTypes'
+      'OTHER_LDFLAGS' => '-lz.1'
+    }
+    # 禁用 auto-linking 以避免 Xcode 15+ 误链接 CoreAudioTypes（header-only framework）
+    gid.pod_target_xcconfig = {
+      'CLANG_MODULES_AUTOLINK' => 'NO'
     }
   end
 
@@ -112,9 +115,12 @@ Pod::Spec.new do |s|
       "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
     cloudsave.dependency 'TapTapSDK/Login'
-    # 注意：CoreAudioTypes 实际未使用，但 Xcode 15+ 的 auto-linking 会误触发，使用弱链接避免错误
     cloudsave.xcconfig = {
-      'OTHER_LDFLAGS' => '-lz.1 -weak_framework CoreAudioTypes'
+      'OTHER_LDFLAGS' => '-lz.1'
+    }
+    # 禁用 auto-linking 以避免 Xcode 15+ 误链接 CoreAudioTypes（header-only framework）
+    cloudsave.pod_target_xcconfig = {
+      'CLANG_MODULES_AUTOLINK' => 'NO'
     }
   end
 
@@ -151,9 +157,9 @@ Pod::Spec.new do |s|
     ]
     relation.resources = 'Frameworks/TapTapRelationResource.bundle'
     relation.dependency 'TapTapSDK/Profile'
-    # 注意：CoreAudioTypes 实际未使用，但 Xcode 15+ 的 auto-linking 会误触发，使用弱链接避免错误
-    relation.xcconfig = {
-      'OTHER_LDFLAGS' => '-weak_framework CoreAudioTypes'
+    # 禁用 auto-linking 以避免 Xcode 15+ 误链接 CoreAudioTypes（header-only framework）
+    relation.pod_target_xcconfig = {
+      'CLANG_MODULES_AUTOLINK' => 'NO'
     }
   end
 
