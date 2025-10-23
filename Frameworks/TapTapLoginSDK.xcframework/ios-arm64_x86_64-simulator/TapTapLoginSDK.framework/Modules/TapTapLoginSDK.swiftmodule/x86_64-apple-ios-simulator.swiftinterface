@@ -9,24 +9,11 @@ import TapTapBasicToolsSDK
 import TapTapCoreSDK
 @_exported import TapTapLoginSDK
 import TapTapNetworkSDK
-import TapTapSDKBridgeCore
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapLoginSwiftBridgeService : ObjectiveC.NSObject {
-  @objc public static let shared: TapTapLoginSDK.TapLoginSwiftBridgeService
-  @objc public func loginWithScopes(scopes: [Swift.String], completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func logout(completion: ((Swift.String) -> Swift.Void)?)
-  @objc public func getCurrentTapAccount(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc(TapLoginSwiftBridgeInitializer) public class TapLoginSwiftBridgeInitializer : ObjectiveC.NSObject {
-  @objc public static func registerWithSwiftBridge()
-  @objc override dynamic public init()
-  @objc deinit
-}
 @objc @objcMembers public class UserInfo : ObjectiveC.NSObject {
   @objc public var name: Swift.String? {
     get

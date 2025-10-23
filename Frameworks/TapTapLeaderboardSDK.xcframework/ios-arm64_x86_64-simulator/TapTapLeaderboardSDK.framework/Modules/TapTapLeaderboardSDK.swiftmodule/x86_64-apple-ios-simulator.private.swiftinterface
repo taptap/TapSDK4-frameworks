@@ -10,7 +10,6 @@ import TapTapCoreSDK
 import TapTapLoginSDK
 import TapTapNetworkSDK
 import TapTapProfileSDK
-import TapTapSDKBridgeCore
 import UIKit
 import WebKit
 import _Concurrency
@@ -31,25 +30,6 @@ extension TapTapLeaderboardSDK.TapWebViewJavascriptBridge : WebKit.WKNavigationD
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapLeaderboardSwiftBridgeService : ObjectiveC.NSObject {
-  @objc public static let shared: TapTapLeaderboardSDK.TapLeaderboardSwiftBridgeService
-  @objc public func openLeaderboard(leaderboardId: Swift.String, leaderboardCollection: Swift.String?)
-  @objc public func openUserProfile(openId: Swift.String?, unionId: Swift.String?)
-  @objc public func submitScores(scores: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func loadLeaderboardScores(leaderboardId: Swift.String, leaderboardCollection: Swift.String?, nextPage: Swift.String?, periodToken: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func loadCurrentPlayerLeaderboardScore(leaderboardId: Swift.String, leaderboardCollection: Swift.String?, periodToken: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func loadCurrentPlayerLeaderboardScore(leaderboardId: Swift.String, leaderboardCollection: Swift.String?, periodToken: Swift.String?, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func loadPlayerCenteredScores(leaderboardId: Swift.String, leaderboardCollection: Swift.String?, periodToken: Swift.String?, maxCount: Foundation.NSNumber?, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func loadPlayerCenteredScores(leaderboardId: Swift.String, leaderboardCollection: Swift.String?, periodToken: Swift.String?, maxCount: Foundation.NSNumber?, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func setShareCallback(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func registerLeaderboardCallback(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc(TapLeaderboardSwiftBridgeInitializer) public class TapLeaderboardSwiftBridgeInitializer : ObjectiveC.NSObject {
-  @objc public static func registerWithSwiftBridge()
-  @objc override dynamic public init()
-  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class TapLeaderboardBizErrorConverter : ObjectiveC.NSObject {
   @objc public static func convert(error: any Swift.Error) -> TapTapLeaderboardSDK.TapLeaderboardError

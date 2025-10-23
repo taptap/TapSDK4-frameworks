@@ -1089,963 +1089,6 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "TapTapCloudSaveSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "TapTapSDKBridgeCore",
-        "printedName": "TapTapSDKBridgeCore",
-        "declKind": "Import",
-        "moduleName": "TapTapCloudSaveSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "TapTapBasicToolsSDK",
-        "printedName": "TapTapBasicToolsSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapCloudSaveSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapCloudSaveSwiftBridgeInitializer",
-        "printedName": "TapCloudSaveSwiftBridgeInitializer",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TapCloudSaveSwiftBridgeInitializer",
-                "printedName": "TapTapCloudSaveSDK.TapCloudSaveSwiftBridgeInitializer",
-                "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeInitializer"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeInitializer(im)init",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC22SwiftBridgeInitializerCACycfc",
-            "moduleName": "TapTapCloudSaveSDK",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "registerWithSwiftBridge",
-            "printedName": "registerWithSwiftBridge()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeInitializer(cm)registerWithSwiftBridge",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC22SwiftBridgeInitializerC012registerWitheF0yyFZ",
-            "moduleName": "TapTapCloudSaveSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeInitializer",
-        "mangledName": "$s03TapA12CloudSaveSDK0abC22SwiftBridgeInitializerC",
-        "moduleName": "TapTapCloudSaveSDK",
-        "objc_name": "TapCloudSaveSwiftBridgeInitializer",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TapTapCloudSaveSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapCloudSaveSwiftBridgeVerification",
-        "printedName": "TapCloudSaveSwiftBridgeVerification",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "verifySwiftBridgeUsage",
-            "printedName": "verifySwiftBridgeUsage()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeVerification(cm)verifySwiftBridgeUsage",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC23SwiftBridgeVerificationC06verifyeF5UsageyyFZ",
-            "moduleName": "TapTapCloudSaveSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isUsingSwiftBridge",
-            "printedName": "isUsingSwiftBridge()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeVerification(cm)isUsingSwiftBridge",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC23SwiftBridgeVerificationC07isUsingeF0SbyFZ",
-            "moduleName": "TapTapCloudSaveSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "printBridgeStatus",
-            "printedName": "printBridgeStatus()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeVerification(cm)printBridgeStatus",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC23SwiftBridgeVerificationC05printF6StatusyyFZ",
-            "moduleName": "TapTapCloudSaveSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TapCloudSaveSwiftBridgeVerification",
-                "printedName": "TapTapCloudSaveSDK.TapCloudSaveSwiftBridgeVerification",
-                "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeVerification"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeVerification(im)init",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC23SwiftBridgeVerificationCACycfc",
-            "moduleName": "TapTapCloudSaveSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeVerification",
-        "mangledName": "$s03TapA12CloudSaveSDK0abC23SwiftBridgeVerificationC",
-        "moduleName": "TapTapCloudSaveSDK",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TapTapCloudSaveSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "TapTapBasicToolsSDK",
-        "printedName": "TapTapBasicToolsSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapCloudSaveSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapCloudSaveSwiftBridgeService",
-        "printedName": "TapCloudSaveSwiftBridgeService",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TapCloudSaveSwiftBridgeService",
-                "printedName": "TapTapCloudSaveSDK.TapCloudSaveSwiftBridgeService",
-                "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService(cpy)shared",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC6sharedACvpZ",
-            "moduleName": "TapTapCloudSaveSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TapCloudSaveSwiftBridgeService",
-                    "printedName": "TapTapCloudSaveSDK.TapCloudSaveSwiftBridgeService",
-                    "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService(cm)shared",
-                "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC6sharedACvgZ",
-                "moduleName": "TapTapCloudSaveSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "registerWithSwiftBridge",
-            "printedName": "registerWithSwiftBridge()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService(cm)registerWithSwiftBridge",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC012registerWitheF0yyFZ",
-            "moduleName": "TapTapCloudSaveSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "registerCloudSaveCallback",
-            "printedName": "registerCloudSaveCallback(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService(im)registerCloudSaveCallback:",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC08registerbC8CallbackyyySScF",
-            "moduleName": "TapTapCloudSaveSDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "cleanup",
-            "printedName": "cleanup()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService(im)cleanup",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC7cleanupyyF",
-            "moduleName": "TapTapCloudSaveSDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "createArchive",
-            "printedName": "createArchive(metadata:filePath:coverPath:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService(im)createArchiveWithMetadata:filePath:coverPath:completion:",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC13createArchive8metadata8filePath05coverL010completionySS_S2SSgySSctF",
-            "moduleName": "TapTapCloudSaveSDK",
-            "objc_name": "createArchiveWithMetadata:filePath:coverPath:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateArchive",
-            "printedName": "updateArchive(uuid:metadata:filePath:coverPath:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService(im)updateArchiveWithUuid:metadata:filePath:coverPath:completion:",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC13updateArchive4uuid8metadata8filePath05coverM010completionySS_S3SSgySSctF",
-            "moduleName": "TapTapCloudSaveSDK",
-            "objc_name": "updateArchiveWithUuid:metadata:filePath:coverPath:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "deleteArchive",
-            "printedName": "deleteArchive(uuid:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService(im)deleteArchiveWithUuid:completion:",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC13deleteArchive4uuid10completionySS_ySSctF",
-            "moduleName": "TapTapCloudSaveSDK",
-            "objc_name": "deleteArchiveWithUuid:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getArchiveList",
-            "printedName": "getArchiveList(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService(im)getArchiveListWithCompletion:",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC14getArchiveList10completionyySSc_tF",
-            "moduleName": "TapTapCloudSaveSDK",
-            "objc_name": "getArchiveListWithCompletion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getArchiveData",
-            "printedName": "getArchiveData(uuid:fileID:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService(im)getArchiveDataWithUuid:fileID:completion:",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC14getArchiveData4uuid6fileID10completionySS_SSySSctF",
-            "moduleName": "TapTapCloudSaveSDK",
-            "objc_name": "getArchiveDataWithUuid:fileID:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getArchiveCover",
-            "printedName": "getArchiveCover(uuid:fileID:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService(im)getArchiveCoverWithUuid:fileID:completion:",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC15getArchiveCover4uuid6fileID10completionySS_SSySSctF",
-            "moduleName": "TapTapCloudSaveSDK",
-            "objc_name": "getArchiveCoverWithUuid:fileID:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onResult",
-            "printedName": "onResult(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService(im)onResult:",
-            "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC8onResultyySiF",
-            "moduleName": "TapTapCloudSaveSDK",
-            "objc_name": "onResult:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@TapTapCloudSaveSDK@objc(cs)TapCloudSaveSwiftBridgeService",
-        "mangledName": "$s03TapA12CloudSaveSDK0abC18SwiftBridgeServiceC",
-        "moduleName": "TapTapCloudSaveSDK",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "TapTapCloudSaveCallback",
-            "printedName": "TapTapCloudSaveCallback",
-            "usr": "c:@M@TapTapCloudSaveSDK@objc(pl)TapTapCloudSaveCallback",
-            "mangledName": "$s03TapA12CloudSaveSDK0aabC8CallbackP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "TapTapCloudSaveSDK",
         "declAttributes": [
           "RawDocComment"
@@ -5602,210 +4645,203 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
       "kind": "BooleanLiteral",
       "offset": 515,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
       "kind": "StringLiteral",
       "offset": 3854,
       "length": 19,
       "value": "\"TapCloudSaveToken\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
       "kind": "StringLiteral",
       "offset": 5053,
       "length": 48,
       "value": "\"CloudSaveToken(kid: \""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
       "kind": "StringLiteral",
       "offset": 5080,
       "length": 1,
       "value": "\", valid: \""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
       "kind": "StringLiteral",
       "offset": 5099,
       "length": 1,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
       "kind": "StringLiteral",
       "offset": 5179,
       "length": 134,
       "value": "\"CloudSaveToken {\n    kid: \""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
       "kind": "StringLiteral",
       "offset": 5231,
       "length": 3,
       "value": "\"\n    key: [REDACTED]\n    isValid: \""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/CloudSaveToken.swift",
       "kind": "StringLiteral",
       "offset": 5291,
       "length": 1,
       "value": "\"\n}\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Private\/TapCloudSaveSwiftBridgeService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13227,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Private\/TapCloudSaveRouterPath.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Private\/TapCloudSaveRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 271,
       "length": 29,
       "value": "\"TapTapSDK\/SetInitialOptions\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Private\/TapCloudSaveRouterPath.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Private\/TapCloudSaveRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 358,
       "length": 19,
       "value": "\"TapTapSDK\/SendRnd\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Private\/TapCloudSaveRouterPath.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Private\/TapCloudSaveRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 428,
       "length": 17,
       "value": "\"TapTapSDK\/Login\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Private\/TapCloudSaveRouterPath.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Private\/TapCloudSaveRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 497,
       "length": 18,
       "value": "\"TapTapSDK\/Logout\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveMetadata.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveMetadata.swift",
       "kind": "BooleanLiteral",
       "offset": 402,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
       "kind": "BooleanLiteral",
       "offset": 620,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
       "kind": "StringLiteral",
       "offset": 2992,
       "length": 11,
       "value": "\"save_size\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
       "kind": "StringLiteral",
       "offset": 3029,
       "length": 12,
       "value": "\"cover_size\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
       "kind": "StringLiteral",
       "offset": 3064,
       "length": 9,
       "value": "\"file_id\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
       "kind": "StringLiteral",
       "offset": 3101,
       "length": 14,
       "value": "\"created_time\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/ArchiveData.swift",
       "kind": "StringLiteral",
       "offset": 3144,
       "length": 15,
       "value": "\"modified_time\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapTapCloudSave.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapTapCloudSave.swift",
       "kind": "BooleanLiteral",
       "offset": 393,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapTapCloudSave.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapTapCloudSave.swift",
       "kind": "BooleanLiteral",
       "offset": 466,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapTapCloudSave.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapTapCloudSave.swift",
       "kind": "StringLiteral",
       "offset": 3561,
       "length": 50,
       "value": "\"🔧 CloudSave static initialization starting...\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapTapCloudSave.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapTapCloudSave.swift",
       "kind": "StringLiteral",
       "offset": 3627,
       "length": 86,
       "value": "\"🔍 CloudSave Swift TapSDKMediator class: \""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapTapCloudSave.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapTapCloudSave.swift",
       "kind": "StringLiteral",
       "offset": 3712,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapTapCloudSave.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapTapCloudSave.swift",
       "kind": "StringLiteral",
       "offset": 3865,
       "length": 47,
       "value": "\"✅ CloudSave static initialization completed\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapCloudSaveResultCode.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapCloudSaveResultCode.swift",
       "kind": "IntegerLiteral",
       "offset": 254,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapCloudSaveResultCode.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapCloudSaveResultCode.swift",
       "kind": "IntegerLiteral",
       "offset": 332,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapCloudSaveResultCode.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapCloudSaveResultCode.swift",
       "kind": "IntegerLiteral",
       "offset": 381,
       "length": 6,
       "value": "300001"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapCloudSaveResultCode.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCloudSave\/Public\/TapCloudSaveResultCode.swift",
       "kind": "IntegerLiteral",
       "offset": 428,
       "length": 6,

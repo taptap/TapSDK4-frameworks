@@ -10,35 +10,9 @@ import TapTapCoreSDK
 import TapTapLoginSDK
 @_exported import TapTapMomentSDK
 import TapTapNetworkSDK
-import TapTapSDKBridgeCore
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @objc(TapMomentSwiftBridgeInitializer) public class TapMomentSwiftBridgeInitializer : ObjectiveC.NSObject {
-  @objc public static func registerWithSwiftBridge()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapMomentSwiftBridgeService : ObjectiveC.NSObject {
-  @objc public static let shared: TapTapMomentSDK.TapMomentSwiftBridgeService
-  @objc public func setCallback(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func setCallback(callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func fetchNotification(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func fetchNotification(callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func close(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func close(callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func closeWithTitle(title: Swift.String, content: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func closeWithTitle(title: Swift.String, content: Swift.String, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func needDeferSystemGestures(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func needDeferSystemGestures(callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func openMoment(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func openMoment(callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func openScene(sceneId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func openScene(sceneId: Swift.String, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func publish(publishMetaData: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func publish(publishMetaData: Swift.String, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc deinit
-}
 public enum SwiftyJSONError : Swift.Int, Swift.Error {
   case unsupportedType
   case indexOutOfBounds

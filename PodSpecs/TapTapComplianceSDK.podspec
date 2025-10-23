@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapComplianceSDK'
-  s.version          = '4.8.4-beta.1'
+  s.version          = '4.8.4-alpha.127'
   s.summary          = '提供 TapTap 合规认证能力。'
   s.swift_version    = '5.0'
   s.description      = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
   s.static_framework = true
-  s.vendored_frameworks = "Frameworks/TapTapComplianceSDK.xcframework", "Frameworks/TapTapSDKBridgeCore.xcframework"
+  s.vendored_frameworks = "Frameworks/TapTapComplianceSDK.xcframework"
   s.resources = 'Frameworks/TapTapComplianceResource.bundle'
   s.dependency 'TapTapLoginSDK', s.version.to_s
 

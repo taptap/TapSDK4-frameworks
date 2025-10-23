@@ -100,13 +100,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 添加动态事件属性，每次发送事件会调用dynamicPropertiesCaculator
 /// @param dynamicPropertiesCaculator 动态属性回调，需返回希望上传的属性字典
 + (void)registerDynamicProperties:(NSDictionary* (^)(void))dynamicPropertiesCaculator;
-
-/// 获取 TapAid
-+ (void)requestTapAidWithCompletionHandler:(void (^)(NSDictionary * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler;
-
-/// 获取 TapAid 归因结果
-+ (void)requestTapAidAttributionWithCompletionHandler:(void (^)(NSDictionary * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler;
-
 @end
 
 NS_ASSUME_NONNULL_END

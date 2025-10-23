@@ -56,6 +56,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIViewController *)findTopViewController;
 
 + (UIViewController *)findUIViewController:(UIViewController *)controller;
+
++ (UIScreen *) getMainScreen;
+
++ (UIWindow *) getCurrentKeyWindow;
 @end
 
 NS_ASSUME_NONNULL_END

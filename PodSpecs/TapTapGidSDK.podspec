@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapGidSDK'
-  s.version          = '4.8.4-beta.1'
+  s.version          = '4.8.4-alpha.127'
   s.summary          = '提供获取 GID 的功能'
 
   s.description      = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
   s.static_framework = true
-  s.vendored_frameworks = "Frameworks/TapTapBasicToolsSDK.xcframework", "Frameworks/THEMISLite.xcframework", "Frameworks/TapTapNetworkSDK.xcframework", "Frameworks/TapTapGidSDK.xcframework", "Frameworks/tapsdkcorecpp.xcframework", "Frameworks/TapTapSDKBridgeCore.xcframework"
+  s.vendored_frameworks = "Frameworks/TapTapBasicToolsSDK.xcframework", "Frameworks/THEMISLite.xcframework", "Frameworks/TapTapNetworkSDK.xcframework", "Frameworks/TapTapGidSDK.xcframework", "Frameworks/tapsdkcorecpp.xcframework"
 
   s.frameworks = 'UIKit', 'Foundation', 'CoreTelephony', 'SystemConfiguration', 'AdSupport', 'GameController'
     

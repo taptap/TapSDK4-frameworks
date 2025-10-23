@@ -444,34 +444,10 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK24TapLeaderboardFilterItem")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS_NAMED("TapLeaderboardSwiftBridgeInitializer")
-@interface TapLeaderboardSwiftBridgeInitializer : NSObject
-+ (void)registerWithSwiftBridge;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSNumber;
-SWIFT_CLASS("_TtC20TapTapLeaderboardSDK32TapLeaderboardSwiftBridgeService")
-@interface TapLeaderboardSwiftBridgeService : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapLeaderboardSwiftBridgeService * _Nonnull shared;)
-+ (TapLeaderboardSwiftBridgeService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)openLeaderboardWithLeaderboardId:(NSString * _Nonnull)leaderboardId leaderboardCollection:(NSString * _Nullable)leaderboardCollection;
-- (void)openUserProfileWithOpenId:(NSString * _Nullable)openId unionId:(NSString * _Nullable)unionId;
-- (void)submitScoresWithScores:(NSString * _Nonnull)scores completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-- (void)loadLeaderboardScoresWithLeaderboardId:(NSString * _Nonnull)leaderboardId leaderboardCollection:(NSString * _Nullable)leaderboardCollection nextPage:(NSString * _Nullable)nextPage periodToken:(NSString * _Nullable)periodToken completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-- (void)loadCurrentPlayerLeaderboardScoreWithLeaderboardId:(NSString * _Nonnull)leaderboardId leaderboardCollection:(NSString * _Nullable)leaderboardCollection periodToken:(NSString * _Nullable)periodToken completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-- (void)loadCurrentPlayerLeaderboardScoreWithLeaderboardId:(NSString * _Nonnull)leaderboardId leaderboardCollection:(NSString * _Nullable)leaderboardCollection periodToken:(NSString * _Nullable)periodToken callbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-- (void)loadPlayerCenteredScoresWithLeaderboardId:(NSString * _Nonnull)leaderboardId leaderboardCollection:(NSString * _Nullable)leaderboardCollection periodToken:(NSString * _Nullable)periodToken maxCount:(NSNumber * _Nullable)maxCount completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-- (void)loadPlayerCenteredScoresWithLeaderboardId:(NSString * _Nonnull)leaderboardId leaderboardCollection:(NSString * _Nullable)leaderboardCollection periodToken:(NSString * _Nullable)periodToken maxCount:(NSNumber * _Nullable)maxCount callbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-- (void)setShareCallbackWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-- (void)registerLeaderboardCallbackWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-@end
-
 @class TapTapLeaderboardCollection;
 @class TapTapLeaderboardScoreItem;
 @protocol TapTapLeaderboardResponseCallback;
+@class NSNumber;
 @protocol TapTapLeaderboardCallback;
 @protocol TapTapLeaderboardShareCallback;
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK17TapTapLeaderboard")

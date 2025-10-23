@@ -20,7 +20,15 @@ typedef NS_ENUM(NSInteger, TapTapSDKLogLevel) {
 
 + (void)enableLog:(BOOL)enable;
 
+/**
+ 输出 Debug 日志，该日志只在 xcode 调试时输出，在 Console 中不显示
+ */
 + (void)print:(NSString *)log;
+
+/**
+ 输出 Info 日志，在 Xcode 调试和 Console 中均显示
+ */
++ (void)printInfo:(NSString *)log;
 
 + (void)print:(NSString *)log level:(TapTapSDKLogLevel)level;
 

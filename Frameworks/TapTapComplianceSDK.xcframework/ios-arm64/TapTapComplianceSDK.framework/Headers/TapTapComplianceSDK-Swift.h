@@ -498,29 +498,6 @@ typedef SWIFT_ENUM(NSInteger, TapComplianceServiceResult, open) {
   TapComplianceServiceResultRealNameStop = 9002,
 };
 
-SWIFT_CLASS_NAMED("TapComplianceSwiftBridgeInitializer")
-@interface TapComplianceSwiftBridgeInitializer : NSObject
-+ (void)registerWithSwiftBridge;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC19TapTapComplianceSDK31TapComplianceSwiftBridgeService")
-@interface TapComplianceSwiftBridgeService : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapComplianceSwiftBridgeService * _Nonnull shared;)
-+ (TapComplianceSwiftBridgeService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)startupWithUserId:(NSString * _Nonnull)userId;
-- (void)registerComplianceCallbackWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-- (void)setTestEnvironmentWithIsTest:(BOOL)isTest;
-- (void)getCurrentAccessTokenWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-- (void)getUserRemainTimeWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-- (void)getUserAgeRangeWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-- (void)exit;
-- (void)submitPaymentWithAmount:(int64_t)amount completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-- (void)checkPaymentLimitWithAmount:(int64_t)amount completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
-@end
-
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

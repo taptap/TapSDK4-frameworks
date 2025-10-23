@@ -47,1052 +47,6 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "TapTapMomentSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "TapTapSDKBridgeCore",
-        "printedName": "TapTapSDKBridgeCore",
-        "declKind": "Import",
-        "moduleName": "TapTapMomentSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "TapTapBasicToolsSDK",
-        "printedName": "TapTapBasicToolsSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapMomentSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapMomentSwiftBridgeInitializer",
-        "printedName": "TapMomentSwiftBridgeInitializer",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "registerWithSwiftBridge",
-            "printedName": "registerWithSwiftBridge()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeInitializer(cm)registerWithSwiftBridge",
-            "mangledName": "$s03TapA9MomentSDK0aB22SwiftBridgeInitializerC012registerWithdE0yyFZ",
-            "moduleName": "TapTapMomentSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TapMomentSwiftBridgeInitializer",
-                "printedName": "TapTapMomentSDK.TapMomentSwiftBridgeInitializer",
-                "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeInitializer"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeInitializer(im)init",
-            "mangledName": "$s03TapA9MomentSDK0aB22SwiftBridgeInitializerCACycfc",
-            "moduleName": "TapTapMomentSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeInitializer",
-        "mangledName": "$s03TapA9MomentSDK0aB22SwiftBridgeInitializerC",
-        "moduleName": "TapTapMomentSDK",
-        "objc_name": "TapMomentSwiftBridgeInitializer",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TapTapMomentSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "TapTapBasicToolsSDK",
-        "printedName": "TapTapBasicToolsSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapMomentSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapMomentSwiftBridgeService",
-        "printedName": "TapMomentSwiftBridgeService",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TapMomentSwiftBridgeService",
-                "printedName": "TapTapMomentSDK.TapMomentSwiftBridgeService",
-                "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(cpy)shared",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC6sharedACvpZ",
-            "moduleName": "TapTapMomentSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TapMomentSwiftBridgeService",
-                    "printedName": "TapTapMomentSDK.TapMomentSwiftBridgeService",
-                    "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(cm)shared",
-                "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC6sharedACvgZ",
-                "moduleName": "TapTapMomentSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "setCallback",
-            "printedName": "setCallback(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)setCallbackWithCompletion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC11setCallback10completionyySSc_tF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "setCallbackWithCompletion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setCallback",
-            "printedName": "setCallback(callbackId:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)setCallbackWithCallbackId:completion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC11setCallback10callbackId10completionySS_ySSctF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "setCallbackWithCallbackId:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "fetchNotification",
-            "printedName": "fetchNotification(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)fetchNotificationWithCompletion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC17fetchNotification10completionyySSc_tF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "fetchNotificationWithCompletion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "fetchNotification",
-            "printedName": "fetchNotification(callbackId:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)fetchNotificationWithCallbackId:completion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC17fetchNotification10callbackId10completionySS_ySSctF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "fetchNotificationWithCallbackId:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "close",
-            "printedName": "close(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)closeWithCompletion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC5close10completionyySSc_tF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "closeWithCompletion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "close",
-            "printedName": "close(callbackId:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)closeWithCallbackId:completion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC5close10callbackId10completionySS_ySSctF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "closeWithCallbackId:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "closeWithTitle",
-            "printedName": "closeWithTitle(title:content:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)closeWithTitleWithTitle:content:completion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC14closeWithTitle5title7content10completionySS_SSySSctF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "closeWithTitleWithTitle:content:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "closeWithTitle",
-            "printedName": "closeWithTitle(title:content:callbackId:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)closeWithTitleWithTitle:content:callbackId:completion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC14closeWithTitle5title7content10callbackId10completionySS_S2SySSctF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "closeWithTitleWithTitle:content:callbackId:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "needDeferSystemGestures",
-            "printedName": "needDeferSystemGestures(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)needDeferSystemGesturesWithCompletion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC23needDeferSystemGestures10completionyySSc_tF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "needDeferSystemGesturesWithCompletion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "needDeferSystemGestures",
-            "printedName": "needDeferSystemGestures(callbackId:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)needDeferSystemGesturesWithCallbackId:completion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC23needDeferSystemGestures10callbackId10completionySS_ySSctF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "needDeferSystemGesturesWithCallbackId:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "openMoment",
-            "printedName": "openMoment(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)openMomentWithCompletion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC04openB010completionyySSc_tF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "openMomentWithCompletion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "openMoment",
-            "printedName": "openMoment(callbackId:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)openMomentWithCallbackId:completion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC04openB010callbackId10completionySS_ySSctF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "openMomentWithCallbackId:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "openScene",
-            "printedName": "openScene(sceneId:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)openSceneWithSceneId:completion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC9openScene7sceneId10completionySS_ySSctF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "openSceneWithSceneId:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "openScene",
-            "printedName": "openScene(sceneId:callbackId:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)openSceneWithSceneId:callbackId:completion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC9openScene7sceneId08callbackJ010completionySS_SSySSctF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "openSceneWithSceneId:callbackId:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "publish",
-            "printedName": "publish(publishMetaData:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)publishWithPublishMetaData:completion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC7publish0G8MetaData10completionySS_ySSctF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "publishWithPublishMetaData:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "publish",
-            "printedName": "publish(publishMetaData:callbackId:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService(im)publishWithPublishMetaData:callbackId:completion:",
-            "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC7publish0G8MetaData10callbackId10completionySS_SSySSctF",
-            "moduleName": "TapTapMomentSDK",
-            "objc_name": "publishWithPublishMetaData:callbackId:completion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@TapTapMomentSDK@objc(cs)TapMomentSwiftBridgeService",
-        "mangledName": "$s03TapA9MomentSDK0aB18SwiftBridgeServiceC",
-        "moduleName": "TapTapMomentSDK",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "TapTapMomentSDK",
         "declAttributes": [
           "RawDocComment"
@@ -10516,210 +9470,203 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/TapMomentRepo.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/TapMomentRepo.swift",
       "kind": "StringLiteral",
       "offset": 308,
       "length": 29,
       "value": "\"\/feed\/v1\/reminder-with-user\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentSwiftBridgeService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 359,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 1317,
       "length": 3,
       "value": "999"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 1349,
       "length": 3,
       "value": "900"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 1379,
       "length": 3,
       "value": "902"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 1404,
       "length": 3,
       "value": "901"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 1428,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 1455,
       "length": 3,
       "value": "490"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 2727,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 2743,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 2757,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 2772,
       "length": 10,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 2792,
       "length": 4,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 2806,
       "length": 7,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "Array",
       "offset": 3224,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "Array",
       "offset": 6718,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "Dictionary",
       "offset": 6772,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "StringLiteral",
       "offset": 6816,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 6861,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "BooleanLiteral",
       "offset": 6946,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 16988,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 18218,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "BooleanLiteral",
       "offset": 35122,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "BooleanLiteral",
       "offset": 35170,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Routes\/TapMomentRouterPath.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Routes\/TapMomentRouterPath.swift",
       "kind": "StringLiteral",
       "offset": 233,
       "length": 29,
       "value": "\"TapTapSDK\/SetInitialOptions\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "BooleanLiteral",
       "offset": 320,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "BooleanLiteral",
       "offset": 355,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "StringLiteral",
       "offset": 394,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "IntegerLiteral",
       "offset": 430,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/2\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "StringLiteral",
       "offset": 473,
       "length": 2,

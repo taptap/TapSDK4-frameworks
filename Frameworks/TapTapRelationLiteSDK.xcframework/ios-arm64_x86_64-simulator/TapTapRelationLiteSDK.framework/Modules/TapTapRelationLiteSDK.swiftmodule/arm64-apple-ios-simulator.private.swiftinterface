@@ -11,7 +11,6 @@ import TapTapCoreSDK
 import TapTapLoginSDK
 import TapTapNetworkSDK
 import TapTapProfileSDK
-import TapTapSDKBridgeCore
 import UIKit
 import _Concurrency
 import _StringProcessing
@@ -25,31 +24,6 @@ public struct TapRelationUITheme {
   public static let ipadDark: TapTapRelationLiteSDK.TapRelationUITheme
   public static let ipadPortrait: TapTapRelationLiteSDK.TapRelationUITheme
   public static let ipadPortraitDark: TapTapRelationLiteSDK.TapRelationUITheme
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapRelationLiteSwiftBridgeService : ObjectiveC.NSObject {
-  @objc public static let shared: TapTapRelationLiteSDK.TapRelationLiteSwiftBridgeService
-  @objc public func inviteGameByRelationLite()
-  @objc public func inviteTeam(teamId: Swift.String)
-  @objc public func getFriendsList(nextPageToken: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func getFriendsList(nextPageToken: Swift.String?, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func getFollowingList(nextPageToken: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func getFollowingList(nextPageToken: Swift.String?, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func getFansList(nextPageToken: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func getFansList(nextPageToken: Swift.String?, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func syncRelationshipWithOpenId(action: Swift.Int, nickname: Swift.String?, friendNickname: Swift.String?, friendOpenId: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func syncRelationshipWithOpenId(action: Swift.Int, nickname: Swift.String?, friendNickname: Swift.String?, friendOpenId: Swift.String?, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func syncRelationshipWithUnionId(action: Swift.Int, nickname: Swift.String?, friendNickname: Swift.String?, friendUnionId: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func syncRelationshipWithUnionId(action: Swift.Int, nickname: Swift.String?, friendNickname: Swift.String?, friendUnionId: Swift.String?, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func showTapUserProfile(openId: Swift.String?, unionId: Swift.String?)
-  @objc public func registerRelationLiteCallback(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func registerRelationLiteCallback(callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func unregisterRelationLiteCallback()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc(TapRelationLiteSwiftBridgeInitializer) public class TapRelationLiteSwiftBridgeInitializer : ObjectiveC.NSObject {
-  @objc public static func registerWithSwiftBridge()
-  @objc override dynamic public init()
-  @objc deinit
 }
 @objc public protocol TapTapRelationRequestDelegate : ObjectiveC.NSObjectProtocol {
   @objc optional func onFriendsListResult(friendsList: [TapTapRelationLiteSDK.RelationLiteUserItem], nextPageToken: Swift.String?)

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapProfileSDK'
-  s.version          = '4.8.4-beta.1'
+  s.version          = '4.8.4-alpha.127'
   s.summary          = '提供 TapTap 展示用户名片信息的能力。'
   s.swift_version    = '5.0'
   s.description      = <<-DESC
@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "Frameworks/TapTapProfileSDK.xcframework"
   s.resources = 'Frameworks/TapTapProfileResource.bundle'
   s.dependency 'TapTapLoginSDK', s.version.to_s
-  s.dependency "Kingfisher", '~> 6.0'
+  s.dependency "Kingfisher", '>= 6.0', '< 9.0'
 
 end
