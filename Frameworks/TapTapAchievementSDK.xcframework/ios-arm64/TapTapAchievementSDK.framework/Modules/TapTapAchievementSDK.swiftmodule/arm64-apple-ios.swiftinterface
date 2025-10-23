@@ -8,6 +8,7 @@ import TapTapBasicToolsSDK
 import TapTapCoreSDK
 import TapTapLoginSDK
 import TapTapNetworkSDK
+import TapTapSDKBridgeCore
 import UIKit
 import WebKit
 import _Concurrency
@@ -28,6 +29,20 @@ import _SwiftConcurrencyShims
   public var rawValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapAchievementSwiftBridgeService : ObjectiveC.NSObject {
+  @objc public static let shared: TapTapAchievementSDK.TapAchievementSwiftBridgeService
+  @objc public func unlockAchievement(achievementId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func incrementAchievement(achievementId: Swift.String, steps: Swift.Int, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func showAchievements(completion: ((Swift.String) -> Swift.Void)?)
+  @objc public func enableToast(enable: Swift.Bool, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func registerAchievementCallback(_ completion: @escaping (Swift.String) -> Swift.Void)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TapAchievementSwiftBridgeInitializer) public class TapAchievementSwiftBridgeInitializer : ObjectiveC.NSObject {
+  @objc public static func registerWithSwiftBridge()
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapAchievementResult : ObjectiveC.NSObject, Swift.Codable {
   @objc public var achievementId: Swift.String

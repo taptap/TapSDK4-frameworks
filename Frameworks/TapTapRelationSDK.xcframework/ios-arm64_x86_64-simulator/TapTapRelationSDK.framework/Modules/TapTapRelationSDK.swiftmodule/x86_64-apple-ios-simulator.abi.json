@@ -3592,6 +3592,663 @@
         "printedName": "TapTapBasicToolsSDK",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapSDKBridgeCore",
+        "printedName": "TapTapSDKBridgeCore",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapRelationSwiftBridgeService",
+        "printedName": "TapRelationSwiftBridgeService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapRelationSwiftBridgeService",
+                "printedName": "TapTapRelationSDK.TapRelationSwiftBridgeService",
+                "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(cpy)shared",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC6sharedACvpZ",
+            "moduleName": "TapTapRelationSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapRelationSwiftBridgeService",
+                    "printedName": "TapTapRelationSDK.TapRelationSwiftBridgeService",
+                    "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(cm)shared",
+                "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC6sharedACvgZ",
+                "moduleName": "TapTapRelationSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "prepare",
+            "printedName": "prepare()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)prepare",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC7prepareyyF",
+            "moduleName": "TapTapRelationSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startMessenger",
+            "printedName": "startMessenger()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)startMessenger",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC14startMessengeryyF",
+            "moduleName": "TapTapRelationSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "inviteGame",
+            "printedName": "inviteGame()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)inviteGame",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC10inviteGameyyF",
+            "moduleName": "TapTapRelationSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "inviteTeam",
+            "printedName": "inviteTeam(teamId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)inviteTeamWithTeamId:",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC10inviteTeam6teamIdySSSg_tF",
+            "moduleName": "TapTapRelationSDK",
+            "objc_name": "inviteTeamWithTeamId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showTapUserProfile",
+            "printedName": "showTapUserProfile(openId:unionId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)showTapUserProfileWithOpenId:unionId:",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC04showA11UserProfile6openId05unionK0ySSSg_AGtF",
+            "moduleName": "TapTapRelationSDK",
+            "objc_name": "showTapUserProfileWithOpenId:unionId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getNewFansCount",
+            "printedName": "getNewFansCount(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)getNewFansCountWithCompletion:",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC15getNewFansCount10completionyySSc_tF",
+            "moduleName": "TapTapRelationSDK",
+            "objc_name": "getNewFansCountWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUnreadMessageCount",
+            "printedName": "getUnreadMessageCount(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)getUnreadMessageCountWithCompletion:",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC21getUnreadMessageCount10completionyySSc_tF",
+            "moduleName": "TapTapRelationSDK",
+            "objc_name": "getUnreadMessageCountWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerRelationCallback",
+            "printedName": "registerRelationCallback(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)registerRelationCallbackWithCompletion:",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC08registerB8Callback10completionyySSc_tF",
+            "moduleName": "TapTapRelationSDK",
+            "objc_name": "registerRelationCallbackWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)destroy",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC7destroyyyF",
+            "moduleName": "TapTapRelationSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService",
+        "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC",
+        "moduleName": "TapTapRelationSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapSDKBridgeCore",
+        "printedName": "TapTapSDKBridgeCore",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapRelationSwiftBridgeInitializer",
+        "printedName": "TapRelationSwiftBridgeInitializer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapRelationSwiftBridgeInitializer",
+                "printedName": "TapTapRelationSDK.TapRelationSwiftBridgeInitializer",
+                "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer(cpy)shared",
+            "mangledName": "$s03TapA11RelationSDK0aB22SwiftBridgeInitializerC6sharedACvpZ",
+            "moduleName": "TapTapRelationSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapRelationSwiftBridgeInitializer",
+                    "printedName": "TapTapRelationSDK.TapRelationSwiftBridgeInitializer",
+                    "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer(cm)shared",
+                "mangledName": "$s03TapA11RelationSDK0aB22SwiftBridgeInitializerC6sharedACvgZ",
+                "moduleName": "TapTapRelationSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer(im)initialize",
+            "mangledName": "$s03TapA11RelationSDK0aB22SwiftBridgeInitializerC10initializeyyF",
+            "moduleName": "TapTapRelationSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "triggerAutoInitialization",
+            "printedName": "triggerAutoInitialization()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer(cm)triggerAutoInitialization",
+            "mangledName": "$s03TapA11RelationSDK0aB22SwiftBridgeInitializerC25triggerAutoInitializationyyFZ",
+            "moduleName": "TapTapRelationSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer",
+        "mangledName": "$s03TapA11RelationSDK0aB22SwiftBridgeInitializerC",
+        "moduleName": "TapTapRelationSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -7628,6 +8285,13 @@
       "offset": 370,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/TapRelationSwiftBridgeInitializer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 245,
+      "length": 5,
+      "value": "false"
     }
   ]
 }

@@ -15,6 +15,7 @@ import TapTapCoreSDK
 import TapTapLoginSDK
 import TapTapNetworkSDK
 import TapTapProfileSDK
+import TapTapSDKBridgeCore
 import UIKit
 import UniformTypeIdentifiers
 import _Concurrency
@@ -57,4 +58,25 @@ public struct TapRelationUITheme {
   @objc public static func destroy()
   @objc override dynamic public init()
   @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapRelationSwiftBridgeService : ObjectiveC.NSObject {
+  @objc public static let shared: TapTapRelationSDK.TapRelationSwiftBridgeService
+  @objc public func prepare()
+  @objc public func startMessenger()
+  @objc public func inviteGame()
+  @objc public func inviteTeam(teamId: Swift.String?)
+  @objc public func showTapUserProfile(openId: Swift.String?, unionId: Swift.String?)
+  @objc public func getNewFansCount(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func getUnreadMessageCount(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func registerRelationCallback(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func destroy()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapRelationSwiftBridgeInitializer : ObjectiveC.NSObject {
+  @objc public static let shared: TapTapRelationSDK.TapRelationSwiftBridgeInitializer
+  @objc public func initialize()
+  @objc deinit
+}
+extension TapTapRelationSDK.TapRelationSwiftBridgeInitializer {
+  @objc public static func triggerAutoInitialization()
 }

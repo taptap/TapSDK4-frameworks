@@ -304,7 +304,38 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+SWIFT_CLASS("_TtC17TapTapRelationSDK33TapRelationSwiftBridgeInitializer")
+@interface TapRelationSwiftBridgeInitializer : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapRelationSwiftBridgeInitializer * _Nonnull shared;)
++ (TapRelationSwiftBridgeInitializer * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)initialize;
+@end
+
+@interface TapRelationSwiftBridgeInitializer (SWIFT_EXTENSION(TapTapRelationSDK))
+/// 触发自动初始化
++ (void)triggerAutoInitialization;
+@end
+
 @class NSString;
+SWIFT_CLASS("_TtC17TapTapRelationSDK29TapRelationSwiftBridgeService")
+@interface TapRelationSwiftBridgeService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapRelationSwiftBridgeService * _Nonnull shared;)
++ (TapRelationSwiftBridgeService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)prepare;
+- (void)startMessenger;
+- (void)inviteGame;
+- (void)inviteTeamWithTeamId:(NSString * _Nullable)teamId;
+- (void)showTapUserProfileWithOpenId:(NSString * _Nullable)openId unionId:(NSString * _Nullable)unionId;
+- (void)getNewFansCountWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)getUnreadMessageCountWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)registerRelationCallbackWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)destroy;
+@end
+
 @protocol TapTapRelationDelegate;
 SWIFT_CLASS("_TtC17TapTapRelationSDK14TapTapRelation")
 @interface TapTapRelation : NSObject
@@ -657,7 +688,38 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+SWIFT_CLASS("_TtC17TapTapRelationSDK33TapRelationSwiftBridgeInitializer")
+@interface TapRelationSwiftBridgeInitializer : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapRelationSwiftBridgeInitializer * _Nonnull shared;)
++ (TapRelationSwiftBridgeInitializer * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)initialize;
+@end
+
+@interface TapRelationSwiftBridgeInitializer (SWIFT_EXTENSION(TapTapRelationSDK))
+/// 触发自动初始化
++ (void)triggerAutoInitialization;
+@end
+
 @class NSString;
+SWIFT_CLASS("_TtC17TapTapRelationSDK29TapRelationSwiftBridgeService")
+@interface TapRelationSwiftBridgeService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapRelationSwiftBridgeService * _Nonnull shared;)
++ (TapRelationSwiftBridgeService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)prepare;
+- (void)startMessenger;
+- (void)inviteGame;
+- (void)inviteTeamWithTeamId:(NSString * _Nullable)teamId;
+- (void)showTapUserProfileWithOpenId:(NSString * _Nullable)openId unionId:(NSString * _Nullable)unionId;
+- (void)getNewFansCountWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)getUnreadMessageCountWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)registerRelationCallbackWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)destroy;
+@end
+
 @protocol TapTapRelationDelegate;
 SWIFT_CLASS("_TtC17TapTapRelationSDK14TapTapRelation")
 @interface TapTapRelation : NSObject

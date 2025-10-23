@@ -349,6 +349,23 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK25TapFirstPartyLoginOptions")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+SWIFT_CLASS_NAMED("TapLoginSwiftBridgeInitializer")
+@interface TapLoginSwiftBridgeInitializer : NSObject
++ (void)registerWithSwiftBridge;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC14TapTapLoginSDK26TapLoginSwiftBridgeService")
+@interface TapLoginSwiftBridgeService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapLoginSwiftBridgeService * _Nonnull shared;)
++ (TapLoginSwiftBridgeService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)loginWithScopesWithScopes:(NSArray<NSString *> * _Nonnull)scopes completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)logoutWithCompletion:(void (^ _Nullable)(NSString * _Nonnull))completion;
+- (void)getCurrentTapAccountWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+@end
+
 @class UserInfo;
 SWIFT_CLASS("_TtC14TapTapLoginSDK13TapTapAccount")
 @interface TapTapAccount : NSObject

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapRelationSDK'
-  s.version          = '4.8.4-beta.0'
+  s.version          = '4.8.4-beta.1'
   s.summary          = '提供 TapTap 展示好友 UI 的能力。'
   s.swift_version    = '5.0'
   s.description      = <<-DESC
