@@ -348,6 +348,36 @@ SWIFT_CLASS_NAMED("RelationLiteUserResult")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+SWIFT_CLASS_NAMED("TapRelationLiteSwiftBridgeInitializer")
+@interface TapRelationLiteSwiftBridgeInitializer : NSObject
++ (void)registerWithSwiftBridge;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC21TapTapRelationLiteSDK33TapRelationLiteSwiftBridgeService")
+@interface TapRelationLiteSwiftBridgeService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapRelationLiteSwiftBridgeService * _Nonnull shared;)
++ (TapRelationLiteSwiftBridgeService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)inviteGameByRelationLite;
+- (void)inviteTeamWithTeamId:(NSString * _Nonnull)teamId;
+- (void)getFriendsListWithNextPageToken:(NSString * _Nullable)nextPageToken completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)getFriendsListWithNextPageToken:(NSString * _Nullable)nextPageToken callbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)getFollowingListWithNextPageToken:(NSString * _Nullable)nextPageToken completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)getFollowingListWithNextPageToken:(NSString * _Nullable)nextPageToken callbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)getFansListWithNextPageToken:(NSString * _Nullable)nextPageToken completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)getFansListWithNextPageToken:(NSString * _Nullable)nextPageToken callbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)syncRelationshipWithOpenIdWithAction:(NSInteger)action nickname:(NSString * _Nullable)nickname friendNickname:(NSString * _Nullable)friendNickname friendOpenId:(NSString * _Nullable)friendOpenId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)syncRelationshipWithOpenIdWithAction:(NSInteger)action nickname:(NSString * _Nullable)nickname friendNickname:(NSString * _Nullable)friendNickname friendOpenId:(NSString * _Nullable)friendOpenId callbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)syncRelationshipWithUnionIdWithAction:(NSInteger)action nickname:(NSString * _Nullable)nickname friendNickname:(NSString * _Nullable)friendNickname friendUnionId:(NSString * _Nullable)friendUnionId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)syncRelationshipWithUnionIdWithAction:(NSInteger)action nickname:(NSString * _Nullable)nickname friendNickname:(NSString * _Nullable)friendNickname friendUnionId:(NSString * _Nullable)friendUnionId callbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)showTapUserProfileWithOpenId:(NSString * _Nullable)openId unionId:(NSString * _Nullable)unionId;
+- (void)registerRelationLiteCallbackWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)registerRelationLiteCallbackWithCallbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)unregisterRelationLiteCallback;
+@end
+
 @class NSError;
 @protocol TapTapRelationLiteDelegate;
 SWIFT_CLASS("_TtC21TapTapRelationLiteSDK18TapTapRelationLite")
@@ -757,6 +787,36 @@ SWIFT_CLASS_NAMED("RelationLiteUserResult")
 - (nonnull instancetype)initWithList:(NSArray<RelationLiteUserItem *> * _Nullable)list nextPageToken:(NSString * _Nullable)nextPageToken OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS_NAMED("TapRelationLiteSwiftBridgeInitializer")
+@interface TapRelationLiteSwiftBridgeInitializer : NSObject
++ (void)registerWithSwiftBridge;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC21TapTapRelationLiteSDK33TapRelationLiteSwiftBridgeService")
+@interface TapRelationLiteSwiftBridgeService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapRelationLiteSwiftBridgeService * _Nonnull shared;)
++ (TapRelationLiteSwiftBridgeService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)inviteGameByRelationLite;
+- (void)inviteTeamWithTeamId:(NSString * _Nonnull)teamId;
+- (void)getFriendsListWithNextPageToken:(NSString * _Nullable)nextPageToken completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)getFriendsListWithNextPageToken:(NSString * _Nullable)nextPageToken callbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)getFollowingListWithNextPageToken:(NSString * _Nullable)nextPageToken completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)getFollowingListWithNextPageToken:(NSString * _Nullable)nextPageToken callbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)getFansListWithNextPageToken:(NSString * _Nullable)nextPageToken completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)getFansListWithNextPageToken:(NSString * _Nullable)nextPageToken callbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)syncRelationshipWithOpenIdWithAction:(NSInteger)action nickname:(NSString * _Nullable)nickname friendNickname:(NSString * _Nullable)friendNickname friendOpenId:(NSString * _Nullable)friendOpenId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)syncRelationshipWithOpenIdWithAction:(NSInteger)action nickname:(NSString * _Nullable)nickname friendNickname:(NSString * _Nullable)friendNickname friendOpenId:(NSString * _Nullable)friendOpenId callbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)syncRelationshipWithUnionIdWithAction:(NSInteger)action nickname:(NSString * _Nullable)nickname friendNickname:(NSString * _Nullable)friendNickname friendUnionId:(NSString * _Nullable)friendUnionId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)syncRelationshipWithUnionIdWithAction:(NSInteger)action nickname:(NSString * _Nullable)nickname friendNickname:(NSString * _Nullable)friendNickname friendUnionId:(NSString * _Nullable)friendUnionId callbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)showTapUserProfileWithOpenId:(NSString * _Nullable)openId unionId:(NSString * _Nullable)unionId;
+- (void)registerRelationLiteCallbackWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)registerRelationLiteCallbackWithCallbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)unregisterRelationLiteCallback;
 @end
 
 @class NSError;

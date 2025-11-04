@@ -10,11 +10,31 @@ import TapTapCoreSDK
 import TapTapLoginSDK
 import TapTapNetworkSDK
 import TapTapProfileSDK
+import TapTapSDKBridgeCore
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(TapLeaderboardSwiftBridgeInitializer) public class TapLeaderboardSwiftBridgeInitializer : ObjectiveC.NSObject {
+  @objc public static func registerWithSwiftBridge()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapLeaderboardSwiftBridgeService : ObjectiveC.NSObject {
+  @objc public static let shared: TapTapLeaderboardSDK.TapLeaderboardSwiftBridgeService
+  @objc public func openLeaderboard(leaderboardId: Swift.String, leaderboardCollection: Swift.String?)
+  @objc public func openUserProfile(openId: Swift.String?, unionId: Swift.String?)
+  @objc public func submitScores(scores: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func loadLeaderboardScores(leaderboardId: Swift.String, leaderboardCollection: Swift.String?, nextPage: Swift.String?, periodToken: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func loadCurrentPlayerLeaderboardScore(leaderboardId: Swift.String, leaderboardCollection: Swift.String?, periodToken: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func loadCurrentPlayerLeaderboardScore(leaderboardId: Swift.String, leaderboardCollection: Swift.String?, periodToken: Swift.String?, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func loadPlayerCenteredScores(leaderboardId: Swift.String, leaderboardCollection: Swift.String?, periodToken: Swift.String?, maxCount: Foundation.NSNumber?, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func loadPlayerCenteredScores(leaderboardId: Swift.String, leaderboardCollection: Swift.String?, periodToken: Swift.String?, maxCount: Foundation.NSNumber?, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func setShareCallback(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func registerLeaderboardCallback(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc deinit
+}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class TapWebViewJavascriptBridge : ObjectiveC.NSObject {
   @objc public func getWebView() -> WebKit.WKWebView
   @objc deinit

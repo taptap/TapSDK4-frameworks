@@ -1,0 +1,43 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapSDKBridgeCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import Foundation
+import Swift
+@_exported import TapTapSDKBridgeCore
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+@objc public class TapSDKSwiftCommand : ObjectiveC.NSObject {
+  @objc final public let service: Swift.String
+  @objc final public let method: Swift.String
+  @objc final public let args: Swift.String
+  @objc final public let callbackId: Swift.String
+  @objc final public let onceTime: Swift.Bool
+  @objc final public let disposable: Swift.Bool
+  @objc public init(service: Swift.String, method: Swift.String, args: Swift.String, callbackId: Swift.String, onceTime: Swift.Bool, disposable: Swift.Bool)
+  @objc convenience public init?(jsonString: Swift.String)
+  @objc deinit
+}
+@objc public protocol TapSDKSwiftBridgeCallback {
+  @objc func onResult(_ result: Swift.String)
+}
+public typealias SwiftBridgeCommandHandler = (Any, Any?) -> Swift.Void
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(TapSDKSwiftBridge) public class TapSDKSwiftBridge : ObjectiveC.NSObject {
+  @objc public static let shared: TapTapSDKBridgeCore.TapSDKSwiftBridge
+  @objc public static func instance() -> TapTapSDKBridgeCore.TapSDKSwiftBridge
+  public func registerHandler(service: Swift.String, method: Swift.String, handler: @escaping TapTapSDKBridgeCore.SwiftBridgeCommandHandler)
+  @objc public func registerServiceHandler(service: Swift.String, method: Swift.String, handler: @escaping (Any, Any?) -> Swift.Void)
+  @objc public func removeHandler(service: Swift.String, method: Swift.String)
+  public func registerHandlers(_ handlersDict: [Swift.String : TapTapSDKBridgeCore.SwiftBridgeCommandHandler])
+  @objc public func registerHandler(_ commandJSON: Swift.String, bridgeCallback: (any TapTapSDKBridgeCore.TapSDKSwiftBridgeCallback)?)
+  @objc public func processCommand(_ commandJSON: Swift.String, bridgeCallback: (any TapTapSDKBridgeCore.TapSDKSwiftBridgeCallback)?)
+  @objc public var registeredHandlersCount: Swift.Int {
+    @objc get
+  }
+  @objc public var registeredHandlerKeys: [Swift.String] {
+    @objc get
+  }
+  @objc deinit
+}

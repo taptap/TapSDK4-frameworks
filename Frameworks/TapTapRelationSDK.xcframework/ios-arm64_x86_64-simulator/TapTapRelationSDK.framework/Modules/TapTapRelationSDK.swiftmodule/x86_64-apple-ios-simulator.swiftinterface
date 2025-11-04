@@ -1,10 +1,10 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapRelationSDK
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapRelationSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import CommonCrypto
 import CryptoKit
 import Foundation
-import Kingfisher
 import MobileCoreServices
 import Network
 import Photos
@@ -12,15 +12,38 @@ import PhotosUI
 import Swift
 import TapTapBasicToolsSDK
 import TapTapCoreSDK
+import TapTapKingfisher
 import TapTapLoginSDK
 import TapTapNetworkSDK
 import TapTapProfileSDK
+import TapTapSDKBridgeCore
 import UIKit
 import UniformTypeIdentifiers
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import bifrost_sdk
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapRelationSwiftBridgeService : ObjectiveC.NSObject {
+  @objc public static let shared: TapTapRelationSDK.TapRelationSwiftBridgeService
+  @objc public func prepare()
+  @objc public func startMessenger()
+  @objc public func inviteGame()
+  @objc public func inviteTeam(teamId: Swift.String?)
+  @objc public func showTapUserProfile(openId: Swift.String?, unionId: Swift.String?)
+  @objc public func getNewFansCount(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func getUnreadMessageCount(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func registerRelationCallback(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func destroy()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapRelationSwiftBridgeInitializer : ObjectiveC.NSObject {
+  @objc public static let shared: TapTapRelationSDK.TapRelationSwiftBridgeInitializer
+  @objc public func initialize()
+  @objc deinit
+}
+extension TapTapRelationSDK.TapRelationSwiftBridgeInitializer {
+  @objc public static func triggerAutoInitialization()
+}
 public struct TapRelationUITheme {
   public static let standard: TapTapRelationSDK.TapRelationUITheme
   public static let standardPortrait: TapTapRelationSDK.TapRelationUITheme

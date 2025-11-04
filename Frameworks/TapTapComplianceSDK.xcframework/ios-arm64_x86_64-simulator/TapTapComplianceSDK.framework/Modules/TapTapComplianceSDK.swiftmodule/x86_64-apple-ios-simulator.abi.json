@@ -846,6 +846,659 @@
       },
       {
         "kind": "Import",
+        "name": "TapTapSDKBridgeCore",
+        "printedName": "TapTapSDKBridgeCore",
+        "declKind": "Import",
+        "moduleName": "TapTapComplianceSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapComplianceSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapComplianceSwiftBridgeInitializer",
+        "printedName": "TapComplianceSwiftBridgeInitializer",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "registerWithSwiftBridge",
+            "printedName": "registerWithSwiftBridge()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeInitializer(cm)registerWithSwiftBridge",
+            "mangledName": "$s03TapA13ComplianceSDK0aB22SwiftBridgeInitializerC012registerWithdE0yyFZ",
+            "moduleName": "TapTapComplianceSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapComplianceSwiftBridgeInitializer",
+                "printedName": "TapTapComplianceSDK.TapComplianceSwiftBridgeInitializer",
+                "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeInitializer"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeInitializer(im)init",
+            "mangledName": "$s03TapA13ComplianceSDK0aB22SwiftBridgeInitializerCACycfc",
+            "moduleName": "TapTapComplianceSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeInitializer",
+        "mangledName": "$s03TapA13ComplianceSDK0aB22SwiftBridgeInitializerC",
+        "moduleName": "TapTapComplianceSDK",
+        "objc_name": "TapComplianceSwiftBridgeInitializer",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapComplianceSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapSDKBridgeCore",
+        "printedName": "TapTapSDKBridgeCore",
+        "declKind": "Import",
+        "moduleName": "TapTapComplianceSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapComplianceSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapComplianceSDK",
+        "printedName": "TapTapComplianceSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapComplianceSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapComplianceSwiftBridgeService",
+        "printedName": "TapComplianceSwiftBridgeService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapComplianceSwiftBridgeService",
+                "printedName": "TapTapComplianceSDK.TapComplianceSwiftBridgeService",
+                "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService(cpy)shared",
+            "mangledName": "$s03TapA13ComplianceSDK0aB18SwiftBridgeServiceC6sharedACvpZ",
+            "moduleName": "TapTapComplianceSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapComplianceSwiftBridgeService",
+                    "printedName": "TapTapComplianceSDK.TapComplianceSwiftBridgeService",
+                    "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService(cm)shared",
+                "mangledName": "$s03TapA13ComplianceSDK0aB18SwiftBridgeServiceC6sharedACvgZ",
+                "moduleName": "TapTapComplianceSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startup",
+            "printedName": "startup(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService(im)startupWithUserId:",
+            "mangledName": "$s03TapA13ComplianceSDK0aB18SwiftBridgeServiceC7startup6userIdySS_tF",
+            "moduleName": "TapTapComplianceSDK",
+            "objc_name": "startupWithUserId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerComplianceCallback",
+            "printedName": "registerComplianceCallback(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService(im)registerComplianceCallbackWithCompletion:",
+            "mangledName": "$s03TapA13ComplianceSDK0aB18SwiftBridgeServiceC08registerB8Callback10completionyySSc_tF",
+            "moduleName": "TapTapComplianceSDK",
+            "objc_name": "registerComplianceCallbackWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTestEnvironment",
+            "printedName": "setTestEnvironment(isTest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService(im)setTestEnvironmentWithIsTest:",
+            "mangledName": "$s03TapA13ComplianceSDK0aB18SwiftBridgeServiceC18setTestEnvironment02isH0ySb_tF",
+            "moduleName": "TapTapComplianceSDK",
+            "objc_name": "setTestEnvironmentWithIsTest:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCurrentAccessToken",
+            "printedName": "getCurrentAccessToken(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService(im)getCurrentAccessTokenWithCompletion:",
+            "mangledName": "$s03TapA13ComplianceSDK0aB18SwiftBridgeServiceC21getCurrentAccessToken10completionyySSc_tF",
+            "moduleName": "TapTapComplianceSDK",
+            "objc_name": "getCurrentAccessTokenWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserRemainTime",
+            "printedName": "getUserRemainTime(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService(im)getUserRemainTimeWithCompletion:",
+            "mangledName": "$s03TapA13ComplianceSDK0aB18SwiftBridgeServiceC17getUserRemainTime10completionyySSc_tF",
+            "moduleName": "TapTapComplianceSDK",
+            "objc_name": "getUserRemainTimeWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserAgeRange",
+            "printedName": "getUserAgeRange(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService(im)getUserAgeRangeWithCompletion:",
+            "mangledName": "$s03TapA13ComplianceSDK0aB18SwiftBridgeServiceC15getUserAgeRange10completionyySSc_tF",
+            "moduleName": "TapTapComplianceSDK",
+            "objc_name": "getUserAgeRangeWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "exit",
+            "printedName": "exit()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService(im)exit",
+            "mangledName": "$s03TapA13ComplianceSDK0aB18SwiftBridgeServiceC4exityyF",
+            "moduleName": "TapTapComplianceSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "submitPayment",
+            "printedName": "submitPayment(amount:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService(im)submitPaymentWithAmount:completion:",
+            "mangledName": "$s03TapA13ComplianceSDK0aB18SwiftBridgeServiceC13submitPayment6amount10completionys5Int64V_ySSctF",
+            "moduleName": "TapTapComplianceSDK",
+            "objc_name": "submitPaymentWithAmount:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkPaymentLimit",
+            "printedName": "checkPaymentLimit(amount:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService(im)checkPaymentLimitWithAmount:completion:",
+            "mangledName": "$s03TapA13ComplianceSDK0aB18SwiftBridgeServiceC17checkPaymentLimit6amount10completionys5Int64V_ySSctF",
+            "moduleName": "TapTapComplianceSDK",
+            "objc_name": "checkPaymentLimitWithAmount:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapComplianceSDK@objc(cs)TapComplianceSwiftBridgeService",
+        "mangledName": "$s03TapA13ComplianceSDK0aB18SwiftBridgeServiceC",
+        "moduleName": "TapTapComplianceSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapComplianceSDK"
+      },
+      {
+        "kind": "Import",
         "name": "ObjectiveC",
         "printedName": "ObjectiveC",
         "declKind": "Import",

@@ -392,7 +392,64 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger INIT_FAIL;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@protocol TapTapCloudSaveCallback;
+SWIFT_CLASS_NAMED("TapCloudSaveSwiftBridgeInitializer")
+@interface TapCloudSaveSwiftBridgeInitializer : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
++ (void)registerWithSwiftBridge;
+@end
+
+SWIFT_CLASS("_TtC18TapTapCloudSaveSDK30TapCloudSaveSwiftBridgeService")
+@interface TapCloudSaveSwiftBridgeService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapCloudSaveSwiftBridgeService * _Nonnull shared;)
++ (TapCloudSaveSwiftBridgeService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (void)registerWithSwiftBridge;
+- (void)registerCloudSaveCallback:(void (^ _Nonnull)(NSString * _Nonnull))callback;
+/// 清理callback，用于页面退出时防止内存泄漏
+- (void)cleanup;
+/// 创建存档
+- (void)createArchiveWithMetadata:(NSString * _Nonnull)metadata filePath:(NSString * _Nonnull)filePath coverPath:(NSString * _Nullable)coverPath completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+/// 更新存档
+- (void)updateArchiveWithUuid:(NSString * _Nonnull)uuid metadata:(NSString * _Nonnull)metadata filePath:(NSString * _Nonnull)filePath coverPath:(NSString * _Nullable)coverPath completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+/// 删除存档
+- (void)deleteArchiveWithUuid:(NSString * _Nonnull)uuid completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+/// 获取存档列表
+- (void)getArchiveListWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+/// 获取存档数据
+- (void)getArchiveDataWithUuid:(NSString * _Nonnull)uuid fileID:(NSString * _Nonnull)fileID completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+/// 获取存档封面
+- (void)getArchiveCoverWithUuid:(NSString * _Nonnull)uuid fileID:(NSString * _Nonnull)fileID completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+@end
+
+/// CloudSave 状态回调协议
+/// 用于通知 CloudSave 模块的状态变化，如登录状态等
+/// 参考 Android 版本的 TapCloudSaveCallback 实现
+SWIFT_PROTOCOL("_TtP18TapTapCloudSaveSDK23TapTapCloudSaveCallback_")
+@protocol TapTapCloudSaveCallback <NSObject>
+/// CloudSave 结果通知
+/// \param resultCode 结果代码，参考 TapCloudSaveResultCode 中的定义
+///
+- (void)onResult:(NSInteger)resultCode;
+@end
+
+@interface TapCloudSaveSwiftBridgeService (SWIFT_EXTENSION(TapTapCloudSaveSDK)) <TapTapCloudSaveCallback>
+- (void)onResult:(NSInteger)resultCode;
+@end
+
+SWIFT_CLASS("_TtC18TapTapCloudSaveSDK27TapCloudSaveSwiftBridgeTest")
+@interface TapCloudSaveSwiftBridgeTest : NSObject
++ (void)testSwiftBridge;
++ (void)testCloudSaveOperations;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC18TapTapCloudSaveSDK33TapCloudSaveSwiftBridgeTestRunner")
+@interface TapCloudSaveSwiftBridgeTestRunner : NSObject
++ (void)runAllTests;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @protocol TapTapCloudSaveRequestCallback;
 SWIFT_CLASS("_TtC18TapTapCloudSaveSDK15TapTapCloudSave")
 @interface TapTapCloudSave : NSObject
@@ -417,17 +474,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapTapCloudS
 + (void)getArchiveCoverWithArchiveUUID:(NSString * _Nonnull)archiveUUID archiveFileID:(NSString * _Nonnull)archiveFileID callback:(id <TapTapCloudSaveRequestCallback> _Nonnull)callback;
 /// 确保静态初始化被触发
 + (void)ensureInitialization;
-@end
-
-/// CloudSave 状态回调协议
-/// 用于通知 CloudSave 模块的状态变化，如登录状态等
-/// 参考 Android 版本的 TapCloudSaveCallback 实现
-SWIFT_PROTOCOL("_TtP18TapTapCloudSaveSDK23TapTapCloudSaveCallback_")
-@protocol TapTapCloudSaveCallback <NSObject>
-/// CloudSave 结果通知
-/// \param resultCode 结果代码，参考 TapCloudSaveResultCode 中的定义
-///
-- (void)onResult:(NSInteger)resultCode;
 @end
 
 @class NSData;

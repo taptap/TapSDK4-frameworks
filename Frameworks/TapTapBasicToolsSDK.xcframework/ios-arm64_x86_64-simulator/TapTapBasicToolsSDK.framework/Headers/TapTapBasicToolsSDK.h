@@ -19,7 +19,6 @@
 #import <TapTapBasicToolsSDK/TapSDKMediator.h>
 #import <TapTapBasicToolsSDK/TapTapSDKHostConfiguration.h>
 #import <TapTapBasicToolsSDK/TapTapSDKVersion.h>
-#import <TapTapBasicToolsSDK/TapCoreNetworkTarget.h>
 #import <TapTapBasicToolsSDK/TapSDKHUD.h>
 #import <TapTapBasicToolsSDK/TapSDKProgressHUD.h>
 #import <TapTapBasicToolsSDK/NSString+TapSDKCore.h>
@@ -29,6 +28,7 @@
 #import <TapTapBasicToolsSDK/UIView+TapSdkToast.h>
 #import <TapTapBasicToolsSDK/TapTapSDKBasicLogUtils.h>
 #import <TapTapBasicToolsSDK/NSBundle+TapSDKCore.h>
+#import <TapTapBasicToolsSDK/TapCoreNetworkTarget.h>
 
 
 

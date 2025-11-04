@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapRelationSDK'
-  s.version          = '4.8.4-alpha.127'
+  s.version          = '4.8.4'
   s.summary          = '提供 TapTap 展示好友 UI 的能力。'
   s.swift_version    = '5.0'
   s.description      = <<-DESC
@@ -14,8 +14,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
   s.static_framework = true
-  s.vendored_frameworks = "Frameworks/TapTapRelationSDK.xcframework", "Frameworks/bifrost_sdk.xcframework"
+  s.vendored_frameworks = "Frameworks/TapTapRelationSDK.xcframework", "Frameworks/bifrost_sdk.xcframework", "Frameworks/TapTapSDKBridgeCore.xcframework"
   s.resources = 'Frameworks/TapTapRelationResource.bundle'
   s.dependency 'TapTapProfileSDK', s.version.to_s
+  s.dependency 'Kingfisher', '>= 6.0', '< 9.0'
 
 end

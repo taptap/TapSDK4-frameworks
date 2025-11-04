@@ -6,30 +6,6 @@
     "children": [
       {
         "kind": "Import",
-        "name": "TapTapNetworkSDK",
-        "printedName": "TapTapNetworkSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapRelationSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TapTapBasicToolsSDK",
-        "printedName": "TapTapBasicToolsSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapRelationSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CryptoKit",
-        "printedName": "CryptoKit",
-        "declKind": "Import",
-        "moduleName": "TapTapRelationSDK"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -125,12 +101,676 @@
       },
       {
         "kind": "Import",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapSDKBridgeCore",
+        "printedName": "TapTapSDKBridgeCore",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapRelationSwiftBridgeService",
+        "printedName": "TapRelationSwiftBridgeService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapRelationSwiftBridgeService",
+                "printedName": "TapTapRelationSDK.TapRelationSwiftBridgeService",
+                "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(cpy)shared",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC6sharedACvpZ",
+            "moduleName": "TapTapRelationSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapRelationSwiftBridgeService",
+                    "printedName": "TapTapRelationSDK.TapRelationSwiftBridgeService",
+                    "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(cm)shared",
+                "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC6sharedACvgZ",
+                "moduleName": "TapTapRelationSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "prepare",
+            "printedName": "prepare()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)prepare",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC7prepareyyF",
+            "moduleName": "TapTapRelationSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startMessenger",
+            "printedName": "startMessenger()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)startMessenger",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC14startMessengeryyF",
+            "moduleName": "TapTapRelationSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "inviteGame",
+            "printedName": "inviteGame()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)inviteGame",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC10inviteGameyyF",
+            "moduleName": "TapTapRelationSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "inviteTeam",
+            "printedName": "inviteTeam(teamId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)inviteTeamWithTeamId:",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC10inviteTeam6teamIdySSSg_tF",
+            "moduleName": "TapTapRelationSDK",
+            "objc_name": "inviteTeamWithTeamId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showTapUserProfile",
+            "printedName": "showTapUserProfile(openId:unionId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)showTapUserProfileWithOpenId:unionId:",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC04showA11UserProfile6openId05unionK0ySSSg_AGtF",
+            "moduleName": "TapTapRelationSDK",
+            "objc_name": "showTapUserProfileWithOpenId:unionId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getNewFansCount",
+            "printedName": "getNewFansCount(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)getNewFansCountWithCompletion:",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC15getNewFansCount10completionyySSc_tF",
+            "moduleName": "TapTapRelationSDK",
+            "objc_name": "getNewFansCountWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUnreadMessageCount",
+            "printedName": "getUnreadMessageCount(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)getUnreadMessageCountWithCompletion:",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC21getUnreadMessageCount10completionyySSc_tF",
+            "moduleName": "TapTapRelationSDK",
+            "objc_name": "getUnreadMessageCountWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerRelationCallback",
+            "printedName": "registerRelationCallback(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)registerRelationCallbackWithCompletion:",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC08registerB8Callback10completionyySSc_tF",
+            "moduleName": "TapTapRelationSDK",
+            "objc_name": "registerRelationCallbackWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService(im)destroy",
+            "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC7destroyyyF",
+            "moduleName": "TapTapRelationSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeService",
+        "mangledName": "$s03TapA11RelationSDK0aB18SwiftBridgeServiceC",
+        "moduleName": "TapTapRelationSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapSDKBridgeCore",
+        "printedName": "TapTapSDKBridgeCore",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapRelationSwiftBridgeInitializer",
+        "printedName": "TapRelationSwiftBridgeInitializer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapRelationSwiftBridgeInitializer",
+                "printedName": "TapTapRelationSDK.TapRelationSwiftBridgeInitializer",
+                "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer(cpy)shared",
+            "mangledName": "$s03TapA11RelationSDK0aB22SwiftBridgeInitializerC6sharedACvpZ",
+            "moduleName": "TapTapRelationSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapRelationSwiftBridgeInitializer",
+                    "printedName": "TapTapRelationSDK.TapRelationSwiftBridgeInitializer",
+                    "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer(cm)shared",
+                "mangledName": "$s03TapA11RelationSDK0aB22SwiftBridgeInitializerC6sharedACvgZ",
+                "moduleName": "TapTapRelationSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer(im)initialize",
+            "mangledName": "$s03TapA11RelationSDK0aB22SwiftBridgeInitializerC10initializeyyF",
+            "moduleName": "TapTapRelationSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "triggerAutoInitialization",
+            "printedName": "triggerAutoInitialization()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer(cm)triggerAutoInitialization",
+            "mangledName": "$s03TapA11RelationSDK0aB22SwiftBridgeInitializerC25triggerAutoInitializationyyFZ",
+            "moduleName": "TapTapRelationSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapRelationSDK@objc(cs)TapRelationSwiftBridgeInitializer",
+        "mangledName": "$s03TapA11RelationSDK0aB22SwiftBridgeInitializerC",
+        "moduleName": "TapTapRelationSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -152,8 +792,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -332,8 +972,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -509,8 +1149,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -525,6 +1165,13 @@
         "kind": "Import",
         "name": "TapTapNetworkSDK",
         "printedName": "TapTapNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -690,8 +1337,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -809,8 +1456,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -1146,6 +1793,13 @@
       },
       {
         "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1214,6 +1868,13 @@
       },
       {
         "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1224,8 +1885,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -1340,8 +2001,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -1919,8 +2580,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -2007,8 +2668,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -2075,8 +2736,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -2330,8 +2991,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -3418,8 +4079,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -3459,42 +4120,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
-        "declKind": "Import",
-        "moduleName": "TapTapRelationSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TapTapRelationSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "TapTapRelationSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TapTapRelationSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -3561,8 +4188,42 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRelationSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -3616,8 +4277,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapRelationSDK"
       },
@@ -3646,20 +4307,6 @@
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Utils\/TTFImageUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 336,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Utils\/TTFImageUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 353,
-      "length": 1,
-      "value": "0"
-    },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Model\/ChatMsgModel\/TTFTeamInviteMsgModel.swift",
       "kind": "StringLiteral",
@@ -3780,6 +4427,13 @@
       "value": "\"message_unread_cnt\""
     },
     {
+      "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/TapRelationSwiftBridgeInitializer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 245,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Utils\/TTFAppStateObserver.swift",
       "kind": "BooleanLiteral",
       "offset": 798,
@@ -3803,7 +4457,7 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Utils\/TTFAppStateObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 1088,
+      "offset": 1063,
       "length": 5,
       "value": "false"
     },
@@ -3908,329 +4562,329 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 392,
+      "offset": 398,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 399,
+      "offset": 405,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 409,
+      "offset": 415,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 421,
+      "offset": 427,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 502,
+      "offset": 508,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 552,
+      "offset": 558,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 791,
+      "offset": 797,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 1172,
+      "offset": 1178,
       "length": 9,
       "value": "\"#FF5A50\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1223,
+      "offset": 1229,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1298,
+      "offset": 1304,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1330,
+      "offset": 1336,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1510,
+      "offset": 1516,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1770,
+      "offset": 1776,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 1929,
+      "offset": 1935,
       "length": 9,
       "value": "\"#FF5A50\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1981,
+      "offset": 1987,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2058,
+      "offset": 2064,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2091,
+      "offset": 2097,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2312,
+      "offset": 2318,
       "length": 9,
       "value": "\"#00D9C5\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2374,
+      "offset": 2380,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2461,
+      "offset": 2467,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2504,
+      "offset": 2510,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2824,
+      "offset": 2830,
       "length": 23,
       "value": "\"common\/ttf_state_game\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2934,
+      "offset": 2940,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3149,
+      "offset": 3155,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3203,
+      "offset": 3209,
       "length": 9,
       "value": "\"#00CDBA\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3312,
+      "offset": 3318,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3550,
+      "offset": 3556,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 3568,
+      "offset": 3574,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3588,
+      "offset": 3594,
       "length": 9,
       "value": "\"#90969C\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3653,
+      "offset": 3659,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3905,
+      "offset": 3911,
       "length": 3,
       "value": "187"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3913,
+      "offset": 3919,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3924,
+      "offset": 3930,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3936,
+      "offset": 3942,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 4018,
+      "offset": 4024,
       "length": 48,
       "value": "\"common\/\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 4037,
+      "offset": 4043,
       "length": 6,
       "value": "\"dark\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 4045,
+      "offset": 4051,
       "length": 7,
       "value": "\"light\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 4053,
+      "offset": 4059,
       "length": 1,
       "value": "\"\/ttf_slience\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4103,
+      "offset": 4109,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 4392,
+      "offset": 4398,
       "length": 48,
       "value": "\"common\/\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 4412,
+      "offset": 4418,
       "length": 6,
       "value": "\"dark\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 4420,
+      "offset": 4426,
       "length": 7,
       "value": "\"light\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 4428,
+      "offset": 4434,
       "length": 1,
       "value": "\"\/ttf_invite\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 4450,
+      "offset": 4456,
       "length": 11,
       "value": "\"邀上线\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4878,
+      "offset": 4884,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 13596,
+      "offset": 13602,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Portrait\/TTFPortraitTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 13624,
+      "offset": 13630,
       "length": 5,
       "value": "false"
     },
@@ -4426,35 +5080,35 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Presenter\/TTFEmotionDataPresenter.swift",
       "kind": "Array",
-      "offset": 361,
+      "offset": 394,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Presenter\/TTFEmotionDataPresenter.swift",
       "kind": "Dictionary",
-      "offset": 450,
+      "offset": 483,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Presenter\/TTFEmotionDataPresenter.swift",
       "kind": "Array",
-      "offset": 520,
+      "offset": 553,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Presenter\/TTFEmotionDataPresenter.swift",
       "kind": "Array",
-      "offset": 651,
+      "offset": 684,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/Presenter\/TTFEmotionDataPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 681,
+      "offset": 714,
       "length": 5,
       "value": "false"
     },
@@ -4489,7 +5143,7 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/TTFChatMessageTableView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18942,
+      "offset": 18922,
       "length": 5,
       "value": "false"
     },
@@ -4685,63 +5339,63 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandFriendView.swift",
       "kind": "Array",
-      "offset": 664,
+      "offset": 670,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandFriendView.swift",
       "kind": "BooleanLiteral",
-      "offset": 774,
+      "offset": 780,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandFriendView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1201,
+      "offset": 1207,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandFriendView.swift",
       "kind": "StringLiteral",
-      "offset": 1239,
+      "offset": 1245,
       "length": 25,
       "value": "\"friend_and_message_list\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandFriendView.swift",
       "kind": "StringLiteral",
-      "offset": 1299,
+      "offset": 1305,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandFriendView.swift",
       "kind": "Array",
-      "offset": 1358,
+      "offset": 1364,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandFriendView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9524,
+      "offset": 9530,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandFriendView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17053,
+      "offset": 17452,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandFriendView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20365,
+      "offset": 20827,
       "length": 5,
       "value": "false"
     },
@@ -5035,28 +5689,28 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/TTFLandViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 339,
+      "offset": 366,
       "length": 3,
       "value": "536"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/TTFLandViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 645,
+      "offset": 672,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/TTFLandViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 696,
+      "offset": 723,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/TTFLandViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8325,
+      "offset": 12119,
       "length": 4,
       "value": "true"
     },
@@ -5070,322 +5724,322 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Utils\/TTFImagePickUtils.swift",
       "kind": "StringLiteral",
-      "offset": 672,
+      "offset": 692,
       "length": 49,
       "value": "\"访问权限被拒绝，请在 设置 中开启\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Utils\/TTFImagePickUtils.swift",
       "kind": "StringLiteral",
-      "offset": 752,
+      "offset": 772,
       "length": 23,
       "value": "\"当前设备不支持\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Utils\/TTFImagePickUtils.swift",
       "kind": "StringLiteral",
-      "offset": 799,
+      "offset": 819,
       "length": 14,
       "value": "\"用户取消\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Utils\/TTFImagePickUtils.swift",
       "kind": "StringLiteral",
-      "offset": 833,
+      "offset": 853,
       "length": 14,
       "value": "\"未知错误\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Utils\/TTFImagePickUtils.swift",
       "kind": "StringLiteral",
-      "offset": 870,
+      "offset": 890,
       "length": 24,
       "value": "\"文件大小超过 10M\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Utils\/TTFImagePickUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1087,
+      "offset": 1107,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 519,
+      "offset": 525,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 524,
+      "offset": 530,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 531,
+      "offset": 537,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 554,
+      "offset": 560,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 559,
+      "offset": 565,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 584,
+      "offset": 590,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 589,
+      "offset": 595,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 683,
+      "offset": 689,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 688,
+      "offset": 694,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 738,
+      "offset": 744,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1021,
+      "offset": 1027,
       "length": 3,
       "value": "164"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1106,
+      "offset": 1112,
       "length": 2,
       "value": "76"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1111,
+      "offset": 1117,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1131,
+      "offset": 1137,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1136,
+      "offset": 1142,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1176,
+      "offset": 1182,
       "length": 3,
       "value": "232"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1189,
+      "offset": 1195,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1289,
+      "offset": 1295,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1294,
+      "offset": 1300,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1727,
+      "offset": 1733,
       "length": 3,
       "value": "164"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1819,
+      "offset": 1825,
       "length": 2,
       "value": "76"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1824,
+      "offset": 1830,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1844,
+      "offset": 1850,
       "length": 2,
       "value": "34"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1849,
+      "offset": 1855,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1889,
+      "offset": 1895,
       "length": 3,
       "value": "232"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1915,
+      "offset": 1921,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1920,
+      "offset": 1926,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2027,
+      "offset": 2033,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2032,
+      "offset": 2038,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2087,
+      "offset": 2093,
       "length": 9,
       "value": "\"#00CDBA\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2448,
+      "offset": 2454,
       "length": 3,
       "value": "292"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2456,
+      "offset": 2462,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2467,
+      "offset": 2473,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2479,
+      "offset": 2485,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2637,
+      "offset": 2643,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2642,
+      "offset": 2648,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2724,
+      "offset": 2730,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2729,
+      "offset": 2735,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2761,
+      "offset": 2767,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/FriendRequest\/TTFRequestTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2805,
+      "offset": 2811,
       "length": 9,
       "value": "\"#52565A\""
     },
@@ -5399,357 +6053,357 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 231,
+      "offset": 237,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 458,
+      "offset": 464,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 463,
+      "offset": 469,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 470,
+      "offset": 476,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 493,
+      "offset": 499,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 497,
+      "offset": 503,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 522,
+      "offset": 528,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 526,
+      "offset": 532,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 620,
+      "offset": 626,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 625,
+      "offset": 631,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 675,
+      "offset": 681,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 974,
+      "offset": 980,
       "length": 2,
       "value": "76"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 978,
+      "offset": 984,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 998,
+      "offset": 1004,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1002,
+      "offset": 1008,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1026,
+      "offset": 1032,
       "length": 3,
       "value": "232"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1031,
+      "offset": 1037,
       "length": 3,
       "value": "268"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1044,
+      "offset": 1050,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1144,
+      "offset": 1150,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1148,
+      "offset": 1154,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1525,
+      "offset": 1531,
       "length": 2,
       "value": "76"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1530,
+      "offset": 1536,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1550,
+      "offset": 1556,
       "length": 2,
       "value": "39"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1554,
+      "offset": 1560,
       "length": 2,
       "value": "35"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1565,
+      "offset": 1571,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1576,
+      "offset": 1582,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 1630,
+      "offset": 1636,
       "length": 9,
       "value": "\"#00D9C5\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1676,
+      "offset": 1682,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1752,
+      "offset": 1758,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2018,
+      "offset": 2024,
       "length": 2,
       "value": "76"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2023,
+      "offset": 2029,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2043,
+      "offset": 2049,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2047,
+      "offset": 2053,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2058,
+      "offset": 2064,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2070,
+      "offset": 2076,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2150,
+      "offset": 2156,
       "length": 23,
       "value": "\"common\/ttf_state_game\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2493,
+      "offset": 2499,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2498,
+      "offset": 2504,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2518,
+      "offset": 2524,
       "length": 2,
       "value": "35"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2522,
+      "offset": 2528,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2533,
+      "offset": 2539,
       "length": 3,
       "value": "232"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2546,
+      "offset": 2552,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2638,
+      "offset": 2644,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2691,
+      "offset": 2697,
       "length": 9,
       "value": "\"#00CDBA\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3099,
+      "offset": 3105,
       "length": 36,
       "value": "\"common\/light\/ttf_checkbox_selected\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3220,
+      "offset": 3226,
       "length": 61,
       "value": "\"common\/\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3239,
+      "offset": 3245,
       "length": 6,
       "value": "\"dark\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3248,
+      "offset": 3254,
       "length": 7,
       "value": "\"light\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3256,
+      "offset": 3262,
       "length": 1,
       "value": "\"\/ttf_checkbox_unselected\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3337,
+      "offset": 3343,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Invite\/TTFInviteTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 5900,
+      "offset": 5906,
       "length": 5,
       "value": "false"
     },
@@ -6365,28 +7019,28 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/InputView\/KeyBoard\/EmojiKeyBoard\/TTFEmojiSwitchView.swift",
       "kind": "IntegerLiteral",
-      "offset": 575,
+      "offset": 581,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/InputView\/KeyBoard\/EmojiKeyBoard\/TTFEmojiSwitchView.swift",
       "kind": "IntegerLiteral",
-      "offset": 748,
+      "offset": 754,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/InputView\/KeyBoard\/EmojiKeyBoard\/TTFEmojiSwitchView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5462,
+      "offset": 5468,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/InputView\/KeyBoard\/EmojiKeyBoard\/TTFEmojiSwitchView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5607,
+      "offset": 5613,
       "length": 5,
       "value": "false"
     },
@@ -6624,49 +7278,49 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/InputView\/KeyBoard\/EmojiKeyBoard\/TTFEmojiKeyBoardCell.swift",
       "kind": "Array",
-      "offset": 631,
+      "offset": 637,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/InputView\/KeyBoard\/EmojiKeyBoard\/TTFEmojiKeyBoardCell.swift",
       "kind": "StringLiteral",
-      "offset": 917,
+      "offset": 923,
       "length": 9,
       "value": "\"#333333\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/InputView\/KeyBoard\/EmojiKeyBoard\/TTFEmojiKeyBoardCell.swift",
       "kind": "StringLiteral",
-      "offset": 928,
+      "offset": 934,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/InputView\/KeyBoard\/EmojiKeyBoard\/TTFEmojiKeyBoardCell.swift",
       "kind": "FloatLiteral",
-      "offset": 946,
+      "offset": 952,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/InputView\/KeyBoard\/EmojiKeyBoard\/TTFEmojiKeyBoardCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1021,
+      "offset": 1027,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/InputView\/KeyBoard\/EmojiKeyBoard\/TTFEmojiKeyBoardCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 12050,
+      "offset": 12056,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Widget\/InputView\/KeyBoard\/EmojiKeyBoard\/TTFEmojiKeyBoardCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 13415,
+      "offset": 13421,
       "length": 2,
       "value": "12"
     },
@@ -7044,371 +7698,371 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 361,
+      "offset": 367,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 368,
+      "offset": 374,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 378,
+      "offset": 384,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 390,
+      "offset": 396,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 441,
+      "offset": 447,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 522,
+      "offset": 528,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 772,
+      "offset": 778,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1140,
+      "offset": 1146,
       "length": 2,
       "value": "76"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1147,
+      "offset": 1153,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1158,
+      "offset": 1164,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1169,
+      "offset": 1175,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 1233,
+      "offset": 1239,
       "length": 9,
       "value": "\"#00D9C5\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1295,
+      "offset": 1301,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1381,
+      "offset": 1387,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1424,
+      "offset": 1430,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1623,
+      "offset": 1629,
       "length": 2,
       "value": "76"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1630,
+      "offset": 1636,
       "length": 2,
       "value": "27"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1641,
+      "offset": 1647,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1653,
+      "offset": 1659,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 1733,
+      "offset": 1739,
       "length": 23,
       "value": "\"common\/ttf_state_game\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1843,
+      "offset": 1849,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2039,
+      "offset": 2045,
       "length": 2,
       "value": "86"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2046,
+      "offset": 2052,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2057,
+      "offset": 2063,
       "length": 2,
       "value": "98"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2069,
+      "offset": 2075,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2133,
+      "offset": 2139,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2187,
+      "offset": 2193,
       "length": 9,
       "value": "\"#00CDBA\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2296,
+      "offset": 2302,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2667,
+      "offset": 2673,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2908,
+      "offset": 2914,
       "length": 3,
       "value": "187"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2916,
+      "offset": 2922,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2927,
+      "offset": 2933,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2939,
+      "offset": 2945,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3021,
+      "offset": 3027,
       "length": 49,
       "value": "\"common\/\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3040,
+      "offset": 3046,
       "length": 6,
       "value": "\"dark\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3049,
+      "offset": 3055,
       "length": 7,
       "value": "\"light\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3057,
+      "offset": 3063,
       "length": 1,
       "value": "\"\/ttf_slience\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3107,
+      "offset": 3113,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3293,
+      "offset": 3299,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3514,
+      "offset": 3520,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3671,
+      "offset": 3677,
       "length": 9,
       "value": "\"#FF5A50\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3723,
+      "offset": 3729,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3799,
+      "offset": 3805,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3832,
+      "offset": 3838,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4009,
+      "offset": 4015,
       "length": 3,
       "value": "196"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4017,
+      "offset": 4023,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4028,
+      "offset": 4034,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4039,
+      "offset": 4045,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 4092,
+      "offset": 4098,
       "length": 9,
       "value": "\"#FF5A50\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4143,
+      "offset": 4149,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4218,
+      "offset": 4224,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4250,
+      "offset": 4256,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Friend\/Landscape\/TTFLandTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 8636,
+      "offset": 8642,
       "length": 5,
       "value": "false"
     },
@@ -7639,42 +8293,42 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Portrait\/TTFPortraitChatController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1130,
+      "offset": 1136,
       "length": 4,
       "value": "-114"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Portrait\/TTFPortraitChatController.swift",
       "kind": "StringLiteral",
-      "offset": 1167,
+      "offset": 1173,
       "length": 16,
       "value": "\"message_detail\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Portrait\/TTFPortraitChatController.swift",
       "kind": "Dictionary",
-      "offset": 1229,
+      "offset": 1235,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Chat\/Portrait\/TTFPortraitChatController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17007,
+      "offset": 17013,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Widget\/TTFShowChatImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 341,
+      "offset": 347,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRelation\/Private\/UI\/Widget\/TTFShowChatImageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 370,
+      "offset": 376,
       "length": 1,
       "value": "0"
     }

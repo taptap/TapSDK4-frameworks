@@ -330,8 +330,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger UNKNOWN_ER
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class TapTapAchievementResult;
+SWIFT_CLASS_NAMED("TapAchievementSwiftBridgeInitializer")
+@interface TapAchievementSwiftBridgeInitializer : NSObject
++ (void)registerWithSwiftBridge;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSString;
+SWIFT_CLASS("_TtC20TapTapAchievementSDK32TapAchievementSwiftBridgeService")
+@interface TapAchievementSwiftBridgeService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapAchievementSwiftBridgeService * _Nonnull shared;)
++ (TapAchievementSwiftBridgeService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)unlockAchievementWithAchievementId:(NSString * _Nonnull)achievementId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)incrementAchievementWithAchievementId:(NSString * _Nonnull)achievementId steps:(NSInteger)steps completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)showAchievementsWithCompletion:(void (^ _Nullable)(NSString * _Nonnull))completion;
+- (void)enableToastWithEnable:(BOOL)enable completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)registerAchievementCallback:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+@end
+
+@class TapTapAchievementResult;
 SWIFT_PROTOCOL("_TtP20TapTapAchievementSDK25TapTapAchievementCallback_")
 @protocol TapTapAchievementCallback <NSObject>
 - (void)onAchievementSuccessWithCode:(NSInteger)code result:(TapTapAchievementResult * _Nonnull)result;
@@ -789,8 +808,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger UNKNOWN_ER
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class TapTapAchievementResult;
+SWIFT_CLASS_NAMED("TapAchievementSwiftBridgeInitializer")
+@interface TapAchievementSwiftBridgeInitializer : NSObject
++ (void)registerWithSwiftBridge;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSString;
+SWIFT_CLASS("_TtC20TapTapAchievementSDK32TapAchievementSwiftBridgeService")
+@interface TapAchievementSwiftBridgeService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapAchievementSwiftBridgeService * _Nonnull shared;)
++ (TapAchievementSwiftBridgeService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)unlockAchievementWithAchievementId:(NSString * _Nonnull)achievementId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)incrementAchievementWithAchievementId:(NSString * _Nonnull)achievementId steps:(NSInteger)steps completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)showAchievementsWithCompletion:(void (^ _Nullable)(NSString * _Nonnull))completion;
+- (void)enableToastWithEnable:(BOOL)enable completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)registerAchievementCallback:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+@end
+
+@class TapTapAchievementResult;
 SWIFT_PROTOCOL("_TtP20TapTapAchievementSDK25TapTapAchievementCallback_")
 @protocol TapTapAchievementCallback <NSObject>
 - (void)onAchievementSuccessWithCode:(NSInteger)code result:(TapTapAchievementResult * _Nonnull)result;

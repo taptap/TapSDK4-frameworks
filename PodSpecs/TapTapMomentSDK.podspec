@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapMomentSDK'
-  s.version          = '4.8.4-alpha.127'
+  s.version          = '4.8.4'
   s.summary          = '提供 TapTap 内嵌动态功能。'
   s.swift_version    = '5.0'
   s.description      = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
   s.static_framework = true
-  s.vendored_frameworks = "Frameworks/TapTapMomentSDK.xcframework"
+  s.vendored_frameworks = "Frameworks/TapTapMomentSDK.xcframework", "Frameworks/TapTapSDKBridgeCore.xcframework"
   s.resources = 'Frameworks/TapTapMomentResource.bundle'
   s.dependency 'TapTapLoginSDK', s.version.to_s
 

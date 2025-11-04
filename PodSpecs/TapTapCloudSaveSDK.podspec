@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapCloudSaveSDK'
-  s.version          = '4.8.4-alpha.127'
+  s.version          = '4.8.4'
   s.summary          = '提供 TapTap 云存档的能力。'
   s.swift_version    = '5.0'
   s.description      = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
   s.static_framework = true
-  s.vendored_frameworks = "Frameworks/TapTapCloudSaveSDK.xcframework", "Frameworks/cloudsave_sdk.xcframework"
+  s.vendored_frameworks = "Frameworks/TapTapCloudSaveSDK.xcframework", "Frameworks/cloudsave_sdk.xcframework", "Frameworks/TapTapSDKBridgeCore.xcframework"
   s.dependency 'TapTapLoginSDK', s.version.to_s
   s.xcconfig = {
     'OTHER_LDFLAGS' => '-lz.1'

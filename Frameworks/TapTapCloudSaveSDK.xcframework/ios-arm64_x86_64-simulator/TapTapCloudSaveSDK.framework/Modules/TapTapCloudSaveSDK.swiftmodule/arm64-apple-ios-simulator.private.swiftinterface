@@ -7,10 +7,43 @@ import Swift
 import TapTapBasicToolsSDK
 import TapTapCoreSDK
 import TapTapLoginSDK
+import TapTapSDKBridgeCore
 import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(TapCloudSaveSwiftBridgeInitializer) public class TapCloudSaveSwiftBridgeInitializer : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public static func registerWithSwiftBridge()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapCloudSaveSwiftBridgeService : ObjectiveC.NSObject {
+  @objc public static let shared: TapTapCloudSaveSDK.TapCloudSaveSwiftBridgeService
+  @objc public static func registerWithSwiftBridge()
+  @objc public func registerCloudSaveCallback(_ callback: @escaping (Swift.String) -> Swift.Void)
+  @objc public func cleanup()
+  @objc public func createArchive(metadata: Swift.String, filePath: Swift.String, coverPath: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func updateArchive(uuid: Swift.String, metadata: Swift.String, filePath: Swift.String, coverPath: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func deleteArchive(uuid: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func getArchiveList(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func getArchiveData(uuid: Swift.String, fileID: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func getArchiveCover(uuid: Swift.String, fileID: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc deinit
+}
+extension TapTapCloudSaveSDK.TapCloudSaveSwiftBridgeService : TapTapCloudSaveSDK.TapTapCloudSaveCallback {
+  @objc dynamic public func onResult(_ resultCode: Swift.Int)
+}
+@_inheritsConvenienceInitializers @objc public class TapCloudSaveSwiftBridgeTest : ObjectiveC.NSObject {
+  @objc public static func testSwiftBridge()
+  @objc public static func testCloudSaveOperations()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class TapCloudSaveSwiftBridgeTestRunner : ObjectiveC.NSObject {
+  @objc public static func runAllTests()
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public protocol TapTapCloudSaveCallback : ObjectiveC.NSObjectProtocol {
   @objc func onResult(_ resultCode: Swift.Int)
 }

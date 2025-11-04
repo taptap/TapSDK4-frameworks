@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapComplianceSDK
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapComplianceSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CommonCrypto
 import Foundation
@@ -11,6 +11,7 @@ import TapTapBasicToolsSDK
 @_exported import TapTapComplianceSDK
 import TapTapLoginSDK
 import TapTapNetworkSDK
+import TapTapSDKBridgeCore
 import UIKit
 import _Concurrency
 import _StringProcessing
@@ -46,6 +47,24 @@ public class SwiftCountDownTimer {
 }
 extension Dispatch.DispatchTimeInterval {
   public static func fromSeconds(_ seconds: Swift.Double) -> Dispatch.DispatchTimeInterval
+}
+@_inheritsConvenienceInitializers @objc(TapComplianceSwiftBridgeInitializer) public class TapComplianceSwiftBridgeInitializer : ObjectiveC.NSObject {
+  @objc public static func registerWithSwiftBridge()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapComplianceSwiftBridgeService : ObjectiveC.NSObject {
+  @objc public static let shared: TapTapComplianceSDK.TapComplianceSwiftBridgeService
+  @objc public func startup(userId: Swift.String)
+  @objc public func registerComplianceCallback(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func setTestEnvironment(isTest: Swift.Bool)
+  @objc public func getCurrentAccessToken(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func getUserRemainTime(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func getUserAgeRange(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func exit()
+  @objc public func submitPayment(amount: Swift.Int64, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func checkPaymentLimit(amount: Swift.Int64, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc deinit
 }
 extension Swift.Collection {
   public subscript(safe index: Self.Index) -> Self.Iterator.Element? {

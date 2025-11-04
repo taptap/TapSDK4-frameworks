@@ -281,8 +281,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapProfileSDK"
       },
@@ -449,8 +449,8 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
         "declKind": "Import",
         "moduleName": "TapTapProfileSDK"
       },
@@ -1746,112 +1746,112 @@
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/GradientImageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 289,
+      "offset": 295,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/GradientImageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 326,
+      "offset": 332,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/GradientImageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 364,
+      "offset": 370,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/GradientImageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 441,
+      "offset": 447,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/GradientImageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 641,
+      "offset": 647,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
       "kind": "StringLiteral",
-      "offset": 316,
+      "offset": 322,
       "length": 11,
       "value": "\"user_card\""
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
       "kind": "BooleanLiteral",
-      "offset": 554,
+      "offset": 560,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
       "kind": "BooleanLiteral",
-      "offset": 584,
+      "offset": 590,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
       "kind": "IntegerLiteral",
-      "offset": 658,
+      "offset": 664,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
       "kind": "IntegerLiteral",
-      "offset": 727,
+      "offset": 733,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
       "kind": "IntegerLiteral",
-      "offset": 786,
+      "offset": 792,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
       "kind": "IntegerLiteral",
-      "offset": 854,
+      "offset": 860,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
       "kind": "IntegerLiteral",
-      "offset": 911,
+      "offset": 917,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1020,
+      "offset": 1026,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1131,
+      "offset": 1137,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/builds\/cY2CtEh8s\/0\/tapsdk\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1208,
+      "offset": 1214,
       "length": 5,
       "value": "false"
     },
