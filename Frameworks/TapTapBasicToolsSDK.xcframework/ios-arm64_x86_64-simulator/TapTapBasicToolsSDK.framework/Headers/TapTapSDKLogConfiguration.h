@@ -18,6 +18,7 @@ typedef NS_ENUM(NSUInteger, TapTapSDKProjectType) {
     TapTapAchievementProject,
     TapTapComplianceProject,
     TapTapShareProject,
+    TapTapRepProject,
     TapTapRelationProject,
     TapTapRelationLiteProject,
     TapTapProfileProject,
