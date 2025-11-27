@@ -1,4 +1,0 @@
-framework module TapTapAchievementSDK {
-  header "TapTapAchievementSDK-Swift.h"
-  requires objc
-}

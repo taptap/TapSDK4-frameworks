@@ -1,0 +1,6 @@
+framework module TapTapBasicToolsSDK {
+  umbrella header "TapTapBasicToolsSDK.h"
+  export *
+
+  module * { export * }
+}

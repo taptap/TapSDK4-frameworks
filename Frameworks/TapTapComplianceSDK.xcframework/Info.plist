@@ -6,11 +6,11 @@
 	<array>
 		<dict>
 			<key>BinaryPath</key>
-			<string>TapTapComplianceSDK.framework/TapTapComplianceSDK</string>
+			<string>Pods_TapTapLoginSDK.framework/Pods_TapTapLoginSDK</string>
 			<key>LibraryIdentifier</key>
 			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
-			<string>TapTapComplianceSDK.framework</string>
+			<string>Pods_TapTapLoginSDK.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
@@ -23,11 +23,11 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>TapTapComplianceSDK.framework/TapTapComplianceSDK</string>
+			<string>Pods_TapTapLoginSDK.framework/Pods_TapTapLoginSDK</string>
 			<key>LibraryIdentifier</key>
 			<string>ios-arm64</string>
 			<key>LibraryPath</key>
-			<string>TapTapComplianceSDK.framework</string>
+			<string>Pods_TapTapLoginSDK.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>

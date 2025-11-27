@@ -1,4 +1,0 @@
-framework module TapTapRepSDK {
-  header "TapTapRepSDK-Swift.h"
-  requires objc
-}

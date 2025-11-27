@@ -1,4 +1,0 @@
-framework module TapTapShareSDK {
-  header "TapTapShareSDK-Swift.h"
-  requires objc
-}
