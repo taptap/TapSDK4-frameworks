@@ -1,0 +1,70 @@
+# Fastfile for TapTap iOS SDK Release Automation
+#
+# 使用方法:
+#   fastlane release version:4.7.4
+#   fastlane release_to_cocoapods
+
+default_platform(:ios)
+
+platform :ios do
+  # 发布到 CocoaPods
+  # 这个 lane 会验证并发布 podspec 到 CocoaPods Trunk
+  desc "Release SDK to CocoaPods"
+  lane :release_to_cocoapods do
+    # 1. 验证 podspec 文件格式
+    pod_lib_lint(
+      podspec: "PodSpecs/TapTapSDK.podspec",
+      allow_warnings: true,
+      verbose: true
+    )
+
+    # 2. 发布到 CocoaPods Trunk
+    pod_push(
+      path: "PodSpecs/TapTapSDK.podspec",
+      allow_warnings: true,
+      verbose: true
+    )
+
+    UI.success("✅ Successfully published TapTapSDK to CocoaPods!")
+  end
+
+  # 完整的发布流程
+  # 包含版本验证、GitHub Release 创建、CocoaPods 发布
+  desc "Full release process with version validation"
+  lane :release do |options|
+    # 获取版本号
+    version = options[:version]
+
+    if version.nil?
+      UI.user_error!("❌ Please specify version number: fastlane release version:4.7.4")
+    end
+
+    UI.message("🚀 Starting release process for version #{version}")
+
+    # 1. 验证 podspec 版本号与参数是否匹配
+    podspec_version = version_get_podspec(path: "PodSpecs/TapTapSDK.podspec")
+
+    if podspec_version != version
+      UI.user_error!("❌ Podspec version (#{podspec_version}) does not match specified version (#{version})")
+    end
+
+    UI.success("✅ Version check passed: #{version}")
+
+    # 2. 发布到 CocoaPods
+    release_to_cocoapods
+
+    UI.success("🎉 Release #{version} completed successfully!")
+  end
+
+  # 仅验证 podspec，不发布
+  desc "Validate podspec without publishing"
+  lane :validate do
+    pod_lib_lint(
+      podspec: "PodSpecs/TapTapSDK.podspec",
+      allow_warnings: true,
+      verbose: true
+    )
+
+    UI.success("✅ Podspec validation passed!")
+  end
+end

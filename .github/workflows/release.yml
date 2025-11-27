@@ -1,0 +1,100 @@
+name: Release iOS SDK
+
+# 触发条件：当推送版本 tag 时自动运行
+# 支持格式：v1.0.0 或 1.0.0
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+      - '*.*.*'
+
+jobs:
+  # Job 1: 创建 GitHub Release
+  create-release:
+    name: Create GitHub Release
+    runs-on: tapsdk-linux-x64-16c  # 使用自定义 Linux runner
+    permissions:
+      contents: write  # 需要写权限来创建 release
+
+    steps:
+      # Step 1: 检出代码
+      # fetch-depth: 0 表示获取完整的 git 历史，以便后续操作
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Step 2: 从 tag 中提取版本号
+      # 例如：v4.7.3 -> 4.7.3
+      - name: Extract version from tag
+        id: get_version
+        run: |
+          TAG_NAME=${GITHUB_REF#refs/tags/}
+          VERSION=${TAG_NAME#v}
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "tag_name=${TAG_NAME}" >> $GITHUB_OUTPUT
+          echo "Extracted version: ${VERSION} from tag: ${TAG_NAME}"
+
+      # Step 3: 创建 GitHub Release
+      # 创建正式版本发布，使用 GitHub 自动生成的 release notes
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.get_version.outputs.tag_name }}
+          name: Release ${{ steps.get_version.outputs.version }}
+          generate_release_notes: true
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Job 2: 使用 Fastlane 发布到 CocoaPods
+  # 依赖于 create-release job 完成后才执行
+  publish-cocoapods:
+    name: Publish to CocoaPods with Fastlane
+    needs: create-release
+    runs-on: macos-15-xlarge  # 使用自定义 macOS runner (macOS 15, XLarge)
+
+    steps:
+      # Step 1: 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: 设置 Ruby 环境并安装依赖
+      # 使用 Bundler 自动安装 Gemfile 中指定的 Fastlane 和 CocoaPods
+      # bundler-cache: true 会自动缓存 gems，加快构建速度
+      - name: Set up Ruby and install dependencies
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      # Step 3: 从 tag 中提取版本号
+      - name: Extract version from tag
+        id: get_version
+        run: |
+          TAG_NAME=${GITHUB_REF#refs/tags/}
+          VERSION=${TAG_NAME#v}
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "Extracted version: ${VERSION} from tag: ${TAG_NAME}"
+
+      # Step 4: 使用 Fastlane 发布到 CocoaPods
+      # Fastlane 会自动处理版本验证、podspec 验证和发布流程
+      - name: Release to CocoaPods using Fastlane
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+        run: |
+          if [ -z "$COCOAPODS_TRUNK_TOKEN" ]; then
+            echo "❌ Error: COCOAPODS_TRUNK_TOKEN is not set"
+            echo "Please add your CocoaPods Trunk token to GitHub Secrets"
+            exit 1
+          fi
+
+          echo "🚀 Starting Fastlane release process..."
+          bundle exec fastlane release version:${{ steps.get_version.outputs.version }}
+
+      # Step 5: 发布成功提示
+      - name: Release completed
+        run: |
+          echo "✅ Successfully published TapTapSDK ${{ steps.get_version.outputs.version }} to CocoaPods"
+          echo "It may take a few minutes for the new version to be available in CocoaPods search"
