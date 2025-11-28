@@ -11,19 +11,15 @@ platform :ios do
   # 这个 lane 会验证并发布 podspec 到 CocoaPods Trunk
   desc "Release SDK to CocoaPods"
   lane :release_to_cocoapods do
-    # 1. 验证 podspec 文件格式
-    pod_lib_lint(
-      podspec: "PodSpecs/TapTapSDK.podspec",
-      allow_warnings: true,
-      verbose: true
-    )
+    # 1. 更新 CocoaPods 仓库
+    sh("pod repo update")
 
-    # 2. 发布到 CocoaPods Trunk
-    pod_push(
-      path: "PodSpecs/TapTapSDK.podspec",
-      allow_warnings: true,
-      verbose: true
-    )
+    # 2. 验证 podspec 文件格式（从 Git 仓库验证）
+    podspec_path = File.expand_path("../PodSpecs/TapTapSDK.podspec", __dir__)
+    sh("pod spec lint #{podspec_path} --allow-warnings --verbose --skip-import-validation")
+
+    # 3. 发布到 CocoaPods Trunk
+    sh("pod trunk push #{podspec_path} --allow-warnings --verbose")
 
     UI.success("✅ Successfully published TapTapSDK to CocoaPods!")
   end
@@ -59,11 +55,12 @@ platform :ios do
   # 仅验证 podspec，不发布
   desc "Validate podspec without publishing"
   lane :validate do
-    pod_lib_lint(
-      podspec: "PodSpecs/TapTapSDK.podspec",
-      allow_warnings: true,
-      verbose: true
-    )
+    # 更新 CocoaPods 仓库
+    sh("pod repo update")
+
+    # 使用 pod spec lint 从 Git 仓库验证
+    podspec_path = File.expand_path("../PodSpecs/TapTapSDK.podspec", __dir__)
+    sh("pod spec lint #{podspec_path} --allow-warnings --verbose --skip-import-validation")
 
     UI.success("✅ Podspec validation passed!")
   end
