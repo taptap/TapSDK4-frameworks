@@ -1,0 +1,83 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapRelationSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import CommonCrypto
+import CryptoKit
+import Foundation
+import MobileCoreServices
+import Network
+import Photos
+import PhotosUI
+import Swift
+import TapTapBasicToolsSDK
+import TapTapCoreSDK
+import TapTapKingfisher
+import TapTapLoginSDK
+import TapTapNetworkSDK
+import TapTapProfileSDK
+import TapTapSDKBridgeCore
+import UIKit
+import UniformTypeIdentifiers
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import bifrost_sdk
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapRelationSwiftBridgeService : ObjectiveC.NSObject {
+  @objc public static let shared: TapTapRelationSDK.TapRelationSwiftBridgeService
+  @objc public func prepare()
+  @objc public func startMessenger()
+  @objc public func inviteGame()
+  @objc public func inviteTeam(teamId: Swift.String?)
+  @objc public func showTapUserProfile(openId: Swift.String?, unionId: Swift.String?)
+  @objc public func getNewFansCount(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func getUnreadMessageCount(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func registerRelationCallback(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func destroy()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapRelationSwiftBridgeInitializer : ObjectiveC.NSObject {
+  @objc public static let shared: TapTapRelationSDK.TapRelationSwiftBridgeInitializer
+  @objc public func initialize()
+  @objc deinit
+}
+extension TapTapRelationSDK.TapRelationSwiftBridgeInitializer {
+  @objc public static func triggerAutoInitialization()
+}
+public struct TapRelationUITheme {
+  public static let standard: TapTapRelationSDK.TapRelationUITheme
+  public static let standardPortrait: TapTapRelationSDK.TapRelationUITheme
+  public static let standardDark: TapTapRelationSDK.TapRelationUITheme
+  public static let standardPortraitDark: TapTapRelationSDK.TapRelationUITheme
+  public static let ipad: TapTapRelationSDK.TapRelationUITheme
+  public static let ipadDark: TapTapRelationSDK.TapRelationUITheme
+  public static let ipadPortrait: TapTapRelationSDK.TapRelationUITheme
+  public static let ipadPortraitDark: TapTapRelationSDK.TapRelationUITheme
+}
+@objc public protocol TapTapRelationDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func onMessengerCodeResult(code: Swift.Int)
+  @objc func onNewFansCountChanged(code: Swift.Int, fansCount: Swift.Int)
+  @objc func onUnreadMessageCountChanged(code: Swift.Int, unreadMsgCount: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class TapTapRelationMessengerCode : ObjectiveC.NSObject {
+  @objc public static let NEED_LOGIN: Swift.Int
+  @objc public static let ON_NEW_FANS_COUNT_CHANGED: Swift.Int
+  @objc public static let GET_NEW_FANS_COUNT: Swift.Int
+  @objc public static let ON_NEW_MESSAGE_COUNT_CHANGED: Swift.Int
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapRelation : ObjectiveC.NSObject {
+  @objc public static func prepare()
+  @objc public static func startMessenger()
+  @objc public static func inviteGame()
+  @objc public static func inviteTeam(_ teamId: Swift.String)
+  @objc public static func showTapUserProfile(openId: Swift.String? = nil, unionId: Swift.String? = nil)
+  @objc public static func getNewFansCount() -> Swift.Int
+  @objc public static func getUnreadMessageCount() -> Swift.Int
+  @objc public static func registerRelationDelegate(delegate: any TapTapRelationSDK.TapTapRelationDelegate)
+  @objc public static func unregisterRelationDelegate(delegate: any TapTapRelationSDK.TapTapRelationDelegate)
+  @objc public static func destroy()
+  @objc override dynamic public init()
+  @objc deinit
+}

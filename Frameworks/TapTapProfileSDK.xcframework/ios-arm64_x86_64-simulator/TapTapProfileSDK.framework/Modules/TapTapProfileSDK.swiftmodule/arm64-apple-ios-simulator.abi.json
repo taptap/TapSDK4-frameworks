@@ -1,0 +1,2048 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TapTapProfileSDK",
+    "printedName": "TapTapProfileSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapLoginSDK",
+        "printedName": "TapTapLoginSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapTapProfile",
+        "printedName": "TapTapProfile",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "showUserCard",
+            "printedName": "showUserCard(openId:unionId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:03TapA10ProfileSDK0aaB0C12showUserCard6openId05unionH0ySSSg_AGtFZ",
+            "mangledName": "$s03TapA10ProfileSDK0aaB0C12showUserCard6openId05unionH0ySSSg_AGtFZ",
+            "moduleName": "TapTapProfileSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:03TapA10ProfileSDK0aaB0C",
+        "mangledName": "$s03TapA10ProfileSDK0aaB0C",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapProfileRelationBridge",
+        "printedName": "TapProfileRelationBridge",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "startChat",
+            "printedName": "startChat(profileModel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TapUserProfileModel",
+                "printedName": "TapTapProfileSDK.TapUserProfileModel",
+                "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:03TapA10ProfileSDK0aB14RelationBridgeP9startChat12profileModelyAA0a4UserbI0V_tFZ",
+            "mangledName": "$s03TapA10ProfileSDK0aB14RelationBridgeP9startChat12profileModelyAA0a4UserbI0V_tFZ",
+            "moduleName": "TapTapProfileSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TapTapProfileSDK.TapProfileRelationBridge>",
+            "sugared_genericSig": "<Self where Self : TapTapProfileSDK.TapProfileRelationBridge>",
+            "static": true,
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "invite",
+            "printedName": "invite(profileModel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TapUserProfileModel",
+                "printedName": "TapTapProfileSDK.TapUserProfileModel",
+                "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:03TapA10ProfileSDK0aB14RelationBridgeP6invite12profileModelyAA0a4UserbH0V_tFZ",
+            "mangledName": "$s03TapA10ProfileSDK0aB14RelationBridgeP6invite12profileModelyAA0a4UserbH0V_tFZ",
+            "moduleName": "TapTapProfileSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TapTapProfileSDK.TapProfileRelationBridge>",
+            "sugared_genericSig": "<Self where Self : TapTapProfileSDK.TapProfileRelationBridge>",
+            "static": true,
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:03TapA10ProfileSDK0aB14RelationBridgeP",
+        "mangledName": "$s03TapA10ProfileSDK0aB14RelationBridgeP",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapCoreSDK",
+        "printedName": "TapTapCoreSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapCoreSDK",
+        "printedName": "TapTapCoreSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapProfileLeaderboardBridge",
+        "printedName": "TapProfileLeaderboardBridge",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "openLeaderboard",
+            "printedName": "openLeaderboard(sdkUserId:leaderboardId:leaderboardCallback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String, Swift.Int, Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String, Swift.Int, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:03TapA10ProfileSDK0aB17LeaderboardBridgeP04openD09sdkUserId011leaderboardI00J8CallbackySS_SSySS_SSSiSStctFZ",
+            "mangledName": "$s03TapA10ProfileSDK0aB17LeaderboardBridgeP04openD09sdkUserId011leaderboardI00J8CallbackySS_SSySS_SSSiSStctFZ",
+            "moduleName": "TapTapProfileSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TapTapProfileSDK.TapProfileLeaderboardBridge>",
+            "sugared_genericSig": "<Self where Self : TapTapProfileSDK.TapProfileLeaderboardBridge>",
+            "static": true,
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:03TapA10ProfileSDK0aB17LeaderboardBridgeP",
+        "mangledName": "$s03TapA10ProfileSDK0aB17LeaderboardBridgeP",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapKingfisher",
+        "printedName": "TapTapKingfisher",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapCoreSDK",
+        "printedName": "TapTapCoreSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapLoginSDK",
+        "printedName": "TapTapLoginSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapNetworkSDK",
+        "printedName": "TapTapNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapLoginSDK",
+        "printedName": "TapTapLoginSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapCoreSDK",
+        "printedName": "TapTapCoreSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapCoreSDK",
+        "printedName": "TapTapCoreSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapUserProfileModel",
+        "printedName": "TapUserProfileModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "friendship",
+            "printedName": "friendship",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TapTapProfileSDK.TapUserFriendShip?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapUserFriendShip",
+                    "printedName": "TapTapProfileSDK.TapUserFriendShip",
+                    "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV10friendshipAA0aD10FriendShipVSgvp",
+            "mangledName": "$s03TapA10ProfileSDK0a4UserB5ModelV10friendshipAA0aD10FriendShipVSgvp",
+            "moduleName": "TapTapProfileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TapTapProfileSDK.TapUserFriendShip?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TapUserFriendShip",
+                        "printedName": "TapTapProfileSDK.TapUserFriendShip",
+                        "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV10friendshipAA0aD10FriendShipVSgvg",
+                "mangledName": "$s03TapA10ProfileSDK0a4UserB5ModelV10friendshipAA0aD10FriendShipVSgvg",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TapTapProfileSDK.TapUserFriendShip?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TapUserFriendShip",
+                        "printedName": "TapTapProfileSDK.TapUserFriendShip",
+                        "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV10friendshipAA0aD10FriendShipVSgvs",
+                "mangledName": "$s03TapA10ProfileSDK0a4UserB5ModelV10friendshipAA0aD10FriendShipVSgvs",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV10friendshipAA0aD10FriendShipVSgvM",
+                "mangledName": "$s03TapA10ProfileSDK0a4UserB5ModelV10friendshipAA0aD10FriendShipVSgvM",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "user",
+            "printedName": "user",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapUserModel",
+                "printedName": "TapTapProfileSDK.TapUserModel",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV4userAA0adE0Vvp",
+            "mangledName": "$s03TapA10ProfileSDK0a4UserB5ModelV4userAA0adE0Vvp",
+            "moduleName": "TapTapProfileSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapUserModel",
+                    "printedName": "TapTapProfileSDK.TapUserModel",
+                    "usr": "s:03TapA10ProfileSDK0A9UserModelV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV4userAA0adE0Vvg",
+                "mangledName": "$s03TapA10ProfileSDK0a4UserB5ModelV4userAA0adE0Vvg",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapUserModel",
+                    "printedName": "TapTapProfileSDK.TapUserModel",
+                    "usr": "s:03TapA10ProfileSDK0A9UserModelV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV4userAA0adE0Vvs",
+                "mangledName": "$s03TapA10ProfileSDK0a4UserB5ModelV4userAA0adE0Vvs",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV4userAA0adE0VvM",
+                "mangledName": "$s03TapA10ProfileSDK0a4UserB5ModelV4userAA0adE0VvM",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapUserProfileModel",
+                "printedName": "TapTapProfileSDK.TapUserProfileModel",
+                "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s03TapA10ProfileSDK0a4UserB5ModelV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "TapTapProfileSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s03TapA10ProfileSDK0a4UserB5ModelV6encode2toys7Encoder_p_tKF",
+            "moduleName": "TapTapProfileSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:03TapA10ProfileSDK0a4UserB5ModelV",
+        "mangledName": "$s03TapA10ProfileSDK0a4UserB5ModelV",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapUserFriendShip",
+        "printedName": "TapUserFriendShip",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "followd",
+            "printedName": "followd",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV7followdSbSgvp",
+            "mangledName": "$s03TapA10ProfileSDK0A14UserFriendShipV7followdSbSgvp",
+            "moduleName": "TapTapProfileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV7followdSbSgvg",
+                "mangledName": "$s03TapA10ProfileSDK0A14UserFriendShipV7followdSbSgvg",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV7followdSbSgvs",
+                "mangledName": "$s03TapA10ProfileSDK0A14UserFriendShipV7followdSbSgvs",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV7followdSbSgvM",
+                "mangledName": "$s03TapA10ProfileSDK0A14UserFriendShipV7followdSbSgvM",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "following",
+            "printedName": "following",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV9followingSbSgvp",
+            "mangledName": "$s03TapA10ProfileSDK0A14UserFriendShipV9followingSbSgvp",
+            "moduleName": "TapTapProfileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV9followingSbSgvg",
+                "mangledName": "$s03TapA10ProfileSDK0A14UserFriendShipV9followingSbSgvg",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV9followingSbSgvs",
+                "mangledName": "$s03TapA10ProfileSDK0A14UserFriendShipV9followingSbSgvs",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV9followingSbSgvM",
+                "mangledName": "$s03TapA10ProfileSDK0A14UserFriendShipV9followingSbSgvM",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapUserFriendShip",
+                "printedName": "TapTapProfileSDK.TapUserFriendShip",
+                "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s03TapA10ProfileSDK0A14UserFriendShipV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "TapTapProfileSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s03TapA10ProfileSDK0A14UserFriendShipV6encode2toys7Encoder_p_tKF",
+            "moduleName": "TapTapProfileSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:03TapA10ProfileSDK0A14UserFriendShipV",
+        "mangledName": "$s03TapA10ProfileSDK0A14UserFriendShipV",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapUserModel",
+        "printedName": "TapUserModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkUserId",
+            "printedName": "sdkUserId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA10ProfileSDK0A9UserModelV03sdkD2IdSSvp",
+            "mangledName": "$s03TapA10ProfileSDK0A9UserModelV03sdkD2IdSSvp",
+            "moduleName": "TapTapProfileSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV03sdkD2IdSSvg",
+                "mangledName": "$s03TapA10ProfileSDK0A9UserModelV03sdkD2IdSSvg",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV03sdkD2IdSSvs",
+                "mangledName": "$s03TapA10ProfileSDK0A9UserModelV03sdkD2IdSSvs",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV03sdkD2IdSSvM",
+                "mangledName": "$s03TapA10ProfileSDK0A9UserModelV03sdkD2IdSSvM",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA10ProfileSDK0A9UserModelV4nameSSvp",
+            "mangledName": "$s03TapA10ProfileSDK0A9UserModelV4nameSSvp",
+            "moduleName": "TapTapProfileSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV4nameSSvg",
+                "mangledName": "$s03TapA10ProfileSDK0A9UserModelV4nameSSvg",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV4nameSSvs",
+                "mangledName": "$s03TapA10ProfileSDK0A9UserModelV4nameSSvs",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV4nameSSvM",
+                "mangledName": "$s03TapA10ProfileSDK0A9UserModelV4nameSSvM",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "avatar",
+            "printedName": "avatar",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA10ProfileSDK0A9UserModelV6avatarSSvp",
+            "mangledName": "$s03TapA10ProfileSDK0A9UserModelV6avatarSSvp",
+            "moduleName": "TapTapProfileSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV6avatarSSvg",
+                "mangledName": "$s03TapA10ProfileSDK0A9UserModelV6avatarSSvg",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV6avatarSSvs",
+                "mangledName": "$s03TapA10ProfileSDK0A9UserModelV6avatarSSvs",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV6avatarSSvM",
+                "mangledName": "$s03TapA10ProfileSDK0A9UserModelV6avatarSSvM",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "alias",
+            "printedName": "alias",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA10ProfileSDK0A9UserModelV5aliasSSSgvp",
+            "mangledName": "$s03TapA10ProfileSDK0A9UserModelV5aliasSSSgvp",
+            "moduleName": "TapTapProfileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV5aliasSSSgvg",
+                "mangledName": "$s03TapA10ProfileSDK0A9UserModelV5aliasSSSgvg",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV5aliasSSSgvs",
+                "mangledName": "$s03TapA10ProfileSDK0A9UserModelV5aliasSSSgvs",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV5aliasSSSgvM",
+                "mangledName": "$s03TapA10ProfileSDK0A9UserModelV5aliasSSSgvM",
+                "moduleName": "TapTapProfileSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapUserModel",
+                "printedName": "TapTapProfileSDK.TapUserModel",
+                "usr": "s:03TapA10ProfileSDK0A9UserModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:03TapA10ProfileSDK0A9UserModelV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s03TapA10ProfileSDK0A9UserModelV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "TapTapProfileSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:03TapA10ProfileSDK0A9UserModelV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s03TapA10ProfileSDK0A9UserModelV6encode2toys7Encoder_p_tKF",
+            "moduleName": "TapTapProfileSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:03TapA10ProfileSDK0A9UserModelV",
+        "mangledName": "$s03TapA10ProfileSDK0A9UserModelV",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapCoreSDK",
+        "printedName": "TapTapCoreSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapProfileSDK"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Public\/TapTapProfile.swift",
+      "kind": "BooleanLiteral",
+      "offset": 265,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Public\/TapTapProfile.swift",
+      "kind": "StringLiteral",
+      "offset": 332,
+      "length": 9,
+      "value": "\"open_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Public\/TapTapProfile.swift",
+      "kind": "StringLiteral",
+      "offset": 366,
+      "length": 10,
+      "value": "\"union_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileActionView.swift",
+      "kind": "StringLiteral",
+      "offset": 273,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileActionView.swift",
+      "kind": "StringLiteral",
+      "offset": 300,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileActionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 328,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileActionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1767,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/GradientImageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 295,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/GradientImageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 332,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/GradientImageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 370,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/GradientImageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 447,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/GradientImageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 647,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
+      "kind": "StringLiteral",
+      "offset": 322,
+      "length": 11,
+      "value": "\"user_card\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 560,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 590,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 664,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 733,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 792,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 860,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 917,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1026,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1137,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserProfileController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1214,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserGameDataView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4231,
+      "length": 3,
+      "value": "236"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserGameDataView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4237,
+      "length": 3,
+      "value": "204"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserGameDataView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4265,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapUserGameDataView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4270,
+      "length": 2,
+      "value": "28"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 582,
+      "length": 12,
+      "value": "\"spent_tips\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 868,
+      "length": 20,
+      "value": "\"achievements_total\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 919,
+      "length": 17,
+      "value": "\"completed_count\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 964,
+      "length": 14,
+      "value": "\"has_platinum\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1198,
+      "length": 13,
+      "value": "\"followed_by\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1762,
+      "length": 13,
+      "value": "\"sdk_user_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1905,
+      "length": 15,
+      "value": "\"follow_source\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1959,
+      "length": 16,
+      "value": "\"is_deactivated\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2010,
+      "length": 12,
+      "value": "\"is_deleted\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2063,
+      "length": 18,
+      "value": "\"background_image\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2515,
+      "length": 16,
+      "value": "\"leaderboard_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2572,
+      "length": 18,
+      "value": "\"leaderboard_name\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2823,
+      "length": 14,
+      "value": "\"rank_display\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4858,
+      "length": 9,
+      "value": "\"gif_url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4913,
+      "length": 12,
+      "value": "\"medium_url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4956,
+      "length": 17,
+      "value": "\"original_format\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5002,
+      "length": 15,
+      "value": "\"original_size\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5045,
+      "length": 14,
+      "value": "\"original_url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/Model\/TapUserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5084,
+      "length": 11,
+      "value": "\"small_url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapProfileConfirmView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 431,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapProfileConfirmView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 458,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/TapProfileConfirmView.swift",
+      "kind": "StringLiteral",
+      "offset": 5987,
+      "length": 8,
+      "value": "\"确认\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapProfile\/Private\/UI\/UIColor+Extension.swift",
+      "kind": "FloatLiteral",
+      "offset": 243,
+      "length": 3,
+      "value": "1.0"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+framework module TapTapRelationSDK {
+  header "TapTapRelationSDK-Swift.h"
+  requires objc
+}
