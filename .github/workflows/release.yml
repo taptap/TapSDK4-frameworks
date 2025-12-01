@@ -83,22 +83,31 @@ jobs:
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
           echo "Extracted version: ${VERSION} from tag: ${TAG_NAME}"
 
-      # Step 6: 使用 Fastlane 发布到 CocoaPods
-      # Fastlane 会自动处理版本验证、podspec 验证和发布流程
-      - name: Release to CocoaPods using Fastlane
+      # Step 6: 配置 CocoaPods Trunk 认证
+      # 将 .netrc 文件内容写入 ~/.netrc 供 CocoaPods 使用
+      - name: Configure CocoaPods Trunk authentication
         env:
-          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+          NETRC_CONTENT: ${{ secrets.NETRC_CONTENT }}
         run: |
-          if [ -z "$COCOAPODS_TRUNK_TOKEN" ]; then
-            echo "❌ Error: COCOAPODS_TRUNK_TOKEN is not set"
-            echo "Please add your CocoaPods Trunk token to GitHub Secrets"
+          if [ -z "$NETRC_CONTENT" ]; then
+            echo "❌ Error: NETRC_CONTENT is not set"
+            echo "Please add your .netrc file content to GitHub Secrets"
             exit 1
           fi
 
+          echo "🔑 Setting up CocoaPods Trunk authentication..."
+          echo "$NETRC_CONTENT" > ~/.netrc
+          chmod 600 ~/.netrc
+          echo "✅ CocoaPods authentication configured"
+
+      # Step 7: 使用 Fastlane 发布到 CocoaPods
+      # Fastlane 会自动处理版本验证、podspec 验证和发布流程
+      - name: Release to CocoaPods using Fastlane
+        run: |
           echo "🚀 Starting Fastlane release process..."
           fastlane release version:${{ steps.get_version.outputs.version }}
 
-      # Step 7: 发布成功提示
+      # Step 8: 发布成功提示
       - name: Release completed
         run: |
           echo "✅ Successfully published TapTapSDK ${{ steps.get_version.outputs.version }} to CocoaPods"
