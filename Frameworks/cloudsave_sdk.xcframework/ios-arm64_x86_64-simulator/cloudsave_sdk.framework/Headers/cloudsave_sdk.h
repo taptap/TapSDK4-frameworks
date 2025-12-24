@@ -1,6 +1,8 @@
 ﻿#ifndef TAP_CLOUD_SAVE_SDK_SRC_CLOUD_SAVE_SDK_H_
 #define TAP_CLOUD_SAVE_SDK_SRC_CLOUD_SAVE_SDK_H_
 
+#include <stdint.h>
+
 #if defined(_WIN32) || defined(__CYGWIN__)
 #ifdef EXPORT_TDK_CPP
 #define TAPSDK_EXPORT_API __declspec(dllexport)
