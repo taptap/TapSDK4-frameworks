@@ -1506,21 +1506,21 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapShare\/Public\/TapTapShare.swift",
+      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapShare\/Public\/TapTapShare.swift",
       "kind": "StringLiteral",
       "offset": 375,
       "length": 11,
       "value": "\"taptap:\/\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapShare\/Public\/TapTapShare.swift",
+      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapShare\/Public\/TapTapShare.swift",
       "kind": "BooleanLiteral",
       "offset": 477,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tapsdk_ios_demo\/tapsdk_ios_demo\/TapTapShare\/Public\/TapTapShareObj.swift",
+      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapShare\/Public\/TapTapShareObj.swift",
       "kind": "BooleanLiteral",
       "offset": 1124,
       "length": 4,

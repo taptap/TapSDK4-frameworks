@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapSDK'
-  s.version          = '4.7.2-beta.13'
+  s.version          = '4.10.0-beta.2'
   s.summary          = 'TapTap SDK 统一接入方式，支持按需引入各个功能模块'
   s.swift_version    = '5.0'
 
@@ -173,6 +173,15 @@ Pod::Spec.new do |s|
     ]
     leaderboard.resources = 'Frameworks/TapTapLeaderboardResource.bundle'
     leaderboard.dependency 'TapTapSDK/Profile'
+  end
+
+  # ==================== Rep 模块 ====================
+  s.subspec 'Rep' do |rep|
+    rep.vendored_frameworks = [
+      "Frameworks/TapTapRepSDK.xcframework",
+      "Frameworks/TapTapSDKBridgeCore.xcframework"
+    ]
+    rep.dependency 'TapTapSDK/Core'
   end
 
 end

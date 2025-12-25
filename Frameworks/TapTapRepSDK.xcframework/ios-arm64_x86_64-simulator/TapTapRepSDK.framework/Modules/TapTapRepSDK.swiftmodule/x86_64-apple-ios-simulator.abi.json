@@ -1,0 +1,1060 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TapTapRepSDK",
+    "printedName": "TapTapRepSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapCoreSDK",
+        "printedName": "TapTapCoreSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapTapRepError",
+        "printedName": "TapTapRepError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "PARAM_ERROR",
+            "printedName": "PARAM_ERROR",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRepError(cpy)PARAM_ERROR",
+            "mangledName": "$s03TapA6RepSDK0aaB5ErrorC11PARAM_ERRORSivpZ",
+            "moduleName": "TapTapRepSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRepError(cm)PARAM_ERROR",
+                "mangledName": "$s03TapA6RepSDK0aaB5ErrorC11PARAM_ERRORSivgZ",
+                "moduleName": "TapTapRepSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "CLIENT_ERROR",
+            "printedName": "CLIENT_ERROR",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRepError(cpy)CLIENT_ERROR",
+            "mangledName": "$s03TapA6RepSDK0aaB5ErrorC12CLIENT_ERRORSivpZ",
+            "moduleName": "TapTapRepSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRepError(cm)CLIENT_ERROR",
+                "mangledName": "$s03TapA6RepSDK0aaB5ErrorC12CLIENT_ERRORSivgZ",
+                "moduleName": "TapTapRepSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "UNKNOWN_ERROR",
+            "printedName": "UNKNOWN_ERROR",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRepError(cpy)UNKNOWN_ERROR",
+            "mangledName": "$s03TapA6RepSDK0aaB5ErrorC13UNKNOWN_ERRORSivpZ",
+            "moduleName": "TapTapRepSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRepError(cm)UNKNOWN_ERROR",
+                "mangledName": "$s03TapA6RepSDK0aaB5ErrorC13UNKNOWN_ERRORSivgZ",
+                "moduleName": "TapTapRepSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapTapRepError",
+                "printedName": "TapTapRepSDK.TapTapRepError",
+                "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRepError"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRepError(im)init",
+            "mangledName": "$s03TapA6RepSDK0aaB5ErrorCACycfc",
+            "moduleName": "TapTapRepSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRepError",
+        "mangledName": "$s03TapA6RepSDK0aaB5ErrorC",
+        "moduleName": "TapTapRepSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapTapRep",
+        "printedName": "TapTapRep",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isTapTapInstalled",
+            "printedName": "isTapTapInstalled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRep(cpy)isTapTapInstalled",
+            "mangledName": "$s03TapA6RepSDK0aaB0C02isaA9InstalledSbvpZ",
+            "moduleName": "TapTapRepSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRep(cm)isTapTapInstalled",
+                "mangledName": "$s03TapA6RepSDK0aaB0C02isaA9InstalledSbvgZ",
+                "moduleName": "TapTapRepSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "open",
+            "printedName": "open(openUrl:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Int, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Int, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRep(cm)openWithOpenUrl:completion:",
+            "mangledName": "$s03TapA6RepSDK0aaB0C4open0D3Url10completionySS_ySi_SSSgtctFZ",
+            "moduleName": "TapTapRepSDK",
+            "static": true,
+            "objc_name": "openWithOpenUrl:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInit",
+            "printedName": "onInit(options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRep(cm)onInitWithOptions:",
+            "mangledName": "$s03TapA6RepSDK0aaB0C6onInit7optionsySDySSypG_tFZ",
+            "moduleName": "TapTapRepSDK",
+            "static": true,
+            "objc_name": "onInitWithOptions:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapTapRep",
+                "printedName": "TapTapRepSDK.TapTapRep",
+                "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRep"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRep(im)init",
+            "mangledName": "$s03TapA6RepSDK0aaB0CACycfc",
+            "moduleName": "TapTapRepSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapRepSDK@objc(cs)TapTapRep",
+        "mangledName": "$s03TapA6RepSDK0aaB0C",
+        "moduleName": "TapTapRepSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapNetworkSDK",
+        "printedName": "TapTapNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapRepSwiftBridgeService",
+        "printedName": "TapRepSwiftBridgeService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapRepSwiftBridgeService",
+                "printedName": "TapTapRepSDK.TapRepSwiftBridgeService",
+                "usr": "c:@M@TapTapRepSDK@objc(cs)TapRepSwiftBridgeService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapTapRepSDK@objc(cs)TapRepSwiftBridgeService(cpy)shared",
+            "mangledName": "$s03TapA6RepSDK0aB18SwiftBridgeServiceC6sharedACvpZ",
+            "moduleName": "TapTapRepSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapRepSwiftBridgeService",
+                    "printedName": "TapTapRepSDK.TapRepSwiftBridgeService",
+                    "usr": "c:@M@TapTapRepSDK@objc(cs)TapRepSwiftBridgeService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapTapRepSDK@objc(cs)TapRepSwiftBridgeService(cm)shared",
+                "mangledName": "$s03TapA6RepSDK0aB18SwiftBridgeServiceC6sharedACvgZ",
+                "moduleName": "TapTapRepSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "open",
+            "printedName": "open(openUrl:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRepSDK@objc(cs)TapRepSwiftBridgeService(im)openWithOpenUrl:completion:",
+            "mangledName": "$s03TapA6RepSDK0aB18SwiftBridgeServiceC4open0G3Url10completionySS_ySSctF",
+            "moduleName": "TapTapRepSDK",
+            "objc_name": "openWithOpenUrl:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapRepSDK@objc(cs)TapRepSwiftBridgeService",
+        "mangledName": "$s03TapA6RepSDK0aB18SwiftBridgeServiceC",
+        "moduleName": "TapTapRepSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapSDKBridgeCore",
+        "printedName": "TapTapSDKBridgeCore",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TapTapBasicToolsSDK",
+        "printedName": "TapTapBasicToolsSDK",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapRepSwiftBridgeInitializer",
+        "printedName": "TapRepSwiftBridgeInitializer",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "registerWithSwiftBridge",
+            "printedName": "registerWithSwiftBridge()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapTapRepSDK@objc(cs)TapRepSwiftBridgeInitializer(cm)registerWithSwiftBridge",
+            "mangledName": "$s03TapA6RepSDK0aB22SwiftBridgeInitializerC012registerWithdE0yyFZ",
+            "moduleName": "TapTapRepSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapRepSwiftBridgeInitializer",
+                "printedName": "TapTapRepSDK.TapRepSwiftBridgeInitializer",
+                "usr": "c:@M@TapTapRepSDK@objc(cs)TapRepSwiftBridgeInitializer"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TapTapRepSDK@objc(cs)TapRepSwiftBridgeInitializer(im)init",
+            "mangledName": "$s03TapA6RepSDK0aB22SwiftBridgeInitializerCACycfc",
+            "moduleName": "TapTapRepSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TapTapRepSDK@objc(cs)TapRepSwiftBridgeInitializer",
+        "mangledName": "$s03TapA6RepSDK0aB22SwiftBridgeInitializerC",
+        "moduleName": "TapTapRepSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
+      "kind": "IntegerLiteral",
+      "offset": 286,
+      "length": 6,
+      "value": "100002"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
+      "kind": "IntegerLiteral",
+      "offset": 366,
+      "length": 6,
+      "value": "100003"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
+      "kind": "IntegerLiteral",
+      "offset": 438,
+      "length": 6,
+      "value": "100004"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
+      "kind": "StringLiteral",
+      "offset": 647,
+      "length": 11,
+      "value": "\"taptap:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
+      "kind": "BooleanLiteral",
+      "offset": 749,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Private\/RepResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 410,
+      "length": 15,
+      "value": "\"ch_src_prefix\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Private\/TapRepSwiftBridgeInitializer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 300,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
