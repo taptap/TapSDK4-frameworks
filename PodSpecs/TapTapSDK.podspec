@@ -191,6 +191,13 @@ Pod::Spec.new do |s|
       "Frameworks/TapTapBattleSDK.xcframework"
     ]
     battle.dependency 'TapTapSDK/Login'
+    battle.xcconfig = {
+          'OTHER_LDFLAGS' => '-lz.1'
+        }
+        # 禁用 auto-linking 以避免 Xcode 15+ 误链接 CoreAudioTypes（header-only framework）
+        battle.pod_target_xcconfig = {
+          'CLANG_MODULES_AUTOLINK' => 'NO'
+        }
   end
 
 end
