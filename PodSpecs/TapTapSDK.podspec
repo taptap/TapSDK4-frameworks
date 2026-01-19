@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapSDK'
-  s.version          = '4.10.0-beta.3'
+  s.version          = '4.9.4'
   s.summary          = 'TapTap SDK 统一接入方式，支持按需引入各个功能模块'
   s.swift_version    = '5.0'
 
@@ -182,22 +182,6 @@ Pod::Spec.new do |s|
       "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
     rep.dependency 'TapTapSDK/Core'
-  end
-
-# ==================== Battle 模块 ====================
-  s.subspec 'Battle' do |battle|
-    battle.vendored_frameworks = [
-      "Frameworks/onlinebattle_sdk.xcframework",
-      "Frameworks/TapTapBattleSDK.xcframework"
-    ]
-    battle.dependency 'TapTapSDK/Login'
-    battle.xcconfig = {
-          'OTHER_LDFLAGS' => '-lz.1'
-        }
-        # 禁用 auto-linking 以避免 Xcode 15+ 误链接 CoreAudioTypes（header-only framework）
-        battle.pod_target_xcconfig = {
-          'CLANG_MODULES_AUTOLINK' => 'NO'
-        }
   end
 
 end

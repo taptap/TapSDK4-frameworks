@@ -6,8 +6,10 @@
 #if defined(_WIN32) || defined(__CYGWIN__)
 #ifdef EXPORT_TDK_CPP
 #define TAPSDK_EXPORT_API __declspec(dllexport)
-#else
+#elif defined(TAPSDK_SHARED_LIB)
 #define TAPSDK_EXPORT_API __declspec(dllimport)
+#else
+#define TAPSDK_EXPORT_API
 #endif
 #else
 #ifdef EXPORT_TDK_CPP
@@ -38,6 +40,7 @@ extern "C" {
  *       "client_token": "ts426XNwSswZWE33qB1ri6OmMk1i2q4zthima6hS",
  *       "ua": "TapSDK-Android/3.28.0",
  *       "lang": "zh-CN",
+ *       "runtime_ver": "4.6.0-alpha.7",
  *       "platform": "Android",
  *       "device_id": "123456",
  *       "sdk_artifact": "Android",
@@ -73,6 +76,7 @@ extern "C" {
  *   - client_token 不允许为空
  *   - ua user agent，不允许为空
  *   - lang 语言，允许为空
+ *   - runtime_ver 宿主版本，Tap Miniapp不允许为空，TapSDK可以为空
  *   - platform 不允许为空，TapSDK专用参数
  *   - device_id 设备ID，不允许为空，TapSDK专用参数
  *   - sdk_artifact 不允许为空，TapSDK专用参数
@@ -80,7 +84,6 @@ extern "C" {
  *   - sdk_token 登录态鉴权token，允许为空，TapSDK专用参数
  *     - kid mac_key id，不允许为空
  *     - key mac密钥，不允许为空
- *   - runtime_ver 宿主版本，不允许为空，Tap Miniapp专用参数
  *   - access_token 登录态鉴权token，允许为空，Tap Miniapp专用参数
  *     - kid mac_key id，不允许为空
  *     - key mac密钥，不允许为空
