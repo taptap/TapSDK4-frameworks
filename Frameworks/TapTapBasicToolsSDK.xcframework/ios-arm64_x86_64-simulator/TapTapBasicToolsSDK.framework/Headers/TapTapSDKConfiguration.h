@@ -37,6 +37,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否采集广告 ID 默认 false
 @property (nonatomic, assign) BOOL isAdvertiserIDCollectionEnabled;
 
+/// 日志开关
+@property (nonatomic, assign) BOOL enableLog;
+
 /*
  SDK 产物（开发平台或语言）
  Android,iOS,Unity,UE4,UE5,CPP
