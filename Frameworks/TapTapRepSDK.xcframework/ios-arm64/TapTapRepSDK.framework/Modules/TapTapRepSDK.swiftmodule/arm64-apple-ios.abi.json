@@ -1008,49 +1008,49 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
+      "filePath": "\/Users\/runner\/work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
       "kind": "IntegerLiteral",
       "offset": 286,
       "length": 6,
       "value": "100002"
     },
     {
-      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
+      "filePath": "\/Users\/runner\/work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
       "kind": "IntegerLiteral",
       "offset": 366,
       "length": 6,
       "value": "100003"
     },
     {
-      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
+      "filePath": "\/Users\/runner\/work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
       "kind": "IntegerLiteral",
       "offset": 438,
       "length": 6,
       "value": "100004"
     },
     {
-      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
+      "filePath": "\/Users\/runner\/work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
       "kind": "StringLiteral",
       "offset": 647,
       "length": 11,
       "value": "\"taptap:\/\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
+      "filePath": "\/Users\/runner\/work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
       "kind": "BooleanLiteral",
       "offset": 749,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Private\/RepResponse.swift",
+      "filePath": "\/Users\/runner\/work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRep\/Private\/RepResponse.swift",
       "kind": "StringLiteral",
       "offset": 410,
       "length": 15,
       "value": "\"ch_src_prefix\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/TapSDK-Monorepo\/TapSDK-Monorepo\/iOS\/TapTapSDK\/TapTapRep\/Private\/TapRepSwiftBridgeInitializer.swift",
+      "filePath": "\/Users\/runner\/work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRep\/Private\/TapRepSwiftBridgeInitializer.swift",
       "kind": "BooleanLiteral",
       "offset": 300,
       "length": 5,
