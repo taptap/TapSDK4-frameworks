@@ -2,20 +2,7 @@
 #define TAP_SDK_CORE_SRC_TDS_SDK_API_H_
 
 #include "common.h"
-
-#if defined(_WIN32) || defined(__CYGWIN__)
-#ifdef EXPORT_TDK_CPP
-#define TDSSDK_EXPORT_API __declspec(dllexport)
-#else
-#define TDSSDK_EXPORT_API __declspec(dllimport)
-#endif
-#else
-#ifdef EXPORT_TDK_CPP
-#define TDSSDK_EXPORT_API __attribute__((visibility("default")))
-#else
-#define TDSSDK_EXPORT_API
-#endif
-#endif
+#include "export_api.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -30,9 +17,7 @@ extern "C" {
  *
  *   {
  *       "region": 2,
- *       "log_to_console": 1,
  *       “enable_auto_test_log”: 0,
- *       "log_level": 1,
  *       "data_dir": "/tmp",
  *       "env": "local",
  *       "tapsdk_artifact": "Unity",
@@ -80,12 +65,12 @@ extern "C" {
  *
  * 成功返回 0，失败返回 -1
  */
-TDSSDK_EXPORT_API int TdkOnAppStarted(const char* cfg, CommonVariablesGetter commonVariablesGetter, MemoryDeallocator deallocator);
+TAPSDK_EXPORT_API int TdkOnAppStarted(const char* cfg, CommonVariablesGetter commonVariablesGetter, MemoryDeallocator deallocator);
 
 /**
  * App 退出时调用，只需要调用一次。
  */
-TDSSDK_EXPORT_API void TdkOnAppStopped();
+TAPSDK_EXPORT_API void TdkOnAppStopped();
 
 /**
  * 启用功能模块，如：app_duration
@@ -93,7 +78,7 @@ TDSSDK_EXPORT_API void TdkOnAppStopped();
  *   modules JSON 数组，如：["app_duration"]
  *
  */
-TDSSDK_EXPORT_API void TdkEnableModules(const char* modules);
+TAPSDK_EXPORT_API void TdkEnableModules(const char* modules);
 
 /**
  * 禁用功能模块，如：app_duration
@@ -101,7 +86,7 @@ TDSSDK_EXPORT_API void TdkEnableModules(const char* modules);
  *   modules JSON 数组，如：["app_duration"]
  *
  */
-TDSSDK_EXPORT_API void TdkDisableModules(const char* modules);
+TAPSDK_EXPORT_API void TdkDisableModules(const char* modules);
 
 /**
  * 需要发送埋点日志时调用。
@@ -111,51 +96,51 @@ TDSSDK_EXPORT_API void TdkDisableModules(const char* modules);
  *   logStore 如：tapsdk、tapsdk-apm
  *   logContent 业务埋点日志，仅需传递业务参数，JSON 格式：{"action":"xxx","open_id":"yyy","tds_user_id":"zzz"}
  */
-TDSSDK_EXPORT_API void TdkOpenLog(const char* logStore, const char* logContent);
+TAPSDK_EXPORT_API void TdkOpenLog(const char* logStore, const char* logContent);
 
 /**
  * 用户登录成功时调用。
  *
  *   userInfo 用户信息，JSON 格式：{"open_id":"","tds_user_id":""}
  */
-TDSSDK_EXPORT_API void TdkOnLogin(const char* userInfo);
+TAPSDK_EXPORT_API void TdkOnLogin(const char* userInfo);
 
 /**
  * 用户登出时调用。
  */
-TDSSDK_EXPORT_API void TdkOnLogout();
+TAPSDK_EXPORT_API void TdkOnLogout();
 
 /**
  * 应用切回前台时调用。
  */
-TDSSDK_EXPORT_API void TdkOnForeground();
+TAPSDK_EXPORT_API void TdkOnForeground();
 
 /**
  * 应用切到后台时调用。
  */
-TDSSDK_EXPORT_API void TdkOnBackground();
+TAPSDK_EXPORT_API void TdkOnBackground();
 
 /**
  * 设置额外的时长模块日志参数，JSON K/V 格式。每次调用这个接口时，会用最新得到的参数，替换原有参数。
  *
  *   params 额外日志参数，JSON 格式：{"K1":"V1","K2":"V2","K3":"V3"}
  */
-TDSSDK_EXPORT_API void TdkSetExtraAppDurationParams(const char* params);
+TAPSDK_EXPORT_API void TdkSetExtraAppDurationParams(const char* params);
 
 /**
  * 设置日志等级
  */
-TDSSDK_EXPORT_API void TdkSetLogLevel(int logLevel, int logToConsole, int enableAutoTestLog);
+TAPSDK_EXPORT_API void TdkSetLogLevel(int logLevel, int logToConsole, int enableAutoTestLog);
 
 /**
  * 代码版本，如：1.2.5
  */
-TDSSDK_EXPORT_API const char* TdkVersion();
+TAPSDK_EXPORT_API const char* TdkVersion();
 
 /**
  * git commit 版本，如：98f5d81a0fdcab9a755878b3e825c2cb510e5196
  */
-TDSSDK_EXPORT_API const char* TdkGitCommit();
+TAPSDK_EXPORT_API const char* TdkGitCommit();
 
 #ifdef __cplusplus
 } // extern "C"

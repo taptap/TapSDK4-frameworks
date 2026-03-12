@@ -1,23 +1,7 @@
 ﻿#ifndef TAP_CLOUD_SAVE_SDK_SRC_CLOUD_SAVE_SDK_H_
 #define TAP_CLOUD_SAVE_SDK_SRC_CLOUD_SAVE_SDK_H_
 
-#include <stdint.h>
-
-#if defined(_WIN32) || defined(__CYGWIN__)
-#ifdef EXPORT_TDK_CPP
-#define TAPSDK_EXPORT_API __declspec(dllexport)
-#elif defined(TAPSDK_SHARED_LIB)
-#define TAPSDK_EXPORT_API __declspec(dllimport)
-#else
-#define TAPSDK_EXPORT_API
-#endif
-#else
-#ifdef EXPORT_TDK_CPP
-#define TAPSDK_EXPORT_API __attribute__((visibility("default")))
-#else
-#define TAPSDK_EXPORT_API
-#endif
-#endif
+#include "export_api.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -33,8 +17,6 @@ extern "C" {
  *   TapSDK参数格式
  *   {
  *       "region": 2,
- *       "log_to_console": 1,
- *       "log_level": 3,
  *       "data_dir": "/tmp",
  *       "client_id": "rfciqabirt4vqav7io",
  *       "client_token": "ts426XNwSswZWE33qB1ri6OmMk1i2q4zthima6hS",
@@ -54,8 +36,6 @@ extern "C" {
  *   Tap Miniapp参数格式
  *   {
  *       "region": 2,
- *       "log_to_console": 1,
- *       "log_level": 3,
  *       "data_dir": "/tmp",
  *       "client_id": "rfciqabirt4vqav7io",
  *       "client_token": "ts426XNwSswZWE33qB1ri6OmMk1i2q4zthima6hS",
