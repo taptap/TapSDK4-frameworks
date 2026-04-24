@@ -10,18 +10,19 @@
 extern "C" {
 #endif
 
+#ifdef TAPSDK_SHARED_LIB
+/**
+ * 初始化日志模块
+ */
+TAPSDK_EXPORT_API void TapSdkBifrostInitLogger(TapSdkCppLogWriter logWriter);
+#endif
+
 /**
  * 初始化接口，只需要调用一次，且必须调用一次。非线程安全，并发调用可能导致崩溃。
  *
  * - jsonCfg JSON 格式的初始化参数
- *   {
- *     "log_dir": "/path/for/sdk/logging",
- *     "log_level": 3,
- *     "log_to_console": 1
- *   }
- *   - log_dir 保存日志文件的目录。
- *   - log_level 日志等级：1 trace、2 debug、3 info、4 warn、5 error、> 5 不打日志。建议调试时设为1，正式版设为3。
- *   - log_to_console 是否输出到控制台：0 不输出、1 输出。
+ *    {
+ *    }
  *
  * 成功返回 0，失败返回 -1
  */

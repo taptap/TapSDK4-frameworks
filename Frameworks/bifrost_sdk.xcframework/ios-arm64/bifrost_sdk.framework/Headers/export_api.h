@@ -22,19 +22,11 @@
 extern "C" {
 #endif
 
+// logLevel - 日志等级：1 trace、2 debug、3 info、4 warn、5 error
+// codeLocation - 输出日志的代码位置，如：filename:line_number
+// logTag - 日志标签，如：模块名、功能名等
+// logMessage - 日志内容
 typedef void (*TapSdkCppLogWriter)(int32_t logLevel, const char* codeLocation, const char* logTag, const char* logMessage);
-
-/**
- * 设置日志等级
- *   - logLevel 日志等级：1 trace、2 debug、3 info、4 warn、5 error、> 5 不打日志。建议调试时设为1，正式版设为3。
- */
-TAPSDK_EXPORT_API void TapSdkCppInitLogger(int32_t logLevel, TapSdkCppLogWriter logWriter);
-
-/**
- * 设置日志等级
- *   - logLevel 日志等级：1 trace、2 debug、3 info、4 warn、5 error、> 5 不打日志。建议调试时设为1，正式版设为3。
- */
-TAPSDK_EXPORT_API void TapSdkCppSetLogLevel(int32_t logLevel);
 
 #ifdef __cplusplus
 }

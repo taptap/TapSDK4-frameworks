@@ -11,6 +11,18 @@ extern "C" {
 #endif
 
 /**
+ * 初始化日志模块
+ *   - logLevel 日志等级：1 trace、2 debug、3 info、4 warn、5 error、> 5 不打日志。建议调试时设为1，正式版设为3。
+ */
+TAPSDK_EXPORT_API void TapSdkCppInitLogger(int32_t logLevel, TapSdkCppLogWriter logWriter);
+
+/**
+ * 设置日志等级
+ *   - logLevel 日志等级：1 trace、2 debug、3 info、4 warn、5 error、> 5 不打日志。建议调试时设为1，正式版设为3。
+ */
+TAPSDK_EXPORT_API void TapSdkCppSetLogLevel(int32_t logLevel);
+
+/**
  * 初始化接口，只需要调用一次。
  *
  *   cfg 初始化配置，JSON 格式：
@@ -56,7 +68,6 @@ extern "C" {
  *       }
  *   }
  *
- *   - log_level 取值：1 Trace、2 Debug、3 Info、4 Warn、5 Error、6 完全不输出
  *   - region 取值：0 国内、1 海外、2 RND
  *   - modules 取值：app_duration（开启时长埋点）。如果 modules 不传，或者为空，
  *                  则仅开启 OpenLog 功能，不会上报游戏时长

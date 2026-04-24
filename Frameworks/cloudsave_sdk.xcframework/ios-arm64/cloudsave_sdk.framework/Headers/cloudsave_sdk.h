@@ -9,6 +9,21 @@
 extern "C" {
 #endif
 
+#ifdef TAPSDK_SHARED_LIB
+/**
+ * 初始化日志模块
+ */
+TAPSDK_EXPORT_API void TapSdkCloudSaveInitLogger(TapSdkCppLogWriter logWriter);
+#endif
+
+#ifdef FOR_TAP_PC
+/**
+ * 初始化日志模块
+ *   - logLevel 日志等级：1 trace、2 debug、3 info、4 warn、5 error、> 5 不打日志。建议调试时设为1，正式版设为3。
+ */
+TAPSDK_EXPORT_API void TapSdkCppInitLogger(int32_t logLevel, TapSdkCppLogWriter logWriter);
+#endif
+
 /**
  * 初始化接口，只需要调用一次。非线程安全，并发调用可能崩溃。
  *
@@ -49,9 +64,7 @@ extern "C" {
  *   }
  *
  *   - region 取值：0 国内、1 海外、2 RND、3 海外RND
- *   - log_to_console 是否输出到控制台：0 不输出、1 输出。
- *   - log_level 取值：1 Trace、2 Debug、3 Info、4 Warn、5 Error、6 完全不输出
- *   - data_dir 保存本地缓存和日志文件的目录，不允许为空
+ *   - data_dir 保存本地缓存的目录，不允许为空
  *   - client_id 不允许为空
  *   - client_token 不允许为空
  *   - ua user agent，不允许为空

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TapTapSDK'
-  s.version          = '4.10.0'
+  s.version          = '4.10.1'
   s.summary          = 'TapTap SDK 统一接入方式，支持按需引入各个功能模块'
   s.swift_version    = '5.0'
 
@@ -70,7 +70,7 @@ Pod::Spec.new do |s|
       "Frameworks/TapTapLoginSDK.xcframework",
       "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
-    login.resources = 'Frameworks/TapTapLoginResource.bundle'
+    login.resources = 'iOS/Frameworks/TapTapLoginResource.bundle'
     login.dependency 'TapTapSDK/Core'
 
     login.frameworks = ['UIKit', 'Foundation', 'CoreTelephony', 'SystemConfiguration', 'AdSupport', 'GameController']
@@ -83,7 +83,7 @@ Pod::Spec.new do |s|
       "Frameworks/TapTapAchievementSDK.xcframework",
       "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
-    achievement.resources = 'Frameworks/TapTapAchievementResource.bundle'
+    achievement.resources = 'iOS/Frameworks/TapTapAchievementResource.bundle'
     achievement.dependency 'TapTapSDK/Login'
   end
 
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
       "Frameworks/TapTapMomentSDK.xcframework",
       "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
-    moment.resources = 'Frameworks/TapTapMomentResource.bundle'
+    moment.resources = 'iOS/Frameworks/TapTapMomentResource.bundle'
     moment.dependency 'TapTapSDK/Login'
   end
 
@@ -103,7 +103,7 @@ Pod::Spec.new do |s|
       "Frameworks/TapTapComplianceSDK.xcframework",
       "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
-    compliance.resources = 'Frameworks/TapTapComplianceResource.bundle'
+    compliance.resources = 'iOS/Frameworks/TapTapComplianceResource.bundle'
     compliance.dependency 'TapTapSDK/Login'
   end
 
@@ -136,7 +136,7 @@ Pod::Spec.new do |s|
         "Frameworks/TapTapProfileSDK.xcframework",
         "Frameworks/TapTapKingfisher.xcframework"
     ]
-    profile.resources = 'Frameworks/TapTapProfileResource.bundle'
+    profile.resources = 'iOS/Frameworks/TapTapProfileResource.bundle'
     profile.dependency 'TapTapSDK/Login'
   end
 
@@ -146,7 +146,7 @@ Pod::Spec.new do |s|
       "Frameworks/TapTapRelationLiteSDK.xcframework",
       "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
-    relationlite.resources = 'Frameworks/TapTapRelationLiteResource.bundle'
+    relationlite.resources = 'iOS/Frameworks/TapTapRelationLiteResource.bundle'
     relationlite.dependency 'TapTapSDK/Profile'
   end
 
@@ -157,7 +157,7 @@ Pod::Spec.new do |s|
       "Frameworks/bifrost_sdk.xcframework",
       "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
-    relation.resources = 'Frameworks/TapTapRelationResource.bundle'
+    relation.resources = 'iOS/Frameworks/TapTapRelationResource.bundle'
     relation.dependency 'TapTapSDK/Profile'
     # 禁用 auto-linking 以避免 Xcode 15+ 误链接 CoreAudioTypes（header-only framework）
     relation.pod_target_xcconfig = {
@@ -171,7 +171,7 @@ Pod::Spec.new do |s|
       "Frameworks/TapTapLeaderboardSDK.xcframework",
       "Frameworks/TapTapSDKBridgeCore.xcframework"
     ]
-    leaderboard.resources = 'Frameworks/TapTapLeaderboardResource.bundle'
+    leaderboard.resources = 'iOS/Frameworks/TapTapLeaderboardResource.bundle'
     leaderboard.dependency 'TapTapSDK/Profile'
   end
 

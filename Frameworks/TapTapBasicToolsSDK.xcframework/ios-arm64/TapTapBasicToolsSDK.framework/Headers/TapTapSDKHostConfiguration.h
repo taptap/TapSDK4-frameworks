@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TapTapSDKHostConfiguration : NSObject
++ (void)switchToRnd;
 + (NSString *)getGidHost;
 + (NSString *)getGatekeeperHost;
 + (NSString *)getThemisHost;
