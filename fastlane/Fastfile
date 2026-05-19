@@ -15,7 +15,7 @@ platform :ios do
     sh("pod repo update")
 
     # 2. 验证 podspec 文件格式（从 Git 仓库验证）
-    podspec_path = File.expand_path("../PodSpecs/TapTapSDK.podspec", __dir__)
+    podspec_path = File.expand_path("../iOS/PodSpecs/TapTapSDK.podspec", __dir__)
     sh("pod spec lint #{podspec_path} --allow-warnings --verbose --skip-import-validation")
 
     # 3. 发布到 CocoaPods Trunk
@@ -38,7 +38,7 @@ platform :ios do
     UI.message("🚀 Starting release process for version #{version}")
 
     # 1. 验证 podspec 版本号与参数是否匹配
-    podspec_version = version_get_podspec(path: "PodSpecs/TapTapSDK.podspec")
+    podspec_version = version_get_podspec(path: "iOS/PodSpecs/TapTapSDK.podspec")
 
     if podspec_version != version
       UI.user_error!("❌ Podspec version (#{podspec_version}) does not match specified version (#{version})")
@@ -59,7 +59,7 @@ platform :ios do
     sh("pod repo update")
 
     # 使用 pod spec lint 从 Git 仓库验证
-    podspec_path = File.expand_path("../PodSpecs/TapTapSDK.podspec", __dir__)
+    podspec_path = File.expand_path("../iOS/PodSpecs/TapTapSDK.podspec", __dir__)
     sh("pod spec lint #{podspec_path} --allow-warnings --verbose --skip-import-validation")
 
     UI.success("✅ Podspec validation passed!")
