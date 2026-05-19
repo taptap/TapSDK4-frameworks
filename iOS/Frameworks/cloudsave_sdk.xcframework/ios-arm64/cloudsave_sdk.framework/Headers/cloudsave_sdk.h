@@ -33,8 +33,8 @@ TAPSDK_EXPORT_API void TapSdkCppInitLogger(int32_t logLevel, TapSdkCppLogWriter 
  *   {
  *       "region": 2,
  *       "data_dir": "/tmp",
- *       "client_id": "rfciqabirt4vqav7io",
- *       "client_token": "ts426XNwSswZWE33qB1ri6OmMk1i2q4zthima6hS",
+ *       "client_id": "",
+ *       "client_token": "",
  *       "ua": "TapSDK-Android/3.28.0",
  *       "lang": "zh-CN",
  *       "runtime_ver": "4.6.0-alpha.7",
@@ -43,8 +43,8 @@ TAPSDK_EXPORT_API void TapSdkCppInitLogger(int32_t logLevel, TapSdkCppLogWriter 
  *       "sdk_artifact": "Android",
  *       "sdk_module_ver": "4.6.0-alpha.7",
  *       "sdk_token": {
- *           "kid": "1/N9xz6ZMTRhezpoqDx04vXyLWdQP3YC1FYTBSmAinqEvjs-OF0_8FB_998XN1apyHC-W7DAngc25iAJuFltttwNKrdLamBVgw9FheTkJ6OCyqZeRp1-aKOjbswTdkjkcM5NXsiKHT6V0t0tus4mWCu_6M3Q34brTwumbL02-4Yj08Gf-zYNyWo3YRWTia8qY1pv2hpyng93C1UdgrqHZ9GMvTN9SeGSg3eHmrMMcvS6ISOjigC1ewHZx1CUbzcWpETeqAP2FxiV0kzbqFmAYf-tTBhSGThK6mWWj9B_GRAJH5X-bja58qF4X6gROM4iCrCn_7_csRQpJ8_iWXCVgjpA",
- *           "key": "vaJptFfy9icA2UmdSUtZ5YRxEulMZrsBBseyZYTm"
+ *           "kid": "",
+ *           "key": ""
  *       }
  *   }
  *
@@ -52,14 +52,14 @@ TAPSDK_EXPORT_API void TapSdkCppInitLogger(int32_t logLevel, TapSdkCppLogWriter 
  *   {
  *       "region": 2,
  *       "data_dir": "/tmp",
- *       "client_id": "rfciqabirt4vqav7io",
- *       "client_token": "ts426XNwSswZWE33qB1ri6OmMk1i2q4zthima6hS",
+ *       "client_id": "",
+ *       "client_token": "",
  *       "ua": "TapSDK-Android/3.28.0",
  *       "lang": "zh-CN",
  *       "runtime_ver": "4.6.0-alpha.7",
  *       "access_token": {
- *           "kid": "1/N9xz6ZMTRhezpoqDx04vXyLWdQP3YC1FYTBSmAinqEvjs-OF0_8FB_998XN1apyHC-W7DAngc25iAJuFltttwNKrdLamBVgw9FheTkJ6OCyqZeRp1-aKOjbswTdkjkcM5NXsiKHT6V0t0tus4mWCu_6M3Q34brTwumbL02-4Yj08Gf-zYNyWo3YRWTia8qY1pv2hpyng93C1UdgrqHZ9GMvTN9SeGSg3eHmrMMcvS6ISOjigC1ewHZx1CUbzcWpETeqAP2FxiV0kzbqFmAYf-tTBhSGThK6mWWj9B_GRAJH5X-bja58qF4X6gROM4iCrCn_7_csRQpJ8_iWXCVgjpA",
- *           "key": "vaJptFfy9icA2UmdSUtZ5YRxEulMZrsBBseyZYTm"
+ *           "kid": "",
+ *           "key": ""
  *       }
  *   }
  *
@@ -118,8 +118,8 @@ TAPSDK_EXPORT_API const char* TapSdkCloudSaveGitCommit();
  *
  * @param token 最新的access token，传空指针或"{}"表示用户退出登录。格式如下：
  *    {
- *       "kid": "1/N9xz6ZMTRhezpoqDx04vXyLWdQP3YC1FYTBSmAinqEvjs-OF0_8FB_998XN1apyHC-W7DAngc25iAJuFltttwNKrdLamBVgw9FheTkJ6OCyqZeRp1-aKOjbswTdkjkcM5NXsiKHT6V0t0tus4mWCu_6M3Q34brTwumbL02-4Yj08Gf-zYNyWo3YRWTia8qY1pv2hpyng93C1UdgrqHZ9GMvTN9SeGSg3eHmrMMcvS6ISOjigC1ewHZx1CUbzcWpETeqAP2FxiV0kzbqFmAYf-tTBhSGThK6mWWj9B_GRAJH5X-bja58qF4X6gROM4iCrCn_7_csRQpJ8_iWXCVgjpA",
- *       "key": "vaJptFfy9icA2UmdSUtZ5YRxEulMZrsBBseyZYTm"
+ *       "kid": "",
+ *       "key": ""
  *    }
  *
  * @return 成功返回 0，失败（通常是JSON格式错误）返回 -1
@@ -144,7 +144,7 @@ TAPSDK_EXPORT_API int TapSdkCloudSaveUpdateAccessToken(const char* token);
  * @param extraParams Tap Miniapp专用参数，JSON格式。其他接入方传空指针即可
  *     {
  *       "X-UA": "V%3D1%26PN%3DTapTap%26VN_CODE%3D275001002%26LOC%3DCN%26LANG%3Dzh_CN%26CH%3Ddefault%26UID%3D050b722b-43cb-4ab5-8848-8bcf34ab4350%26VID%3D33",
- *       "miniappId": "tapmcyewecm0dpon8o"
+ *       "miniappId": ""
  *     }
  *
  * @return JSON格式，服务端生成的云存档UUID和FileID，或者错误信息。用完后，调用方需要调用TapSdkCloudSaveFreeMemory来释放内存
@@ -180,7 +180,7 @@ TAPSDK_EXPORT_API char* TapSdkCloudSaveCreateArchive(const char* metadata, const
  * @param extraParams Tap Miniapp专用参数，JSON格式。其他接入方传空指针即可
  *     {
  *       "X-UA": "V%3D1%26PN%3DTapTap%26VN_CODE%3D275001002%26LOC%3DCN%26LANG%3Dzh_CN%26CH%3Ddefault%26UID%3D050b722b-43cb-4ab5-8848-8bcf34ab4350%26VID%3D33",
- *       "miniappId": "tapmcyewecm0dpon8o"
+ *       "miniappId": ""
  *     }
  *
  * @return JSON格式，服务端生成的云存档UUID和FileID，或者错误信息。用完后，调用方需要调用TapSdkCloudSaveFreeMemory来释放内存
@@ -204,7 +204,7 @@ TAPSDK_EXPORT_API char* TapSdkCloudSaveUpdateArchive(const char* archiveUUID, co
  * @param extraParams Tap Miniapp专用参数，JSON格式。其他接入方传空指针即可
  *     {
  *       "X-UA": "V%3D1%26PN%3DTapTap%26VN_CODE%3D275001002%26LOC%3DCN%26LANG%3Dzh_CN%26CH%3Ddefault%26UID%3D050b722b-43cb-4ab5-8848-8bcf34ab4350%26VID%3D33",
- *       "miniappId": "tapmcyewecm0dpon8o"
+ *       "miniappId": ""
  *     }
  *
  * @return JSON格式，返回成功或者错误信息。用完后，调用方需要调用TapSdkCloudSaveFreeMemory来释放内存
@@ -224,7 +224,7 @@ TAPSDK_EXPORT_API char* TapSdkCloudSaveDeleteArchive(const char* archiveUUID, co
  * @param extraParams Tap Miniapp专用参数，JSON格式。其他接入方传空指针即可
  *     {
  *       "X-UA": "V%3D1%26PN%3DTapTap%26VN_CODE%3D275001002%26LOC%3DCN%26LANG%3Dzh_CN%26CH%3Ddefault%26UID%3D050b722b-43cb-4ab5-8848-8bcf34ab4350%26VID%3D33",
- *       "miniappId": "tapmcyewecm0dpon8o"
+ *       "miniappId": ""
  *     }
  *
  * @return JSON格式，返回存档元信息列表，或者错误信息。用完后，需要调用TapSdkCloudSaveFreeMemory来释放内存
@@ -262,7 +262,7 @@ TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveList(const char* extraParams);
  * @param extraParams Tap Miniapp专用参数，JSON格式。其他接入方传空指针即可
  *     {
  *       "X-UA": "V%3D1%26PN%3DTapTap%26VN_CODE%3D275001002%26LOC%3DCN%26LANG%3Dzh_CN%26CH%3Ddefault%26UID%3D050b722b-43cb-4ab5-8848-8bcf34ab4350%26VID%3D33",
- *       "miniappId": "tapmcyewecm0dpon8o"
+ *       "miniappId": ""
  *     }
  *
  * @return 成功时saveSize是实际读取到的存档文件大小，返回存档文件内容；失败时saveSize是负数，返回JSON格式的错误信息，格式如下。用完后，需要调用TapSdkCloudSaveFreeMemory来释放内存
@@ -289,7 +289,7 @@ TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveData(const char* archiveUUID, c
  * @param extraParams Tap Miniapp专用参数，JSON格式。其他接入方传空指针即可
  *     {
  *       "X-UA": "V%3D1%26PN%3DTapTap%26VN_CODE%3D275001002%26LOC%3DCN%26LANG%3Dzh_CN%26CH%3Ddefault%26UID%3D050b722b-43cb-4ab5-8848-8bcf34ab4350%26VID%3D33",
- *       "miniappId": "tapmcyewecm0dpon8o"
+ *       "miniappId": ""
  *     }
  *
  * @return 成功时coverSize是实际读取到的封面文件大小，返回cover文件内容；失败时coverSize是负数，返回JSON格式的错误信息，格式如下。用完后，需要调用TapSdkCloudSaveFreeMemory来释放内存
@@ -313,7 +313,7 @@ TAPSDK_EXPORT_API char* TapSdkCloudSaveGetArchiveCover(const char* archiveUUID, 
  * @param params clientID TapSDK传client id，Miniapp传miniappId
  *   {
  *      "data_dir": "/tmp/cloudsave",
- *      "client_id": "rfciqabirt4vqav7io"
+ *      "client_id": ""
  *   }
  *   - data_dir 和初始化接口传的参数保存一致
  *   - client_id TapSDK传client id，Miniapp传miniappId

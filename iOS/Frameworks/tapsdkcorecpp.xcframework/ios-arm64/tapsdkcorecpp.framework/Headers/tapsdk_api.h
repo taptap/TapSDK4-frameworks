@@ -36,8 +36,8 @@ TAPSDK_EXPORT_API void TapSdkCppSetLogLevel(int32_t logLevel);
  *       "tapsdk_version": "4.2.0",
  *       "platform": "PC",
  *       "ua": "TapSDK-Android/3.28.0",
- *       "client_id": "uZ8Yy6cSXVOR6AMRPj",
- *       "client_token": "AVhR1Bu9qfLR1cGbZMAdZ5rzJSxfoEiQaFf1T2P7",
+ *       "client_id": "",
+ *       "client_token": "",
  *       "modules": ["app_duration"],
  *       "common": {
  *           "pn": "TapSDK",
