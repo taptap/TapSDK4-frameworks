@@ -18,10 +18,17 @@ platform :ios do
     podspec_path = File.expand_path("../iOS/PodSpecs/TapTapSDK.podspec", __dir__)
     sh("pod spec lint #{podspec_path} --allow-warnings --verbose --skip-import-validation")
 
-    # 3. 发布到 CocoaPods Trunk
-    sh("pod trunk push #{podspec_path} --allow-warnings --verbose")
-
-    UI.success("✅ Successfully published TapTapSDK to CocoaPods!")
+    # 3. 发布到 CocoaPods Trunk（409 重复提交视为已成功，幂等处理）
+    begin
+      sh("pod trunk push #{podspec_path} --allow-warnings --verbose")
+      UI.success("✅ Successfully published TapTapSDK to CocoaPods!")
+    rescue => e
+      if e.message.include?("duplicate entry") || e.message.include?("409")
+        UI.important("⚠️ Version already exists on CocoaPods trunk, skipping push (idempotent).")
+      else
+        raise e
+      end
+    end
   end
 
   # 完整的发布流程
