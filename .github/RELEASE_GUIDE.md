@@ -54,7 +54,7 @@
 
 ### 1. 更新版本号
 
-在发布新版本前，确保更新了 `PodSpecs/TapTapSDK.podspec` 中的版本号：
+在发布新版本前，确保更新了 `iOS/PodSpecs/TapTapSDK.podspec` 中的版本号：
 
 ```ruby
 s.version = '4.7.4'  # 更新为新版本号
@@ -179,7 +179,7 @@ Error: Podspec version (4.7.3) does not match tag version (4.7.4)
 ```
 
 **解决方法：**
-确保 `PodSpecs/TapTapSDK.podspec` 中的版本号与 Git tag 的版本号一致。
+确保 `iOS/PodSpecs/TapTapSDK.podspec` 中的版本号与 Git tag 的版本号一致。
 
 ### Q: CocoaPods 验证失败
 
@@ -195,7 +195,7 @@ Error: Podspec version (4.7.3) does not match tag version (4.7.4)
 fastlane validate
 
 # 或直接使用 CocoaPods 命令
-pod spec lint PodSpecs/TapTapSDK.podspec --allow-warnings --verbose
+pod spec lint iOS/PodSpecs/TapTapSDK.podspec --allow-warnings --verbose
 ```
 
 ### Q: COCOAPODS_TRUNK_TOKEN 未配置
@@ -265,8 +265,10 @@ workflow 支持以下 tag 格式：
 ├── fastlane/
 │   ├── Fastfile                 # Fastlane 配置文件
 │   └── README.md                # Fastlane 使用文档
-├── PodSpecs/
-│   └── TapTapSDK.podspec        # CocoaPods 规范文件
+├── iOS/
+│   ├── Frameworks/              # xcframeworks + resource bundles
+│   └── PodSpecs/
+│       └── TapTapSDK.podspec    # CocoaPods 规范文件（当前版本）
 ├── Gemfile                      # Ruby 依赖配置
 └── Gemfile.lock                 # 依赖版本锁定（自动生成）
 ```
