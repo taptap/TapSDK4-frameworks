@@ -1,7 +1,5 @@
 name: Release iOS SDK
 
-# 触发条件：当推送版本 tag 时自动运行
-# 支持格式：v1.0.0 或 1.0.0
 on:
   push:
     tags:
@@ -9,23 +7,18 @@ on:
       - '*.*.*'
 
 jobs:
-  # Job 1: 创建 GitHub Release
   create-release:
     name: Create GitHub Release
-    runs-on: ubuntu-latest  # 使用 GitHub 默认 Linux runner
+    runs-on: ubuntu-latest
     permissions:
-      contents: write  # 需要写权限来创建 release
+      contents: write
 
     steps:
-      # Step 1: 检出代码
-      # fetch-depth: 0 表示获取完整的 git 历史，以便后续操作
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # Step 2: 从 tag 中提取版本号
-      # 例如：v4.7.3 -> 4.7.3
       - name: Extract version from tag
         id: get_version
         run: |
@@ -33,10 +26,7 @@ jobs:
           VERSION=${TAG_NAME#v}
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
           echo "tag_name=${TAG_NAME}" >> $GITHUB_OUTPUT
-          echo "Extracted version: ${VERSION} from tag: ${TAG_NAME}"
 
-      # Step 3: 创建 GitHub Release
-      # 创建正式版本发布，使用 GitHub 自动生成的 release notes
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
@@ -48,67 +38,55 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # Job 2: 使用 Fastlane 发布到 CocoaPods
-  # 依赖于 create-release job 完成后才执行
   publish-cocoapods:
-    name: Publish to CocoaPods with Fastlane
+    name: Publish to CocoaPods
     needs: create-release
-    runs-on: macos-15-xlarge  # 使用自定义 macOS runner (macOS 15, XLarge)
+    runs-on: macos-15-xlarge
 
     steps:
-      # Step 1: 检出代码
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Step 2: 设置 Ruby 环境
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-
-      # Step 3: 安装 fastlane
-      - name: Install fastlane
-        run: gem install fastlane -v 2.228.0
-
-      # Step 4: 安装 cocoapods
-      - name: Install cocoapods
-        run: gem install cocoapods
-
-      # Step 5: 从 tag 中提取版本号
       - name: Extract version from tag
         id: get_version
         run: |
           TAG_NAME=${GITHUB_REF#refs/tags/}
           VERSION=${TAG_NAME#v}
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
-          echo "Extracted version: ${VERSION} from tag: ${TAG_NAME}"
 
-      # Step 6: 配置 CocoaPods Trunk 认证
-      # 将 .netrc 文件内容写入 ~/.netrc 供 CocoaPods 使用
       - name: Configure CocoaPods Trunk authentication
         env:
           NETRC_CONTENT: ${{ secrets.NETRC_CONTENT }}
         run: |
           if [ -z "$NETRC_CONTENT" ]; then
             echo "❌ Error: NETRC_CONTENT is not set"
-            echo "Please add your .netrc file content to GitHub Secrets"
             exit 1
           fi
-
-          echo "🔑 Setting up CocoaPods Trunk authentication..."
           echo "$NETRC_CONTENT" > ~/.netrc
           chmod 600 ~/.netrc
-          echo "✅ CocoaPods authentication configured"
 
-      # Step 7: 使用 Fastlane 发布到 CocoaPods
-      # Fastlane 会自动处理版本验证、podspec 验证和发布流程
-      - name: Release to CocoaPods using Fastlane
+      - name: Validate podspec version
         run: |
-          echo "🚀 Starting Fastlane release process..."
-          fastlane release version:${{ steps.get_version.outputs.version }}
+          PODSPEC_VERSION=$(grep -E "^\s+s\.version\s*=" iOS/PodSpecs/TapTapSDK.podspec | grep -oE "'[^']+'" | tr -d "'")
+          TAG_VERSION="${{ steps.get_version.outputs.version }}"
+          if [ "$PODSPEC_VERSION" != "$TAG_VERSION" ]; then
+            echo "❌ Version mismatch: podspec=${PODSPEC_VERSION}, tag=${TAG_VERSION}"
+            exit 1
+          fi
+          echo "✅ Version check passed: ${TAG_VERSION}"
 
-      # Step 8: 发布成功提示
+      - name: Lint podspec
+        run: |
+          pod spec lint iOS/PodSpecs/TapTapSDK.podspec \
+            --allow-warnings \
+            --verbose \
+            --skip-import-validation
+
+      - name: Push to CocoaPods Trunk
+        run: |
+          pod trunk push iOS/PodSpecs/TapTapSDK.podspec \
+            --allow-warnings \
+            --verbose
+
       - name: Release completed
-        run: |
-          echo "✅ Successfully published TapTapSDK ${{ steps.get_version.outputs.version }} to CocoaPods"
-          echo "It may take a few minutes for the new version to be available in CocoaPods search"
+        run: echo "✅ TapTapSDK ${{ steps.get_version.outputs.version }} published to CocoaPods"
