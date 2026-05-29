@@ -831,6 +831,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -985,6 +992,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -8794,6 +8808,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "Nonisolated",
               "ObjC"
             ],
             "hasStorage": true,
@@ -8897,6 +8912,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "Nonisolated",
               "ObjC"
             ],
             "hasStorage": true,
@@ -9000,6 +9016,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "Nonisolated",
               "ObjC"
             ],
             "hasStorage": true,
@@ -9243,6 +9260,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
+              "Custom",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -10518,7 +10536,7 @@
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentSwiftBridgeService.swift",
       "kind": "BooleanLiteral",
-      "offset": 359,
+      "offset": 380,
       "length": 5,
       "value": "false"
     },
@@ -10658,28 +10676,28 @@
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
-      "offset": 16988,
+      "offset": 16937,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
-      "offset": 18218,
+      "offset": 18167,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "BooleanLiteral",
-      "offset": 35122,
+      "offset": 35071,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/Net\/SwiftyJSON.swift",
       "kind": "BooleanLiteral",
-      "offset": 35170,
+      "offset": 35119,
       "length": 5,
       "value": "false"
     },
@@ -10693,35 +10711,35 @@
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "BooleanLiteral",
-      "offset": 320,
+      "offset": 340,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "BooleanLiteral",
-      "offset": 355,
+      "offset": 395,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "StringLiteral",
-      "offset": 394,
+      "offset": 454,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "IntegerLiteral",
-      "offset": 430,
+      "offset": 510,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapMoment\/Private\/TapMomentInternal.swift",
       "kind": "StringLiteral",
-      "offset": 473,
+      "offset": 573,
       "length": 2,
       "value": "\"\""
     }

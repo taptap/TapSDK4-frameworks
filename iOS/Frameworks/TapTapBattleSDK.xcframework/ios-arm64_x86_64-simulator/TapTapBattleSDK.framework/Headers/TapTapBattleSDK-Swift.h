@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -305,6 +306,645 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class NSString;
+/// 对战帧输入
+SWIFT_CLASS("_TtC15TapTapBattleSDK16BattleFrameInput")
+@interface BattleFrameInput : NSObject
+/// 玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+/// 玩家操作数据，utf8字符串格式
+@property (nonatomic, readonly, copy) NSString * _Nonnull data;
+/// 服务器收到该操作数据的时间，1970年开始的毫秒数
+@property (nonatomic, readonly, copy) NSString * _Nonnull serverTms;
+- (nonnull instancetype)initWithPlayerId:(NSString * _Nonnull)playerId data:(NSString * _Nonnull)data serverTms:(NSString * _Nonnull)serverTms OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class EnterRoomNotification;
+@class LeaveRoomNotification;
+@class PlayerOfflineNotification;
+@class PlayerCustomStatusNotification;
+@class PlayerCustomPropertiesNotification;
+@class RoomPropertiesNotification;
+@class FrameSyncStartNotification;
+@class FrameSynchronization;
+@class FrameSyncStopNotification;
+@class ErrorResponse;
+@class RoomPlayerKickedNotification;
+@class CustomMessageNotification;
+/// 对战通知监听器
+/// 统一处理所有对战相关的通知事件
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK26BattleNotificationCallback_")
+@protocol BattleNotificationCallback <NSObject>
+@optional
+/// 玩家进入房间通知
+- (void)onPlayerEnteredWithNotification:(EnterRoomNotification * _Nonnull)notification;
+/// 玩家离开房间通知
+- (void)onPlayerLeftWithNotification:(LeaveRoomNotification * _Nonnull)notification;
+/// 玩家离线通知
+- (void)onPlayerOfflineWithNotification:(PlayerOfflineNotification * _Nonnull)notification;
+/// 玩家自定义状态通知
+- (void)onPlayerCustomStatusChangedWithNotification:(PlayerCustomStatusNotification * _Nonnull)notification;
+/// 玩家自定义属性通知
+- (void)onPlayerCustomPropertiesChangedWithNotification:(PlayerCustomPropertiesNotification * _Nonnull)notification;
+/// 房间属性通知
+- (void)onRoomPropertiesChangedWithNotification:(RoomPropertiesNotification * _Nonnull)notification;
+/// 帧同步开始通知
+- (void)onFrameSyncStartedWithNotification:(FrameSyncStartNotification * _Nonnull)notification;
+/// 帧同步数据接收
+- (void)onFrameReceivedWithFrameSync:(FrameSynchronization * _Nonnull)frameSync;
+/// 帧同步停止通知
+- (void)onFrameSyncStoppedWithNotification:(FrameSyncStopNotification * _Nonnull)notification;
+/// 对战服务错误
+- (void)onBattleServiceError;
+/// 被动断连通知
+/// 网络问题断线、被踢下线等被动断连时回调
+- (void)onDisconnectedWithError:(ErrorResponse * _Nonnull)error;
+/// 房间玩家被踢通知
+- (void)onPlayerKickedWithNotification:(RoomPlayerKickedNotification * _Nonnull)notification;
+/// 自定义消息通知
+- (void)onCustomMessageReceivedWithNotification:(CustomMessageNotification * _Nonnull)notification;
+@end
+
+@class SignInResponse;
+/// 连接回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK15ConnectListener_")
+@protocol ConnectListener
+/// 连接成功回调
+/// \param response 连接响应数据
+///
+- (void)onSuccessWithResponse:(SignInResponse * _Nonnull)response;
+/// 连接失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+@class CreateRoomResponse;
+/// 创建房间回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK18CreateRoomListener_")
+@protocol CreateRoomListener
+/// 创建房间成功回调
+/// \param response 创建房间响应数据
+///
+- (void)onSuccessWithResponse:(CreateRoomResponse * _Nonnull)response;
+/// 创建房间失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+@class RoomConfig;
+@class PlayerConfig;
+/// 创建房间请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK17CreateRoomRequest")
+@interface CreateRoomRequest : NSObject
+/// 房间配置，必填
+@property (nonatomic, readonly, strong) RoomConfig * _Nonnull roomCfg;
+/// 玩家配置，选填
+@property (nonatomic, readonly, strong) PlayerConfig * _Nonnull playerCfg;
+- (nonnull instancetype)initWithRoomCfg:(RoomConfig * _Nonnull)roomCfg playerCfg:(PlayerConfig * _Nonnull)playerCfg OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class RoomInfo;
+/// 创建房间响应
+SWIFT_CLASS("_TtC15TapTapBattleSDK18CreateRoomResponse")
+@interface CreateRoomResponse : NSObject
+@property (nonatomic, readonly, strong) RoomInfo * _Nonnull roomInfo;
+- (nonnull instancetype)initWithRoomInfo:(RoomInfo * _Nonnull)roomInfo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 自定义消息通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK25CustomMessageNotification")
+@interface CustomMessageNotification : NSObject
+/// 消息发送者玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+/// 自定义消息，格式由开发者决定，必须是utf8字符串，最大2048字节
+@property (nonatomic, readonly, copy) NSString * _Nonnull msg;
+- (nonnull instancetype)initWithPlayerId:(NSString * _Nonnull)playerId msg:(NSString * _Nonnull)msg OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 断开连接回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK18DisconnectListener_")
+@protocol DisconnectListener
+/// 断开连接成功回调
+- (void)onSuccess;
+/// 断开连接失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+@class PlayerInfo;
+/// 进入房间通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK21EnterRoomNotification")
+@interface EnterRoomNotification : NSObject
+/// 玩家进入的房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomId;
+/// 进入房间的玩家信息
+@property (nonatomic, readonly, strong) PlayerInfo * _Nonnull playerInfo;
+- (nonnull instancetype)initWithRoomId:(NSString * _Nonnull)roomId playerInfo:(PlayerInfo * _Nonnull)playerInfo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 错误码枚举
+typedef SWIFT_ENUM(NSInteger, ErrorCode, open) {
+/// SDK 未登录 TapSDK Login
+  ErrorCodeErrorNotLogin = 101,
+/// 系统错误
+  ErrorCodeErrorSystemError = 1,
+/// SDK错误，可能内存分配失败、http对象创建失败等
+  ErrorCodeErrorSDKError = 2,
+/// 请求频率超限
+  ErrorCodeErrorRequestRateLimitExceeded = 3,
+/// 网关认定为恶意用户，拒绝请求或关闭连接。建议不要重连
+  ErrorCodeErrorMaliciousUser = 4,
+/// 因同时连接数过多而被踢下线。建议不要重连，避免互踢，导致重连死循环
+  ErrorCodeErrorTooManyConnections = 5,
+/// 网络错误，可能是连接超时、断开等
+  ErrorCodeErrorNetworkError = 6,
+/// 请求不合法
+  ErrorCodeErrorInvalidRequest = 11,
+/// 认证信息不合法
+  ErrorCodeErrorInvalidAuthorization = 12,
+/// 尚未完成登录认证
+  ErrorCodeErrorUnauthorized = 13,
+/// 已经登录，不能重复登录
+  ErrorCodeErrorAlreadySignedIn = 14,
+/// 上一个请求未完成，不接受新的请求
+  ErrorCodeErrorPreviousRequestInProgress = 15,
+/// 请求了后端服务未实现的功能
+  ErrorCodeErrorUnimplemented = 16,
+/// 用户没有对当前动作的权限
+  ErrorCodeErrorForbidden = 17,
+/// 房间模板不存在
+  ErrorCodeErrorRoomTemplateNotFound = 18,
+/// 房间总数量超过限制
+  ErrorCodeErrorRoomCountLimitExceeded = 19,
+/// 尚未加入房间
+  ErrorCodeErrorNotInRoom = 20,
+/// 已经在房间中，不能重复加入
+  ErrorCodeErrorAlreadyInRoom = 21,
+/// 不是房主，不能执行此操作
+  ErrorCodeErrorNotRoomOwner = 22,
+/// 房间已满，不能加入
+  ErrorCodeErrorRoomFull = 23,
+/// 房间不存在
+  ErrorCodeErrorRoomNotExist = 24,
+/// 对战未开始，不能执行此操作
+  ErrorCodeErrorBattleNotStarted = 25,
+/// 对战已开始，不能执行此操作
+  ErrorCodeErrorBattleAlreadyStarted = 26,
+/// 对战帧数据大小超过限制
+  ErrorCodeErrorBattleFrameDataSizeLimitExceeded = 28,
+/// 每帧可接受的输入数量超过限制
+  ErrorCodeErrorBattleFrameDataCountLimitExceeded = 29,
+/// 玩家不存在
+  ErrorCodeErrorPlayerNotFound = 30,
+};
+
+/// 错误响应
+SWIFT_CLASS("_TtC15TapTapBattleSDK13ErrorResponse")
+@interface ErrorResponse : NSObject
+@property (nonatomic, readonly) NSInteger code;
+@property (nonatomic, readonly, copy) NSString * _Nonnull msg;
+- (nonnull instancetype)initWithCode:(NSInteger)code msg:(NSString * _Nonnull)msg OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 帧同步开始通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK26FrameSyncStartNotification")
+@interface FrameSyncStartNotification : NSObject
+@property (nonatomic, readonly, strong) RoomInfo * _Nonnull roomInfo;
+/// 帧同步ID，房间内唯一，房间内每次开始帧同步都会变化
+@property (nonatomic, readonly) int64_t frameSyncId;
+/// 用于初始化线性同余伪随机数生成器的随机数种子
+@property (nonatomic, readonly) int64_t seed;
+/// 对战开始的服务端时间，1970年开始的毫秒数
+@property (nonatomic, readonly, copy) NSString * _Nonnull serverTms;
+- (nonnull instancetype)initWithRoomInfo:(RoomInfo * _Nonnull)roomInfo frameSyncId:(int64_t)frameSyncId seed:(int64_t)seed serverTms:(NSString * _Nonnull)serverTms OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 帧同步停止通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK25FrameSyncStopNotification")
+@interface FrameSyncStopNotification : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomId;
+/// 帧同步ID，房间内唯一，房间内每次开始帧同步都会变化
+@property (nonatomic, readonly) int64_t frameSyncId;
+/// 0：房主主动结束帧同步，1：帧同步因30分钟超时结束
+@property (nonatomic, readonly) NSInteger reason;
+- (nonnull instancetype)initWithRoomId:(NSString * _Nonnull)roomId frameSyncId:(int64_t)frameSyncId reason:(NSInteger)reason OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 帧同步
+SWIFT_CLASS("_TtC15TapTapBattleSDK20FrameSynchronization")
+@interface FrameSynchronization : NSObject
+/// 帧ID，从1开始递增
+@property (nonatomic, readonly) int64_t id;
+/// 当前帧的所有玩家操作，按服务端接收时间排序
+@property (nonatomic, readonly, copy) NSArray<BattleFrameInput *> * _Nonnull inputs;
+- (nonnull instancetype)initWithId:(int64_t)id inputs:(NSArray<BattleFrameInput *> * _Nonnull)inputs OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class GetRoomListResponse;
+/// 获取房间列表回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK19GetRoomListListener_")
+@protocol GetRoomListListener
+/// 获取房间列表成功回调
+/// \param response 房间列表响应数据
+///
+- (void)onSuccessWithResponse:(GetRoomListResponse * _Nonnull)response;
+/// 获取房间列表失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 获取房间列表请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK18GetRoomListRequest")
+@interface GetRoomListRequest : NSObject
+/// 房间类型。不填则拉取全部类型的房间
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomType;
+/// 偏移量，第一次请求时为0，或者不填
+@property (nonatomic, readonly) NSInteger offset;
+/// 请求获取的房间数量，不填则默认为20，最大100
+@property (nonatomic, readonly) NSInteger limit;
+- (nonnull instancetype)initWithRoomType:(NSString * _Nonnull)roomType offset:(NSInteger)offset limit:(NSInteger)limit OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class RoomBasicInfo;
+/// 获取房间列表响应
+SWIFT_CLASS("_TtC15TapTapBattleSDK19GetRoomListResponse")
+@interface GetRoomListResponse : NSObject
+/// 房间列表，选填
+@property (nonatomic, readonly, copy) NSArray<RoomBasicInfo *> * _Nullable rooms;
+/// 用于请求下一页的偏移量，选填
+@property (nonatomic, readonly) NSInteger offset;
+/// 是否还有更多房间可以拉取，选填
+@property (nonatomic, readonly) BOOL hasMore;
+- (nonnull instancetype)initWithRooms:(NSArray<RoomBasicInfo *> * _Nullable)rooms offset:(NSInteger)offset hasMore:(BOOL)hasMore OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class JoinRoomResponse;
+/// 加入房间回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK16JoinRoomListener_")
+@protocol JoinRoomListener
+/// 加入房间成功回调
+/// \param response 加入房间响应数据
+///
+- (void)onSuccessWithResponse:(JoinRoomResponse * _Nonnull)response;
+/// 加入房间失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 加入房间请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK15JoinRoomRequest")
+@interface JoinRoomRequest : NSObject
+/// 房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomId;
+/// 玩家配置，选填
+@property (nonatomic, readonly, strong) PlayerConfig * _Nonnull playerCfg;
+- (nonnull instancetype)initWithRoomId:(NSString * _Nonnull)roomId playerCfg:(PlayerConfig * _Nonnull)playerCfg OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 加入房间响应
+SWIFT_CLASS("_TtC15TapTapBattleSDK16JoinRoomResponse")
+@interface JoinRoomResponse : NSObject
+@property (nonatomic, readonly, strong) RoomInfo * _Nonnull roomInfo;
+- (nonnull instancetype)initWithRoomInfo:(RoomInfo * _Nonnull)roomInfo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 踢出房间玩家回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK22KickRoomPlayerListener_")
+@protocol KickRoomPlayerListener
+/// 踢出房间玩家成功回调
+- (void)onSuccess;
+/// 踢出房间玩家失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 离开房间回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK17LeaveRoomListener_")
+@protocol LeaveRoomListener
+/// 离开房间成功回调
+- (void)onSuccess;
+/// 离开房间失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 离开房间通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK21LeaveRoomNotification")
+@interface LeaveRoomNotification : NSObject
+/// 玩家离开的房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomId;
+/// 房主ID。如果离开的是房主，则roomOwnerId为新房主ID；反之，为原房主ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomOwnerId;
+/// 离开房间的玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+- (nonnull instancetype)initWithRoomId:(NSString * _Nonnull)roomId roomOwnerId:(NSString * _Nonnull)roomOwnerId playerId:(NSString * _Nonnull)playerId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class MatchRoomResponse;
+/// 匹配房间回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK17MatchRoomListener_")
+@protocol MatchRoomListener
+/// 匹配房间成功回调
+/// \param response 匹配房间响应数据
+///
+- (void)onSuccessWithResponse:(MatchRoomResponse * _Nonnull)response;
+/// 匹配房间失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 匹配房间请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK16MatchRoomRequest")
+@interface MatchRoomRequest : NSObject
+/// 房间配置，必填
+@property (nonatomic, readonly, strong) RoomConfig * _Nonnull roomCfg;
+/// 玩家配置，选填
+@property (nonatomic, readonly, strong) PlayerConfig * _Nonnull playerCfg;
+- (nonnull instancetype)initWithRoomCfg:(RoomConfig * _Nonnull)roomCfg playerCfg:(PlayerConfig * _Nonnull)playerCfg OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 匹配房间响应
+SWIFT_CLASS("_TtC15TapTapBattleSDK17MatchRoomResponse")
+@interface MatchRoomResponse : NSObject
+@property (nonatomic, readonly, strong) RoomInfo * _Nonnull roomInfo;
+- (nonnull instancetype)initWithRoomInfo:(RoomInfo * _Nonnull)roomInfo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 玩家配置
+SWIFT_CLASS("_TtC15TapTapBattleSDK12PlayerConfig")
+@interface PlayerConfig : NSObject
+/// 自定义玩家状态，整形，选填。开发者可随意设置任何值，意义由开发者自行判断
+@property (nonatomic, readonly) NSInteger customStatus;
+/// 自定义玩家属性，选填。开发者可以随意设置任何数据，最大长度为2048字节
+@property (nonatomic, readonly, copy) NSString * _Nonnull customProperties;
+- (nonnull instancetype)initWithCustomStatus:(NSInteger)customStatus customProperties:(NSString * _Nonnull)customProperties OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 玩家自定义属性通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK34PlayerCustomPropertiesNotification")
+@interface PlayerCustomPropertiesNotification : NSObject
+/// 更新了自定义属性的玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull properties;
+- (nonnull instancetype)initWithPlayerId:(NSString * _Nonnull)playerId properties:(NSString * _Nonnull)properties OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 玩家自定义状态通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK30PlayerCustomStatusNotification")
+@interface PlayerCustomStatusNotification : NSObject
+/// 更新了自定义状态的玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+@property (nonatomic, readonly) NSInteger status;
+- (nonnull instancetype)initWithPlayerId:(NSString * _Nonnull)playerId status:(NSInteger)status OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 玩家信息
+SWIFT_CLASS("_TtC15TapTapBattleSDK10PlayerInfo")
+@interface PlayerInfo : NSObject
+/// 玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// 玩家状态：0-离线、1-在线
+@property (nonatomic, readonly) NSInteger status;
+/// 自定义玩家状态，开发者可随意设置任何值，意义由开发者自行判断，选填
+@property (nonatomic, readonly) NSInteger customStatus;
+/// 自定义玩家属性，选填
+@property (nonatomic, readonly, copy) NSString * _Nullable customProperties;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id status:(NSInteger)status customStatus:(NSInteger)customStatus customProperties:(NSString * _Nullable)customProperties OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 玩家离线通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK25PlayerOfflineNotification")
+@interface PlayerOfflineNotification : NSObject
+/// 离线玩家所属房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomId;
+/// 房主ID。如果离线的是房主，则roomOwnerId为新房主ID；反之，为原房主ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomOwnerId;
+/// 离线玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+- (nonnull instancetype)initWithRoomId:(NSString * _Nonnull)roomId roomOwnerId:(NSString * _Nonnull)roomOwnerId playerId:(NSString * _Nonnull)playerId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 房间基本信息（用于房间列表）
+SWIFT_CLASS("_TtC15TapTapBattleSDK13RoomBasicInfo")
+@interface RoomBasicInfo : NSObject
+/// 房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// 房间名字，选填
+@property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// 房间自定义属性
+@property (nonatomic, readonly, copy) NSString * _Nullable customProperties;
+/// 房间最大人数
+@property (nonatomic, readonly) NSInteger maxPlayerCount;
+/// 房间当前人数
+@property (nonatomic, readonly) NSInteger playerCount;
+/// 房间创建时间
+@property (nonatomic, readonly, copy) NSString * _Nonnull createTime;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id name:(NSString * _Nullable)name customProperties:(NSString * _Nullable)customProperties maxPlayerCount:(NSInteger)maxPlayerCount playerCount:(NSInteger)playerCount createTime:(NSString * _Nonnull)createTime OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 房间配置
+SWIFT_CLASS("_TtC15TapTapBattleSDK10RoomConfig")
+@interface RoomConfig : NSObject
+/// 房间最大支持人数，取值范围为[1, 20]，必填
+@property (nonatomic, readonly) NSInteger maxPlayerCount;
+/// 房间类型，最大32字节,必填
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+/// 房间匹配参数，选填，最大支持3个K/V对
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull matchParams;
+/// 房间名称，最大64个字节，选填
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+/// 自定义房间属性，最大2048字节，选填
+@property (nonatomic, readonly, copy) NSString * _Nonnull customProperties;
+- (nonnull instancetype)initWithMaxPlayerCount:(NSInteger)maxPlayerCount type:(NSString * _Nonnull)type matchParams:(NSDictionary<NSString *, NSString *> * _Nonnull)matchParams name:(NSString * _Nonnull)name customProperties:(NSString * _Nonnull)customProperties OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 房间信息
+SWIFT_CLASS("_TtC15TapTapBattleSDK8RoomInfo")
+@interface RoomInfo : NSObject
+/// 房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// 房间名称，选填
+@property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// 房间类型
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+/// 房主ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull ownerId;
+/// 房间状态，0-未开始，1-进行中（帧同步中），2-已结束，选填
+@property (nonatomic, readonly) NSInteger status;
+/// 自定义房间属性，选填
+@property (nonatomic, readonly, copy) NSString * _Nullable customProperties;
+/// 房间最大支持人数
+@property (nonatomic, readonly) NSInteger maxPlayerCount;
+/// 房间内当前玩家列表
+@property (nonatomic, readonly, copy) NSArray<PlayerInfo *> * _Nonnull players;
+/// 房间创建时间，1970年开始的秒数
+@property (nonatomic, readonly, copy) NSString * _Nonnull createTime;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id name:(NSString * _Nullable)name type:(NSString * _Nonnull)type ownerId:(NSString * _Nonnull)ownerId status:(NSInteger)status customProperties:(NSString * _Nullable)customProperties maxPlayerCount:(NSInteger)maxPlayerCount players:(NSArray<PlayerInfo *> * _Nonnull)players createTime:(NSString * _Nonnull)createTime OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 房间玩家被踢通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK28RoomPlayerKickedNotification")
+@interface RoomPlayerKickedNotification : NSObject
+/// 被踢玩家所属房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomId;
+/// 被踢玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+- (nonnull instancetype)initWithRoomId:(NSString * _Nonnull)roomId playerId:(NSString * _Nonnull)playerId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 房间属性通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK26RoomPropertiesNotification")
+@interface RoomPropertiesNotification : NSObject
+/// 房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// 房间名称
+@property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// 房间自定义属性
+@property (nonatomic, readonly, copy) NSString * _Nullable customProperties;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id name:(NSString * _Nullable)name customProperties:(NSString * _Nullable)customProperties OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 发送自定义消息回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK25SendCustomMessageListener_")
+@protocol SendCustomMessageListener
+/// 发送自定义消息成功回调
+- (void)onSuccess;
+/// 发送自定义消息失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 发送自定义消息请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK24SendCustomMessageRequest")
+@interface SendCustomMessageRequest : NSObject
+/// 自定义消息，格式由开发者决定，必须是utf8字符串，最大2048字节
+@property (nonatomic, readonly, copy) NSString * _Nonnull msg;
+/// 消息接收者类型。0：房间内所有玩家，不包括发送者；1：发送给指定玩家
+@property (nonatomic, readonly) NSInteger type;
+/// 当type==1时有效，发送给该字段指定的玩家，最多20个ID
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull receivers;
+- (nonnull instancetype)initWithMsg:(NSString * _Nonnull)msg type:(NSInteger)type receivers:(NSArray<NSString *> * _Nonnull)receivers OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 发送帧输入回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK22SendFrameInputListener_")
+@protocol SendFrameInputListener
+/// 发送帧输入成功回调
+- (void)onSuccess;
+/// 发送帧输入失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 发送帧输入请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK21SendFrameInputRequest")
+@interface SendFrameInputRequest : NSObject
+/// 游戏操作，utf8字符串格式，最大1024字节
+@property (nonatomic, readonly, copy) NSString * _Nonnull data;
+- (nonnull instancetype)initWithData:(NSString * _Nonnull)data OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 登录响应
+SWIFT_CLASS("_TtC15TapTapBattleSDK14SignInResponse")
+@interface SignInResponse : NSObject
+/// 玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+- (nonnull instancetype)initWithPlayerId:(NSString * _Nonnull)playerId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 开始帧同步回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK22StartFrameSyncListener_")
+@protocol StartFrameSyncListener
+/// 开始帧同步成功回调
+- (void)onSuccess;
+/// 开始帧同步失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 停止帧同步回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK21StopFrameSyncListener_")
+@protocol StopFrameSyncListener
+/// 停止帧同步成功回调
+- (void)onSuccess;
+/// 停止帧同步失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+@protocol UpdatePlayerCustomStatusListener;
+@protocol UpdatePlayerCustomPropertiesListener;
+@class UpdateRoomPropertiesRequest;
+@protocol UpdateRoomPropertiesListener;
 /// TapTap Battle SDK Public API
 /// 提供对战服务功能，包括房间管理、帧同步对战等。
 /// Native 库 (onlinebattle_sdk.xcframework) 在 TapSDK 初始化时自动加载。
@@ -353,6 +993,97 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// \endcode
 SWIFT_CLASS("_TtC15TapTapBattleSDK12TapTapBattle")
 @interface TapTapBattle : NSObject
+/// 连接对战服务（建立长连接）
+/// 注意：调用此方法前需要先使用 TapSDK Login 完成用户登录
+/// SDK 会自动从 TapTapKit 和 LoginService 获取必要的认证信息
+/// \param listener 回调监听器（可选）
+///
++ (void)connectWithListener:(id <ConnectListener> _Nullable)listener;
+/// 断开对战服务（关闭长连接）
+/// \param listener 回调监听器（可选）
+///
+/// \param forceCheck 是否强制执行（忽略登录检查），默认为 false。用于登录状态变化时自动断开连接
+///
++ (void)disconnectWithListener:(id <DisconnectListener> _Nullable)listener forceCheck:(BOOL)forceCheck;
+/// 创建房间
+/// \param request 创建房间请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)createRoomWithRequest:(CreateRoomRequest * _Nonnull)request listener:(id <CreateRoomListener> _Nullable)listener;
+/// 匹配房间（匹配不到时自动创建）
+/// \param request 匹配房间请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)matchRoomWithRequest:(MatchRoomRequest * _Nonnull)request listener:(id <MatchRoomListener> _Nullable)listener;
+/// 获取房间列表
+/// \param request 获取房间列表请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)getRoomListWithRequest:(GetRoomListRequest * _Nonnull)request listener:(id <GetRoomListListener> _Nullable)listener;
+/// 加入房间
+/// \param request 加入房间请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)joinRoomWithRequest:(JoinRoomRequest * _Nonnull)request listener:(id <JoinRoomListener> _Nullable)listener;
+/// 离开房间
+/// 注意：处于对战状态时不允许调用
+/// \param listener 回调监听器（可选）
+///
++ (void)leaveRoomWithListener:(id <LeaveRoomListener> _Nullable)listener;
+/// 更新玩家自定义状态
+/// 注意：在房间里，且未开战时才能调用
+/// \param status 玩家自定义状态
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)updatePlayerCustomStatusWithStatus:(NSInteger)status listener:(id <UpdatePlayerCustomStatusListener> _Nullable)listener;
+/// 更新玩家自定义属性
+/// 注意：在房间里，且未开战时才能调用
+/// \param properties 玩家自定义属性（UTF-8 字符串，最大 2048 字节）
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)updatePlayerCustomPropertiesWithProperties:(NSString * _Nonnull)properties listener:(id <UpdatePlayerCustomPropertiesListener> _Nullable)listener;
+/// 更新房间属性
+/// 注意：在房间里，且未开战时才能调用，仅限房主调用
+/// \param request 更新房间属性请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)updateRoomPropertiesWithRequest:(UpdateRoomPropertiesRequest * _Nonnull)request listener:(id <UpdateRoomPropertiesListener> _Nullable)listener;
+/// 开始帧同步
+/// \param listener 回调监听器（可选）
+///
++ (void)startFrameSyncWithListener:(id <StartFrameSyncListener> _Nullable)listener;
+/// 发送玩家帧输入
+/// 注意：同一帧允许发送多次操作，无需等待回调
+/// \param request 发送帧输入请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)sendFrameInputWithRequest:(SendFrameInputRequest * _Nonnull)request listener:(id <SendFrameInputListener> _Nullable)listener;
+/// 停止帧同步
+/// \param listener 回调监听器（可选）
+///
++ (void)stopFrameSyncWithListener:(id <StopFrameSyncListener> _Nullable)listener;
+/// 踢玩家出房间
+/// 注意：在房间里，且未开战时才能调用，仅限房主调用
+/// \param playerID 被踢玩家ID
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)kickRoomPlayerWithPlayerID:(NSString * _Nonnull)playerID listener:(id <KickRoomPlayerListener> _Nullable)listener;
+/// 发送自定义消息
+/// 注意：每秒允许调用 20 次，无需等待回调
+/// \param request 发送自定义消息请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)sendCustomMessageWithRequest:(SendCustomMessageRequest * _Nonnull)request listener:(id <SendCustomMessageListener> _Nullable)listener;
 /// 创建新的随机数生成器对象
 /// \param seed 随机数种子（使用 BattleStartNotification 里返回的 seed）
 ///
@@ -396,9 +1127,62 @@ SWIFT_CLASS("_TtC15TapTapBattleSDK12TapTapBattle")
 /// returns:
 /// 版本字符串或 nil（SDK 未初始化）
 + (NSString * _Nullable)getVersion SWIFT_WARN_UNUSED_RESULT;
+/// 注册对战通知监听器
+/// \param listener 对战通知监听器
+///
++ (void)registerBattleNotificationListener:(id <BattleNotificationCallback> _Nonnull)listener;
+/// 注销对战通知监听器
+/// \param listener 对战通知监听器
+///
++ (void)unregisterBattleNotificationListener:(id <BattleNotificationCallback> _Nonnull)listener;
 /// 确保静态初始化被触发
 + (void)ensureInitialization;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// 更新玩家自定义属性回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK36UpdatePlayerCustomPropertiesListener_")
+@protocol UpdatePlayerCustomPropertiesListener
+/// 更新玩家自定义属性成功回调
+- (void)onSuccess;
+/// 更新玩家自定义属性失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 更新玩家自定义状态回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK32UpdatePlayerCustomStatusListener_")
+@protocol UpdatePlayerCustomStatusListener
+/// 更新玩家自定义状态成功回调
+- (void)onSuccess;
+/// 更新玩家自定义状态失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 更新房间属性回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK28UpdateRoomPropertiesListener_")
+@protocol UpdateRoomPropertiesListener
+/// 更新房间属性成功回调
+- (void)onSuccess;
+/// 更新房间属性失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 更新房间属性请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK27UpdateRoomPropertiesRequest")
+@interface UpdateRoomPropertiesRequest : NSObject
+/// 房间名称，最大64个字节
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+/// 房间自定义属性，最大2048字节
+@property (nonatomic, readonly, copy) NSString * _Nonnull customProperties;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name customProperties:(NSString * _Nonnull)customProperties OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 #endif
@@ -692,6 +1476,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -716,6 +1501,645 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class NSString;
+/// 对战帧输入
+SWIFT_CLASS("_TtC15TapTapBattleSDK16BattleFrameInput")
+@interface BattleFrameInput : NSObject
+/// 玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+/// 玩家操作数据，utf8字符串格式
+@property (nonatomic, readonly, copy) NSString * _Nonnull data;
+/// 服务器收到该操作数据的时间，1970年开始的毫秒数
+@property (nonatomic, readonly, copy) NSString * _Nonnull serverTms;
+- (nonnull instancetype)initWithPlayerId:(NSString * _Nonnull)playerId data:(NSString * _Nonnull)data serverTms:(NSString * _Nonnull)serverTms OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class EnterRoomNotification;
+@class LeaveRoomNotification;
+@class PlayerOfflineNotification;
+@class PlayerCustomStatusNotification;
+@class PlayerCustomPropertiesNotification;
+@class RoomPropertiesNotification;
+@class FrameSyncStartNotification;
+@class FrameSynchronization;
+@class FrameSyncStopNotification;
+@class ErrorResponse;
+@class RoomPlayerKickedNotification;
+@class CustomMessageNotification;
+/// 对战通知监听器
+/// 统一处理所有对战相关的通知事件
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK26BattleNotificationCallback_")
+@protocol BattleNotificationCallback <NSObject>
+@optional
+/// 玩家进入房间通知
+- (void)onPlayerEnteredWithNotification:(EnterRoomNotification * _Nonnull)notification;
+/// 玩家离开房间通知
+- (void)onPlayerLeftWithNotification:(LeaveRoomNotification * _Nonnull)notification;
+/// 玩家离线通知
+- (void)onPlayerOfflineWithNotification:(PlayerOfflineNotification * _Nonnull)notification;
+/// 玩家自定义状态通知
+- (void)onPlayerCustomStatusChangedWithNotification:(PlayerCustomStatusNotification * _Nonnull)notification;
+/// 玩家自定义属性通知
+- (void)onPlayerCustomPropertiesChangedWithNotification:(PlayerCustomPropertiesNotification * _Nonnull)notification;
+/// 房间属性通知
+- (void)onRoomPropertiesChangedWithNotification:(RoomPropertiesNotification * _Nonnull)notification;
+/// 帧同步开始通知
+- (void)onFrameSyncStartedWithNotification:(FrameSyncStartNotification * _Nonnull)notification;
+/// 帧同步数据接收
+- (void)onFrameReceivedWithFrameSync:(FrameSynchronization * _Nonnull)frameSync;
+/// 帧同步停止通知
+- (void)onFrameSyncStoppedWithNotification:(FrameSyncStopNotification * _Nonnull)notification;
+/// 对战服务错误
+- (void)onBattleServiceError;
+/// 被动断连通知
+/// 网络问题断线、被踢下线等被动断连时回调
+- (void)onDisconnectedWithError:(ErrorResponse * _Nonnull)error;
+/// 房间玩家被踢通知
+- (void)onPlayerKickedWithNotification:(RoomPlayerKickedNotification * _Nonnull)notification;
+/// 自定义消息通知
+- (void)onCustomMessageReceivedWithNotification:(CustomMessageNotification * _Nonnull)notification;
+@end
+
+@class SignInResponse;
+/// 连接回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK15ConnectListener_")
+@protocol ConnectListener
+/// 连接成功回调
+/// \param response 连接响应数据
+///
+- (void)onSuccessWithResponse:(SignInResponse * _Nonnull)response;
+/// 连接失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+@class CreateRoomResponse;
+/// 创建房间回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK18CreateRoomListener_")
+@protocol CreateRoomListener
+/// 创建房间成功回调
+/// \param response 创建房间响应数据
+///
+- (void)onSuccessWithResponse:(CreateRoomResponse * _Nonnull)response;
+/// 创建房间失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+@class RoomConfig;
+@class PlayerConfig;
+/// 创建房间请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK17CreateRoomRequest")
+@interface CreateRoomRequest : NSObject
+/// 房间配置，必填
+@property (nonatomic, readonly, strong) RoomConfig * _Nonnull roomCfg;
+/// 玩家配置，选填
+@property (nonatomic, readonly, strong) PlayerConfig * _Nonnull playerCfg;
+- (nonnull instancetype)initWithRoomCfg:(RoomConfig * _Nonnull)roomCfg playerCfg:(PlayerConfig * _Nonnull)playerCfg OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class RoomInfo;
+/// 创建房间响应
+SWIFT_CLASS("_TtC15TapTapBattleSDK18CreateRoomResponse")
+@interface CreateRoomResponse : NSObject
+@property (nonatomic, readonly, strong) RoomInfo * _Nonnull roomInfo;
+- (nonnull instancetype)initWithRoomInfo:(RoomInfo * _Nonnull)roomInfo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 自定义消息通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK25CustomMessageNotification")
+@interface CustomMessageNotification : NSObject
+/// 消息发送者玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+/// 自定义消息，格式由开发者决定，必须是utf8字符串，最大2048字节
+@property (nonatomic, readonly, copy) NSString * _Nonnull msg;
+- (nonnull instancetype)initWithPlayerId:(NSString * _Nonnull)playerId msg:(NSString * _Nonnull)msg OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 断开连接回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK18DisconnectListener_")
+@protocol DisconnectListener
+/// 断开连接成功回调
+- (void)onSuccess;
+/// 断开连接失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+@class PlayerInfo;
+/// 进入房间通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK21EnterRoomNotification")
+@interface EnterRoomNotification : NSObject
+/// 玩家进入的房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomId;
+/// 进入房间的玩家信息
+@property (nonatomic, readonly, strong) PlayerInfo * _Nonnull playerInfo;
+- (nonnull instancetype)initWithRoomId:(NSString * _Nonnull)roomId playerInfo:(PlayerInfo * _Nonnull)playerInfo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 错误码枚举
+typedef SWIFT_ENUM(NSInteger, ErrorCode, open) {
+/// SDK 未登录 TapSDK Login
+  ErrorCodeErrorNotLogin = 101,
+/// 系统错误
+  ErrorCodeErrorSystemError = 1,
+/// SDK错误，可能内存分配失败、http对象创建失败等
+  ErrorCodeErrorSDKError = 2,
+/// 请求频率超限
+  ErrorCodeErrorRequestRateLimitExceeded = 3,
+/// 网关认定为恶意用户，拒绝请求或关闭连接。建议不要重连
+  ErrorCodeErrorMaliciousUser = 4,
+/// 因同时连接数过多而被踢下线。建议不要重连，避免互踢，导致重连死循环
+  ErrorCodeErrorTooManyConnections = 5,
+/// 网络错误，可能是连接超时、断开等
+  ErrorCodeErrorNetworkError = 6,
+/// 请求不合法
+  ErrorCodeErrorInvalidRequest = 11,
+/// 认证信息不合法
+  ErrorCodeErrorInvalidAuthorization = 12,
+/// 尚未完成登录认证
+  ErrorCodeErrorUnauthorized = 13,
+/// 已经登录，不能重复登录
+  ErrorCodeErrorAlreadySignedIn = 14,
+/// 上一个请求未完成，不接受新的请求
+  ErrorCodeErrorPreviousRequestInProgress = 15,
+/// 请求了后端服务未实现的功能
+  ErrorCodeErrorUnimplemented = 16,
+/// 用户没有对当前动作的权限
+  ErrorCodeErrorForbidden = 17,
+/// 房间模板不存在
+  ErrorCodeErrorRoomTemplateNotFound = 18,
+/// 房间总数量超过限制
+  ErrorCodeErrorRoomCountLimitExceeded = 19,
+/// 尚未加入房间
+  ErrorCodeErrorNotInRoom = 20,
+/// 已经在房间中，不能重复加入
+  ErrorCodeErrorAlreadyInRoom = 21,
+/// 不是房主，不能执行此操作
+  ErrorCodeErrorNotRoomOwner = 22,
+/// 房间已满，不能加入
+  ErrorCodeErrorRoomFull = 23,
+/// 房间不存在
+  ErrorCodeErrorRoomNotExist = 24,
+/// 对战未开始，不能执行此操作
+  ErrorCodeErrorBattleNotStarted = 25,
+/// 对战已开始，不能执行此操作
+  ErrorCodeErrorBattleAlreadyStarted = 26,
+/// 对战帧数据大小超过限制
+  ErrorCodeErrorBattleFrameDataSizeLimitExceeded = 28,
+/// 每帧可接受的输入数量超过限制
+  ErrorCodeErrorBattleFrameDataCountLimitExceeded = 29,
+/// 玩家不存在
+  ErrorCodeErrorPlayerNotFound = 30,
+};
+
+/// 错误响应
+SWIFT_CLASS("_TtC15TapTapBattleSDK13ErrorResponse")
+@interface ErrorResponse : NSObject
+@property (nonatomic, readonly) NSInteger code;
+@property (nonatomic, readonly, copy) NSString * _Nonnull msg;
+- (nonnull instancetype)initWithCode:(NSInteger)code msg:(NSString * _Nonnull)msg OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 帧同步开始通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK26FrameSyncStartNotification")
+@interface FrameSyncStartNotification : NSObject
+@property (nonatomic, readonly, strong) RoomInfo * _Nonnull roomInfo;
+/// 帧同步ID，房间内唯一，房间内每次开始帧同步都会变化
+@property (nonatomic, readonly) int64_t frameSyncId;
+/// 用于初始化线性同余伪随机数生成器的随机数种子
+@property (nonatomic, readonly) int64_t seed;
+/// 对战开始的服务端时间，1970年开始的毫秒数
+@property (nonatomic, readonly, copy) NSString * _Nonnull serverTms;
+- (nonnull instancetype)initWithRoomInfo:(RoomInfo * _Nonnull)roomInfo frameSyncId:(int64_t)frameSyncId seed:(int64_t)seed serverTms:(NSString * _Nonnull)serverTms OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 帧同步停止通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK25FrameSyncStopNotification")
+@interface FrameSyncStopNotification : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomId;
+/// 帧同步ID，房间内唯一，房间内每次开始帧同步都会变化
+@property (nonatomic, readonly) int64_t frameSyncId;
+/// 0：房主主动结束帧同步，1：帧同步因30分钟超时结束
+@property (nonatomic, readonly) NSInteger reason;
+- (nonnull instancetype)initWithRoomId:(NSString * _Nonnull)roomId frameSyncId:(int64_t)frameSyncId reason:(NSInteger)reason OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 帧同步
+SWIFT_CLASS("_TtC15TapTapBattleSDK20FrameSynchronization")
+@interface FrameSynchronization : NSObject
+/// 帧ID，从1开始递增
+@property (nonatomic, readonly) int64_t id;
+/// 当前帧的所有玩家操作，按服务端接收时间排序
+@property (nonatomic, readonly, copy) NSArray<BattleFrameInput *> * _Nonnull inputs;
+- (nonnull instancetype)initWithId:(int64_t)id inputs:(NSArray<BattleFrameInput *> * _Nonnull)inputs OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class GetRoomListResponse;
+/// 获取房间列表回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK19GetRoomListListener_")
+@protocol GetRoomListListener
+/// 获取房间列表成功回调
+/// \param response 房间列表响应数据
+///
+- (void)onSuccessWithResponse:(GetRoomListResponse * _Nonnull)response;
+/// 获取房间列表失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 获取房间列表请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK18GetRoomListRequest")
+@interface GetRoomListRequest : NSObject
+/// 房间类型。不填则拉取全部类型的房间
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomType;
+/// 偏移量，第一次请求时为0，或者不填
+@property (nonatomic, readonly) NSInteger offset;
+/// 请求获取的房间数量，不填则默认为20，最大100
+@property (nonatomic, readonly) NSInteger limit;
+- (nonnull instancetype)initWithRoomType:(NSString * _Nonnull)roomType offset:(NSInteger)offset limit:(NSInteger)limit OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class RoomBasicInfo;
+/// 获取房间列表响应
+SWIFT_CLASS("_TtC15TapTapBattleSDK19GetRoomListResponse")
+@interface GetRoomListResponse : NSObject
+/// 房间列表，选填
+@property (nonatomic, readonly, copy) NSArray<RoomBasicInfo *> * _Nullable rooms;
+/// 用于请求下一页的偏移量，选填
+@property (nonatomic, readonly) NSInteger offset;
+/// 是否还有更多房间可以拉取，选填
+@property (nonatomic, readonly) BOOL hasMore;
+- (nonnull instancetype)initWithRooms:(NSArray<RoomBasicInfo *> * _Nullable)rooms offset:(NSInteger)offset hasMore:(BOOL)hasMore OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class JoinRoomResponse;
+/// 加入房间回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK16JoinRoomListener_")
+@protocol JoinRoomListener
+/// 加入房间成功回调
+/// \param response 加入房间响应数据
+///
+- (void)onSuccessWithResponse:(JoinRoomResponse * _Nonnull)response;
+/// 加入房间失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 加入房间请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK15JoinRoomRequest")
+@interface JoinRoomRequest : NSObject
+/// 房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomId;
+/// 玩家配置，选填
+@property (nonatomic, readonly, strong) PlayerConfig * _Nonnull playerCfg;
+- (nonnull instancetype)initWithRoomId:(NSString * _Nonnull)roomId playerCfg:(PlayerConfig * _Nonnull)playerCfg OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 加入房间响应
+SWIFT_CLASS("_TtC15TapTapBattleSDK16JoinRoomResponse")
+@interface JoinRoomResponse : NSObject
+@property (nonatomic, readonly, strong) RoomInfo * _Nonnull roomInfo;
+- (nonnull instancetype)initWithRoomInfo:(RoomInfo * _Nonnull)roomInfo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 踢出房间玩家回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK22KickRoomPlayerListener_")
+@protocol KickRoomPlayerListener
+/// 踢出房间玩家成功回调
+- (void)onSuccess;
+/// 踢出房间玩家失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 离开房间回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK17LeaveRoomListener_")
+@protocol LeaveRoomListener
+/// 离开房间成功回调
+- (void)onSuccess;
+/// 离开房间失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 离开房间通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK21LeaveRoomNotification")
+@interface LeaveRoomNotification : NSObject
+/// 玩家离开的房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomId;
+/// 房主ID。如果离开的是房主，则roomOwnerId为新房主ID；反之，为原房主ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomOwnerId;
+/// 离开房间的玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+- (nonnull instancetype)initWithRoomId:(NSString * _Nonnull)roomId roomOwnerId:(NSString * _Nonnull)roomOwnerId playerId:(NSString * _Nonnull)playerId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class MatchRoomResponse;
+/// 匹配房间回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK17MatchRoomListener_")
+@protocol MatchRoomListener
+/// 匹配房间成功回调
+/// \param response 匹配房间响应数据
+///
+- (void)onSuccessWithResponse:(MatchRoomResponse * _Nonnull)response;
+/// 匹配房间失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 匹配房间请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK16MatchRoomRequest")
+@interface MatchRoomRequest : NSObject
+/// 房间配置，必填
+@property (nonatomic, readonly, strong) RoomConfig * _Nonnull roomCfg;
+/// 玩家配置，选填
+@property (nonatomic, readonly, strong) PlayerConfig * _Nonnull playerCfg;
+- (nonnull instancetype)initWithRoomCfg:(RoomConfig * _Nonnull)roomCfg playerCfg:(PlayerConfig * _Nonnull)playerCfg OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 匹配房间响应
+SWIFT_CLASS("_TtC15TapTapBattleSDK17MatchRoomResponse")
+@interface MatchRoomResponse : NSObject
+@property (nonatomic, readonly, strong) RoomInfo * _Nonnull roomInfo;
+- (nonnull instancetype)initWithRoomInfo:(RoomInfo * _Nonnull)roomInfo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 玩家配置
+SWIFT_CLASS("_TtC15TapTapBattleSDK12PlayerConfig")
+@interface PlayerConfig : NSObject
+/// 自定义玩家状态，整形，选填。开发者可随意设置任何值，意义由开发者自行判断
+@property (nonatomic, readonly) NSInteger customStatus;
+/// 自定义玩家属性，选填。开发者可以随意设置任何数据，最大长度为2048字节
+@property (nonatomic, readonly, copy) NSString * _Nonnull customProperties;
+- (nonnull instancetype)initWithCustomStatus:(NSInteger)customStatus customProperties:(NSString * _Nonnull)customProperties OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 玩家自定义属性通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK34PlayerCustomPropertiesNotification")
+@interface PlayerCustomPropertiesNotification : NSObject
+/// 更新了自定义属性的玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull properties;
+- (nonnull instancetype)initWithPlayerId:(NSString * _Nonnull)playerId properties:(NSString * _Nonnull)properties OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 玩家自定义状态通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK30PlayerCustomStatusNotification")
+@interface PlayerCustomStatusNotification : NSObject
+/// 更新了自定义状态的玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+@property (nonatomic, readonly) NSInteger status;
+- (nonnull instancetype)initWithPlayerId:(NSString * _Nonnull)playerId status:(NSInteger)status OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 玩家信息
+SWIFT_CLASS("_TtC15TapTapBattleSDK10PlayerInfo")
+@interface PlayerInfo : NSObject
+/// 玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// 玩家状态：0-离线、1-在线
+@property (nonatomic, readonly) NSInteger status;
+/// 自定义玩家状态，开发者可随意设置任何值，意义由开发者自行判断，选填
+@property (nonatomic, readonly) NSInteger customStatus;
+/// 自定义玩家属性，选填
+@property (nonatomic, readonly, copy) NSString * _Nullable customProperties;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id status:(NSInteger)status customStatus:(NSInteger)customStatus customProperties:(NSString * _Nullable)customProperties OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 玩家离线通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK25PlayerOfflineNotification")
+@interface PlayerOfflineNotification : NSObject
+/// 离线玩家所属房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomId;
+/// 房主ID。如果离线的是房主，则roomOwnerId为新房主ID；反之，为原房主ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomOwnerId;
+/// 离线玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+- (nonnull instancetype)initWithRoomId:(NSString * _Nonnull)roomId roomOwnerId:(NSString * _Nonnull)roomOwnerId playerId:(NSString * _Nonnull)playerId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 房间基本信息（用于房间列表）
+SWIFT_CLASS("_TtC15TapTapBattleSDK13RoomBasicInfo")
+@interface RoomBasicInfo : NSObject
+/// 房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// 房间名字，选填
+@property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// 房间自定义属性
+@property (nonatomic, readonly, copy) NSString * _Nullable customProperties;
+/// 房间最大人数
+@property (nonatomic, readonly) NSInteger maxPlayerCount;
+/// 房间当前人数
+@property (nonatomic, readonly) NSInteger playerCount;
+/// 房间创建时间
+@property (nonatomic, readonly, copy) NSString * _Nonnull createTime;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id name:(NSString * _Nullable)name customProperties:(NSString * _Nullable)customProperties maxPlayerCount:(NSInteger)maxPlayerCount playerCount:(NSInteger)playerCount createTime:(NSString * _Nonnull)createTime OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 房间配置
+SWIFT_CLASS("_TtC15TapTapBattleSDK10RoomConfig")
+@interface RoomConfig : NSObject
+/// 房间最大支持人数，取值范围为[1, 20]，必填
+@property (nonatomic, readonly) NSInteger maxPlayerCount;
+/// 房间类型，最大32字节,必填
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+/// 房间匹配参数，选填，最大支持3个K/V对
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull matchParams;
+/// 房间名称，最大64个字节，选填
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+/// 自定义房间属性，最大2048字节，选填
+@property (nonatomic, readonly, copy) NSString * _Nonnull customProperties;
+- (nonnull instancetype)initWithMaxPlayerCount:(NSInteger)maxPlayerCount type:(NSString * _Nonnull)type matchParams:(NSDictionary<NSString *, NSString *> * _Nonnull)matchParams name:(NSString * _Nonnull)name customProperties:(NSString * _Nonnull)customProperties OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 房间信息
+SWIFT_CLASS("_TtC15TapTapBattleSDK8RoomInfo")
+@interface RoomInfo : NSObject
+/// 房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// 房间名称，选填
+@property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// 房间类型
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+/// 房主ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull ownerId;
+/// 房间状态，0-未开始，1-进行中（帧同步中），2-已结束，选填
+@property (nonatomic, readonly) NSInteger status;
+/// 自定义房间属性，选填
+@property (nonatomic, readonly, copy) NSString * _Nullable customProperties;
+/// 房间最大支持人数
+@property (nonatomic, readonly) NSInteger maxPlayerCount;
+/// 房间内当前玩家列表
+@property (nonatomic, readonly, copy) NSArray<PlayerInfo *> * _Nonnull players;
+/// 房间创建时间，1970年开始的秒数
+@property (nonatomic, readonly, copy) NSString * _Nonnull createTime;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id name:(NSString * _Nullable)name type:(NSString * _Nonnull)type ownerId:(NSString * _Nonnull)ownerId status:(NSInteger)status customProperties:(NSString * _Nullable)customProperties maxPlayerCount:(NSInteger)maxPlayerCount players:(NSArray<PlayerInfo *> * _Nonnull)players createTime:(NSString * _Nonnull)createTime OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 房间玩家被踢通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK28RoomPlayerKickedNotification")
+@interface RoomPlayerKickedNotification : NSObject
+/// 被踢玩家所属房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull roomId;
+/// 被踢玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+- (nonnull instancetype)initWithRoomId:(NSString * _Nonnull)roomId playerId:(NSString * _Nonnull)playerId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 房间属性通知
+SWIFT_CLASS("_TtC15TapTapBattleSDK26RoomPropertiesNotification")
+@interface RoomPropertiesNotification : NSObject
+/// 房间ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+/// 房间名称
+@property (nonatomic, readonly, copy) NSString * _Nullable name;
+/// 房间自定义属性
+@property (nonatomic, readonly, copy) NSString * _Nullable customProperties;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id name:(NSString * _Nullable)name customProperties:(NSString * _Nullable)customProperties OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 发送自定义消息回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK25SendCustomMessageListener_")
+@protocol SendCustomMessageListener
+/// 发送自定义消息成功回调
+- (void)onSuccess;
+/// 发送自定义消息失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 发送自定义消息请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK24SendCustomMessageRequest")
+@interface SendCustomMessageRequest : NSObject
+/// 自定义消息，格式由开发者决定，必须是utf8字符串，最大2048字节
+@property (nonatomic, readonly, copy) NSString * _Nonnull msg;
+/// 消息接收者类型。0：房间内所有玩家，不包括发送者；1：发送给指定玩家
+@property (nonatomic, readonly) NSInteger type;
+/// 当type==1时有效，发送给该字段指定的玩家，最多20个ID
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull receivers;
+- (nonnull instancetype)initWithMsg:(NSString * _Nonnull)msg type:(NSInteger)type receivers:(NSArray<NSString *> * _Nonnull)receivers OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 发送帧输入回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK22SendFrameInputListener_")
+@protocol SendFrameInputListener
+/// 发送帧输入成功回调
+- (void)onSuccess;
+/// 发送帧输入失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 发送帧输入请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK21SendFrameInputRequest")
+@interface SendFrameInputRequest : NSObject
+/// 游戏操作，utf8字符串格式，最大1024字节
+@property (nonatomic, readonly, copy) NSString * _Nonnull data;
+- (nonnull instancetype)initWithData:(NSString * _Nonnull)data OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 登录响应
+SWIFT_CLASS("_TtC15TapTapBattleSDK14SignInResponse")
+@interface SignInResponse : NSObject
+/// 玩家ID
+@property (nonatomic, readonly, copy) NSString * _Nonnull playerId;
+- (nonnull instancetype)initWithPlayerId:(NSString * _Nonnull)playerId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// 开始帧同步回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK22StartFrameSyncListener_")
+@protocol StartFrameSyncListener
+/// 开始帧同步成功回调
+- (void)onSuccess;
+/// 开始帧同步失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 停止帧同步回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK21StopFrameSyncListener_")
+@protocol StopFrameSyncListener
+/// 停止帧同步成功回调
+- (void)onSuccess;
+/// 停止帧同步失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+@protocol UpdatePlayerCustomStatusListener;
+@protocol UpdatePlayerCustomPropertiesListener;
+@class UpdateRoomPropertiesRequest;
+@protocol UpdateRoomPropertiesListener;
 /// TapTap Battle SDK Public API
 /// 提供对战服务功能，包括房间管理、帧同步对战等。
 /// Native 库 (onlinebattle_sdk.xcframework) 在 TapSDK 初始化时自动加载。
@@ -764,6 +2188,97 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// \endcode
 SWIFT_CLASS("_TtC15TapTapBattleSDK12TapTapBattle")
 @interface TapTapBattle : NSObject
+/// 连接对战服务（建立长连接）
+/// 注意：调用此方法前需要先使用 TapSDK Login 完成用户登录
+/// SDK 会自动从 TapTapKit 和 LoginService 获取必要的认证信息
+/// \param listener 回调监听器（可选）
+///
++ (void)connectWithListener:(id <ConnectListener> _Nullable)listener;
+/// 断开对战服务（关闭长连接）
+/// \param listener 回调监听器（可选）
+///
+/// \param forceCheck 是否强制执行（忽略登录检查），默认为 false。用于登录状态变化时自动断开连接
+///
++ (void)disconnectWithListener:(id <DisconnectListener> _Nullable)listener forceCheck:(BOOL)forceCheck;
+/// 创建房间
+/// \param request 创建房间请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)createRoomWithRequest:(CreateRoomRequest * _Nonnull)request listener:(id <CreateRoomListener> _Nullable)listener;
+/// 匹配房间（匹配不到时自动创建）
+/// \param request 匹配房间请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)matchRoomWithRequest:(MatchRoomRequest * _Nonnull)request listener:(id <MatchRoomListener> _Nullable)listener;
+/// 获取房间列表
+/// \param request 获取房间列表请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)getRoomListWithRequest:(GetRoomListRequest * _Nonnull)request listener:(id <GetRoomListListener> _Nullable)listener;
+/// 加入房间
+/// \param request 加入房间请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)joinRoomWithRequest:(JoinRoomRequest * _Nonnull)request listener:(id <JoinRoomListener> _Nullable)listener;
+/// 离开房间
+/// 注意：处于对战状态时不允许调用
+/// \param listener 回调监听器（可选）
+///
++ (void)leaveRoomWithListener:(id <LeaveRoomListener> _Nullable)listener;
+/// 更新玩家自定义状态
+/// 注意：在房间里，且未开战时才能调用
+/// \param status 玩家自定义状态
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)updatePlayerCustomStatusWithStatus:(NSInteger)status listener:(id <UpdatePlayerCustomStatusListener> _Nullable)listener;
+/// 更新玩家自定义属性
+/// 注意：在房间里，且未开战时才能调用
+/// \param properties 玩家自定义属性（UTF-8 字符串，最大 2048 字节）
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)updatePlayerCustomPropertiesWithProperties:(NSString * _Nonnull)properties listener:(id <UpdatePlayerCustomPropertiesListener> _Nullable)listener;
+/// 更新房间属性
+/// 注意：在房间里，且未开战时才能调用，仅限房主调用
+/// \param request 更新房间属性请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)updateRoomPropertiesWithRequest:(UpdateRoomPropertiesRequest * _Nonnull)request listener:(id <UpdateRoomPropertiesListener> _Nullable)listener;
+/// 开始帧同步
+/// \param listener 回调监听器（可选）
+///
++ (void)startFrameSyncWithListener:(id <StartFrameSyncListener> _Nullable)listener;
+/// 发送玩家帧输入
+/// 注意：同一帧允许发送多次操作，无需等待回调
+/// \param request 发送帧输入请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)sendFrameInputWithRequest:(SendFrameInputRequest * _Nonnull)request listener:(id <SendFrameInputListener> _Nullable)listener;
+/// 停止帧同步
+/// \param listener 回调监听器（可选）
+///
++ (void)stopFrameSyncWithListener:(id <StopFrameSyncListener> _Nullable)listener;
+/// 踢玩家出房间
+/// 注意：在房间里，且未开战时才能调用，仅限房主调用
+/// \param playerID 被踢玩家ID
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)kickRoomPlayerWithPlayerID:(NSString * _Nonnull)playerID listener:(id <KickRoomPlayerListener> _Nullable)listener;
+/// 发送自定义消息
+/// 注意：每秒允许调用 20 次，无需等待回调
+/// \param request 发送自定义消息请求
+///
+/// \param listener 回调监听器（可选）
+///
++ (void)sendCustomMessageWithRequest:(SendCustomMessageRequest * _Nonnull)request listener:(id <SendCustomMessageListener> _Nullable)listener;
 /// 创建新的随机数生成器对象
 /// \param seed 随机数种子（使用 BattleStartNotification 里返回的 seed）
 ///
@@ -807,9 +2322,62 @@ SWIFT_CLASS("_TtC15TapTapBattleSDK12TapTapBattle")
 /// returns:
 /// 版本字符串或 nil（SDK 未初始化）
 + (NSString * _Nullable)getVersion SWIFT_WARN_UNUSED_RESULT;
+/// 注册对战通知监听器
+/// \param listener 对战通知监听器
+///
++ (void)registerBattleNotificationListener:(id <BattleNotificationCallback> _Nonnull)listener;
+/// 注销对战通知监听器
+/// \param listener 对战通知监听器
+///
++ (void)unregisterBattleNotificationListener:(id <BattleNotificationCallback> _Nonnull)listener;
 /// 确保静态初始化被触发
 + (void)ensureInitialization;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// 更新玩家自定义属性回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK36UpdatePlayerCustomPropertiesListener_")
+@protocol UpdatePlayerCustomPropertiesListener
+/// 更新玩家自定义属性成功回调
+- (void)onSuccess;
+/// 更新玩家自定义属性失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 更新玩家自定义状态回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK32UpdatePlayerCustomStatusListener_")
+@protocol UpdatePlayerCustomStatusListener
+/// 更新玩家自定义状态成功回调
+- (void)onSuccess;
+/// 更新玩家自定义状态失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 更新房间属性回调监听器
+SWIFT_PROTOCOL("_TtP15TapTapBattleSDK28UpdateRoomPropertiesListener_")
+@protocol UpdateRoomPropertiesListener
+/// 更新房间属性成功回调
+- (void)onSuccess;
+/// 更新房间属性失败回调
+/// \param error 错误信息
+///
+- (void)onFailureWithError:(ErrorResponse * _Nonnull)error;
+@end
+
+/// 更新房间属性请求
+SWIFT_CLASS("_TtC15TapTapBattleSDK27UpdateRoomPropertiesRequest")
+@interface UpdateRoomPropertiesRequest : NSObject
+/// 房间名称，最大64个字节
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+/// 房间自定义属性，最大2048字节
+@property (nonatomic, readonly, copy) NSString * _Nonnull customProperties;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name customProperties:(NSString * _Nonnull)customProperties OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 #endif

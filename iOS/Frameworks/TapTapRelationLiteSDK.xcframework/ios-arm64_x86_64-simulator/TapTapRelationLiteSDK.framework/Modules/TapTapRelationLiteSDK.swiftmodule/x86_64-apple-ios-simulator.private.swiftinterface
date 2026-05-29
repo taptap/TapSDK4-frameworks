@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapRelationLiteSDK
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapRelationLiteSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import Network
@@ -21,7 +21,7 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapRelationLiteSwiftBridgeService : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapRelationLiteSwiftBridgeService : ObjectiveC.NSObject, @unchecked Swift.Sendable {
   @objc public static let shared: TapTapRelationLiteSDK.TapRelationLiteSwiftBridgeService
   @objc public func inviteGameByRelationLite()
   @objc public func inviteTeam(teamId: Swift.String)
@@ -41,7 +41,7 @@ import _SwiftConcurrencyShims
   @objc public func unregisterRelationLiteCallback()
   @objc deinit
 }
-public struct TapRelationUITheme {
+public struct TapRelationUITheme : @unchecked Swift.Sendable {
   public static let standard: TapTapRelationLiteSDK.TapRelationUITheme
   public static let standardPortrait: TapTapRelationLiteSDK.TapRelationUITheme
   public static let standardDark: TapTapRelationLiteSDK.TapRelationUITheme
@@ -59,42 +59,42 @@ public struct TapRelationUITheme {
   @objc optional func onSyncRelationshipFail(errorMessage: Swift.String?, openId: Swift.String?, unionId: Swift.String?)
   @objc optional func onRequestError(errorMessage: Swift.String?)
 }
-@objcMembers @objc(RelationLiteUserResult) public class RelationLiteUserResult : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var list: [TapTapRelationLiteSDK.RelationLiteUserItem]?
-  @objc public var nextPageToken: Swift.String?
+@objcMembers @objc(RelationLiteUserResult) final public class RelationLiteUserResult : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let list: [TapTapRelationLiteSDK.RelationLiteUserItem]?
+  @objc final public let nextPageToken: Swift.String?
   @objc public init(list: [TapTapRelationLiteSDK.RelationLiteUserItem]?, nextPageToken: Swift.String?)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-@objcMembers @objc(RelationLiteUserItem) public class RelationLiteUserItem : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var followStatus: TapTapRelationLiteSDK.FollowStatus
-  @objc public var createdAt: Swift.Int64
-  @objc public var user: TapTapRelationLiteSDK.RelationLiteUserInfo
+@objcMembers @objc(RelationLiteUserItem) final public class RelationLiteUserItem : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let followStatus: TapTapRelationLiteSDK.FollowStatus
+  @objc final public let createdAt: Swift.Int64
+  @objc final public let user: TapTapRelationLiteSDK.RelationLiteUserInfo
   @objc public init(followStatus: TapTapRelationLiteSDK.FollowStatus = FollowStatus(), createdAt: Swift.Int64 = 0, user: TapTapRelationLiteSDK.RelationLiteUserInfo = RelationLiteUserInfo())
   required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-  @objc public func getJSONString() -> Swift.String?
+  final public func encode(to encoder: any Swift.Encoder) throws
+  @objc final public func getJSONString() -> Swift.String?
   @objc deinit
 }
-@objcMembers @objc(RelationLiteUserInfo) public class RelationLiteUserInfo : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var alias: Swift.String
-  @objc public var avatar: Swift.String
-  @objc public var name: Swift.String
-  @objc public var openId: Swift.String
+@objcMembers @objc(RelationLiteUserInfo) final public class RelationLiteUserInfo : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let alias: Swift.String
+  @objc final public let avatar: Swift.String
+  @objc final public let name: Swift.String
+  @objc final public let openId: Swift.String
   @objc public init(alias: Swift.String = "", avatar: Swift.String = "", name: Swift.String = "", openId: Swift.String = "")
   required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
-@objcMembers @objc(FollowStatus) public class FollowStatus : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var blockedBy: Swift.Bool
-  @objc public var blocking: Swift.Bool
-  @objc public var followedBy: Swift.Bool
-  @objc public var following: Swift.Bool
+@objcMembers @objc(FollowStatus) final public class FollowStatus : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let blockedBy: Swift.Bool
+  @objc final public let blocking: Swift.Bool
+  @objc final public let followedBy: Swift.Bool
+  @objc final public let following: Swift.Bool
   @objc public init(blockedBy: Swift.Bool = false, blocking: Swift.Bool = false, followedBy: Swift.Bool = false, following: Swift.Bool = false)
   required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 @objc public protocol TapTapRelationLiteDelegate : ObjectiveC.NSObjectProtocol {
@@ -114,9 +114,9 @@ public struct TapRelationUITheme {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapRelationLite : ObjectiveC.NSObject {
-  @objc public static func showTapUserProfile(openId: Swift.String? = nil, unionId: Swift.String? = nil)
-  @objc public static func inviteGame()
-  @objc public static func inviteTeam(teamId: Swift.String)
+  @objc @_Concurrency.MainActor public static func showTapUserProfile(openId: Swift.String? = nil, unionId: Swift.String? = nil)
+  @objc @_Concurrency.MainActor public static func inviteGame()
+  @objc @_Concurrency.MainActor public static func inviteTeam(teamId: Swift.String)
   @objc public static func getFriendsList(nextPageToken: Swift.String? = nil, completion: ((_ userList: TapTapRelationLiteSDK.RelationLiteUserResult?, _ error: Foundation.NSError?) -> Swift.Void)?)
   @objc public static func getFollowingList(nextPageToken: Swift.String? = nil, completion: ((_ userList: TapTapRelationLiteSDK.RelationLiteUserResult?, _ error: Foundation.NSError?) -> Swift.Void)?)
   @objc public static func getFansList(nextPageToken: Swift.String? = nil, completion: ((_ userList: TapTapRelationLiteSDK.RelationLiteUserResult?, _ error: Foundation.NSError?) -> Swift.Void)?)

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapProfileSDK
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapProfileSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CoreImage
 import Foundation
 import Swift
@@ -14,16 +14,17 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers public class TapTapProfile {
-  public static func showUserCard(openId: Swift.String? = nil, unionId: Swift.String? = nil)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor public class TapTapProfile : ObjectiveC.NSObject {
+  @objc @_Concurrency.MainActor public static func showUserCard(openId: Swift.String? = nil, unionId: Swift.String? = nil)
+  @_Concurrency.MainActor @objc override dynamic public init()
   @objc deinit
 }
-public protocol TapProfileRelationBridge {
-  static func startChat(profileModel: TapTapProfileSDK.TapUserProfileModel)
-  static func invite(profileModel: TapTapProfileSDK.TapUserProfileModel)
+@_Concurrency.MainActor public protocol TapProfileRelationBridge {
+  @_Concurrency.MainActor static func startChat(profileModel: TapTapProfileSDK.TapUserProfileModel)
+  @_Concurrency.MainActor static func invite(profileModel: TapTapProfileSDK.TapUserProfileModel)
 }
-public protocol TapProfileLeaderboardBridge {
-  static func openLeaderboard(sdkUserId: Swift.String, leaderboardId: Swift.String, leaderboardCallback: @escaping (_ leaderboardId: Swift.String, _ leaderboardName: Swift.String, _ rank: Swift.Int, _ rankDisplay: Swift.String) -> Swift.Void)
+@_Concurrency.MainActor public protocol TapProfileLeaderboardBridge {
+  @_Concurrency.MainActor static func openLeaderboard(sdkUserId: Swift.String, leaderboardId: Swift.String, leaderboardCallback: @escaping (_ leaderboardId: Swift.String, _ leaderboardName: Swift.String, _ rank: Swift.Int, _ rankDisplay: Swift.String) -> Swift.Void)
 }
 public struct TapUserProfileModel : Swift.Codable {
   public var friendship: TapTapProfileSDK.TapUserFriendShip?
@@ -45,3 +46,4 @@ public struct TapUserModel : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+extension TapTapProfileSDK.TapTapProfile : Swift.Sendable {}

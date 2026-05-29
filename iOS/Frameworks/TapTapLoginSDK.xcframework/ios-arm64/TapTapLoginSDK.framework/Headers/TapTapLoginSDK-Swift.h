@@ -310,17 +310,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSString;
 SWIFT_CLASS("_TtC14TapTapLoginSDK11AccessToken")
 @interface AccessToken : NSObject
-@property (nonatomic, copy) NSString * _Nullable kid;
-@property (nonatomic, copy) NSString * _Nullable tokenType;
-@property (nonatomic, copy) NSString * _Nullable macKey;
-@property (nonatomic, copy) NSString * _Nullable macAlgorithm;
-@property (nonatomic, copy) NSString * _Nullable scope;
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable scopeArray;
-@property (nonatomic) NSInteger expiresIn;
+@property (nonatomic, readonly, copy) NSString * _Nullable kid;
+@property (nonatomic, readonly, copy) NSString * _Nullable tokenType;
+@property (nonatomic, readonly, copy) NSString * _Nullable macKey;
+@property (nonatomic, readonly, copy) NSString * _Nullable macAlgorithm;
+@property (nonatomic, readonly, copy) NSString * _Nullable scope;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable scopeArray;
+@property (nonatomic, readonly) NSInteger expiresIn;
 - (NSString * _Nonnull)toJsonString SWIFT_WARN_UNUSED_RESULT;
 + (AccessToken * _Nullable)buildWith:(NSString * _Nonnull)accessTokenJsonString SWIFT_WARN_UNUSED_RESULT;
 + (AccessToken * _Nonnull)buildWithKid:(NSString * _Nonnull)kid tokenType:(NSString * _Nonnull)tokenType macKey:(NSString * _Nonnull)macKey macAlgorithm:(NSString * _Nonnull)macAlgorithm scope:(NSString * _Nullable)scope SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC14TapTapLoginSDK10FriendInfo")
@@ -336,7 +337,7 @@ SWIFT_CLASS("_TtC14TapTapLoginSDK10FriendInfo")
 SWIFT_CLASS("_TtC14TapTapLoginSDK13FriendsResult")
 @interface FriendsResult : NSObject
 /// 好友列表
-@property (nonatomic, copy) NSArray<FriendInfo *> * _Nonnull friends;
+@property (nonatomic, readonly, copy) NSArray<FriendInfo *> * _Nonnull friends;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -369,8 +370,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapLoginSwif
 @class UserInfo;
 SWIFT_CLASS("_TtC14TapTapLoginSDK13TapTapAccount")
 @interface TapTapAccount : NSObject
-@property (nonatomic, strong) AccessToken * _Nullable accessToken;
-@property (nonatomic, strong) UserInfo * _Nullable userInfo;
+@property (nonatomic, readonly, strong) AccessToken * _Nullable accessToken;
+@property (nonatomic, readonly, strong) UserInfo * _Nullable userInfo;
 - (NSString * _Nonnull)toJsonString SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

@@ -453,6 +453,7 @@
         "mangledName": "$s03TapA13SDKBridgeCore0A15SDKSwiftCommandC",
         "moduleName": "TapTapSDKBridgeCore",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "ObjC",
           "RawDocComment"
@@ -462,6 +463,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -618,6 +626,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "Nonisolated",
               "ObjC",
               "RawDocComment"
             ],
@@ -1196,6 +1205,129 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BridgeUncheckedSendableBox",
+        "printedName": "BridgeUncheckedSendableBox",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:03TapA13SDKBridgeCore26BridgeUncheckedSendableBoxC5valuexvp",
+            "mangledName": "$s03TapA13SDKBridgeCore26BridgeUncheckedSendableBoxC5valuexvp",
+            "moduleName": "TapTapSDKBridgeCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:03TapA13SDKBridgeCore26BridgeUncheckedSendableBoxC5valuexvg",
+                "mangledName": "$s03TapA13SDKBridgeCore26BridgeUncheckedSendableBoxC5valuexvg",
+                "moduleName": "TapTapSDKBridgeCore",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BridgeUncheckedSendableBox",
+                "printedName": "TapTapSDKBridgeCore.BridgeUncheckedSendableBox<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:03TapA13SDKBridgeCore26BridgeUncheckedSendableBoxC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:03TapA13SDKBridgeCore26BridgeUncheckedSendableBoxCyACyxGxcfc",
+            "mangledName": "$s03TapA13SDKBridgeCore26BridgeUncheckedSendableBoxCyACyxGxcfc",
+            "moduleName": "TapTapSDKBridgeCore",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:03TapA13SDKBridgeCore26BridgeUncheckedSendableBoxC",
+        "mangledName": "$s03TapA13SDKBridgeCore26BridgeUncheckedSendableBoxC",
+        "moduleName": "TapTapSDKBridgeCore",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -1204,56 +1336,56 @@
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapSDKBridgeCore\/Public\/TapSDKBridgeCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 150,
+      "offset": 396,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapSDKBridgeCore\/Public\/TapSDKBridgeCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 168,
+      "offset": 414,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapSDKBridgeCore\/Public\/TapSDKBridgeCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 186,
+      "offset": 432,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapSDKBridgeCore\/Public\/TapSDKBridgeCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 205,
+      "offset": 451,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapSDKBridgeCore\/Public\/TapSDKBridgeCore.swift",
       "kind": "StringLiteral",
-      "offset": 447,
+      "offset": 693,
       "length": 23,
       "value": "\"com.taptap.sdk.bridge\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapSDKBridgeCore\/Public\/TapSDKBridgeCore.swift",
       "kind": "StringLiteral",
-      "offset": 482,
+      "offset": 728,
       "length": 12,
       "value": "\"BridgeCore\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapSDKBridgeCore\/Public\/TapSDKBridgeCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 602,
+      "offset": 848,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapSDKBridgeCore\/Public\/TapSDKBridgeCore.swift",
       "kind": "Dictionary",
-      "offset": 4994,
+      "offset": 5276,
       "length": 3,
       "value": "[]"
     }

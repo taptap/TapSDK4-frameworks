@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapCloudSaveSDK
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapCloudSaveSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import Swift
@@ -17,7 +17,7 @@ import _SwiftConcurrencyShims
   @objc public static func registerWithSwiftBridge()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapCloudSaveSwiftBridgeService : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapCloudSaveSwiftBridgeService : ObjectiveC.NSObject, @unchecked Swift.Sendable {
   @objc public static let shared: TapTapCloudSaveSDK.TapCloudSaveSwiftBridgeService
   @objc public static func registerWithSwiftBridge()
   @objc public func registerCloudSaveCallback(_ callback: @escaping (Swift.String) -> Swift.Void)
@@ -50,20 +50,20 @@ extension TapTapCloudSaveSDK.TapCloudSaveSwiftBridgeService : TapTapCloudSaveSDK
 extension TapTapCloudSaveSDK.TapTapCloudSaveCallback {
   public func onResult(_ resultCode: Swift.Int)
 }
-@objc public class CloudSaveToken : ObjectiveC.NSObject, Swift.Codable, Foundation.NSCoding, Foundation.NSSecureCoding {
-  @objc public var kid: Swift.String
-  @objc public var key: Swift.String
+@objc final public class CloudSaveToken : ObjectiveC.NSObject, Swift.Codable, Foundation.NSCoding, Foundation.NSSecureCoding, Swift.Sendable {
+  @objc final public let kid: Swift.String
+  @objc final public let key: Swift.String
   @objc public static var supportsSecureCoding: Swift.Bool {
     @objc get
   }
   @objc public init(kid: Swift.String, key: Swift.String)
   @objc required public init?(coder: Foundation.NSCoder)
-  @objc public func encode(with coder: Foundation.NSCoder)
-  @objc public func toJSONString() -> Swift.String
-  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc final public func encode(with coder: Foundation.NSCoder)
+  @objc final public func toJSONString() -> Swift.String
+  @objc final public func toDictionary() -> [Swift.String : Any]
   @objc public static func from(jsonString: Swift.String) -> TapTapCloudSaveSDK.CloudSaveToken?
   @objc public static func from(dictionary: [Swift.String : Any]) -> TapTapCloudSaveSDK.CloudSaveToken?
-  @objc public var isValid: Swift.Bool {
+  @objc final public var isValid: Swift.Bool {
     @objc get
   }
   @objc public static var current: TapTapCloudSaveSDK.CloudSaveToken? {
@@ -71,15 +71,15 @@ extension TapTapCloudSaveSDK.TapTapCloudSaveCallback {
     @objc set
   }
   @objc public static func clearCurrent()
-  @objc override dynamic public var description: Swift.String {
+  @objc override final public var description: Swift.String {
     @objc get
   }
-  @objc override dynamic public var debugDescription: Swift.String {
+  @objc override final public var debugDescription: Swift.String {
     @objc get
   }
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc public protocol TapTapCloudSaveRequestCallback : ObjectiveC.NSObjectProtocol {
   @objc func onArchiveCreated(archive: TapTapCloudSaveSDK.ArchiveData)
@@ -99,46 +99,45 @@ extension TapTapCloudSaveSDK.TapTapCloudSaveRequestCallback {
   public func onArchiveCoverResult(archiveUUID: Swift.String, archiveFileID: Swift.String, coverData: Foundation.Data)
   public func onRequestError(errorCode: Swift.Int, errorMessage: Swift.String)
 }
-@_inheritsConvenienceInitializers @objc public class ArchiveMetadata : ObjectiveC.NSObject, Swift.Codable, Foundation.NSCoding, Foundation.NSSecureCoding {
-  @objc public var name: Swift.String
-  @objc public var summary: Swift.String
-  @objc public var extra: Swift.String
-  @objc public var playtime: Swift.Int64
+@_inheritsConvenienceInitializers @objc final public class ArchiveMetadata : ObjectiveC.NSObject, Swift.Codable, Foundation.NSCoding, Foundation.NSSecureCoding, Swift.Sendable {
+  @objc final public let name: Swift.String
+  @objc final public let summary: Swift.String
+  @objc final public let extra: Swift.String
+  @objc final public let playtime: Swift.Int64
   @objc public static var supportsSecureCoding: Swift.Bool {
     @objc get
   }
   @objc override dynamic public init()
   @objc public init(name: Swift.String, summary: Swift.String, extra: Swift.String, playtime: Swift.Int64)
   @objc required public init?(coder: Foundation.NSCoder)
-  @objc public func encode(with coder: Foundation.NSCoder)
+  @objc final public func encode(with coder: Foundation.NSCoder)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @objc public class ArchiveData : ObjectiveC.NSObject, Swift.Codable, Foundation.NSCoding, Foundation.NSSecureCoding {
-  @objc public var uuid: Swift.String
-  @objc public var name: Swift.String
-  @objc public var summary: Swift.String
-  @objc public var extra: Swift.String
-  @objc public var playtime: Swift.Int64
-  @objc public var saveSize: Swift.Int64
-  @objc public var coverSize: Swift.Int64
-  @objc public var fileId: Swift.String
-  @objc public var createdTime: Swift.Int64
-  @objc public var modifiedTime: Swift.Int64
+@_inheritsConvenienceInitializers @objc final public class ArchiveData : ObjectiveC.NSObject, Swift.Codable, Foundation.NSCoding, Foundation.NSSecureCoding, Swift.Sendable {
+  @objc final public let uuid: Swift.String
+  @objc final public let name: Swift.String
+  @objc final public let summary: Swift.String
+  @objc final public let extra: Swift.String
+  @objc final public let playtime: Swift.Int64
+  @objc final public let saveSize: Swift.Int64
+  @objc final public let coverSize: Swift.Int64
+  @objc final public let fileId: Swift.String
+  @objc final public let createdTime: Swift.Int64
+  @objc final public let modifiedTime: Swift.Int64
   @objc public static var supportsSecureCoding: Swift.Bool {
     @objc get
   }
   @objc override dynamic public init()
   @objc public init(uuid: Swift.String, name: Swift.String, summary: Swift.String, extra: Swift.String, playtime: Swift.Int64, saveSize: Swift.Int64, coverSize: Swift.Int64, fileId: Swift.String, createdTime: Swift.Int64, modifiedTime: Swift.Int64)
   @objc required public init?(coder: Foundation.NSCoder)
-  @objc public func encode(with coder: Foundation.NSCoder)
+  @objc final public func encode(with coder: Foundation.NSCoder)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class TapTapCloudSave : ObjectiveC.NSObject {
-  @objc public static let shared: TapTapCloudSaveSDK.TapTapCloudSave
   @objc public static func registerCloudSaveCallback(_ callback: any TapTapCloudSaveSDK.TapTapCloudSaveCallback)
   @objc public static func unregisterCloudSaveCallback(_ callback: any TapTapCloudSaveSDK.TapTapCloudSaveCallback)
   @objc public static func createArchive(archiveMetadata: TapTapCloudSaveSDK.ArchiveMetadata, archiveFilePath: Swift.String, archiveCoverPath: Swift.String?, callback: any TapTapCloudSaveSDK.TapTapCloudSaveRequestCallback)

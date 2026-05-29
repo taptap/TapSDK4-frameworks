@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapAchievementSDK
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapAchievementSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import Swift
@@ -14,14 +14,14 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @objc(TapTapAchievementOptions) @objcMembers public class TapTapAchievementOptions : ObjectiveC.NSObject, TapTapCoreSDK.TapTapSdkBaseOptions {
+@_inheritsConvenienceInitializers @objc(TapTapAchievementOptions) @objcMembers public class TapTapAchievementOptions : ObjectiveC.NSObject, TapTapCoreSDK.TapTapSdkBaseOptions, @unchecked Swift.Sendable {
   @objc final public let moduleName: Swift.String
   @objc public var enableToast: Swift.Bool
   @objc public static func initWithJson(_ json: [Swift.String : Any]?) -> TapTapAchievementSDK.TapTapAchievementOptions
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public enum TapTapAchievementType : Swift.Int, Swift.Codable {
+@objc public enum TapTapAchievementType : Swift.Int, Swift.Codable, Swift.Sendable {
   case NORMAL = 0
   case PLATINUM
   public init?(rawValue: Swift.Int)
@@ -31,7 +31,7 @@ import _SwiftConcurrencyShims
   }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapAchievementSwiftBridgeService : ObjectiveC.NSObject {
-  @objc public static let shared: TapTapAchievementSDK.TapAchievementSwiftBridgeService
+  @objc nonisolated(unsafe) public static let shared: TapTapAchievementSDK.TapAchievementSwiftBridgeService
   @objc public func unlockAchievement(achievementId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
   @objc public func incrementAchievement(achievementId: Swift.String, steps: Swift.Int, completion: @escaping (Swift.String) -> Swift.Void)
   @objc public func showAchievements(completion: ((Swift.String) -> Swift.Void)?)
@@ -44,14 +44,14 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapAchievementResult : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var achievementId: Swift.String
-  @objc public var achievementName: Swift.String
-  @objc public var achievementType: TapTapAchievementSDK.TapTapAchievementType
-  @objc public var currentSteps: Swift.Int64
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class TapTapAchievementResult : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let achievementId: Swift.String
+  @objc final public let achievementName: Swift.String
+  @objc final public let achievementType: TapTapAchievementSDK.TapTapAchievementType
+  @objc final public let currentSteps: Swift.Int64
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc public protocol TapTapAchievementCallback : ObjectiveC.NSObjectProtocol {
   @objc func onAchievementSuccess(code: Swift.Int, result: TapTapAchievementSDK.TapTapAchievementResult)
@@ -79,12 +79,12 @@ import _SwiftConcurrencyShims
   @objc public static func registerCallback(callback: any TapTapAchievementSDK.TapTapAchievementCallback)
   @objc public static func unregisterCallback(callback: any TapTapAchievementSDK.TapTapAchievementCallback)
   @objc public static func setToastEnable(enable: Swift.Bool)
-  @objc public static func showAchievements()
+  @objc @_Concurrency.MainActor public static func showAchievements()
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapWebViewJavascriptBridge : ObjectiveC.NSObject {
-  @objc public func getWebView() -> WebKit.WKWebView
+@objc @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor public class TapWebViewJavascriptBridge : ObjectiveC.NSObject {
+  @objc @_Concurrency.MainActor public func getWebView() -> WebKit.WKWebView
   @objc deinit
 }
 extension TapTapAchievementSDK.TapWebViewJavascriptBridge : WebKit.WKScriptMessageHandler {
@@ -92,9 +92,9 @@ extension TapTapAchievementSDK.TapWebViewJavascriptBridge : WebKit.WKScriptMessa
 }
 extension TapTapAchievementSDK.TapWebViewJavascriptBridge : WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> ())
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> ())
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> ())
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping @_Concurrency.MainActor @Sendable (WebKit.WKNavigationResponsePolicy) -> ())
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping @_Concurrency.MainActor @Sendable (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> ())
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping @_Concurrency.MainActor @Sendable (WebKit.WKNavigationActionPolicy) -> ())
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
@@ -102,3 +102,4 @@ extension TapTapAchievementSDK.TapWebViewJavascriptBridge : WebKit.WKNavigationD
 extension TapTapAchievementSDK.TapTapAchievementType : Swift.Equatable {}
 extension TapTapAchievementSDK.TapTapAchievementType : Swift.Hashable {}
 extension TapTapAchievementSDK.TapTapAchievementType : Swift.RawRepresentable {}
+extension TapTapAchievementSDK.TapWebViewJavascriptBridge : Swift.Sendable {}

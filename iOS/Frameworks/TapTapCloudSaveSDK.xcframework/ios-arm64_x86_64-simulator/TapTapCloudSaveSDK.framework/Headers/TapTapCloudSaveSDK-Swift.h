@@ -309,16 +309,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSCoder;
 SWIFT_CLASS("_TtC18TapTapCloudSaveSDK11ArchiveData")
 @interface ArchiveData : NSObject <NSSecureCoding>
-@property (nonatomic, copy) NSString * _Nonnull uuid;
-@property (nonatomic, copy) NSString * _Nonnull name;
-@property (nonatomic, copy) NSString * _Nonnull summary;
-@property (nonatomic, copy) NSString * _Nonnull extra;
-@property (nonatomic) int64_t playtime;
-@property (nonatomic) int64_t saveSize;
-@property (nonatomic) int64_t coverSize;
-@property (nonatomic, copy) NSString * _Nonnull fileId;
-@property (nonatomic) int64_t createdTime;
-@property (nonatomic) int64_t modifiedTime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull uuid;
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, copy) NSString * _Nonnull summary;
+@property (nonatomic, readonly, copy) NSString * _Nonnull extra;
+@property (nonatomic, readonly) int64_t playtime;
+@property (nonatomic, readonly) int64_t saveSize;
+@property (nonatomic, readonly) int64_t coverSize;
+@property (nonatomic, readonly, copy) NSString * _Nonnull fileId;
+@property (nonatomic, readonly) int64_t createdTime;
+@property (nonatomic, readonly) int64_t modifiedTime;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureCoding;)
 + (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -329,10 +329,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureC
 
 SWIFT_CLASS("_TtC18TapTapCloudSaveSDK15ArchiveMetadata")
 @interface ArchiveMetadata : NSObject <NSSecureCoding>
-@property (nonatomic, copy) NSString * _Nonnull name;
-@property (nonatomic, copy) NSString * _Nonnull summary;
-@property (nonatomic, copy) NSString * _Nonnull extra;
-@property (nonatomic) int64_t playtime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, copy) NSString * _Nonnull summary;
+@property (nonatomic, readonly, copy) NSString * _Nonnull extra;
+@property (nonatomic, readonly) int64_t playtime;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureCoding;)
 + (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -346,9 +346,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureC
 SWIFT_CLASS("_TtC18TapTapCloudSaveSDK14CloudSaveToken")
 @interface CloudSaveToken : NSObject <NSSecureCoding>
 /// MAC key ID，用于身份验证
-@property (nonatomic, copy) NSString * _Nonnull kid;
+@property (nonatomic, readonly, copy) NSString * _Nonnull kid;
 /// MAC 密钥，用于签名验证
-@property (nonatomic, copy) NSString * _Nonnull key;
+@property (nonatomic, readonly, copy) NSString * _Nonnull key;
 /// 支持安全编码
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureCoding;)
 + (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
@@ -453,8 +453,6 @@ SWIFT_CLASS("_TtC18TapTapCloudSaveSDK33TapCloudSaveSwiftBridgeTestRunner")
 @protocol TapTapCloudSaveRequestCallback;
 SWIFT_CLASS("_TtC18TapTapCloudSaveSDK15TapTapCloudSave")
 @interface TapTapCloudSave : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapTapCloudSave * _Nonnull shared;)
-+ (TapTapCloudSave * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// 注册 CloudSave 回调
@@ -807,16 +805,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSCoder;
 SWIFT_CLASS("_TtC18TapTapCloudSaveSDK11ArchiveData")
 @interface ArchiveData : NSObject <NSSecureCoding>
-@property (nonatomic, copy) NSString * _Nonnull uuid;
-@property (nonatomic, copy) NSString * _Nonnull name;
-@property (nonatomic, copy) NSString * _Nonnull summary;
-@property (nonatomic, copy) NSString * _Nonnull extra;
-@property (nonatomic) int64_t playtime;
-@property (nonatomic) int64_t saveSize;
-@property (nonatomic) int64_t coverSize;
-@property (nonatomic, copy) NSString * _Nonnull fileId;
-@property (nonatomic) int64_t createdTime;
-@property (nonatomic) int64_t modifiedTime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull uuid;
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, copy) NSString * _Nonnull summary;
+@property (nonatomic, readonly, copy) NSString * _Nonnull extra;
+@property (nonatomic, readonly) int64_t playtime;
+@property (nonatomic, readonly) int64_t saveSize;
+@property (nonatomic, readonly) int64_t coverSize;
+@property (nonatomic, readonly, copy) NSString * _Nonnull fileId;
+@property (nonatomic, readonly) int64_t createdTime;
+@property (nonatomic, readonly) int64_t modifiedTime;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureCoding;)
 + (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -827,10 +825,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureC
 
 SWIFT_CLASS("_TtC18TapTapCloudSaveSDK15ArchiveMetadata")
 @interface ArchiveMetadata : NSObject <NSSecureCoding>
-@property (nonatomic, copy) NSString * _Nonnull name;
-@property (nonatomic, copy) NSString * _Nonnull summary;
-@property (nonatomic, copy) NSString * _Nonnull extra;
-@property (nonatomic) int64_t playtime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, copy) NSString * _Nonnull summary;
+@property (nonatomic, readonly, copy) NSString * _Nonnull extra;
+@property (nonatomic, readonly) int64_t playtime;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureCoding;)
 + (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -844,9 +842,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureC
 SWIFT_CLASS("_TtC18TapTapCloudSaveSDK14CloudSaveToken")
 @interface CloudSaveToken : NSObject <NSSecureCoding>
 /// MAC key ID，用于身份验证
-@property (nonatomic, copy) NSString * _Nonnull kid;
+@property (nonatomic, readonly, copy) NSString * _Nonnull kid;
 /// MAC 密钥，用于签名验证
-@property (nonatomic, copy) NSString * _Nonnull key;
+@property (nonatomic, readonly, copy) NSString * _Nonnull key;
 /// 支持安全编码
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureCoding;)
 + (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
@@ -951,8 +949,6 @@ SWIFT_CLASS("_TtC18TapTapCloudSaveSDK33TapCloudSaveSwiftBridgeTestRunner")
 @protocol TapTapCloudSaveRequestCallback;
 SWIFT_CLASS("_TtC18TapTapCloudSaveSDK15TapTapCloudSave")
 @interface TapTapCloudSave : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapTapCloudSave * _Nonnull shared;)
-+ (TapTapCloudSave * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// 注册 CloudSave 回调

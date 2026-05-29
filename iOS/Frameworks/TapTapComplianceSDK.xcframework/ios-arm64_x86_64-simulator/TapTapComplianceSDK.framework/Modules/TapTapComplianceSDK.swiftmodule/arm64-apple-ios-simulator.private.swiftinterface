@@ -1,12 +1,11 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapComplianceSDK
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapComplianceSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CommonCrypto
 import Foundation
 import ObjectiveC
 import Swift
-import SystemConfiguration
 import TapTapBasicToolsSDK
 @_exported import TapTapComplianceSDK
 import TapTapLoginSDK
@@ -53,17 +52,17 @@ extension Dispatch.DispatchTimeInterval {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapComplianceSwiftBridgeService : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class TapComplianceSwiftBridgeService : ObjectiveC.NSObject, @unchecked Swift.Sendable {
   @objc public static let shared: TapTapComplianceSDK.TapComplianceSwiftBridgeService
-  @objc public func startup(userId: Swift.String)
-  @objc public func registerComplianceCallback(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func setTestEnvironment(isTest: Swift.Bool)
-  @objc public func getCurrentAccessToken(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func getUserRemainTime(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func getUserAgeRange(completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func exit()
-  @objc public func submitPayment(amount: Swift.Int64, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc public func checkPaymentLimit(amount: Swift.Int64, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc final public func startup(userId: Swift.String)
+  @objc final public func registerComplianceCallback(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc final public func setTestEnvironment(isTest: Swift.Bool)
+  @objc final public func getCurrentAccessToken(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc final public func getUserRemainTime(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc final public func getUserAgeRange(completion: @escaping (Swift.String) -> Swift.Void)
+  @objc final public func exit()
+  @objc final public func submitPayment(amount: Swift.Int64, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc final public func checkPaymentLimit(amount: Swift.Int64, completion: @escaping (Swift.String) -> Swift.Void)
   @objc deinit
 }
 extension Swift.Collection {
@@ -449,7 +448,7 @@ extension TapTapComplianceSDK.JSON : Swift.Codable {
   public init(_ key: Swift.String)
   @objc deinit
 }
-final public class Defaults {
+final public class Defaults : @unchecked Swift.Sendable {
   public static let shared: TapTapComplianceSDK.Defaults
   public init(userDefaults: Foundation.UserDefaults = UserDefaults.standard)
   final public func clear<ValueType>(_ key: TapTapComplianceSDK.Key<ValueType>) where ValueType : Swift.Decodable, ValueType : Swift.Encodable
@@ -473,87 +472,6 @@ extension TapTapComplianceSDK.Defaults {
   public static func debug(_ items: Any...)
   @objc override dynamic public init()
   @objc deinit
-}
-public enum ReachabilityError : Swift.Error {
-  case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
-  case failedToCreateWithHostname(Swift.String, Swift.Int32)
-  case unableToSetCallback(Swift.Int32)
-  case unableToSetDispatchQueue(Swift.Int32)
-  case unableToGetFlags(Swift.Int32)
-}
-@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
-public let ReachabilityChangedNotification: Foundation.NSNotification.Name
-extension Foundation.NSNotification.Name {
-  public static let reachabilityChanged: Foundation.Notification.Name
-}
-public class Reachability {
-  public typealias NetworkReachable = (TapTapComplianceSDK.Reachability) -> ()
-  public typealias NetworkUnreachable = (TapTapComplianceSDK.Reachability) -> ()
-  @available(*, unavailable, renamed: "Connection")
-  public enum NetworkStatus : Swift.CustomStringConvertible {
-    case notReachable, reachableViaWiFi, reachableViaWWAN
-    public var description: Swift.String {
-      get
-    }
-    public static func == (a: TapTapComplianceSDK.Reachability.NetworkStatus, b: TapTapComplianceSDK.Reachability.NetworkStatus) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public enum Connection : Swift.CustomStringConvertible {
-    @available(*, deprecated, renamed: "unavailable")
-    case none
-    case unavailable, wifi, cellular
-    public var description: Swift.String {
-      get
-    }
-    public static func == (a: TapTapComplianceSDK.Reachability.Connection, b: TapTapComplianceSDK.Reachability.Connection) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public var whenReachable: TapTapComplianceSDK.Reachability.NetworkReachable?
-  public var whenUnreachable: TapTapComplianceSDK.Reachability.NetworkUnreachable?
-  @available(*, deprecated, renamed: "allowsCellularConnection")
-  final public let reachableOnWWAN: Swift.Bool
-  public var allowsCellularConnection: Swift.Bool
-  public var notificationCenter: Foundation.NotificationCenter
-  @available(*, deprecated, renamed: "connection.description")
-  public var currentReachabilityString: Swift.String {
-    get
-  }
-  @available(*, unavailable, renamed: "connection")
-  public var currentReachabilityStatus: TapTapComplianceSDK.Reachability.Connection {
-    get
-  }
-  public var connection: TapTapComplianceSDK.Reachability.Connection {
-    get
-  }
-  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main)
-  convenience public init(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
-  convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
-  @objc deinit
-}
-extension TapTapComplianceSDK.Reachability {
-  public func startNotifier() throws
-  public func stopNotifier()
-  @available(*, deprecated, message: "Please use `connection != .none`")
-  public var isReachable: Swift.Bool {
-    get
-  }
-  @available(*, deprecated, message: "Please use `connection == .cellular`")
-  public var isReachableViaWWAN: Swift.Bool {
-    get
-  }
-  @available(*, deprecated, message: "Please use `connection == .wifi`")
-  public var isReachableViaWiFi: Swift.Bool {
-    get
-  }
-  public var description: Swift.String {
-    get
-  }
 }
 @_hasMissingDesignatedInitializers public class AntiHttpUtil {
   @objc deinit
@@ -615,8 +533,8 @@ extension TapTapComplianceSDK.Reachability {
   @objc func onCallback(code: Swift.Int, extra: Swift.String?)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @objc(TapComplianceService) final public class TapComplianceService : ObjectiveC.NSObject {
-  @objc public static var UseTestEnv: Swift.Bool
-  @objc public static var configuration: TapTapComplianceSDK.AntiAddictionConfiguration
+  @objc nonisolated(unsafe) public static var UseTestEnv: Swift.Bool
+  @objc nonisolated(unsafe) public static var configuration: TapTapComplianceSDK.AntiAddictionConfiguration
   @objc final public class func getSDKVersion() -> Swift.String
   @objc final public class func enableLog(enable: Swift.Bool)
   @objc final public class func setFunctionConfig(_ showSwitchAccount: Swift.Bool = true, _ useAgeRange: Swift.Bool = true)
@@ -662,12 +580,6 @@ extension TapTapComplianceSDK.`Type` : Swift.Hashable {}
 extension TapTapComplianceSDK.`Type` : Swift.RawRepresentable {}
 extension TapTapComplianceSDK.writingOptionsKeys : Swift.Equatable {}
 extension TapTapComplianceSDK.writingOptionsKeys : Swift.Hashable {}
-@available(*, unavailable, renamed: "Connection")
-extension TapTapComplianceSDK.Reachability.NetworkStatus : Swift.Equatable {}
-@available(*, unavailable, renamed: "Connection")
-extension TapTapComplianceSDK.Reachability.NetworkStatus : Swift.Hashable {}
-extension TapTapComplianceSDK.Reachability.Connection : Swift.Equatable {}
-extension TapTapComplianceSDK.Reachability.Connection : Swift.Hashable {}
 extension TapTapComplianceSDK.TapComplianceServiceResult : Swift.Equatable {}
 extension TapTapComplianceSDK.TapComplianceServiceResult : Swift.Hashable {}
 extension TapTapComplianceSDK.TapComplianceServiceResult : Swift.RawRepresentable {}

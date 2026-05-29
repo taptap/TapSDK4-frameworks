@@ -425,10 +425,10 @@ SWIFT_CLASS_NAMED("TapTapAchievementOptions")
 enum TapTapAchievementType : NSInteger;
 SWIFT_CLASS("_TtC20TapTapAchievementSDK23TapTapAchievementResult")
 @interface TapTapAchievementResult : NSObject
-@property (nonatomic, copy) NSString * _Nonnull achievementId;
-@property (nonatomic, copy) NSString * _Nonnull achievementName;
-@property (nonatomic) enum TapTapAchievementType achievementType;
-@property (nonatomic) int64_t currentSteps;
+@property (nonatomic, readonly, copy) NSString * _Nonnull achievementId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull achievementName;
+@property (nonatomic, readonly) enum TapTapAchievementType achievementType;
+@property (nonatomic, readonly) int64_t currentSteps;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

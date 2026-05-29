@@ -307,10 +307,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS_NAMED("FollowStatus")
 @interface FollowStatus : NSObject
-@property (nonatomic) BOOL blockedBy;
-@property (nonatomic) BOOL blocking;
-@property (nonatomic) BOOL followedBy;
-@property (nonatomic) BOOL following;
+@property (nonatomic, readonly) BOOL blockedBy;
+@property (nonatomic, readonly) BOOL blocking;
+@property (nonatomic, readonly) BOOL followedBy;
+@property (nonatomic, readonly) BOOL following;
 - (nonnull instancetype)initWithBlockedBy:(BOOL)blockedBy blocking:(BOOL)blocking followedBy:(BOOL)followedBy following:(BOOL)following OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -319,10 +319,10 @@ SWIFT_CLASS_NAMED("FollowStatus")
 @class NSString;
 SWIFT_CLASS_NAMED("RelationLiteUserInfo")
 @interface RelationLiteUserInfo : NSObject
-@property (nonatomic, copy) NSString * _Nonnull alias;
-@property (nonatomic, copy) NSString * _Nonnull avatar;
-@property (nonatomic, copy) NSString * _Nonnull name;
-@property (nonatomic, copy) NSString * _Nonnull openId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull alias;
+@property (nonatomic, readonly, copy) NSString * _Nonnull avatar;
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, copy) NSString * _Nonnull openId;
 - (nonnull instancetype)initWithAlias:(NSString * _Nonnull)alias avatar:(NSString * _Nonnull)avatar name:(NSString * _Nonnull)name openId:(NSString * _Nonnull)openId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -330,9 +330,9 @@ SWIFT_CLASS_NAMED("RelationLiteUserInfo")
 
 SWIFT_CLASS_NAMED("RelationLiteUserItem")
 @interface RelationLiteUserItem : NSObject
-@property (nonatomic, strong) FollowStatus * _Nonnull followStatus;
-@property (nonatomic) int64_t createdAt;
-@property (nonatomic, strong) RelationLiteUserInfo * _Nonnull user;
+@property (nonatomic, readonly, strong) FollowStatus * _Nonnull followStatus;
+@property (nonatomic, readonly) int64_t createdAt;
+@property (nonatomic, readonly, strong) RelationLiteUserInfo * _Nonnull user;
 - (nonnull instancetype)initWithFollowStatus:(FollowStatus * _Nonnull)followStatus createdAt:(int64_t)createdAt user:(RelationLiteUserInfo * _Nonnull)user OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nullable)getJSONString SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -341,8 +341,8 @@ SWIFT_CLASS_NAMED("RelationLiteUserItem")
 
 SWIFT_CLASS_NAMED("RelationLiteUserResult")
 @interface RelationLiteUserResult : NSObject
-@property (nonatomic, copy) NSArray<RelationLiteUserItem *> * _Nullable list;
-@property (nonatomic, copy) NSString * _Nullable nextPageToken;
+@property (nonatomic, readonly, copy) NSArray<RelationLiteUserItem *> * _Nullable list;
+@property (nonatomic, readonly, copy) NSString * _Nullable nextPageToken;
 - (nonnull instancetype)initWithList:(NSArray<RelationLiteUserItem *> * _Nullable)list nextPageToken:(NSString * _Nullable)nextPageToken OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -748,10 +748,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS_NAMED("FollowStatus")
 @interface FollowStatus : NSObject
-@property (nonatomic) BOOL blockedBy;
-@property (nonatomic) BOOL blocking;
-@property (nonatomic) BOOL followedBy;
-@property (nonatomic) BOOL following;
+@property (nonatomic, readonly) BOOL blockedBy;
+@property (nonatomic, readonly) BOOL blocking;
+@property (nonatomic, readonly) BOOL followedBy;
+@property (nonatomic, readonly) BOOL following;
 - (nonnull instancetype)initWithBlockedBy:(BOOL)blockedBy blocking:(BOOL)blocking followedBy:(BOOL)followedBy following:(BOOL)following OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -760,10 +760,10 @@ SWIFT_CLASS_NAMED("FollowStatus")
 @class NSString;
 SWIFT_CLASS_NAMED("RelationLiteUserInfo")
 @interface RelationLiteUserInfo : NSObject
-@property (nonatomic, copy) NSString * _Nonnull alias;
-@property (nonatomic, copy) NSString * _Nonnull avatar;
-@property (nonatomic, copy) NSString * _Nonnull name;
-@property (nonatomic, copy) NSString * _Nonnull openId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull alias;
+@property (nonatomic, readonly, copy) NSString * _Nonnull avatar;
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, copy) NSString * _Nonnull openId;
 - (nonnull instancetype)initWithAlias:(NSString * _Nonnull)alias avatar:(NSString * _Nonnull)avatar name:(NSString * _Nonnull)name openId:(NSString * _Nonnull)openId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -771,9 +771,9 @@ SWIFT_CLASS_NAMED("RelationLiteUserInfo")
 
 SWIFT_CLASS_NAMED("RelationLiteUserItem")
 @interface RelationLiteUserItem : NSObject
-@property (nonatomic, strong) FollowStatus * _Nonnull followStatus;
-@property (nonatomic) int64_t createdAt;
-@property (nonatomic, strong) RelationLiteUserInfo * _Nonnull user;
+@property (nonatomic, readonly, strong) FollowStatus * _Nonnull followStatus;
+@property (nonatomic, readonly) int64_t createdAt;
+@property (nonatomic, readonly, strong) RelationLiteUserInfo * _Nonnull user;
 - (nonnull instancetype)initWithFollowStatus:(FollowStatus * _Nonnull)followStatus createdAt:(int64_t)createdAt user:(RelationLiteUserInfo * _Nonnull)user OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nullable)getJSONString SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -782,8 +782,8 @@ SWIFT_CLASS_NAMED("RelationLiteUserItem")
 
 SWIFT_CLASS_NAMED("RelationLiteUserResult")
 @interface RelationLiteUserResult : NSObject
-@property (nonatomic, copy) NSArray<RelationLiteUserItem *> * _Nullable list;
-@property (nonatomic, copy) NSString * _Nullable nextPageToken;
+@property (nonatomic, readonly, copy) NSArray<RelationLiteUserItem *> * _Nullable list;
+@property (nonatomic, readonly, copy) NSString * _Nullable nextPageToken;
 - (nonnull instancetype)initWithList:(NSArray<RelationLiteUserItem *> * _Nullable)list nextPageToken:(NSString * _Nullable)nextPageToken OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

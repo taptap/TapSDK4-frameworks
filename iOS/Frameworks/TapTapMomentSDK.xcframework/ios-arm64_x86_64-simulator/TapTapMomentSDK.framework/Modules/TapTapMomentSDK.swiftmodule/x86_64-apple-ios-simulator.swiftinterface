@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapMomentSDK
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapMomentSDK
 // swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
 import Foundation
 import ObjectiveC
@@ -14,7 +14,7 @@ import TapTapSDKBridgeCore
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapMomentSwiftBridgeService : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapMomentSwiftBridgeService : ObjectiveC.NSObject, @unchecked Swift.Sendable {
   @objc public static let shared: TapTapMomentSDK.TapMomentSwiftBridgeService
   @objc public func setCallback(completion: @escaping (Swift.String) -> Swift.Void)
   @objc public func setCallback(callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
@@ -34,7 +34,7 @@ import _SwiftConcurrencyShims
   @objc public func publish(publishMetaData: Swift.String, callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(TapMomentSwiftBridgeInitializer) public class TapMomentSwiftBridgeInitializer : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(TapMomentSwiftBridgeInitializer) public class TapMomentSwiftBridgeInitializer : ObjectiveC.NSObject, @unchecked Swift.Sendable {
   @objc public static func registerWithSwiftBridge()
   @objc override dynamic public init()
   @objc deinit
@@ -389,11 +389,11 @@ extension TapTapMomentSDK.JSON : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 @_inheritsConvenienceInitializers @objcMembers @objc(TapMomentInternal) final public class TapMomentInternal : ObjectiveC.NSObject {
-  @objc public static var isRnd: Swift.Bool
-  @objc public static var isCN: Swift.Bool
-  @objc public static var clientId: Swift.String
+  @objc nonisolated(unsafe) public static var isRnd: Swift.Bool
+  @objc nonisolated(unsafe) public static var isCN: Swift.Bool
+  @objc nonisolated(unsafe) public static var clientId: Swift.String
   @objc public static func registerRouter()
-  @objc public static func login(successHandler: ((_ code: Swift.Int, _ account: TapTapLoginSDK.TapTapAccount) -> Swift.Void)? = nil, cancelHandler: ((_ code: Swift.Int, _ message: Swift.String) -> Swift.Void)? = nil, failureHandler: ((_ code: Swift.Int, _ message: Swift.String) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor public static func login(successHandler: ((_ code: Swift.Int, _ account: TapTapLoginSDK.TapTapAccount) -> Swift.Void)? = nil, cancelHandler: ((_ code: Swift.Int, _ message: Swift.String) -> Swift.Void)? = nil, failureHandler: ((_ code: Swift.Int, _ message: Swift.String) -> Swift.Void)? = nil)
   @objc public static func fetchNotice(successHandler: ((_ code: Swift.Int, _ message: Swift.String) -> Swift.Void)? = nil, failureHandler: ((_ code: Swift.Int, _ message: Swift.String) -> Swift.Void)? = nil)
   @objc override dynamic public init()
   @objc deinit

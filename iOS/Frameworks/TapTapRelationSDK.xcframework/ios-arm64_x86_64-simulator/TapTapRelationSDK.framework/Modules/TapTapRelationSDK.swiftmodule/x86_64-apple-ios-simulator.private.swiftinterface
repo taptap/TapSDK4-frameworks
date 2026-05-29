@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapRelationSDK
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapRelationSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CommonCrypto
 import CryptoKit
@@ -23,8 +23,8 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import bifrost_sdk
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapRelationSwiftBridgeService : ObjectiveC.NSObject {
-  @objc public static let shared: TapTapRelationSDK.TapRelationSwiftBridgeService
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapRelationSwiftBridgeService : ObjectiveC.NSObject, @unchecked Swift.Sendable {
+  public static let shared: TapTapRelationSDK.TapRelationSwiftBridgeService
   @objc public func prepare()
   @objc public func startMessenger()
   @objc public func inviteGame()
@@ -37,14 +37,14 @@ import bifrost_sdk
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapRelationSwiftBridgeInitializer : ObjectiveC.NSObject {
-  @objc public static let shared: TapTapRelationSDK.TapRelationSwiftBridgeInitializer
+  @objc nonisolated(unsafe) public static let shared: TapTapRelationSDK.TapRelationSwiftBridgeInitializer
   @objc public func initialize()
   @objc deinit
 }
 extension TapTapRelationSDK.TapRelationSwiftBridgeInitializer {
   @objc public static func triggerAutoInitialization()
 }
-public struct TapRelationUITheme {
+public struct TapRelationUITheme : Swift.Sendable {
   public static let standard: TapTapRelationSDK.TapRelationUITheme
   public static let standardPortrait: TapTapRelationSDK.TapRelationUITheme
   public static let standardDark: TapTapRelationSDK.TapRelationUITheme
@@ -59,7 +59,7 @@ public struct TapRelationUITheme {
   @objc func onNewFansCountChanged(code: Swift.Int, fansCount: Swift.Int)
   @objc func onUnreadMessageCountChanged(code: Swift.Int, unreadMsgCount: Swift.Int)
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class TapTapRelationMessengerCode : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapRelationMessengerCode : ObjectiveC.NSObject {
   @objc public static let NEED_LOGIN: Swift.Int
   @objc public static let ON_NEW_FANS_COUNT_CHANGED: Swift.Int
   @objc public static let GET_NEW_FANS_COUNT: Swift.Int
@@ -67,17 +67,18 @@ public struct TapRelationUITheme {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapRelation : ObjectiveC.NSObject {
-  @objc public static func prepare()
-  @objc public static func startMessenger()
-  @objc public static func inviteGame()
-  @objc public static func inviteTeam(_ teamId: Swift.String)
-  @objc public static func showTapUserProfile(openId: Swift.String? = nil, unionId: Swift.String? = nil)
-  @objc public static func getNewFansCount() -> Swift.Int
-  @objc public static func getUnreadMessageCount() -> Swift.Int
-  @objc public static func registerRelationDelegate(delegate: any TapTapRelationSDK.TapTapRelationDelegate)
-  @objc public static func unregisterRelationDelegate(delegate: any TapTapRelationSDK.TapTapRelationDelegate)
-  @objc public static func destroy()
-  @objc override dynamic public init()
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @objcMembers final public class TapTapRelation : ObjectiveC.NSObject {
+  @objc nonisolated public static func prepare()
+  @objc @_Concurrency.MainActor public static func startMessenger()
+  @objc @_Concurrency.MainActor public static func inviteGame()
+  @objc @_Concurrency.MainActor public static func inviteTeam(_ teamId: Swift.String)
+  @objc @_Concurrency.MainActor public static func showTapUserProfile(openId: Swift.String? = nil, unionId: Swift.String? = nil)
+  @objc nonisolated public static func getNewFansCount() -> Swift.Int
+  @objc nonisolated public static func getUnreadMessageCount() -> Swift.Int
+  @objc nonisolated public static func registerRelationDelegate(delegate: any TapTapRelationSDK.TapTapRelationDelegate)
+  @objc nonisolated public static func unregisterRelationDelegate(delegate: any TapTapRelationSDK.TapTapRelationDelegate)
+  @objc nonisolated public static func destroy()
+  @_Concurrency.MainActor @objc override dynamic public init()
   @objc deinit
 }
+extension TapTapRelationSDK.TapTapRelation : Swift.Sendable {}

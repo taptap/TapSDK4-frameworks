@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapLeaderboardSDK
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapLeaderboardSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import Photos
@@ -21,7 +21,7 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapLeaderboardSwiftBridgeService : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TapLeaderboardSwiftBridgeService : ObjectiveC.NSObject, @unchecked Swift.Sendable {
   @objc public static let shared: TapTapLeaderboardSDK.TapLeaderboardSwiftBridgeService
   @objc public func openLeaderboard(leaderboardId: Swift.String, leaderboardCollection: Swift.String?)
   @objc public func openUserProfile(openId: Swift.String?, unionId: Swift.String?)
@@ -35,8 +35,8 @@ import _SwiftConcurrencyShims
   @objc public func registerLeaderboardCallback(completion: @escaping (Swift.String) -> Swift.Void)
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapWebViewJavascriptBridge : ObjectiveC.NSObject {
-  @objc public func getWebView() -> WebKit.WKWebView
+@objc @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor public class TapWebViewJavascriptBridge : ObjectiveC.NSObject {
+  @objc @_Concurrency.MainActor public func getWebView() -> WebKit.WKWebView
   @objc deinit
 }
 extension TapTapLeaderboardSDK.TapWebViewJavascriptBridge : WebKit.WKScriptMessageHandler {
@@ -44,9 +44,9 @@ extension TapTapLeaderboardSDK.TapWebViewJavascriptBridge : WebKit.WKScriptMessa
 }
 extension TapTapLeaderboardSDK.TapWebViewJavascriptBridge : WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> ())
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> ())
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> ())
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping @_Concurrency.MainActor @Sendable (WebKit.WKNavigationResponsePolicy) -> ())
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping @_Concurrency.MainActor @Sendable (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> ())
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping @_Concurrency.MainActor @Sendable (WebKit.WKNavigationActionPolicy) -> ())
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
@@ -58,7 +58,7 @@ extension TapTapLeaderboardSDK.TapWebViewJavascriptBridge : WebKit.WKNavigationD
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public enum TapLeaderboardErrorCode : Swift.Int {
+@objc public enum TapLeaderboardErrorCode : Swift.Int, Swift.Sendable {
   case leaderboardPeriodExpired = 500000
   case leaderboardIdNotFound = 500001
   case leaderboardInvalidArguments = 500002
@@ -78,17 +78,17 @@ extension TapTapLeaderboardSDK.TapWebViewJavascriptBridge : WebKit.WKNavigationD
     get
   }
 }
-@objc @objcMembers public class TapLeaderboardError : ObjectiveC.NSObject, Swift.Error {
+@objc @objcMembers final public class TapLeaderboardError : ObjectiveC.NSObject, Swift.Error {
   @objc final public let errorCode: TapTapLeaderboardSDK.TapLeaderboardErrorCode
   @objc final public let message: Swift.String
   @objc public init(errorCode: TapTapLeaderboardSDK.TapLeaderboardErrorCode, message: Swift.String)
-  @objc public var clientCode: Swift.Int {
+  @objc final public var clientCode: Swift.Int {
     @objc get
   }
-  @objc public var serverCode: Swift.Int {
+  @objc final public var serverCode: Swift.Int {
     @objc get
   }
-  @objc public var localizedDescription: Swift.String {
+  @objc final public var localizedDescription: Swift.String {
     @objc get
   }
   @objc public static func create(code: TapTapLeaderboardSDK.TapLeaderboardErrorCode, message: Swift.String) -> TapTapLeaderboardSDK.TapLeaderboardError
@@ -136,158 +136,171 @@ extension TapTapLeaderboardSDK.TapLeaderboardErrorCode {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapLeaderboardCollection : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class TapTapLeaderboardCollection : ObjectiveC.NSObject, Swift.Sendable {
   @objc public static let friends: TapTapLeaderboardSDK.TapTapLeaderboardCollection
   @objc public static let `public`: TapTapLeaderboardSDK.TapTapLeaderboardCollection
   @objc final public let rawValue: Swift.String
   @objc public static func from(_ value: Swift.String) -> TapTapLeaderboardSDK.TapTapLeaderboardCollection
   @objc deinit
 }
-@objc @objcMembers public class TapTapLeaderboardScoreItem : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var leaderboardId: Swift.String
-  @objc public var score: Swift.Int64
+@objc @objcMembers final public class TapTapLeaderboardScoreItem : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let leaderboardId: Swift.String
+  @objc final public let score: Swift.Int64
   @objc public init(leaderboardId: Swift.String, score: Swift.Int64)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class TapTapLeaderboardImage : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var color: Swift.String
-  @objc public var gifUrl: Swift.String?
-  public var height: Swift.Int?
-  public var width: Swift.Int?
-  @objc public var mediumUrl: Swift.String
-  @objc public var originalFormat: Swift.String
-  public var originalSize: Swift.Int?
-  @objc public var originalUrl: Swift.String
-  @objc public var smallUrl: Swift.String
-  @objc public var url: Swift.String
+@objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapLeaderboardImage : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let color: Swift.String
+  @objc final public let gifUrl: Swift.String?
+  final public let height: Swift.Int?
+  final public let width: Swift.Int?
+  @objc final public let mediumUrl: Swift.String
+  @objc final public let originalFormat: Swift.String
+  final public let originalSize: Swift.Int?
+  @objc final public let originalUrl: Swift.String
+  @objc final public let smallUrl: Swift.String
+  @objc final public let url: Swift.String
   @objc override dynamic public init()
+  public init(color: Swift.String = "", gifUrl: Swift.String? = nil, height: Swift.Int? = nil, width: Swift.Int? = nil, mediumUrl: Swift.String = "", originalFormat: Swift.String = "", originalSize: Swift.Int? = nil, originalUrl: Swift.String = "", smallUrl: Swift.String = "", url: Swift.String = "")
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapLeaderboardUser : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var avatar: TapTapLeaderboardSDK.TapTapLeaderboardImage?
-  @objc public var name: Swift.String?
-  @objc public var openId: Swift.String?
-  @objc public var unionId: Swift.String?
+@objc @objcMembers final public class TapTapLeaderboardUser : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let avatar: TapTapLeaderboardSDK.TapTapLeaderboardImage?
+  @objc final public let name: Swift.String?
+  @objc final public let openId: Swift.String?
+  @objc final public let unionId: Swift.String?
+  @objc public init(avatar: TapTapLeaderboardSDK.TapTapLeaderboardImage? = nil, name: Swift.String? = nil, openId: Swift.String? = nil, unionId: Swift.String? = nil)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapLeaderboardScore : ObjectiveC.NSObject, Swift.Codable {
-  public var rank: Swift.Int64?
-  @objc public var rankDisplay: Swift.String?
-  public var score: Swift.Int64?
-  @objc public var scoreDisplay: Swift.String?
-  public var scoreSubmittedTime: Swift.Int64?
-  @objc public var user: TapTapLeaderboardSDK.TapTapLeaderboardUser?
+@objc @objcMembers final public class TapTapLeaderboardScore : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  final public let rank: Swift.Int64?
+  @objc final public let rankDisplay: Swift.String?
+  final public let score: Swift.Int64?
+  @objc final public let scoreDisplay: Swift.String?
+  final public let scoreSubmittedTime: Swift.Int64?
+  @objc final public let user: TapTapLeaderboardSDK.TapTapLeaderboardUser?
+  public init(rank: Swift.Int64? = nil, rankDisplay: Swift.String? = nil, score: Swift.Int64? = nil, scoreDisplay: Swift.String? = nil, scoreSubmittedTime: Swift.Int64? = nil, user: TapTapLeaderboardSDK.TapTapLeaderboardUser? = nil)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapLeaderboardPeriod : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var display: Swift.String?
-  @objc public var periodToken: Swift.String?
+@objc @objcMembers final public class TapTapLeaderboardPeriod : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let display: Swift.String?
+  @objc final public let periodToken: Swift.String?
+  @objc public init(display: Swift.String? = nil, periodToken: Swift.String? = nil)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapLeaderboardInfo : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var availablePeriods: [TapTapLeaderboardSDK.TapTapLeaderboardPeriod]
-  @objc public var background: TapTapLeaderboardSDK.TapTapLeaderboardImage?
-  @objc public var id: Swift.String
-  @objc public var name: Swift.String
-  @objc public var period: TapTapLeaderboardSDK.TapTapLeaderboardPeriod?
-  @objc public var score: TapTapLeaderboardSDK.TapTapLeaderboardScore?
-  required public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapSubmitScoreResponseItem : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var leaderboardId: Swift.String
-  @objc public var openId: Swift.String
-  @objc public var periodToken: Swift.String
-  @objc public var scoreResult: TapTapLeaderboardSDK.TapTapSubmitScoreResult?
-  @objc public var unionId: Swift.String
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapSubmitScoreResult : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var newBest: Swift.Bool
-  @objc public var rawScore: Swift.Int64
-  @objc public var scoreDisplay: Swift.String
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapSubmitScoresResponse : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var items: [TapTapLeaderboardSDK.TapTapSubmitScoreResponseItem]
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapLeaderboardScoresResponse : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var leaderboard: TapTapLeaderboardSDK.TapTapLeaderboardInfo?
-  @objc public var scores: [TapTapLeaderboardSDK.TapTapLeaderboardScore]?
-  @objc public var nextContinuationToken: Swift.String?
-  @objc public var isTruncated: Swift.Bool
+@objc @objcMembers final public class TapTapLeaderboardInfo : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let availablePeriods: [TapTapLeaderboardSDK.TapTapLeaderboardPeriod]
+  @objc final public let background: TapTapLeaderboardSDK.TapTapLeaderboardImage?
+  @objc final public let id: Swift.String
+  @objc final public let name: Swift.String
+  @objc final public let period: TapTapLeaderboardSDK.TapTapLeaderboardPeriod?
+  @objc final public let score: TapTapLeaderboardSDK.TapTapLeaderboardScore?
+  @objc public init(availablePeriods: [TapTapLeaderboardSDK.TapTapLeaderboardPeriod] = [], background: TapTapLeaderboardSDK.TapTapLeaderboardImage? = nil, id: Swift.String = "", name: Swift.String = "", period: TapTapLeaderboardSDK.TapTapLeaderboardPeriod? = nil, score: TapTapLeaderboardSDK.TapTapLeaderboardScore? = nil)
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class TapTapUserScoreResponse : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var currentUserScore: TapTapLeaderboardSDK.TapTapLeaderboardScore?
-  @objc public var leaderboard: TapTapLeaderboardSDK.TapTapLeaderboardInfo?
+@objc @objcMembers final public class TapTapSubmitScoreResponseItem : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let leaderboardId: Swift.String
+  @objc final public let openId: Swift.String
+  @objc final public let periodToken: Swift.String
+  @objc final public let scoreResult: TapTapLeaderboardSDK.TapTapSubmitScoreResult?
+  @objc final public let unionId: Swift.String
+  @objc public init(leaderboardId: Swift.String = "", openId: Swift.String = "", periodToken: Swift.String = "", scoreResult: TapTapLeaderboardSDK.TapTapSubmitScoreResult? = nil, unionId: Swift.String = "")
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-@objc @objcMembers public class TapTapLeaderboardDataResponse : ObjectiveC.NSObject {
-  @objc public var leaderboard: TapTapLeaderboardSDK.TapTapLeaderboardInfo?
-  @objc public var scores: [TapTapLeaderboardSDK.TapTapLeaderboardScore]?
-  @objc public var nextPage: Swift.String
+@objc @objcMembers final public class TapTapSubmitScoreResult : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let newBest: Swift.Bool
+  @objc final public let rawScore: Swift.Int64
+  @objc final public let scoreDisplay: Swift.String
+  @objc public init(newBest: Swift.Bool = false, rawScore: Swift.Int64 = 0, scoreDisplay: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class TapTapSubmitScoresResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let items: [TapTapLeaderboardSDK.TapTapSubmitScoreResponseItem]
+  @objc public init(items: [TapTapLeaderboardSDK.TapTapSubmitScoreResponseItem] = [])
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class TapTapLeaderboardScoresResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let leaderboard: TapTapLeaderboardSDK.TapTapLeaderboardInfo?
+  @objc final public let scores: [TapTapLeaderboardSDK.TapTapLeaderboardScore]?
+  @objc final public let nextContinuationToken: Swift.String?
+  @objc final public let isTruncated: Swift.Bool
+  @objc public init(leaderboard: TapTapLeaderboardSDK.TapTapLeaderboardInfo? = nil, scores: [TapTapLeaderboardSDK.TapTapLeaderboardScore]? = nil, nextContinuationToken: Swift.String? = nil, isTruncated: Swift.Bool = false)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @objcMembers final public class TapTapUserScoreResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let currentUserScore: TapTapLeaderboardSDK.TapTapLeaderboardScore?
+  @objc final public let leaderboard: TapTapLeaderboardSDK.TapTapLeaderboardInfo?
+  @objc public init(currentUserScore: TapTapLeaderboardSDK.TapTapLeaderboardScore? = nil, leaderboard: TapTapLeaderboardSDK.TapTapLeaderboardInfo? = nil)
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class TapTapLeaderboardDataResponse : ObjectiveC.NSObject, Swift.Sendable {
+  @objc final public let leaderboard: TapTapLeaderboardSDK.TapTapLeaderboardInfo?
+  @objc final public let scores: [TapTapLeaderboardSDK.TapTapLeaderboardScore]?
+  @objc final public let nextPage: Swift.String
   @objc public init(leaderboard: TapTapLeaderboardSDK.TapTapLeaderboardInfo? = nil, scores: [TapTapLeaderboardSDK.TapTapLeaderboardScore]? = nil, nextPage: Swift.String = "")
   @objc public static func from(internalResponse: TapTapLeaderboardSDK.TapTapLeaderboardScoresResponse) -> TapTapLeaderboardSDK.TapTapLeaderboardDataResponse
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class TapTapLeaderboardGroupResponse : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var groups: [TapTapLeaderboardSDK.TapTapLeaderboardGroupResponse.Group]
-  @objc @_inheritsConvenienceInitializers @objcMembers public class Group : ObjectiveC.NSObject, Swift.Codable {
-    @objc public var leaderboards: [TapTapLeaderboardSDK.TapTapLeaderboardInfo]
-    @objc public var name: Swift.String
+@objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapLeaderboardGroupResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let groups: [TapTapLeaderboardSDK.TapTapLeaderboardGroupResponse.Group]
+  @objc @_inheritsConvenienceInitializers @objcMembers final public class Group : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+    @objc final public let leaderboards: [TapTapLeaderboardSDK.TapTapLeaderboardInfo]
+    @objc final public let name: Swift.String
     @objc override dynamic public init()
+    @objc public init(leaderboards: [TapTapLeaderboardSDK.TapTapLeaderboardInfo] = [], name: Swift.String = "")
     @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
+    final public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   @objc override dynamic public init()
+  @objc public init(groups: [TapTapLeaderboardSDK.TapTapLeaderboardGroupResponse.Group] = [])
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-@objc @objcMembers public class TapLeaderboardFilterGroup : ObjectiveC.NSObject {
+@objc @objcMembers final public class TapLeaderboardFilterGroup : ObjectiveC.NSObject, Swift.Sendable {
   @objc final public let id: Swift.String
   @objc final public let name: Swift.String
-  @objc public var isSelected: Swift.Bool
-  @objc public var leaderboards: [TapTapLeaderboardSDK.TapLeaderboardFilterItem]
+  @objc final public let isSelected: Swift.Bool
+  @objc final public let leaderboards: [TapTapLeaderboardSDK.TapLeaderboardFilterItem]
   @objc public init(id: Swift.String, name: Swift.String, isSelected: Swift.Bool = false, leaderboards: [TapTapLeaderboardSDK.TapLeaderboardFilterItem] = [])
   @objc deinit
 }
-@objc @objcMembers public class TapLeaderboardFilterItem : ObjectiveC.NSObject {
+@objc @objcMembers final public class TapLeaderboardFilterItem : ObjectiveC.NSObject, Swift.Sendable {
   @objc final public let id: Swift.String
   @objc final public let name: Swift.String
   @objc final public let rank: Swift.Int
   @objc final public let rankDisplay: Swift.String?
-  @objc public var isSelected: Swift.Bool
+  @objc final public let isSelected: Swift.Bool
   @objc public init(id: Swift.String, name: Swift.String, rank: Swift.Int = 0, rankDisplay: Swift.String? = nil, isSelected: Swift.Bool = false)
   @objc deinit
 }
 @objc public protocol TapLeaderboardFilterCallback : ObjectiveC.NSObjectProtocol {
   @objc func onLeaderboardChange(leaderboardId: Swift.String, leaderboardName: Swift.String, rank: Swift.Int, rankDisplay: Swift.String?)
 }
+extension TapTapLeaderboardSDK.TapWebViewJavascriptBridge : Swift.Sendable {}
 extension TapTapLeaderboardSDK.TapLeaderboardErrorCode : Swift.Equatable {}
 extension TapTapLeaderboardSDK.TapLeaderboardErrorCode : Swift.Hashable {}
 extension TapTapLeaderboardSDK.TapLeaderboardErrorCode : Swift.RawRepresentable {}

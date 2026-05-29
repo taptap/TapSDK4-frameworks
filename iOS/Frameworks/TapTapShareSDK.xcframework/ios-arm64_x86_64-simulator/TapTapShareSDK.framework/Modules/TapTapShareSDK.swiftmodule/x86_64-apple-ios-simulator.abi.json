@@ -6,6 +6,16 @@
     "children": [
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapShareSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "TapTapBasicToolsSDK",
         "printedName": "TapTapBasicToolsSDK",
         "declKind": "Import",
@@ -1414,6 +1424,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -1508,21 +1525,21 @@
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapShare\/Public\/TapTapShare.swift",
       "kind": "StringLiteral",
-      "offset": 375,
+      "offset": 390,
       "length": 11,
       "value": "\"taptap:\/\/\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapShare\/Public\/TapTapShare.swift",
       "kind": "BooleanLiteral",
-      "offset": 477,
+      "offset": 492,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapShare\/Public\/TapTapShareObj.swift",
       "kind": "BooleanLiteral",
-      "offset": 1124,
+      "offset": 1145,
       "length": 4,
       "value": "true"
     }

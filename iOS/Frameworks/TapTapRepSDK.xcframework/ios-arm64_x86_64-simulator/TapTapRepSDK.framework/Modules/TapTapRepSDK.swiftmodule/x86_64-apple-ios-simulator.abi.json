@@ -334,6 +334,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
+              "Custom",
               "ObjC",
               "RawDocComment"
             ],
@@ -782,6 +783,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -844,6 +852,13 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TapTapRepSDK"
       },
       {
         "kind": "Import",
@@ -1031,14 +1046,14 @@
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
       "kind": "StringLiteral",
-      "offset": 647,
+      "offset": 662,
       "length": 11,
       "value": "\"taptap:\/\/\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRep\/Public\/TapTapRep.swift",
       "kind": "BooleanLiteral",
-      "offset": 749,
+      "offset": 764,
       "length": 5,
       "value": "false"
     },
@@ -1052,7 +1067,7 @@
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapRep\/Private\/TapRepSwiftBridgeInitializer.swift",
       "kind": "BooleanLiteral",
-      "offset": 300,
+      "offset": 320,
       "length": 5,
       "value": "false"
     }

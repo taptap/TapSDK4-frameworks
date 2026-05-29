@@ -45350,6 +45350,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "KingfisherCompatibleValue",
             "printedName": "KingfisherCompatibleValue",
             "usr": "s:03TapA10Kingfisher0B15CompatibleValueP",

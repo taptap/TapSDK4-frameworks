@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapBattleSDK
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapTapBattleSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import Swift
@@ -11,324 +11,324 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import onlinebattle_sdk
-public struct SignInResponse : Swift.Codable {
-  public let playerId: Swift.String
-  public init(playerId: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class SignInResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let playerId: Swift.String
+  @objc public init(playerId: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct CreateRoomResponse : Swift.Codable {
-  public let roomInfo: TapTapBattleSDK.RoomInfo
-  public init(roomInfo: TapTapBattleSDK.RoomInfo = RoomInfo())
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class CreateRoomResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomInfo: TapTapBattleSDK.RoomInfo
+  @objc public init(roomInfo: TapTapBattleSDK.RoomInfo = RoomInfo())
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct MatchRoomResponse : Swift.Codable {
-  public let roomInfo: TapTapBattleSDK.RoomInfo
-  public init(roomInfo: TapTapBattleSDK.RoomInfo = RoomInfo())
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class MatchRoomResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomInfo: TapTapBattleSDK.RoomInfo
+  @objc public init(roomInfo: TapTapBattleSDK.RoomInfo = RoomInfo())
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct GetRoomListResponse : Swift.Codable {
-  public let rooms: [TapTapBattleSDK.RoomBasicInfo]?
-  public let offset: Swift.Int?
-  public let hasMore: Swift.Bool?
-  public init(rooms: [TapTapBattleSDK.RoomBasicInfo]? = nil, offset: Swift.Int? = nil, hasMore: Swift.Bool? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class GetRoomListResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let rooms: [TapTapBattleSDK.RoomBasicInfo]?
+  @objc final public let offset: Swift.Int
+  @objc final public let hasMore: Swift.Bool
+  @objc public init(rooms: [TapTapBattleSDK.RoomBasicInfo]? = nil, offset: Swift.Int = 0, hasMore: Swift.Bool = false)
+  public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @objcMembers final public class JoinRoomResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomInfo: TapTapBattleSDK.RoomInfo
+  @objc public init(roomInfo: TapTapBattleSDK.RoomInfo = RoomInfo())
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct JoinRoomResponse : Swift.Codable {
-  public let roomInfo: TapTapBattleSDK.RoomInfo
-  public init(roomInfo: TapTapBattleSDK.RoomInfo = RoomInfo())
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+@objc public protocol ConnectListener {
+  @objc func onSuccess(response: TapTapBattleSDK.SignInResponse)
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol ConnectListener : AnyObject {
-  func onSuccess(response: TapTapBattleSDK.SignInResponse)
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol DisconnectListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol DisconnectListener : AnyObject {
-  func onSuccess()
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol CreateRoomListener {
+  @objc func onSuccess(response: TapTapBattleSDK.CreateRoomResponse)
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol CreateRoomListener : AnyObject {
-  func onSuccess(response: TapTapBattleSDK.CreateRoomResponse)
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol MatchRoomListener {
+  @objc func onSuccess(response: TapTapBattleSDK.MatchRoomResponse)
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol MatchRoomListener : AnyObject {
-  func onSuccess(response: TapTapBattleSDK.MatchRoomResponse)
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol GetRoomListListener {
+  @objc func onSuccess(response: TapTapBattleSDK.GetRoomListResponse)
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol GetRoomListListener : AnyObject {
-  func onSuccess(response: TapTapBattleSDK.GetRoomListResponse)
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol JoinRoomListener {
+  @objc func onSuccess(response: TapTapBattleSDK.JoinRoomResponse)
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol JoinRoomListener : AnyObject {
-  func onSuccess(response: TapTapBattleSDK.JoinRoomResponse)
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol LeaveRoomListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol LeaveRoomListener : AnyObject {
-  func onSuccess()
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol UpdatePlayerCustomStatusListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol UpdatePlayerCustomStatusListener : AnyObject {
-  func onSuccess()
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol UpdatePlayerCustomPropertiesListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol UpdatePlayerCustomPropertiesListener : AnyObject {
-  func onSuccess()
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol UpdateRoomPropertiesListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol UpdateRoomPropertiesListener : AnyObject {
-  func onSuccess()
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol StartFrameSyncListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol StartFrameSyncListener : AnyObject {
-  func onSuccess()
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol SendFrameInputListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol SendFrameInputListener : AnyObject {
-  func onSuccess()
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol StopFrameSyncListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol StopFrameSyncListener : AnyObject {
-  func onSuccess()
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol KickRoomPlayerListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol KickRoomPlayerListener : AnyObject {
-  func onSuccess()
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
+@objc public protocol SendCustomMessageListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapTapBattleSDK.ErrorResponse)
 }
-public protocol SendCustomMessageListener : AnyObject {
-  func onSuccess()
-  func onFailure(error: TapTapBattleSDK.ErrorResponse)
-}
-public protocol BattleNotificationCallback : AnyObject {
-  func onPlayerEntered(notification: TapTapBattleSDK.EnterRoomNotification)
-  func onPlayerLeft(notification: TapTapBattleSDK.LeaveRoomNotification)
-  func onPlayerOffline(notification: TapTapBattleSDK.PlayerOfflineNotification)
-  func onPlayerCustomStatusChanged(notification: TapTapBattleSDK.PlayerCustomStatusNotification)
-  func onPlayerCustomPropertiesChanged(notification: TapTapBattleSDK.PlayerCustomPropertiesNotification)
-  func onRoomPropertiesChanged(notification: TapTapBattleSDK.RoomPropertiesNotification)
-  func onFrameSyncStarted(notification: TapTapBattleSDK.FrameSyncStartNotification)
-  func onFrameReceived(frameSync: TapTapBattleSDK.FrameSynchronization)
-  func onFrameSyncStopped(notification: TapTapBattleSDK.FrameSyncStopNotification)
-  func onBattleServiceError()
-  func onDisconnected(error: TapTapBattleSDK.ErrorResponse)
-  func onPlayerKicked(notification: TapTapBattleSDK.RoomPlayerKickedNotification)
-  func onCustomMessageReceived(notification: TapTapBattleSDK.CustomMessageNotification)
-}
-extension TapTapBattleSDK.BattleNotificationCallback {
-  public func onPlayerEntered(notification: TapTapBattleSDK.EnterRoomNotification)
-  public func onPlayerLeft(notification: TapTapBattleSDK.LeaveRoomNotification)
-  public func onPlayerOffline(notification: TapTapBattleSDK.PlayerOfflineNotification)
-  public func onPlayerCustomStatusChanged(notification: TapTapBattleSDK.PlayerCustomStatusNotification)
-  public func onPlayerCustomPropertiesChanged(notification: TapTapBattleSDK.PlayerCustomPropertiesNotification)
-  public func onRoomPropertiesChanged(notification: TapTapBattleSDK.RoomPropertiesNotification)
-  public func onFrameSyncStarted(notification: TapTapBattleSDK.FrameSyncStartNotification)
-  public func onFrameReceived(frameSync: TapTapBattleSDK.FrameSynchronization)
-  public func onFrameSyncStopped(notification: TapTapBattleSDK.FrameSyncStopNotification)
-  public func onBattleServiceError()
-  public func onDisconnected(error: TapTapBattleSDK.ErrorResponse)
-  public func onPlayerKicked(notification: TapTapBattleSDK.RoomPlayerKickedNotification)
-  public func onCustomMessageReceived(notification: TapTapBattleSDK.CustomMessageNotification)
+@objc public protocol BattleNotificationCallback : ObjectiveC.NSObjectProtocol {
+  @objc optional func onPlayerEntered(notification: TapTapBattleSDK.EnterRoomNotification)
+  @objc optional func onPlayerLeft(notification: TapTapBattleSDK.LeaveRoomNotification)
+  @objc optional func onPlayerOffline(notification: TapTapBattleSDK.PlayerOfflineNotification)
+  @objc optional func onPlayerCustomStatusChanged(notification: TapTapBattleSDK.PlayerCustomStatusNotification)
+  @objc optional func onPlayerCustomPropertiesChanged(notification: TapTapBattleSDK.PlayerCustomPropertiesNotification)
+  @objc optional func onRoomPropertiesChanged(notification: TapTapBattleSDK.RoomPropertiesNotification)
+  @objc optional func onFrameSyncStarted(notification: TapTapBattleSDK.FrameSyncStartNotification)
+  @objc optional func onFrameReceived(frameSync: TapTapBattleSDK.FrameSynchronization)
+  @objc optional func onFrameSyncStopped(notification: TapTapBattleSDK.FrameSyncStopNotification)
+  @objc optional func onBattleServiceError()
+  @objc optional func onDisconnected(error: TapTapBattleSDK.ErrorResponse)
+  @objc optional func onPlayerKicked(notification: TapTapBattleSDK.RoomPlayerKickedNotification)
+  @objc optional func onCustomMessageReceived(notification: TapTapBattleSDK.CustomMessageNotification)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapBattle : ObjectiveC.NSObject {
-  public static func connect(listener: (any TapTapBattleSDK.ConnectListener)? = nil)
-  public static func disconnect(listener: (any TapTapBattleSDK.DisconnectListener)? = nil, forceCheck: Swift.Bool = false)
-  public static func createRoom(request: TapTapBattleSDK.CreateRoomRequest, listener: (any TapTapBattleSDK.CreateRoomListener)? = nil)
-  public static func matchRoom(request: TapTapBattleSDK.MatchRoomRequest, listener: (any TapTapBattleSDK.MatchRoomListener)? = nil)
-  public static func getRoomList(request: TapTapBattleSDK.GetRoomListRequest, listener: (any TapTapBattleSDK.GetRoomListListener)? = nil)
-  public static func joinRoom(request: TapTapBattleSDK.JoinRoomRequest, listener: (any TapTapBattleSDK.JoinRoomListener)? = nil)
-  public static func leaveRoom(listener: (any TapTapBattleSDK.LeaveRoomListener)? = nil)
-  public static func updatePlayerCustomStatus(status: Swift.Int, listener: (any TapTapBattleSDK.UpdatePlayerCustomStatusListener)? = nil)
-  public static func updatePlayerCustomProperties(properties: Swift.String, listener: (any TapTapBattleSDK.UpdatePlayerCustomPropertiesListener)? = nil)
-  public static func updateRoomProperties(request: TapTapBattleSDK.UpdateRoomPropertiesRequest, listener: (any TapTapBattleSDK.UpdateRoomPropertiesListener)? = nil)
-  public static func startFrameSync(listener: (any TapTapBattleSDK.StartFrameSyncListener)? = nil)
-  public static func sendFrameInput(request: TapTapBattleSDK.SendFrameInputRequest, listener: (any TapTapBattleSDK.SendFrameInputListener)? = nil)
-  public static func stopFrameSync(listener: (any TapTapBattleSDK.StopFrameSyncListener)? = nil)
-  public static func kickRoomPlayer(playerID: Swift.String, listener: (any TapTapBattleSDK.KickRoomPlayerListener)? = nil)
-  public static func sendCustomMessage(request: TapTapBattleSDK.SendCustomMessageRequest, listener: (any TapTapBattleSDK.SendCustomMessageListener)? = nil)
+  @objc public static func connect(listener: (any TapTapBattleSDK.ConnectListener)? = nil)
+  @objc public static func disconnect(listener: (any TapTapBattleSDK.DisconnectListener)? = nil, forceCheck: Swift.Bool = false)
+  @objc public static func createRoom(request: TapTapBattleSDK.CreateRoomRequest, listener: (any TapTapBattleSDK.CreateRoomListener)? = nil)
+  @objc public static func matchRoom(request: TapTapBattleSDK.MatchRoomRequest, listener: (any TapTapBattleSDK.MatchRoomListener)? = nil)
+  @objc public static func getRoomList(request: TapTapBattleSDK.GetRoomListRequest, listener: (any TapTapBattleSDK.GetRoomListListener)? = nil)
+  @objc public static func joinRoom(request: TapTapBattleSDK.JoinRoomRequest, listener: (any TapTapBattleSDK.JoinRoomListener)? = nil)
+  @objc public static func leaveRoom(listener: (any TapTapBattleSDK.LeaveRoomListener)? = nil)
+  @objc public static func updatePlayerCustomStatus(status: Swift.Int, listener: (any TapTapBattleSDK.UpdatePlayerCustomStatusListener)? = nil)
+  @objc public static func updatePlayerCustomProperties(properties: Swift.String, listener: (any TapTapBattleSDK.UpdatePlayerCustomPropertiesListener)? = nil)
+  @objc public static func updateRoomProperties(request: TapTapBattleSDK.UpdateRoomPropertiesRequest, listener: (any TapTapBattleSDK.UpdateRoomPropertiesListener)? = nil)
+  @objc public static func startFrameSync(listener: (any TapTapBattleSDK.StartFrameSyncListener)? = nil)
+  @objc public static func sendFrameInput(request: TapTapBattleSDK.SendFrameInputRequest, listener: (any TapTapBattleSDK.SendFrameInputListener)? = nil)
+  @objc public static func stopFrameSync(listener: (any TapTapBattleSDK.StopFrameSyncListener)? = nil)
+  @objc public static func kickRoomPlayer(playerID: Swift.String, listener: (any TapTapBattleSDK.KickRoomPlayerListener)? = nil)
+  @objc public static func sendCustomMessage(request: TapTapBattleSDK.SendCustomMessageRequest, listener: (any TapTapBattleSDK.SendCustomMessageListener)? = nil)
   @objc public static func newRandomNumberGenerator(seed: Swift.Int) -> Swift.Int64
   @objc public static func randomInt(objID: Swift.Int64) -> Swift.Int
   @objc public static func freeRandomNumberGenerator(objID: Swift.Int64)
   @objc public static func initializeSDK()
   @objc public static func setLogLevel(level: Swift.Int, logToConsole: Swift.Bool = true)
   @objc public static func getVersion() -> Swift.String?
-  public static func registerBattleNotificationListener(_ listener: any TapTapBattleSDK.BattleNotificationCallback)
-  public static func unregisterBattleNotificationListener(_ listener: any TapTapBattleSDK.BattleNotificationCallback)
+  @objc public static func registerBattleNotificationListener(_ listener: any TapTapBattleSDK.BattleNotificationCallback)
+  @objc public static func unregisterBattleNotificationListener(_ listener: any TapTapBattleSDK.BattleNotificationCallback)
   @objc public static func ensureInitialization()
   @objc override dynamic public init()
   @objc deinit
 }
-public struct EnterRoomNotification : Swift.Codable {
-  public let roomId: Swift.String
-  public let playerInfo: TapTapBattleSDK.PlayerInfo
-  public init(roomId: Swift.String = "", playerInfo: TapTapBattleSDK.PlayerInfo = PlayerInfo())
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class EnterRoomNotification : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomId: Swift.String
+  @objc final public let playerInfo: TapTapBattleSDK.PlayerInfo
+  @objc public init(roomId: Swift.String = "", playerInfo: TapTapBattleSDK.PlayerInfo = PlayerInfo())
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct LeaveRoomNotification : Swift.Codable {
-  public let roomId: Swift.String
-  public let roomOwnerId: Swift.String
-  public let playerId: Swift.String
-  public init(roomId: Swift.String = "", roomOwnerId: Swift.String = "", playerId: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class LeaveRoomNotification : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomId: Swift.String
+  @objc final public let roomOwnerId: Swift.String
+  @objc final public let playerId: Swift.String
+  @objc public init(roomId: Swift.String = "", roomOwnerId: Swift.String = "", playerId: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct PlayerOfflineNotification : Swift.Codable {
-  public let roomId: Swift.String
-  public let roomOwnerId: Swift.String
-  public let playerId: Swift.String
-  public init(roomId: Swift.String = "", roomOwnerId: Swift.String = "", playerId: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class PlayerOfflineNotification : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomId: Swift.String
+  @objc final public let roomOwnerId: Swift.String
+  @objc final public let playerId: Swift.String
+  @objc public init(roomId: Swift.String = "", roomOwnerId: Swift.String = "", playerId: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct FrameSyncStartNotification : Swift.Codable {
-  public let roomInfo: TapTapBattleSDK.RoomInfo
-  public let frameSyncId: Swift.Int64
-  public let seed: Swift.Int64
-  public let serverTms: Swift.String
-  public init(roomInfo: TapTapBattleSDK.RoomInfo = RoomInfo(), frameSyncId: Swift.Int64 = 0, seed: Swift.Int64 = 0, serverTms: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class FrameSyncStartNotification : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomInfo: TapTapBattleSDK.RoomInfo
+  @objc final public let frameSyncId: Swift.Int64
+  @objc final public let seed: Swift.Int64
+  @objc final public let serverTms: Swift.String
+  @objc public init(roomInfo: TapTapBattleSDK.RoomInfo = RoomInfo(), frameSyncId: Swift.Int64 = 0, seed: Swift.Int64 = 0, serverTms: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct FrameSynchronization : Swift.Codable {
-  public let id: Swift.Int64
-  public let inputs: [TapTapBattleSDK.BattleFrameInput]
-  public init(id: Swift.Int64 = 0, inputs: [TapTapBattleSDK.BattleFrameInput] = [])
-  public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class FrameSynchronization : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let id: Swift.Int64
+  @objc final public let inputs: [TapTapBattleSDK.BattleFrameInput]
+  @objc public init(id: Swift.Int64 = 0, inputs: [TapTapBattleSDK.BattleFrameInput] = [])
+  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
 }
-public struct FrameSyncStopNotification : Swift.Codable {
-  public let roomId: Swift.String
-  public let frameSyncId: Swift.Int64
-  public let reason: Swift.Int?
-  public init(roomId: Swift.String = "", frameSyncId: Swift.Int64 = 0, reason: Swift.Int? = 0)
+@objc @objcMembers final public class FrameSyncStopNotification : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomId: Swift.String
+  @objc final public let frameSyncId: Swift.Int64
+  @objc final public let reason: Swift.Int
+  @objc public init(roomId: Swift.String = "", frameSyncId: Swift.Int64 = 0, reason: Swift.Int = 0)
   public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
 }
-public struct PlayerCustomStatusNotification : Swift.Codable {
-  public let playerId: Swift.String
-  public let status: Swift.Int
-  public init(playerId: Swift.String = "", status: Swift.Int = 0)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct PlayerCustomPropertiesNotification : Swift.Codable {
-  public let playerId: Swift.String
-  public let properties: Swift.String
-  public init(playerId: Swift.String = "", properties: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class PlayerCustomStatusNotification : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let playerId: Swift.String
+  @objc final public let status: Swift.Int
+  @objc public init(playerId: Swift.String = "", status: Swift.Int = 0)
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct RoomPropertiesNotification : Swift.Codable {
-  public let id: Swift.String
-  public let name: Swift.String?
-  public let customProperties: Swift.String?
-  public init(id: Swift.String = "", name: Swift.String? = nil, customProperties: Swift.String? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class PlayerCustomPropertiesNotification : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let playerId: Swift.String
+  @objc final public let properties: Swift.String
+  @objc public init(playerId: Swift.String = "", properties: Swift.String = "")
+  public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @objcMembers final public class RoomPropertiesNotification : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let id: Swift.String
+  @objc final public let name: Swift.String?
+  @objc final public let customProperties: Swift.String?
+  @objc public init(id: Swift.String = "", name: Swift.String? = nil, customProperties: Swift.String? = nil)
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct CustomMessageNotification : Swift.Codable {
-  public let playerId: Swift.String
-  public let msg: Swift.String
-  public init(playerId: Swift.String = "", msg: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class CustomMessageNotification : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let playerId: Swift.String
+  @objc final public let msg: Swift.String
+  @objc public init(playerId: Swift.String = "", msg: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct RoomPlayerKickedNotification : Swift.Codable {
-  public let roomId: Swift.String
-  public let playerId: Swift.String
-  public init(roomId: Swift.String = "", playerId: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class RoomPlayerKickedNotification : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomId: Swift.String
+  @objc final public let playerId: Swift.String
+  @objc public init(roomId: Swift.String = "", playerId: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct SignInRequest : Swift.Codable {
-  public let clientId: Swift.String
-  public let clientToken: Swift.String
-  public let accessToken: TapTapBattleSDK.AccessToken
-  public init(clientId: Swift.String = "", clientToken: Swift.String = "", accessToken: TapTapBattleSDK.AccessToken = AccessToken())
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class CreateRoomRequest : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomCfg: TapTapBattleSDK.RoomConfig
+  @objc final public let playerCfg: TapTapBattleSDK.PlayerConfig
+  @objc public init(roomCfg: TapTapBattleSDK.RoomConfig = RoomConfig(), playerCfg: TapTapBattleSDK.PlayerConfig = PlayerConfig())
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct CreateRoomRequest : Swift.Codable {
-  public let roomCfg: TapTapBattleSDK.RoomConfig
-  public let playerCfg: TapTapBattleSDK.PlayerConfig
-  public init(roomCfg: TapTapBattleSDK.RoomConfig = RoomConfig(), playerCfg: TapTapBattleSDK.PlayerConfig = PlayerConfig())
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class MatchRoomRequest : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomCfg: TapTapBattleSDK.RoomConfig
+  @objc final public let playerCfg: TapTapBattleSDK.PlayerConfig
+  @objc public init(roomCfg: TapTapBattleSDK.RoomConfig = RoomConfig(), playerCfg: TapTapBattleSDK.PlayerConfig = PlayerConfig())
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct MatchRoomRequest : Swift.Codable {
-  public let roomCfg: TapTapBattleSDK.RoomConfig
-  public let playerCfg: TapTapBattleSDK.PlayerConfig
-  public init(roomCfg: TapTapBattleSDK.RoomConfig = RoomConfig(), playerCfg: TapTapBattleSDK.PlayerConfig = PlayerConfig())
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class GetRoomListRequest : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomType: Swift.String
+  @objc final public let offset: Swift.Int
+  @objc final public let limit: Swift.Int
+  @objc public init(roomType: Swift.String = "", offset: Swift.Int = 0, limit: Swift.Int = 20)
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct GetRoomListRequest : Swift.Codable {
-  public let roomType: Swift.String
-  public let offset: Swift.Int
-  public let limit: Swift.Int
-  public init(roomType: Swift.String = "", offset: Swift.Int = 0, limit: Swift.Int = 20)
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class JoinRoomRequest : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomId: Swift.String
+  @objc final public let playerCfg: TapTapBattleSDK.PlayerConfig
+  @objc public init(roomId: Swift.String = "", playerCfg: TapTapBattleSDK.PlayerConfig = PlayerConfig())
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct JoinRoomRequest : Swift.Codable {
-  public let roomId: Swift.String
-  public let playerCfg: TapTapBattleSDK.PlayerConfig
-  public init(roomId: Swift.String = "", playerCfg: TapTapBattleSDK.PlayerConfig = PlayerConfig())
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class UpdateRoomPropertiesRequest : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let name: Swift.String
+  @objc final public let customProperties: Swift.String
+  @objc public init(name: Swift.String = "", customProperties: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct UpdateRoomPropertiesRequest : Swift.Codable {
-  public let name: Swift.String
-  public let customProperties: Swift.String
-  public init(name: Swift.String = "", customProperties: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class SendFrameInputRequest : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let data: Swift.String
+  @objc public init(data: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct SendFrameInputRequest : Swift.Codable {
-  public let data: Swift.String
-  public init(data: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class SendCustomMessageRequest : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let msg: Swift.String
+  @objc final public let type: Swift.Int
+  @objc final public let receivers: [Swift.String]
+  @objc public init(msg: Swift.String = "", type: Swift.Int = 0, receivers: [Swift.String] = [])
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct SendCustomMessageRequest : Swift.Codable {
-  public let msg: Swift.String
-  public let type: Swift.Int
-  public let receivers: [Swift.String]
-  public init(msg: Swift.String = "", type: Swift.Int = 0, receivers: [Swift.String] = [])
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public enum ErrorCode : Swift.Int {
-  case errorNotLogin
-  case errorSystemError
-  case errorSDKError
-  case errorRequestRateLimitExceeded
-  case errorMaliciousUser
-  case errorTooManyConnections
-  case errorNetworkError
-  case errorInvalidRequest
-  case errorInvalidAuthorization
-  case errorUnauthorized
-  case errorAlreadySignedIn
-  case errorPreviousRequestInProgress
-  case errorUnimplemented
-  case errorForbidden
-  case errorRoomTemplateNotFound
-  case errorRoomCountLimitExceeded
-  case errorNotInRoom
-  case errorAlreadyInRoom
-  case errorNotRoomOwner
-  case errorRoomFull
-  case errorRoomNotExist
-  case errorBattleNotStarted
-  case errorBattleAlreadyStarted
-  case errorBattleFrameDataSizeLimitExceeded
-  case errorBattleFrameDataCountLimitExceeded
-  case errorPlayerNotFound
+@objc public enum ErrorCode : Swift.Int {
+  case errorNotLogin = 101
+  case errorSystemError = 1
+  case errorSDKError = 2
+  case errorRequestRateLimitExceeded = 3
+  case errorMaliciousUser = 4
+  case errorTooManyConnections = 5
+  case errorNetworkError = 6
+  case errorInvalidRequest = 11
+  case errorInvalidAuthorization = 12
+  case errorUnauthorized = 13
+  case errorAlreadySignedIn = 14
+  case errorPreviousRequestInProgress = 15
+  case errorUnimplemented = 16
+  case errorForbidden = 17
+  case errorRoomTemplateNotFound = 18
+  case errorRoomCountLimitExceeded = 19
+  case errorNotInRoom = 20
+  case errorAlreadyInRoom = 21
+  case errorNotRoomOwner = 22
+  case errorRoomFull = 23
+  case errorRoomNotExist = 24
+  case errorBattleNotStarted = 25
+  case errorBattleAlreadyStarted = 26
+  case errorBattleFrameDataSizeLimitExceeded = 28
+  case errorBattleFrameDataCountLimitExceeded = 29
+  case errorPlayerNotFound = 30
   public var description: Swift.String {
     get
   }
@@ -338,77 +338,77 @@ public enum ErrorCode : Swift.Int {
     get
   }
 }
-public struct ErrorResponse : Swift.Codable {
-  public let code: Swift.Int
-  public let msg: Swift.String
-  public init(code: Swift.Int = 0, msg: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class ErrorResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let code: Swift.Int
+  @objc final public let msg: Swift.String
+  @objc public init(code: Swift.Int = 0, msg: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct AccessToken : Swift.Codable {
-  public let kid: Swift.String
-  public let key: Swift.String
-  public init(kid: Swift.String = "", key: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class RoomConfig : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let maxPlayerCount: Swift.Int
+  @objc final public let type: Swift.String
+  @objc final public let matchParams: [Swift.String : Swift.String]
+  @objc final public let name: Swift.String
+  @objc final public let customProperties: Swift.String
+  @objc public init(maxPlayerCount: Swift.Int = 0, type: Swift.String = "", matchParams: [Swift.String : Swift.String] = [:], name: Swift.String = "", customProperties: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct RoomConfig : Swift.Codable {
-  public let maxPlayerCount: Swift.Int
-  public let type: Swift.String
-  public let matchParams: [Swift.String : Swift.String]
-  public let name: Swift.String
-  public let customProperties: Swift.String
-  public init(maxPlayerCount: Swift.Int = 0, type: Swift.String = "", matchParams: [Swift.String : Swift.String] = [:], name: Swift.String = "", customProperties: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class PlayerConfig : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let customStatus: Swift.Int
+  @objc final public let customProperties: Swift.String
+  @objc public init(customStatus: Swift.Int = -1, customProperties: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct PlayerConfig : Swift.Codable {
-  public let customStatus: Swift.Int
-  public let customProperties: Swift.String
-  public init(customStatus: Swift.Int = -1, customProperties: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class PlayerInfo : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let id: Swift.String
+  @objc final public let status: Swift.Int
+  @objc final public let customStatus: Swift.Int
+  @objc final public let customProperties: Swift.String?
+  @objc public init(id: Swift.String = "", status: Swift.Int = 0, customStatus: Swift.Int = 0, customProperties: Swift.String? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @objcMembers final public class RoomInfo : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let id: Swift.String
+  @objc final public let name: Swift.String?
+  @objc final public let type: Swift.String
+  @objc final public let ownerId: Swift.String
+  @objc final public let status: Swift.Int
+  @objc final public let customProperties: Swift.String?
+  @objc final public let maxPlayerCount: Swift.Int
+  @objc final public let players: [TapTapBattleSDK.PlayerInfo]
+  @objc final public let createTime: Swift.String
+  @objc public init(id: Swift.String = "", name: Swift.String? = nil, type: Swift.String = "", ownerId: Swift.String = "", status: Swift.Int = 0, customProperties: Swift.String? = nil, maxPlayerCount: Swift.Int = 0, players: [TapTapBattleSDK.PlayerInfo] = [], createTime: Swift.String = "")
+  public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @objcMembers final public class RoomBasicInfo : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let id: Swift.String
+  @objc final public let name: Swift.String?
+  @objc final public let customProperties: Swift.String?
+  @objc final public let maxPlayerCount: Swift.Int
+  @objc final public let playerCount: Swift.Int
+  @objc final public let createTime: Swift.String
+  @objc public init(id: Swift.String = "", name: Swift.String? = nil, customProperties: Swift.String? = nil, maxPlayerCount: Swift.Int = 0, playerCount: Swift.Int = 0, createTime: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct PlayerInfo : Swift.Codable {
-  public let id: Swift.String
-  public let status: Swift.Int
-  public let customStatus: Swift.Int?
-  public let customProperties: Swift.String?
-  public init(id: Swift.String = "", status: Swift.Int = 0, customStatus: Swift.Int? = nil, customProperties: Swift.String? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RoomInfo : Swift.Codable {
-  public let id: Swift.String
-  public let name: Swift.String?
-  public let type: Swift.String
-  public let ownerId: Swift.String
-  public let status: Swift.Int?
-  public let customProperties: Swift.String?
-  public let maxPlayerCount: Swift.Int
-  public let players: [TapTapBattleSDK.PlayerInfo]
-  public let createTime: Swift.String
-  public init(id: Swift.String = "", name: Swift.String? = nil, type: Swift.String = "", ownerId: Swift.String = "", status: Swift.Int? = nil, customProperties: Swift.String? = nil, maxPlayerCount: Swift.Int = 0, players: [TapTapBattleSDK.PlayerInfo] = [], createTime: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RoomBasicInfo : Swift.Codable {
-  public let id: Swift.String
-  public let name: Swift.String?
-  public let customProperties: Swift.String?
-  public let maxPlayerCount: Swift.Int
-  public let playerCount: Swift.Int
-  public let createTime: Swift.String
-  public init(id: Swift.String = "", name: Swift.String? = nil, customProperties: Swift.String? = nil, maxPlayerCount: Swift.Int = 0, playerCount: Swift.Int = 0, createTime: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct BattleFrameInput : Swift.Codable {
-  public let playerId: Swift.String
-  public let data: Swift.String
-  public let serverTms: Swift.String
-  public init(playerId: Swift.String = "", data: Swift.String = "", serverTms: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc @objcMembers final public class BattleFrameInput : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let playerId: Swift.String
+  @objc final public let data: Swift.String
+  @objc final public let serverTms: Swift.String
+  @objc public init(playerId: Swift.String = "", data: Swift.String = "", serverTms: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 extension TapTapBattleSDK.ErrorCode : Swift.Equatable {}

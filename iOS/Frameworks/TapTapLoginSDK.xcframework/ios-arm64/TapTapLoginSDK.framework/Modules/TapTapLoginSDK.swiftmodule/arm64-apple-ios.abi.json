@@ -91,13 +91,6 @@
         "moduleName": "TapTapLoginSDK"
       },
       {
-        "kind": "Import",
-        "name": "TapTapLoginSDK",
-        "printedName": "TapTapLoginSDK",
-        "declKind": "Import",
-        "moduleName": "TapTapLoginSDK"
-      },
-      {
         "kind": "TypeDecl",
         "name": "TapLoginSwiftBridgeService",
         "printedName": "TapLoginSwiftBridgeService",
@@ -124,6 +117,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "Nonisolated",
               "ObjC"
             ],
             "isLet": true,
@@ -206,6 +200,7 @@
             "declAttributes": [
               "AccessControl",
               "ObjC",
+              "Custom",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -575,13 +570,13 @@
             "mangledName": "$s03TapA8LoginSDK8UserInfoC4nameSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -610,6 +605,7 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
@@ -641,13 +637,13 @@
             "mangledName": "$s03TapA8LoginSDK8UserInfoC6avatarSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -676,6 +672,7 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
@@ -707,13 +704,13 @@
             "mangledName": "$s03TapA8LoginSDK8UserInfoC6openIdSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -742,6 +739,7 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
@@ -773,13 +771,13 @@
             "mangledName": "$s03TapA8LoginSDK8UserInfoC7unionIdSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -808,6 +806,7 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
@@ -839,13 +838,13 @@
             "mangledName": "$s03TapA8LoginSDK8UserInfoC5emailSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -874,6 +873,7 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
@@ -905,13 +905,13 @@
             "mangledName": "$s03TapA8LoginSDK8UserInfoC6genderSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -940,6 +940,7 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
@@ -971,11 +972,11 @@
             "mangledName": "$s03TapA8LoginSDK8UserInfoC11isCertifiedSbSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -1003,6 +1004,9 @@
                 "mangledName": "$s03TapA8LoginSDK8UserInfoC11isCertifiedSbSgvg",
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -1024,13 +1028,13 @@
             "mangledName": "$s03TapA8LoginSDK8UserInfoC13emailVerifiedSbvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -1051,6 +1055,7 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
@@ -1116,6 +1121,7 @@
             "mangledName": "$s03TapA8LoginSDK8UserInfoC12toJsonStringSSyF",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment",
               "ObjC"
@@ -1154,6 +1160,7 @@
         "mangledName": "$s03TapA8LoginSDK8UserInfoC",
         "moduleName": "TapTapLoginSDK",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "ObjCMembers",
           "ObjC"
@@ -1163,6 +1170,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -1659,12 +1673,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:03TapA8LoginSDK0aaB0C5login4with14viewController7handlerySayAA5ScopeOG_So06UIViewG0CSgyAA0aA7AccountCSg_So7NSErrorCSgSbtctFZ",
-            "mangledName": "$s03TapA8LoginSDK0aaB0C5login4with14viewController7handlerySayAA5ScopeOG_So06UIViewG0CSgyAA0aA7AccountCSg_So7NSErrorCSgSbtctFZ",
+            "usr": "s:03TapA8LoginSDK0aaB0C5login4with14viewController7handlerySayAA5ScopeOG_So06UIViewG0CSgyAA0aA7AccountCSg_So7NSErrorCSgSbtScMYcctFZ",
+            "mangledName": "$s03TapA8LoginSDK0aaB0C5login4with14viewController7handlerySayAA5ScopeOG_So06UIViewG0CSgyAA0aA7AccountCSg_So7NSErrorCSgSbtScMYcctFZ",
             "moduleName": "TapTapLoginSDK",
             "static": true,
             "declAttributes": [
               "Final",
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1697,6 +1712,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
+              "Nonisolated",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -1720,6 +1736,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
+              "Nonisolated",
               "RawDocComment",
               "ObjC"
             ],
@@ -1750,6 +1767,7 @@
             "static": true,
             "declAttributes": [
               "Final",
+              "Custom",
               "AccessControl",
               "DiscardableResult",
               "RawDocComment",
@@ -1858,6 +1876,8 @@
             "objc_name": "LoginWithScopes:viewController:handler:",
             "declAttributes": [
               "Final",
+              "Custom",
+              "AccessControl",
               "ObjC",
               "RawDocComment"
             ],
@@ -1950,6 +1970,8 @@
             "objc_name": "LoginWithScopes:handler:",
             "declAttributes": [
               "Final",
+              "Custom",
+              "AccessControl",
               "ObjC"
             ],
             "isFromExtension": true,
@@ -1962,6 +1984,7 @@
         "moduleName": "TapTapLoginSDK",
         "declAttributes": [
           "AccessControl",
+          "Custom",
           "ObjCMembers",
           "ObjC"
         ],
@@ -2034,6 +2057,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -2087,11 +2117,13 @@
             "mangledName": "$s03TapA8LoginSDK13FriendsResultC7friendsSayAA10FriendInfoCGvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
+              "Final",
               "HasStorage",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -2120,62 +2152,10 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[TapTapLoginSDK.FriendInfo]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "FriendInfo",
-                        "printedName": "TapTapLoginSDK.FriendInfo",
-                        "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendInfo"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapLoginSDK@objc(cs)FriendsResult(im)setFriends:",
-                "mangledName": "$s03TapA8LoginSDK13FriendsResultC7friendsSayAA10FriendInfoCGvs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK13FriendsResultC7friendsSayAA10FriendInfoCGvM",
-                "mangledName": "$s03TapA8LoginSDK13FriendsResultC7friendsSayAA10FriendInfoCGvM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -2204,11 +2184,12 @@
             "mangledName": "$s03TapA8LoginSDK13FriendsResultC6cursorSiSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -2236,57 +2217,10 @@
                 "mangledName": "$s03TapA8LoginSDK13FriendsResultC6cursorSiSgvg",
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK13FriendsResultC6cursorSiSgvs",
-                "mangledName": "$s03TapA8LoginSDK13FriendsResultC6cursorSiSgvs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK13FriendsResultC6cursorSiSgvM",
-                "mangledName": "$s03TapA8LoginSDK13FriendsResultC6cursorSiSgvM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -2322,6 +2256,7 @@
         "mangledName": "$s03TapA8LoginSDK13FriendsResultC",
         "moduleName": "TapTapLoginSDK",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "ObjCMembers",
           "ObjC"
@@ -2332,6 +2267,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -2427,13 +2369,13 @@
             "mangledName": "$s03TapA8LoginSDK10FriendInfoC4nameSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -2462,6 +2404,7 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
@@ -2493,13 +2436,13 @@
             "mangledName": "$s03TapA8LoginSDK10FriendInfoC6avatarSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -2528,6 +2471,7 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
@@ -2559,13 +2503,13 @@
             "mangledName": "$s03TapA8LoginSDK10FriendInfoC6openIdSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -2594,6 +2538,7 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
@@ -2674,6 +2619,7 @@
         "mangledName": "$s03TapA8LoginSDK10FriendInfoC",
         "moduleName": "TapTapLoginSDK",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "ObjCMembers",
           "ObjC"
@@ -2683,6 +2629,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -2817,15 +2770,17 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:03TapA8LoginSDK11FriendQueryV4sizeSivp",
-            "mangledName": "$s03TapA8LoginSDK11FriendQueryV4sizeSivp",
+            "usr": "s:03TapA8LoginSDK11FriendQueryC4sizeSivp",
+            "mangledName": "$s03TapA8LoginSDK11FriendQueryC4sizeSivp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -2841,53 +2796,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11FriendQueryV4sizeSivg",
-                "mangledName": "$s03TapA8LoginSDK11FriendQueryV4sizeSivg",
+                "usr": "s:03TapA8LoginSDK11FriendQueryC4sizeSivg",
+                "mangledName": "$s03TapA8LoginSDK11FriendQueryC4sizeSivg",
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11FriendQueryV4sizeSivs",
-                "mangledName": "$s03TapA8LoginSDK11FriendQueryV4sizeSivs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11FriendQueryV4sizeSivM",
-                "mangledName": "$s03TapA8LoginSDK11FriendQueryV4sizeSivM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -2912,15 +2829,17 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:03TapA8LoginSDK11FriendQueryV6cursorSSSgvp",
-            "mangledName": "$s03TapA8LoginSDK11FriendQueryV6cursorSSSgvp",
+            "usr": "s:03TapA8LoginSDK11FriendQueryC6cursorSSSgvp",
+            "mangledName": "$s03TapA8LoginSDK11FriendQueryC6cursorSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -2944,61 +2863,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11FriendQueryV6cursorSSSgvg",
-                "mangledName": "$s03TapA8LoginSDK11FriendQueryV6cursorSSSgvg",
+                "usr": "s:03TapA8LoginSDK11FriendQueryC6cursorSSSgvg",
+                "mangledName": "$s03TapA8LoginSDK11FriendQueryC6cursorSSSgvg",
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11FriendQueryV6cursorSSSgvs",
-                "mangledName": "$s03TapA8LoginSDK11FriendQueryV6cursorSSSgvs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11FriendQueryV6cursorSSSgvM",
-                "mangledName": "$s03TapA8LoginSDK11FriendQueryV6cursorSSSgvM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -3011,7 +2884,7 @@
                 "kind": "TypeNominal",
                 "name": "FriendQuery",
                 "printedName": "TapTapLoginSDK.FriendQuery",
-                "usr": "s:03TapA8LoginSDK11FriendQueryV"
+                "usr": "s:03TapA8LoginSDK11FriendQueryC"
               },
               {
                 "kind": "TypeNominal",
@@ -3037,21 +2910,24 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:03TapA8LoginSDK11FriendQueryV4size6cursorACSi_SSSgtcfc",
-            "mangledName": "$s03TapA8LoginSDK11FriendQueryV4size6cursorACSi_SSSgtcfc",
+            "usr": "s:03TapA8LoginSDK11FriendQueryC4size6cursorACSi_SSSgtcfc",
+            "mangledName": "$s03TapA8LoginSDK11FriendQueryC4size6cursorACSi_SSSgtcfc",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:03TapA8LoginSDK11FriendQueryV",
-        "mangledName": "$s03TapA8LoginSDK11FriendQueryV",
+        "declKind": "Class",
+        "usr": "s:03TapA8LoginSDK11FriendQueryC",
+        "mangledName": "$s03TapA8LoginSDK11FriendQueryC",
         "moduleName": "TapTapLoginSDK",
         "declAttributes": [
-          "AccessControl"
+          "Final",
+          "AccessControl",
+          "ObjCMembers"
         ],
         "conformances": [
           {
@@ -3067,6 +2943,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -3221,12 +3104,13 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapFirstPartyLogin(cm)loginWith:viewController:firstPartyLoginOptions:handler:",
-            "mangledName": "$s03TapA8LoginSDK0aa10FirstPartyB0C5login4with14viewController05firsteB7Options7handlerySaySSG_So06UIViewI0CSgAA0adebK0CSgyAA0aA7AccountCSg_So7NSErrorCSgSbtctFZ",
+            "mangledName": "$s03TapA8LoginSDK0aa10FirstPartyB0C5login4with14viewController05firsteB7Options7handlerySaySSG_So06UIViewI0CSgAA0adebK0CSgyAA0aA7AccountCSg_So7NSErrorCSgSbtScMYcctFZ",
             "moduleName": "TapTapLoginSDK",
             "static": true,
             "declAttributes": [
               "Final",
               "AccessControl",
+              "Custom",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -3251,6 +3135,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
+              "Custom",
               "RawDocComment",
               "ObjC"
             ],
@@ -3739,6 +3624,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -3842,12 +3734,13 @@
             "mangledName": "$s03TapA8LoginSDK11AccessTokenC3kidSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -3876,62 +3769,10 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setKid:",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC3kidSSSgvs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11AccessTokenC3kidSSSgvM",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC3kidSSSgvM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -3960,12 +3801,13 @@
             "mangledName": "$s03TapA8LoginSDK11AccessTokenC9tokenTypeSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -3994,62 +3836,10 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setTokenType:",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC9tokenTypeSSSgvs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11AccessTokenC9tokenTypeSSSgvM",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC9tokenTypeSSSgvM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -4078,12 +3868,13 @@
             "mangledName": "$s03TapA8LoginSDK11AccessTokenC6macKeySSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -4112,62 +3903,10 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setMacKey:",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC6macKeySSSgvs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11AccessTokenC6macKeySSSgvM",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC6macKeySSSgvM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -4196,12 +3935,13 @@
             "mangledName": "$s03TapA8LoginSDK11AccessTokenC12macAlgorithmSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -4230,62 +3970,10 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setMacAlgorithm:",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC12macAlgorithmSSSgvs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11AccessTokenC12macAlgorithmSSSgvM",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC12macAlgorithmSSSgvM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -4314,12 +4002,13 @@
             "mangledName": "$s03TapA8LoginSDK11AccessTokenC5scopeSSSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -4348,62 +4037,10 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setScope:",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC5scopeSSSgvs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11AccessTokenC5scopeSSSgvM",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC5scopeSSSgvM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -4440,12 +4077,13 @@
             "mangledName": "$s03TapA8LoginSDK11AccessTokenC10scopeArraySaySSGSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -4482,70 +4120,10 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Swift.String]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setScopeArray:",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC10scopeArraySaySSGSgvs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11AccessTokenC10scopeArraySaySSGSgvM",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC10scopeArraySaySSGSgvM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -4566,11 +4144,12 @@
             "mangledName": "$s03TapA8LoginSDK11AccessTokenC9expiresInSivp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -4591,54 +4170,10 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken(im)setExpiresIn:",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC9expiresInSivs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK11AccessTokenC9expiresInSivM",
-                "mangledName": "$s03TapA8LoginSDK11AccessTokenC9expiresInSivM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -4659,6 +4194,7 @@
             "mangledName": "$s03TapA8LoginSDK11AccessTokenC12toJsonStringSSyF",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "RawDocComment",
               "ObjC"
@@ -4800,16 +4336,24 @@
         "mangledName": "$s03TapA8LoginSDK11AccessTokenC",
         "moduleName": "TapTapLoginSDK",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "ObjCMembers",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
+        "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -4927,7 +4471,6 @@
             "moduleName": "TapTapLoginSDK",
             "static": true,
             "declAttributes": [
-              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4939,9 +4482,8 @@
         "mangledName": "$s03TapA8LoginSDK0A6TipHUDC",
         "moduleName": "TapTapLoginSDK",
         "declAttributes": [
-          "Preconcurrency",
-          "Custom",
           "AccessControl",
+          "Custom",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)UIView",
@@ -5099,11 +4641,12 @@
             "mangledName": "$s03TapA8LoginSDK0aA7AccountC11accessTokenAA06AccessF0CSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -5132,62 +4675,10 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "TapTapLoginSDK.AccessToken?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AccessToken",
-                        "printedName": "TapTapLoginSDK.AccessToken",
-                        "usr": "c:@M@TapTapLoginSDK@objc(cs)AccessToken"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount(im)setAccessToken:",
-                "mangledName": "$s03TapA8LoginSDK0aA7AccountC11accessTokenAA06AccessF0CSgvs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK0aA7AccountC11accessTokenAA06AccessF0CSgvM",
-                "mangledName": "$s03TapA8LoginSDK0aA7AccountC11accessTokenAA06AccessF0CSgvM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -5216,11 +4707,12 @@
             "mangledName": "$s03TapA8LoginSDK0aA7AccountC8userInfoAA04UserF0CSgvp",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
-              "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl",
               "ObjC"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -5249,62 +4741,10 @@
                 "moduleName": "TapTapLoginSDK",
                 "implicit": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "TapTapLoginSDK.UserInfo?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UserInfo",
-                        "printedName": "TapTapLoginSDK.UserInfo",
-                        "usr": "c:@M@TapTapLoginSDK@objc(cs)UserInfo"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapTapLoginSDK@objc(cs)TapTapAccount(im)setUserInfo:",
-                "mangledName": "$s03TapA8LoginSDK0aA7AccountC8userInfoAA04UserF0CSgvs",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:03TapA8LoginSDK0aA7AccountC8userInfoAA04UserF0CSgvM",
-                "mangledName": "$s03TapA8LoginSDK0aA7AccountC8userInfoAA04UserF0CSgvM",
-                "moduleName": "TapTapLoginSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -5325,6 +4765,7 @@
             "mangledName": "$s03TapA8LoginSDK0aA7AccountC12toJsonStringSSyF",
             "moduleName": "TapTapLoginSDK",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "ObjC"
             ],
@@ -5362,6 +4803,7 @@
         "mangledName": "$s03TapA8LoginSDK0aA7AccountC",
         "moduleName": "TapTapLoginSDK",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "ObjCMembers",
           "ObjC"
@@ -5372,6 +4814,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -5607,154 +5056,140 @@
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 354,
+      "offset": 396,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/TapLoginSwiftBridgeService.swift",
       "kind": "StringLiteral",
-      "offset": 11329,
+      "offset": 11342,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/TapLoginSwiftBridgeService.swift",
       "kind": "BooleanLiteral",
-      "offset": 11350,
+      "offset": 11363,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/TapLoginSwiftBridgeInitializer.swift",
       "kind": "BooleanLiteral",
-      "offset": 241,
+      "offset": 261,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/TapLoginSwiftBridgeInitializer.swift",
       "kind": "Array",
-      "offset": 417,
+      "offset": 457,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/UserInfo.swift",
-      "kind": "BooleanLiteral",
-      "offset": 672,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/UserInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2773,
+      "offset": 2622,
       "length": 25,
       "value": "\"TapTapSDKCurrentProfile\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 352,
+      "offset": 363,
       "length": 12,
       "value": "\"basic_info\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 390,
+      "offset": 401,
       "length": 16,
       "value": "\"public_profile\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 445,
+      "offset": 456,
       "length": 14,
       "value": "\"user_friends\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 522,
+      "offset": 533,
       "length": 15,
       "value": "\"mobile_client\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 553,
+      "offset": 564,
       "length": 14,
       "value": "\"embedded_web\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 910,
+      "offset": 932,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1179,
+      "offset": 1193,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 2087,
+      "offset": 2152,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 5021,
+      "offset": 5445,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 14730,
+      "offset": 15648,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 20148,
+      "offset": 21450,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapLogin.swift",
       "kind": "StringLiteral",
-      "offset": 21125,
+      "offset": 22423,
       "length": 17,
       "value": "\"loginWithScopes\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendQuery.swift",
       "kind": "IntegerLiteral",
-      "offset": 190,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapFriendQuery.swift",
-      "kind": "IntegerLiteral",
-      "offset": 278,
+      "offset": 302,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/TapSdkToken.swift",
       "kind": "StringLiteral",
-      "offset": 993,
+      "offset": 960,
       "length": 26,
       "value": "\"TapTapSDKcurrentSdkToken\""
     },
@@ -5964,217 +5399,224 @@
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapFirstPartyLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1010,
+      "offset": 1061,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapAccessToken.swift",
       "kind": "IntegerLiteral",
-      "offset": 632,
+      "offset": 826,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Public\/TapTapAccessToken.swift",
       "kind": "StringLiteral",
-      "offset": 5352,
+      "offset": 5692,
       "length": 29,
       "value": "\"TapTapSDKcurrentAccessToken\""
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
       "kind": "BooleanLiteral",
-      "offset": 496,
+      "offset": 507,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/UI\/TapTipHUD.swift",
       "kind": "IntegerLiteral",
-      "offset": 581,
+      "offset": 592,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 446,
+      "offset": 461,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 2145,
+      "offset": 2175,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 3040,
+      "offset": 3070,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 452,
+      "offset": 453,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 507,
+      "offset": 508,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 564,
+      "offset": 565,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 605,
+      "offset": 606,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 648,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 705,
+      "offset": 748,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 716,
+      "offset": 759,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 883,
+      "offset": 926,
       "length": 2,
       "value": "85"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "FloatLiteral",
-      "offset": 889,
+      "offset": 932,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 911,
+      "offset": 954,
       "length": 3,
       "value": "182"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "FloatLiteral",
-      "offset": 918,
+      "offset": 961,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 939,
+      "offset": 982,
       "length": 3,
       "value": "197"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "FloatLiteral",
-      "offset": 946,
+      "offset": 989,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 960,
+      "offset": 1003,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1012,
+      "offset": 1055,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1064,
+      "offset": 1107,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1115,
+      "offset": 1158,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1121,
+      "offset": 1164,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1131,
+      "offset": 1174,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1142,
+      "offset": 1185,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "FloatLiteral",
-      "offset": 1537,
+      "offset": 1580,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1602,
+      "offset": 1645,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1605,
+      "offset": 1648,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/devops\/github-action-runner1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapLogin\/Private\/LoginWebView.swift",
       "kind": "FloatLiteral",
-      "offset": 1649,
+      "offset": 1692,
       "length": 3,
       "value": "2.5"
     }

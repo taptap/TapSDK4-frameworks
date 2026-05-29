@@ -425,8 +425,8 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK25TapLeaderboardFilterGroup")
 @interface TapLeaderboardFilterGroup : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull id;
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
-@property (nonatomic) BOOL isSelected;
-@property (nonatomic, copy) NSArray<TapLeaderboardFilterItem *> * _Nonnull leaderboards;
+@property (nonatomic, readonly) BOOL isSelected;
+@property (nonatomic, readonly, copy) NSArray<TapLeaderboardFilterItem *> * _Nonnull leaderboards;
 - (nonnull instancetype)initWithId:(NSString * _Nonnull)id name:(NSString * _Nonnull)name isSelected:(BOOL)isSelected leaderboards:(NSArray<TapLeaderboardFilterItem *> * _Nonnull)leaderboards OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -438,7 +438,7 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK24TapLeaderboardFilterItem")
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @property (nonatomic, readonly) NSInteger rank;
 @property (nonatomic, readonly, copy) NSString * _Nullable rankDisplay;
-@property (nonatomic) BOOL isSelected;
+@property (nonatomic, readonly) BOOL isSelected;
 - (nonnull instancetype)initWithId:(NSString * _Nonnull)id name:(NSString * _Nonnull)name rank:(NSInteger)rank rankDisplay:(NSString * _Nullable)rankDisplay isSelected:(BOOL)isSelected OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -596,11 +596,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong, getter=publi
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK29TapTapLeaderboardDataResponse")
 @interface TapTapLeaderboardDataResponse : NSObject
 /// 排行榜信息
-@property (nonatomic, strong) TapTapLeaderboardInfo * _Nullable leaderboard;
+@property (nonatomic, readonly, strong) TapTapLeaderboardInfo * _Nullable leaderboard;
 /// 分数列表
-@property (nonatomic, copy) NSArray<TapTapLeaderboardScore *> * _Nullable scores;
+@property (nonatomic, readonly, copy) NSArray<TapTapLeaderboardScore *> * _Nullable scores;
 /// 下一页标识（根据is_truncated决定取值）
-@property (nonatomic, copy) NSString * _Nonnull nextPage;
+@property (nonatomic, readonly, copy) NSString * _Nonnull nextPage;
 - (nonnull instancetype)initWithLeaderboard:(TapTapLeaderboardInfo * _Nullable)leaderboard scores:(NSArray<TapTapLeaderboardScore *> * _Nullable)scores nextPage:(NSString * _Nonnull)nextPage OBJC_DESIGNATED_INITIALIZER;
 /// 从内部response转换为对外response
 /// \param internalResponse 内部使用的TapTapLeaderboardScoresResponse
@@ -616,19 +616,20 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK29TapTapLeaderboardDataResponse")
 @class Group;
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK30TapTapLeaderboardGroupResponse")
 @interface TapTapLeaderboardGroupResponse : NSObject
-@property (nonatomic, copy) NSArray<Group *> * _Nonnull groups;
+@property (nonatomic, readonly, copy) NSArray<Group *> * _Nonnull groups;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithGroups:(NSArray<Group *> * _Nonnull)groups OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK22TapTapLeaderboardImage")
 @interface TapTapLeaderboardImage : NSObject
-@property (nonatomic, copy) NSString * _Nonnull color;
-@property (nonatomic, copy) NSString * _Nullable gifUrl;
-@property (nonatomic, copy) NSString * _Nonnull mediumUrl;
-@property (nonatomic, copy) NSString * _Nonnull originalFormat;
-@property (nonatomic, copy) NSString * _Nonnull originalUrl;
-@property (nonatomic, copy) NSString * _Nonnull smallUrl;
-@property (nonatomic, copy) NSString * _Nonnull url;
+@property (nonatomic, readonly, copy) NSString * _Nonnull color;
+@property (nonatomic, readonly, copy) NSString * _Nullable gifUrl;
+@property (nonatomic, readonly, copy) NSString * _Nonnull mediumUrl;
+@property (nonatomic, readonly, copy) NSString * _Nonnull originalFormat;
+@property (nonatomic, readonly, copy) NSString * _Nonnull originalUrl;
+@property (nonatomic, readonly, copy) NSString * _Nonnull smallUrl;
+@property (nonatomic, readonly, copy) NSString * _Nonnull url;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -636,17 +637,18 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK22TapTapLeaderboardImage")
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK21TapTapLeaderboardInfo")
 @interface TapTapLeaderboardInfo : NSObject
 /// 可用的时间周期
-@property (nonatomic, copy) NSArray<TapTapLeaderboardPeriod *> * _Nonnull availablePeriods;
+@property (nonatomic, readonly, copy) NSArray<TapTapLeaderboardPeriod *> * _Nonnull availablePeriods;
 /// 排行榜背景图片（结构体）
-@property (nonatomic, strong) TapTapLeaderboardImage * _Nullable background;
+@property (nonatomic, readonly, strong) TapTapLeaderboardImage * _Nullable background;
 /// 排行榜ID
-@property (nonatomic, copy) NSString * _Nonnull id;
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
 /// 排行榜名称
-@property (nonatomic, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
 /// 当前周期
-@property (nonatomic, strong) TapTapLeaderboardPeriod * _Nullable period;
+@property (nonatomic, readonly, strong) TapTapLeaderboardPeriod * _Nullable period;
 /// 排行榜分数
-@property (nonatomic, strong) TapTapLeaderboardScore * _Nullable score;
+@property (nonatomic, readonly, strong) TapTapLeaderboardScore * _Nullable score;
+- (nonnull instancetype)initWithAvailablePeriods:(NSArray<TapTapLeaderboardPeriod *> * _Nonnull)availablePeriods background:(TapTapLeaderboardImage * _Nullable)background id:(NSString * _Nonnull)id name:(NSString * _Nonnull)name period:(TapTapLeaderboardPeriod * _Nullable)period score:(TapTapLeaderboardScore * _Nullable)score OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -654,9 +656,10 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK21TapTapLeaderboardInfo")
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK23TapTapLeaderboardPeriod")
 @interface TapTapLeaderboardPeriod : NSObject
 /// 展示文本
-@property (nonatomic, copy) NSString * _Nullable display;
+@property (nonatomic, readonly, copy) NSString * _Nullable display;
 /// 周期标识
-@property (nonatomic, copy) NSString * _Nullable periodToken;
+@property (nonatomic, readonly, copy) NSString * _Nullable periodToken;
+- (nonnull instancetype)initWithDisplay:(NSString * _Nullable)display periodToken:(NSString * _Nullable)periodToken OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -680,11 +683,11 @@ SWIFT_PROTOCOL("_TtP20TapTapLeaderboardSDK33TapTapLeaderboardResponseCallback_")
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK22TapTapLeaderboardScore")
 @interface TapTapLeaderboardScore : NSObject
 /// 排名展示文本
-@property (nonatomic, copy) NSString * _Nullable rankDisplay;
+@property (nonatomic, readonly, copy) NSString * _Nullable rankDisplay;
 /// 分数展示文本
-@property (nonatomic, copy) NSString * _Nullable scoreDisplay;
+@property (nonatomic, readonly, copy) NSString * _Nullable scoreDisplay;
 /// 用户信息
-@property (nonatomic, strong) TapTapLeaderboardUser * _Nullable user;
+@property (nonatomic, readonly, strong) TapTapLeaderboardUser * _Nullable user;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -692,9 +695,9 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK22TapTapLeaderboardScore")
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK26TapTapLeaderboardScoreItem")
 @interface TapTapLeaderboardScoreItem : NSObject
 /// 排行榜ID
-@property (nonatomic, copy) NSString * _Nonnull leaderboardId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull leaderboardId;
 /// 分数值
-@property (nonatomic) int64_t score;
+@property (nonatomic, readonly) int64_t score;
 - (nonnull instancetype)initWithLeaderboardId:(NSString * _Nonnull)leaderboardId score:(int64_t)score OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -703,13 +706,14 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK26TapTapLeaderboardScoreItem")
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK31TapTapLeaderboardScoresResponse")
 @interface TapTapLeaderboardScoresResponse : NSObject
 /// 排行榜信息
-@property (nonatomic, strong) TapTapLeaderboardInfo * _Nullable leaderboard;
+@property (nonatomic, readonly, strong) TapTapLeaderboardInfo * _Nullable leaderboard;
 /// 分数列表（可为空）
-@property (nonatomic, copy) NSArray<TapTapLeaderboardScore *> * _Nullable scores;
+@property (nonatomic, readonly, copy) NSArray<TapTapLeaderboardScore *> * _Nullable scores;
 /// 下一页续传标识
-@property (nonatomic, copy) NSString * _Nullable nextContinuationToken;
+@property (nonatomic, readonly, copy) NSString * _Nullable nextContinuationToken;
 /// 是否截断（是否还有更多）
-@property (nonatomic) BOOL isTruncated;
+@property (nonatomic, readonly) BOOL isTruncated;
+- (nonnull instancetype)initWithLeaderboard:(TapTapLeaderboardInfo * _Nullable)leaderboard scores:(NSArray<TapTapLeaderboardScore *> * _Nullable)scores nextContinuationToken:(NSString * _Nullable)nextContinuationToken isTruncated:(BOOL)isTruncated OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -730,13 +734,14 @@ SWIFT_PROTOCOL("_TtP20TapTapLeaderboardSDK30TapTapLeaderboardShareCallback_")
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK21TapTapLeaderboardUser")
 @interface TapTapLeaderboardUser : NSObject
 /// 用户头像（结构体）
-@property (nonatomic, strong) TapTapLeaderboardImage * _Nullable avatar;
+@property (nonatomic, readonly, strong) TapTapLeaderboardImage * _Nullable avatar;
 /// 用户名称
-@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// 开放平台ID
-@property (nonatomic, copy) NSString * _Nullable openId;
+@property (nonatomic, readonly, copy) NSString * _Nullable openId;
 /// 统一ID
-@property (nonatomic, copy) NSString * _Nullable unionId;
+@property (nonatomic, readonly, copy) NSString * _Nullable unionId;
+- (nonnull instancetype)initWithAvatar:(TapTapLeaderboardImage * _Nullable)avatar name:(NSString * _Nullable)name openId:(NSString * _Nullable)openId unionId:(NSString * _Nullable)unionId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -745,15 +750,16 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK21TapTapLeaderboardUser")
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK29TapTapSubmitScoreResponseItem")
 @interface TapTapSubmitScoreResponseItem : NSObject
 /// 排行榜ID
-@property (nonatomic, copy) NSString * _Nonnull leaderboardId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull leaderboardId;
 /// 用户开放平台ID
-@property (nonatomic, copy) NSString * _Nonnull openId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull openId;
 /// 周期Token
-@property (nonatomic, copy) NSString * _Nonnull periodToken;
+@property (nonatomic, readonly, copy) NSString * _Nonnull periodToken;
 /// 分数结果
-@property (nonatomic, strong) TapTapSubmitScoreResult * _Nullable scoreResult;
+@property (nonatomic, readonly, strong) TapTapSubmitScoreResult * _Nullable scoreResult;
 /// 用户统一ID
-@property (nonatomic, copy) NSString * _Nonnull unionId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull unionId;
+- (nonnull instancetype)initWithLeaderboardId:(NSString * _Nonnull)leaderboardId openId:(NSString * _Nonnull)openId periodToken:(NSString * _Nonnull)periodToken scoreResult:(TapTapSubmitScoreResult * _Nullable)scoreResult unionId:(NSString * _Nonnull)unionId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -761,11 +767,12 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK29TapTapSubmitScoreResponseItem")
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK23TapTapSubmitScoreResult")
 @interface TapTapSubmitScoreResult : NSObject
 /// 是否为新的最佳成绩
-@property (nonatomic) BOOL newBest;
+@property (nonatomic, readonly) BOOL newBest;
 /// 原始分数
-@property (nonatomic) int64_t rawScore;
+@property (nonatomic, readonly) int64_t rawScore;
 /// 分数展示文本
-@property (nonatomic, copy) NSString * _Nonnull scoreDisplay;
+@property (nonatomic, readonly, copy) NSString * _Nonnull scoreDisplay;
+- (nonnull instancetype)initWithNewBest:(BOOL)newBest rawScore:(int64_t)rawScore scoreDisplay:(NSString * _Nonnull)scoreDisplay OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -773,7 +780,8 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK23TapTapSubmitScoreResult")
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK26TapTapSubmitScoresResponse")
 @interface TapTapSubmitScoresResponse : NSObject
 /// 提交结果列表
-@property (nonatomic, copy) NSArray<TapTapSubmitScoreResponseItem *> * _Nonnull items;
+@property (nonatomic, readonly, copy) NSArray<TapTapSubmitScoreResponseItem *> * _Nonnull items;
+- (nonnull instancetype)initWithItems:(NSArray<TapTapSubmitScoreResponseItem *> * _Nonnull)items OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -781,9 +789,10 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK26TapTapSubmitScoresResponse")
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK23TapTapUserScoreResponse")
 @interface TapTapUserScoreResponse : NSObject
 /// 当前用户的分数信息
-@property (nonatomic, strong) TapTapLeaderboardScore * _Nullable currentUserScore;
+@property (nonatomic, readonly, strong) TapTapLeaderboardScore * _Nullable currentUserScore;
 /// 排行榜信息
-@property (nonatomic, strong) TapTapLeaderboardInfo * _Nullable leaderboard;
+@property (nonatomic, readonly, strong) TapTapLeaderboardInfo * _Nullable leaderboard;
+- (nonnull instancetype)initWithCurrentUserScore:(TapTapLeaderboardScore * _Nullable)currentUserScore leaderboard:(TapTapLeaderboardInfo * _Nullable)leaderboard OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
