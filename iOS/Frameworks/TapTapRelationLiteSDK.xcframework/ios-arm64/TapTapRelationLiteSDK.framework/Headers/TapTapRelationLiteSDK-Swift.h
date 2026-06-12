@@ -375,11 +375,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TapRelationL
 - (void)showTapUserProfileWithOpenId:(NSString * _Nullable)openId unionId:(NSString * _Nullable)unionId;
 - (void)registerRelationLiteCallbackWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 - (void)registerRelationLiteCallbackWithCallbackId:(NSString * _Nonnull)callbackId completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)registerRelationLiteInviteCallbackWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 - (void)unregisterRelationLiteCallback;
+- (void)unregisterRelationLiteInviteCallback;
 @end
 
 @class NSError;
 @protocol TapTapRelationLiteDelegate;
+@protocol TapTapRelationLiteInviteDelegate;
+@class NSURL;
 SWIFT_CLASS("_TtC21TapTapRelationLiteSDK18TapTapRelationLite")
 @interface TapTapRelationLite : NSObject
 + (void)showTapUserProfileWithOpenId:(NSString * _Nullable)openId unionId:(NSString * _Nullable)unionId;
@@ -392,6 +396,10 @@ SWIFT_CLASS("_TtC21TapTapRelationLiteSDK18TapTapRelationLite")
 + (void)syncRelationshipWithUnionIdWithAction:(NSInteger)action nickname:(NSString * _Nonnull)nickname friendNickname:(NSString * _Nonnull)friendNickname friendUnionId:(NSString * _Nonnull)friendUnionId completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 + (void)registerRelationLiteDelegateWithDelegate:(id <TapTapRelationLiteDelegate> _Nonnull)delegate;
 + (void)unregisterRelationLiteDelegateWithDelegate:(id <TapTapRelationLiteDelegate> _Nonnull)delegate;
++ (void)registerRelationLiteInviteDelegateWithDelegate:(id <TapTapRelationLiteInviteDelegate> _Nonnull)delegate;
++ (void)unregisterRelationLiteInviteDelegateWithDelegate:(id <TapTapRelationLiteInviteDelegate> _Nonnull)delegate;
+/// 处理好友邀请 scheme。需要在 AppDelegate/SceneDelegate 的 openURL 回调中调用。
++ (BOOL)openWithUrl:(NSURL * _Nonnull)url;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -409,6 +417,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger REQUEST_ER
 SWIFT_PROTOCOL("_TtP21TapTapRelationLiteSDK26TapTapRelationLiteDelegate_")
 @protocol TapTapRelationLiteDelegate <NSObject>
 - (void)onRelationLiteResultWithCode:(NSInteger)code;
+@end
+
+SWIFT_PROTOCOL("_TtP21TapTapRelationLiteSDK32TapTapRelationLiteInviteDelegate_")
+@protocol TapTapRelationLiteInviteDelegate <NSObject>
+- (void)onGameInviteReceivedWithOpenId:(NSString * _Nonnull)openId unionId:(NSString * _Nonnull)unionId;
+- (void)onTeamInviteReceivedWithOpenId:(NSString * _Nonnull)openId unionId:(NSString * _Nonnull)unionId teamId:(NSString * _Nonnull)teamId;
 @end
 
 SWIFT_CLASS("_TtC21TapTapRelationLiteSDK26TapTapRelationLiteSyncType")

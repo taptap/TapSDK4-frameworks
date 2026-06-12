@@ -38,7 +38,9 @@ import _SwiftConcurrencyShims
   @objc public func showTapUserProfile(openId: Swift.String?, unionId: Swift.String?)
   @objc public func registerRelationLiteCallback(completion: @escaping (Swift.String) -> Swift.Void)
   @objc public func registerRelationLiteCallback(callbackId: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func registerRelationLiteInviteCallback(completion: @escaping (Swift.String) -> Swift.Void)
   @objc public func unregisterRelationLiteCallback()
+  @objc public func unregisterRelationLiteInviteCallback()
   @objc deinit
 }
 public struct TapRelationUITheme : @unchecked Swift.Sendable {
@@ -100,6 +102,10 @@ public struct TapRelationUITheme : @unchecked Swift.Sendable {
 @objc public protocol TapTapRelationLiteDelegate : ObjectiveC.NSObjectProtocol {
   @objc func onRelationLiteResult(code: Swift.Int)
 }
+@objc public protocol TapTapRelationLiteInviteDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func onGameInviteReceived(openId: Swift.String, unionId: Swift.String)
+  @objc func onTeamInviteReceived(openId: Swift.String, unionId: Swift.String, teamId: Swift.String)
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class TapTapRelationLiteCode : ObjectiveC.NSObject {
   @objc public static let NEED_LOGIN: Swift.Int
   @objc public static let NEED_USER_FRIENDS_SCOPE: Swift.Int
@@ -124,6 +130,10 @@ public struct TapRelationUITheme : @unchecked Swift.Sendable {
   @objc public static func syncRelationshipWithUnionId(action: Swift.Int, nickname: Swift.String, friendNickname: Swift.String, friendUnionId: Swift.String, completion: ((_ error: Foundation.NSError?) -> Swift.Void)?)
   @objc public static func registerRelationLiteDelegate(delegate: any TapTapRelationLiteSDK.TapTapRelationLiteDelegate)
   @objc public static func unregisterRelationLiteDelegate(delegate: any TapTapRelationLiteSDK.TapTapRelationLiteDelegate)
+  @objc public static func registerRelationLiteInviteDelegate(delegate: any TapTapRelationLiteSDK.TapTapRelationLiteInviteDelegate)
+  @objc public static func unregisterRelationLiteInviteDelegate(delegate: any TapTapRelationLiteSDK.TapTapRelationLiteInviteDelegate)
+  @objc @discardableResult
+  public static func open(url: Foundation.URL) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }

@@ -331,10 +331,15 @@ SWIFT_CLASS("_TtC17TapTapRelationSDK29TapRelationSwiftBridgeService")
 - (void)getNewFansCountWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 - (void)getUnreadMessageCountWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 - (void)registerRelationCallbackWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)registerRelationInviteCallbackWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
+- (void)unregisterRelationCallback;
+- (void)unregisterRelationInviteCallback;
 - (void)destroy;
 @end
 
 @protocol TapTapRelationDelegate;
+@protocol TapTapRelationInviteDelegate;
+@class NSURL;
 SWIFT_CLASS("_TtC17TapTapRelationSDK14TapTapRelation")
 @interface TapTapRelation : NSObject
 + (void)prepare;
@@ -346,6 +351,10 @@ SWIFT_CLASS("_TtC17TapTapRelationSDK14TapTapRelation")
 + (NSInteger)getUnreadMessageCount SWIFT_WARN_UNUSED_RESULT;
 + (void)registerRelationDelegateWithDelegate:(id <TapTapRelationDelegate> _Nonnull)delegate;
 + (void)unregisterRelationDelegateWithDelegate:(id <TapTapRelationDelegate> _Nonnull)delegate;
++ (void)registerRelationInviteDelegateWithDelegate:(id <TapTapRelationInviteDelegate> _Nonnull)delegate;
++ (void)unregisterRelationInviteDelegateWithDelegate:(id <TapTapRelationInviteDelegate> _Nonnull)delegate;
+/// 处理好友邀请 scheme。需要在 AppDelegate/SceneDelegate 的 openURL 回调中调用。
++ (BOOL)openWithUrl:(NSURL * _Nonnull)url;
 + (void)destroy;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -356,6 +365,13 @@ SWIFT_PROTOCOL("_TtP17TapTapRelationSDK22TapTapRelationDelegate_")
 - (void)onMessengerCodeResultWithCode:(NSInteger)code;
 - (void)onNewFansCountChangedWithCode:(NSInteger)code fansCount:(NSInteger)fansCount;
 - (void)onUnreadMessageCountChangedWithCode:(NSInteger)code unreadMsgCount:(NSInteger)unreadMsgCount;
+@end
+
+/// 好友邀请 scheme 回调
+SWIFT_PROTOCOL("_TtP17TapTapRelationSDK28TapTapRelationInviteDelegate_")
+@protocol TapTapRelationInviteDelegate <NSObject>
+- (void)onGameInviteReceivedWithOpenId:(NSString * _Nonnull)openId unionId:(NSString * _Nonnull)unionId;
+- (void)onTeamInviteReceivedWithOpenId:(NSString * _Nonnull)openId unionId:(NSString * _Nonnull)unionId teamId:(NSString * _Nonnull)teamId;
 @end
 
 SWIFT_CLASS("_TtC17TapTapRelationSDK27TapTapRelationMessengerCode")
