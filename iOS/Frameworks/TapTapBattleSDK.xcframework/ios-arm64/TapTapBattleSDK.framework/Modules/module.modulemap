@@ -1,4 +1,0 @@
-framework module TapTapBattleSDK {
-  header "TapTapBattleSDK-Swift.h"
-  requires objc
-}

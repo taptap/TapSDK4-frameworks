@@ -1,0 +1,4 @@
+framework module TapOnlineBattleSDK {
+  header "TapOnlineBattleSDK-Swift.h"
+  requires objc
+}

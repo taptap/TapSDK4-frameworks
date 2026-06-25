@@ -1,0 +1,344 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapOnlineBattleSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import Foundation
+import Swift
+import TapTapBasicToolsSDK
+import TapTapCoreSDK
+import TapTapLoginSDK
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import onlinebattle_sdk
+@objc public protocol ConnectListener {
+  @objc func onSuccess(playerId: Swift.String)
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol DisconnectListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol CreateRoomListener {
+  @objc func onSuccess(roomInfo: TapOnlineBattleSDK.RoomInfo)
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol MatchRoomListener {
+  @objc func onSuccess(roomInfo: TapOnlineBattleSDK.RoomInfo)
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol GetRoomListListener {
+  @objc func onSuccess(data: TapOnlineBattleSDK.RoomListData)
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol JoinRoomListener {
+  @objc func onSuccess(roomInfo: TapOnlineBattleSDK.RoomInfo)
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol LeaveRoomListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol UpdatePlayerCustomStatusListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol UpdatePlayerCustomPropertiesListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol UpdateRoomPropertiesListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol StartFrameSyncListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol SendFrameInputListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol StopFrameSyncListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol KickRoomPlayerListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol SendCustomMessageListener {
+  @objc func onSuccess()
+  @objc func onFailure(error: TapOnlineBattleSDK.ErrorResponse)
+}
+@objc public protocol TapOnlineBattleCallback : ObjectiveC.NSObjectProtocol {
+  @objc optional func onDisconnected(code: Swift.Int, msg: Swift.String)
+  @objc optional func onBattleServiceError()
+  @objc optional func onRoomPropertiesChanged(id: Swift.String, name: Swift.String, customProperties: Swift.String)
+  @objc optional func onPlayerCustomPropertiesChanged(playerId: Swift.String, properties: Swift.String)
+  @objc optional func onPlayerCustomStatusChanged(playerId: Swift.String, status: Swift.Int)
+  @objc optional func onFrameSyncStarted(frameSyncInfo: TapOnlineBattleSDK.FrameSyncInfo)
+  @objc optional func onFrameReceived(frameData: TapOnlineBattleSDK.FrameData)
+  @objc optional func onFrameSyncStopped(roomId: Swift.String, frameSyncId: Swift.Int, reason: Swift.Int)
+  @objc optional func onPlayerOffline(roomId: Swift.String, roomOwnerId: Swift.String, playerId: Swift.String)
+  @objc optional func onPlayerLeft(roomId: Swift.String, roomOwnerId: Swift.String, playerId: Swift.String)
+  @objc optional func onPlayerEntered(roomId: Swift.String, playerInfo: TapOnlineBattleSDK.PlayerInfo)
+  @objc optional func onCustomMessageReceived(playerId: Swift.String, msg: Swift.String)
+  @objc optional func onPlayerKicked(roomId: Swift.String, playerId: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapOnlineBattle : ObjectiveC.NSObject {
+  @objc public static let Version: Swift.String
+  @objc public static func connect(listener: (any TapOnlineBattleSDK.ConnectListener)? = nil)
+  @objc public static func disconnect(listener: (any TapOnlineBattleSDK.DisconnectListener)? = nil)
+  @objc public static func createRoom(request: TapOnlineBattleSDK.CreateRoomConfig, listener: (any TapOnlineBattleSDK.CreateRoomListener)? = nil)
+  @objc public static func matchRoom(request: TapOnlineBattleSDK.MatchRoomConfig, listener: (any TapOnlineBattleSDK.MatchRoomListener)? = nil)
+  @objc public static func getRoomList(roomType: Swift.String = "", offset: Swift.Int = 0, limit: Swift.Int = 20, listener: (any TapOnlineBattleSDK.GetRoomListListener)? = nil)
+  @objc public static func joinRoom(roomId: Swift.String, playerConfig: TapOnlineBattleSDK.PlayerConfig = PlayerConfig(), listener: (any TapOnlineBattleSDK.JoinRoomListener)? = nil)
+  @objc public static func leaveRoom(listener: (any TapOnlineBattleSDK.LeaveRoomListener)? = nil)
+  @objc public static func updatePlayerCustomStatus(status: Swift.Int, listener: (any TapOnlineBattleSDK.UpdatePlayerCustomStatusListener)? = nil)
+  @objc public static func updatePlayerCustomProperties(properties: Swift.String, listener: (any TapOnlineBattleSDK.UpdatePlayerCustomPropertiesListener)? = nil)
+  @objc public static func updateRoomProperties(roomName: Swift.String = "", properties: Swift.String = "", listener: (any TapOnlineBattleSDK.UpdateRoomPropertiesListener)? = nil)
+  @objc public static func startFrameSync(listener: (any TapOnlineBattleSDK.StartFrameSyncListener)? = nil)
+  @objc public static func sendFrameInput(data: Swift.String, listener: (any TapOnlineBattleSDK.SendFrameInputListener)? = nil)
+  @objc public static func stopFrameSync(listener: (any TapOnlineBattleSDK.StopFrameSyncListener)? = nil)
+  @objc public static func kickRoomPlayer(playerID: Swift.String, listener: (any TapOnlineBattleSDK.KickRoomPlayerListener)? = nil)
+  @objc public static func sendCustomMessage(msg: Swift.String, type: Swift.Int = 0, receivers: [Swift.String] = [], listener: (any TapOnlineBattleSDK.SendCustomMessageListener)? = nil)
+  @objc public static func NewRandomNumberGenerator(seed: Swift.Int) -> TapOnlineBattleSDK.RandomNumberGenerator
+  @objc public static func initializeSDK()
+  @objc public static func setLogLevel(level: Swift.Int, logToConsole: Swift.Bool = true)
+  @objc public static func getVersion() -> Swift.String?
+  @objc public static func registerOnlineBattleCallback(_ listener: any TapOnlineBattleSDK.TapOnlineBattleCallback)
+  @objc public static func unRegisterOnlineBattleCallback(_ listener: any TapOnlineBattleSDK.TapOnlineBattleCallback)
+  @objc public static func ensureInitialization()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @objcMembers final public class RandomNumberGenerator : ObjectiveC.NSObject {
+  @objc public init(seed: Swift.Int)
+  @objc final public func randomInt() -> Swift.Int
+  @objc final public func free()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(*, deprecated, renamed: "TapTapOnlineBattle", message: "请迁移至 TapTapOnlineBattle")
+@objc(TapTapBattle) final public class TapTapBattleLegacy : ObjectiveC.NSObject {
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.connect")
+  @objc public static func connect(listener: (any TapOnlineBattleSDK.ConnectListener)? = nil)
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.disconnect")
+  @objc public static func disconnect(listener: (any TapOnlineBattleSDK.DisconnectListener)? = nil)
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.createRoom")
+  @objc public static func createRoom(request: TapOnlineBattleSDK.CreateRoomConfig, listener: (any TapOnlineBattleSDK.CreateRoomListener)? = nil)
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.matchRoom")
+  @objc public static func matchRoom(request: TapOnlineBattleSDK.MatchRoomConfig, listener: (any TapOnlineBattleSDK.MatchRoomListener)? = nil)
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.leaveRoom")
+  @objc public static func leaveRoom(listener: (any TapOnlineBattleSDK.LeaveRoomListener)? = nil)
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.startFrameSync")
+  @objc public static func startFrameSync(listener: (any TapOnlineBattleSDK.StartFrameSyncListener)? = nil)
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.stopFrameSync")
+  @objc public static func stopFrameSync(listener: (any TapOnlineBattleSDK.StopFrameSyncListener)? = nil)
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.kickRoomPlayer")
+  @objc public static func kickRoomPlayer(playerID: Swift.String, listener: (any TapOnlineBattleSDK.KickRoomPlayerListener)? = nil)
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.registerOnlineBattleCallback")
+  @objc public static func registerOnlineBattleCallback(_ listener: any TapOnlineBattleSDK.TapOnlineBattleCallback)
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.unRegisterOnlineBattleCallback")
+  @objc public static func unRegisterOnlineBattleCallback(_ listener: any TapOnlineBattleSDK.TapOnlineBattleCallback)
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.NewRandomNumberGenerator")
+  @objc public static func NewRandomNumberGenerator(seed: Swift.Int) -> TapOnlineBattleSDK.RandomNumberGenerator
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.setLogLevel")
+  @objc public static func setLogLevel(level: Swift.Int, logToConsole: Swift.Bool)
+  @available(*, deprecated, renamed: "TapTapOnlineBattle.getVersion")
+  @objc public static func getVersion() -> Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@available(*, deprecated, renamed: "TapTapOnlineBattle", message: "请迁移至 TapTapOnlineBattle")
+public typealias TapTapBattle = TapOnlineBattleSDK.TapTapOnlineBattle
+@objc @objcMembers final public class CreateRoomConfig : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomConfig: TapOnlineBattleSDK.RoomConfig
+  @objc final public let playerConfig: TapOnlineBattleSDK.PlayerConfig
+  @objc public init(roomConfig: TapOnlineBattleSDK.RoomConfig = RoomConfig(), playerConfig: TapOnlineBattleSDK.PlayerConfig = PlayerConfig())
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class MatchRoomConfig : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomConfig: TapOnlineBattleSDK.RoomConfig
+  @objc final public let playerConfig: TapOnlineBattleSDK.PlayerConfig
+  @objc public init(roomConfig: TapOnlineBattleSDK.RoomConfig = RoomConfig(), playerConfig: TapOnlineBattleSDK.PlayerConfig = PlayerConfig())
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class TapOnlineBattleConstant : ObjectiveC.NSObject {
+  @objc public static let ERROR_INVALID_PARAMS: Swift.Int
+  @objc public static let ERROR_INIT_INTERNAL_FAILED: Swift.Int
+  @objc public static let ERROR_UNKNOWN: Swift.Int
+  @objc public static let ERROR_NOT_INIT_OR_LOGIN: Swift.Int
+  @objc public static let ERROR_NOT_LAUNCHED_BY_TAP_CLIENT: Swift.Int
+  @objc public static let ERROR_SYSTEM_ERROR: Swift.Int
+  @objc public static let ERROR_SDK_ERROR: Swift.Int
+  @objc public static let ERROR_REQUEST_RATE_LIMIT_EXCEEDED: Swift.Int
+  @objc public static let ERROR_MALICIOUS_USER: Swift.Int
+  @objc public static let ERROR_TOO_MANY_CONNECTIONS: Swift.Int
+  @objc public static let ERROR_NETWORK_ERROR: Swift.Int
+  @objc public static let ERROR_INVALID_REQUEST: Swift.Int
+  @objc public static let ERROR_INVALID_AUTHORIZATION: Swift.Int
+  @objc public static let ERROR_UNAUTHORIZED: Swift.Int
+  @objc public static let ERROR_ALREADY_CONNECTED: Swift.Int
+  @objc public static let ERROR_PREVIOUS_REQUEST_IN_PROGRESS: Swift.Int
+  @objc public static let ERROR_UNIMPLEMENTED: Swift.Int
+  @objc public static let ERROR_FORBIDDEN: Swift.Int
+  @objc public static let ERROR_ROOM_TEMPLATE_NOT_FOUND: Swift.Int
+  @objc public static let ERROR_ROOM_COUNT_LIMIT_EXCEEDED: Swift.Int
+  @objc public static let ERROR_NOT_IN_ROOM: Swift.Int
+  @objc public static let ERROR_ALREADY_IN_ROOM: Swift.Int
+  @objc public static let ERROR_NOT_ROOM_OWNER: Swift.Int
+  @objc public static let ERROR_ROOM_FULL: Swift.Int
+  @objc public static let ERROR_ROOM_NOT_EXIST: Swift.Int
+  @objc public static let ERROR_FRAME_SYNC_NOT_STARTED: Swift.Int
+  @objc public static let ERROR_FRAME_SYNC_ALREADY_STARTED: Swift.Int
+  @objc public static let ERROR_FRAME_INPUT_SIZE_LIMIT_EXCEEDED: Swift.Int
+  @objc public static let ERROR_FRAME_INPUT_COUNT_LIMIT_EXCEEDED: Swift.Int
+  @objc public static let ERROR_PLAYER_NOT_FOUND: Swift.Int
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum ErrorCode : Swift.Int {
+  case errorNotLogin = 101
+  case errorSystemError = 1
+  case errorSDKError = 2
+  case errorRequestRateLimitExceeded = 3
+  case errorMaliciousUser = 4
+  case errorTooManyConnections = 5
+  case errorNetworkError = 6
+  case errorInvalidRequest = 11
+  case errorInvalidAuthorization = 12
+  case errorUnauthorized = 13
+  case errorAlreadySignedIn = 14
+  case errorPreviousRequestInProgress = 15
+  case errorUnimplemented = 16
+  case errorForbidden = 17
+  case errorRoomTemplateNotFound = 18
+  case errorRoomCountLimitExceeded = 19
+  case errorNotInRoom = 20
+  case errorAlreadyInRoom = 21
+  case errorNotRoomOwner = 22
+  case errorRoomFull = 23
+  case errorRoomNotExist = 24
+  case errorBattleNotStarted = 25
+  case errorBattleAlreadyStarted = 26
+  case errorBattleFrameDataSizeLimitExceeded = 28
+  case errorBattleFrameDataCountLimitExceeded = 29
+  case errorPlayerNotFound = 30
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers final public class ErrorResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let code: Swift.Int
+  @objc final public let msg: Swift.String
+  @objc public init(code: Swift.Int = 0, msg: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class RoomConfig : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let maxPlayerCount: Swift.Int
+  @objc final public let type: Swift.String
+  @objc final public let matchParams: [Swift.String : Swift.String]
+  @objc final public let name: Swift.String
+  @objc final public let customProperties: Swift.String
+  @objc public init(maxPlayerCount: Swift.Int = 0, type: Swift.String = "", matchParams: [Swift.String : Swift.String] = [:], name: Swift.String = "", customProperties: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class PlayerConfig : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let customStatus: Swift.Int
+  @objc final public let customProperties: Swift.String
+  @objc public init(customStatus: Swift.Int = 0, customProperties: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class PlayerInfo : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let id: Swift.String
+  @objc final public let status: Swift.Int
+  @objc final public let customStatus: Swift.Int
+  @objc final public let customProperties: Swift.String
+  @objc public init(id: Swift.String = "", status: Swift.Int = 0, customStatus: Swift.Int = 0, customProperties: Swift.String = "")
+  public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @objcMembers final public class RoomInfo : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let id: Swift.String
+  @objc final public let name: Swift.String
+  @objc final public let type: Swift.String
+  @objc final public let ownerId: Swift.String
+  @objc final public let status: Swift.Int
+  @objc final public let customProperties: Swift.String
+  @objc final public let maxPlayerCount: Swift.Int
+  @objc final public let players: [TapOnlineBattleSDK.PlayerInfo]
+  @objc final public let createTime: Swift.String
+  @objc public init(id: Swift.String = "", name: Swift.String = "", type: Swift.String = "", ownerId: Swift.String = "", status: Swift.Int = 0, customProperties: Swift.String = "", maxPlayerCount: Swift.Int = 0, players: [TapOnlineBattleSDK.PlayerInfo] = [], createTime: Swift.String = "")
+  public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @objcMembers final public class RoomBasicInfo : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let id: Swift.String
+  @objc final public let name: Swift.String
+  @objc final public let type: Swift.String
+  @objc final public let customProperties: Swift.String
+  @objc final public let maxPlayerCount: Swift.Int
+  @objc final public let playerCount: Swift.Int
+  @objc final public let createTime: Swift.String
+  @objc public init(id: Swift.String = "", name: Swift.String = "", type: Swift.String = "", customProperties: Swift.String = "", maxPlayerCount: Swift.Int = 0, playerCount: Swift.Int = 0, createTime: Swift.String = "")
+  public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @objcMembers final public class RoomListData : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let rooms: [TapOnlineBattleSDK.RoomBasicInfo]
+  @objc final public let offset: Swift.Int
+  @objc final public let hasMore: Swift.Bool
+  @objc public init(rooms: [TapOnlineBattleSDK.RoomBasicInfo] = [], offset: Swift.Int = 0, hasMore: Swift.Bool = false)
+  public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @objcMembers final public class PlayerInputInfo : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let playerId: Swift.String
+  @objc final public let data: Swift.String
+  @objc final public let serverTime: Swift.String
+  @objc public init(playerId: Swift.String = "", data: Swift.String = "", serverTime: Swift.String = "")
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class FrameData : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let id: Swift.Int
+  @objc final public let inputs: [TapOnlineBattleSDK.PlayerInputInfo]
+  @objc public init(id: Swift.Int = 0, inputs: [TapOnlineBattleSDK.PlayerInputInfo] = [])
+  public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @objcMembers final public class FrameSyncInfo : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let roomInfo: TapOnlineBattleSDK.RoomInfo
+  @objc final public let frameSyncId: Swift.Int
+  @objc final public let seed: Swift.Int
+  @objc final public let serverTime: Swift.String
+  @objc public init(roomInfo: TapOnlineBattleSDK.RoomInfo = RoomInfo(), frameSyncId: Swift.Int = 0, seed: Swift.Int = 0, serverTime: Swift.String = "")
+  public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+extension TapOnlineBattleSDK.ErrorCode : Swift.Equatable {}
+extension TapOnlineBattleSDK.ErrorCode : Swift.Hashable {}
+extension TapOnlineBattleSDK.ErrorCode : Swift.RawRepresentable {}

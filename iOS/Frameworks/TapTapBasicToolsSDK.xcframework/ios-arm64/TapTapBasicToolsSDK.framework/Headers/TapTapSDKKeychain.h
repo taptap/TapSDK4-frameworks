@@ -45,7 +45,7 @@ typedef enum {
     TapKeychainErrorFailedToDecode = errSecDecode
 } TapKeychainErrorCode;
 
-extern NSString *const TapSDKKeychainErrorDomain;
+extern NSString * _Nonnull const TapSDKKeychainErrorDomain;
 
 /** Account name. */
 extern NSString *const TapSDKKeychainAccountKey;
