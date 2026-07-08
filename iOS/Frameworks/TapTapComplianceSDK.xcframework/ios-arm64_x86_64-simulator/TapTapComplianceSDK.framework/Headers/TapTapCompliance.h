@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, TapComplianceResultHandlerCode) {
     TapComplianceResultHandlerExited                = 1000,   //登出成功
     TapComplianceResultHandlerSwitchAccount         = 1001,  // 切换账号
     TapComplianceResultHandlerPeriodRestrict        = 1030,  // 不可玩时间段游戏
+    TapComplianceResultHandlerDurationLimit __attribute__((deprecated("已废弃，请使用 TapComplianceResultHandlerPeriodRestrict"))) = 1050,  // 时长限制
     TapComplianceResultHandlerAgeLimit              = 1100,  // 适龄限制
     TapComplianceResultHandlerInvalidClientOrNetworkError        = 1200,  // 无效应用 ID 或网络异常
 

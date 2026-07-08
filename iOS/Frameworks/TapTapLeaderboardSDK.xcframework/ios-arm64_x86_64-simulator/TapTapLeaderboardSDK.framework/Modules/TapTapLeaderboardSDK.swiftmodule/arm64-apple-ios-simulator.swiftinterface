@@ -226,9 +226,9 @@ extension TapTapLeaderboardSDK.TapLeaderboardErrorCode {
   @objc final public let rawScore: Swift.Int64
   @objc final public let scoreDisplay: Swift.String
   @objc public init(newBest: Swift.Bool = false, rawScore: Swift.Int64 = 0, scoreDisplay: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 @objc @objcMembers final public class TapTapSubmitScoresResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
   @objc final public let items: [TapTapLeaderboardSDK.TapTapSubmitScoreResponseItem]
