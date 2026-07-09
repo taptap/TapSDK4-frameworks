@@ -621,25 +621,11 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK30TapTapLeaderboardGroupResponse")
 - (nonnull instancetype)initWithGroups:(NSArray<Group *> * _Nonnull)groups OBJC_DESIGNATED_INITIALIZER;
 @end
 
-SWIFT_CLASS("_TtC20TapTapLeaderboardSDK22TapTapLeaderboardImage")
-@interface TapTapLeaderboardImage : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull color;
-@property (nonatomic, readonly, copy) NSString * _Nullable gifUrl;
-@property (nonatomic, readonly, copy) NSString * _Nonnull mediumUrl;
-@property (nonatomic, readonly, copy) NSString * _Nonnull originalFormat;
-@property (nonatomic, readonly, copy) NSString * _Nonnull originalUrl;
-@property (nonatomic, readonly, copy) NSString * _Nonnull smallUrl;
-@property (nonatomic, readonly, copy) NSString * _Nonnull url;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class TapTapLeaderboardPeriod;
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK21TapTapLeaderboardInfo")
 @interface TapTapLeaderboardInfo : NSObject
 /// 可用的时间周期
 @property (nonatomic, readonly, copy) NSArray<TapTapLeaderboardPeriod *> * _Nonnull availablePeriods;
-/// 排行榜背景图片（结构体）
-@property (nonatomic, readonly, strong) TapTapLeaderboardImage * _Nullable background;
 /// 排行榜ID
 @property (nonatomic, readonly, copy) NSString * _Nonnull id;
 /// 排行榜名称
@@ -648,7 +634,7 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK21TapTapLeaderboardInfo")
 @property (nonatomic, readonly, strong) TapTapLeaderboardPeriod * _Nullable period;
 /// 排行榜分数
 @property (nonatomic, readonly, strong) TapTapLeaderboardScore * _Nullable score;
-- (nonnull instancetype)initWithAvailablePeriods:(NSArray<TapTapLeaderboardPeriod *> * _Nonnull)availablePeriods background:(TapTapLeaderboardImage * _Nullable)background id:(NSString * _Nonnull)id name:(NSString * _Nonnull)name period:(TapTapLeaderboardPeriod * _Nullable)period score:(TapTapLeaderboardScore * _Nullable)score OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAvailablePeriods:(NSArray<TapTapLeaderboardPeriod *> * _Nonnull)availablePeriods id:(NSString * _Nonnull)id name:(NSString * _Nonnull)name period:(TapTapLeaderboardPeriod * _Nullable)period score:(TapTapLeaderboardScore * _Nullable)score OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -733,15 +719,15 @@ SWIFT_PROTOCOL("_TtP20TapTapLeaderboardSDK30TapTapLeaderboardShareCallback_")
 
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK21TapTapLeaderboardUser")
 @interface TapTapLeaderboardUser : NSObject
-/// 用户头像（结构体）
-@property (nonatomic, readonly, strong) TapTapLeaderboardImage * _Nullable avatar;
+/// 用户头像 URL
+@property (nonatomic, readonly, copy) NSString * _Nullable avatar;
 /// 用户名称
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// 开放平台ID
 @property (nonatomic, readonly, copy) NSString * _Nullable openId;
 /// 统一ID
 @property (nonatomic, readonly, copy) NSString * _Nullable unionId;
-- (nonnull instancetype)initWithAvatar:(TapTapLeaderboardImage * _Nullable)avatar name:(NSString * _Nullable)name openId:(NSString * _Nullable)openId unionId:(NSString * _Nullable)unionId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAvatar:(NSString * _Nullable)avatar name:(NSString * _Nullable)name openId:(NSString * _Nullable)openId unionId:(NSString * _Nullable)unionId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1457,25 +1443,11 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK30TapTapLeaderboardGroupResponse")
 - (nonnull instancetype)initWithGroups:(NSArray<Group *> * _Nonnull)groups OBJC_DESIGNATED_INITIALIZER;
 @end
 
-SWIFT_CLASS("_TtC20TapTapLeaderboardSDK22TapTapLeaderboardImage")
-@interface TapTapLeaderboardImage : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull color;
-@property (nonatomic, readonly, copy) NSString * _Nullable gifUrl;
-@property (nonatomic, readonly, copy) NSString * _Nonnull mediumUrl;
-@property (nonatomic, readonly, copy) NSString * _Nonnull originalFormat;
-@property (nonatomic, readonly, copy) NSString * _Nonnull originalUrl;
-@property (nonatomic, readonly, copy) NSString * _Nonnull smallUrl;
-@property (nonatomic, readonly, copy) NSString * _Nonnull url;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class TapTapLeaderboardPeriod;
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK21TapTapLeaderboardInfo")
 @interface TapTapLeaderboardInfo : NSObject
 /// 可用的时间周期
 @property (nonatomic, readonly, copy) NSArray<TapTapLeaderboardPeriod *> * _Nonnull availablePeriods;
-/// 排行榜背景图片（结构体）
-@property (nonatomic, readonly, strong) TapTapLeaderboardImage * _Nullable background;
 /// 排行榜ID
 @property (nonatomic, readonly, copy) NSString * _Nonnull id;
 /// 排行榜名称
@@ -1484,7 +1456,7 @@ SWIFT_CLASS("_TtC20TapTapLeaderboardSDK21TapTapLeaderboardInfo")
 @property (nonatomic, readonly, strong) TapTapLeaderboardPeriod * _Nullable period;
 /// 排行榜分数
 @property (nonatomic, readonly, strong) TapTapLeaderboardScore * _Nullable score;
-- (nonnull instancetype)initWithAvailablePeriods:(NSArray<TapTapLeaderboardPeriod *> * _Nonnull)availablePeriods background:(TapTapLeaderboardImage * _Nullable)background id:(NSString * _Nonnull)id name:(NSString * _Nonnull)name period:(TapTapLeaderboardPeriod * _Nullable)period score:(TapTapLeaderboardScore * _Nullable)score OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAvailablePeriods:(NSArray<TapTapLeaderboardPeriod *> * _Nonnull)availablePeriods id:(NSString * _Nonnull)id name:(NSString * _Nonnull)name period:(TapTapLeaderboardPeriod * _Nullable)period score:(TapTapLeaderboardScore * _Nullable)score OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1569,15 +1541,15 @@ SWIFT_PROTOCOL("_TtP20TapTapLeaderboardSDK30TapTapLeaderboardShareCallback_")
 
 SWIFT_CLASS("_TtC20TapTapLeaderboardSDK21TapTapLeaderboardUser")
 @interface TapTapLeaderboardUser : NSObject
-/// 用户头像（结构体）
-@property (nonatomic, readonly, strong) TapTapLeaderboardImage * _Nullable avatar;
+/// 用户头像 URL
+@property (nonatomic, readonly, copy) NSString * _Nullable avatar;
 /// 用户名称
 @property (nonatomic, readonly, copy) NSString * _Nullable name;
 /// 开放平台ID
 @property (nonatomic, readonly, copy) NSString * _Nullable openId;
 /// 统一ID
 @property (nonatomic, readonly, copy) NSString * _Nullable unionId;
-- (nonnull instancetype)initWithAvatar:(TapTapLeaderboardImage * _Nullable)avatar name:(NSString * _Nullable)name openId:(NSString * _Nullable)openId unionId:(NSString * _Nullable)unionId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAvatar:(NSString * _Nullable)avatar name:(NSString * _Nullable)name openId:(NSString * _Nullable)openId unionId:(NSString * _Nullable)unionId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

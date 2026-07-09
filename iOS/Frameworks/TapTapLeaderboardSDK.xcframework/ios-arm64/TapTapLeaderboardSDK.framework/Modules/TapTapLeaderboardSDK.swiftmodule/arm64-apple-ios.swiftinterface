@@ -151,29 +151,12 @@ extension TapTapLeaderboardSDK.TapLeaderboardErrorCode {
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_inheritsConvenienceInitializers @objcMembers final public class TapTapLeaderboardImage : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let color: Swift.String
-  @objc final public let gifUrl: Swift.String?
-  final public let height: Swift.Int?
-  final public let width: Swift.Int?
-  @objc final public let mediumUrl: Swift.String
-  @objc final public let originalFormat: Swift.String
-  final public let originalSize: Swift.Int?
-  @objc final public let originalUrl: Swift.String
-  @objc final public let smallUrl: Swift.String
-  @objc final public let url: Swift.String
-  @objc override dynamic public init()
-  public init(color: Swift.String = "", gifUrl: Swift.String? = nil, height: Swift.Int? = nil, width: Swift.Int? = nil, mediumUrl: Swift.String = "", originalFormat: Swift.String = "", originalSize: Swift.Int? = nil, originalUrl: Swift.String = "", smallUrl: Swift.String = "", url: Swift.String = "")
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 @objc @objcMembers final public class TapTapLeaderboardUser : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let avatar: TapTapLeaderboardSDK.TapTapLeaderboardImage?
+  @objc final public let avatar: Swift.String?
   @objc final public let name: Swift.String?
   @objc final public let openId: Swift.String?
   @objc final public let unionId: Swift.String?
-  @objc public init(avatar: TapTapLeaderboardSDK.TapTapLeaderboardImage? = nil, name: Swift.String? = nil, openId: Swift.String? = nil, unionId: Swift.String? = nil)
+  @objc public init(avatar: Swift.String? = nil, name: Swift.String? = nil, openId: Swift.String? = nil, unionId: Swift.String? = nil)
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -200,12 +183,11 @@ extension TapTapLeaderboardSDK.TapLeaderboardErrorCode {
 }
 @objc @objcMembers final public class TapTapLeaderboardInfo : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
   @objc final public let availablePeriods: [TapTapLeaderboardSDK.TapTapLeaderboardPeriod]
-  @objc final public let background: TapTapLeaderboardSDK.TapTapLeaderboardImage?
   @objc final public let id: Swift.String
   @objc final public let name: Swift.String
   @objc final public let period: TapTapLeaderboardSDK.TapTapLeaderboardPeriod?
   @objc final public let score: TapTapLeaderboardSDK.TapTapLeaderboardScore?
-  @objc public init(availablePeriods: [TapTapLeaderboardSDK.TapTapLeaderboardPeriod] = [], background: TapTapLeaderboardSDK.TapTapLeaderboardImage? = nil, id: Swift.String = "", name: Swift.String = "", period: TapTapLeaderboardSDK.TapTapLeaderboardPeriod? = nil, score: TapTapLeaderboardSDK.TapTapLeaderboardScore? = nil)
+  @objc public init(availablePeriods: [TapTapLeaderboardSDK.TapTapLeaderboardPeriod] = [], id: Swift.String = "", name: Swift.String = "", period: TapTapLeaderboardSDK.TapTapLeaderboardPeriod? = nil, score: TapTapLeaderboardSDK.TapTapLeaderboardScore? = nil)
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
