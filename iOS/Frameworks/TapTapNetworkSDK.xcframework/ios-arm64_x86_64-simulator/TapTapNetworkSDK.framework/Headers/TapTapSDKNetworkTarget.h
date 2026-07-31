@@ -21,7 +21,10 @@ typedef NS_ENUM(NSInteger, TapTapRetryStrategy) {
     // 重试 3 次，无论请求方法都最多重试 3 次
     TapTapRetryStrategyThreeTimes,
     // 指数退避策略：第一次间隔 2s 后重试，第二次间隔 4s，第三次间隔 8s，直到最大间隔 600s。无最大重试次数限制。
-    TapTapRetryStrategyExponentialBackoff
+    TapTapRetryStrategyExponentialBackoff,
+    // 指数退避策略，间隔规则与 TapTapRetryStrategyExponentialBackoff 相同，但最多尝试 4 次
+    // （1 次首发 + 3 次重试），达到上限后不再重试，直接走完成回调。
+    TapTapRetryStrategyExponentialBackoffLimited
 };
 
 typedef NS_ENUM(NSInteger, TapTapHTTPRequestMethod) {

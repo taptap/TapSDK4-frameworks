@@ -17508,14 +17508,14 @@
     {
       "filePath": "\/Users\/devops\/tapsdk-unity-mac-runner-1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/Network\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 800,
+      "offset": 1046,
       "length": 16,
       "value": "\"\/real-name\/v1\/\""
     },
     {
       "filePath": "\/Users\/devops\/tapsdk-unity-mac-runner-1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapCompliance\/Private\/TapComplianceService\/Network\/Networking.swift",
       "kind": "StringLiteral",
-      "offset": 882,
+      "offset": 1128,
       "length": 21,
       "value": "\"\/anti-addiction\/v1\/\""
     },

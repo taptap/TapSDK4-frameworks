@@ -17,6 +17,8 @@
 #import <TapTapBasicToolsSDK/TapTapSDKLogConfiguration.h>
 #import <TapTapBasicToolsSDK/TapTapSDKReachability.h>
 #import <TapTapBasicToolsSDK/TapSDKMediator.h>
+#import <TapTapBasicToolsSDK/TapSDKHost.h>
+// @deprecated 兼容历史直接引用 TapTapSDKHostConfiguration 的调用方，新代码用上面的 TapSDKHost
 #import <TapTapBasicToolsSDK/TapTapSDKHostConfiguration.h>
 #import <TapTapBasicToolsSDK/TapTapSDKVersion.h>
 #import <TapTapBasicToolsSDK/TapSDKHUD.h>

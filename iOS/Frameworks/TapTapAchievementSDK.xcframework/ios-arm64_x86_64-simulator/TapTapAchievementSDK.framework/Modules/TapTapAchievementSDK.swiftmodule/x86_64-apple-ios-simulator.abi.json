@@ -3705,7 +3705,7 @@
     {
       "filePath": "\/Users\/devops\/tapsdk-unity-mac-runner-1\/_work\/tapsdk-monorepo\/tapsdk-monorepo\/iOS\/TapTapSDK\/TapTapAchievement\/Private\/TapAchievementManager.swift",
       "kind": "StringLiteral",
-      "offset": 18906,
+      "offset": 18883,
       "length": 16,
       "value": "\"achievement_id\""
     }
