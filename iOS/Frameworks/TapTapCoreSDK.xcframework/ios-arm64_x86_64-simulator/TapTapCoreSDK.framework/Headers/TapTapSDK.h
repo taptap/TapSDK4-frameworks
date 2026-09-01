@@ -22,7 +22,8 @@ typedef NS_ENUM(NSInteger, TapInitErrorCode) {
     TapInitErrorCodeParamError = 1000,
     /// gatekeeper 返回 invalid_client：应用 bundleId 与 clientId/clientToken 不匹配
     TapInitErrorCodeConfigError = 1001,
-    /// gatekeeper 请求多次尝试后仍因网络原因失败
+    /// 保留的网络错误码。当前 gatekeeper 超时/DNS/TLS/5xx 等会降级为 Success
+    ///（沿用磁盘缓存或默认配置），不会通过 onInitFail 抛出此码。
     TapInitErrorCodeNetworkError = 1002,
     /// initWithOptions: 参数校验通过之后的同步初始化步骤（mediator 事件、appStart、
     /// completeInit、otherOptions 分发到其它模块等）自身抛出异常，不是参数校验失败。
@@ -41,7 +42,7 @@ typedef NS_ENUM(NSInteger, TapInitErrorCode) {
 /// removeInitCallback: 手动注销，否则会造成该回调持有的对象无法释放（内存泄漏）。
 @protocol TapInitCallback <NSObject>
 
-/// 本次会话 gatekeeper 网络请求成功
+/// 本次会话初始化到达成功终态（含 gatekeeper 网络失败后的缓存降级）
 - (void)onInitSuccess;
 
 /// 初始化失败，errorCode 取值见 TapInitErrorCode
@@ -155,6 +156,10 @@ typedef NS_ENUM(NSInteger, TapTapUITheme) {
 ///         -1： 未初始化 （TAPSDK_INIT_STATE_EMPTY）
 ///         -2： 应用 bundleId 与 clientID 或 clientToken 不匹配 （TAPSDK_INIT_STATE_INVALID）
 + (int)checkInitState;
+
+/// SDK 内部使用：本地同步初始化是否已开始（含异步 gatekeeper 仍在进行中）。
+/// 用于内部读取本地登录缓存，不弹窗。接入方请使用 checkInitState。
++ (BOOL)isLocalInitStarted NS_SWIFT_NAME(isLocalInitStarted());
 
 @end
 
